@@ -1,0 +1,141 @@
+{
+  "projName": "CODECC_9825941CE98F4318",
+  "scanPath": "/data/iegci/test_tool/test_code/eptest-web",
+  "language": 64,
+  "whitePathList": [
+  ],
+  "toolOptions": [
+    {
+      "optionName": "SHELL",
+      "optionValue": "# Coverity/Klocwork将通过调用编译脚本来编译您的代码，以追踪深层次的缺陷\n# 请使用依赖的构建工具如maven/cmake等写一个编译脚本build.sh\n# 确保build.sh能够编译代码\n# cd path/to/build.sh\n# sh build.sh\n",
+      "osType": "LINUX",
+      "buildEnv": {}
+    }
+  ],
+  "buildScript": "/data/landun/workspace/.temp/codecc_b-6cf2659ad09741288f3f6d7dae6924db/CODECC_9825941CE98F4318_eslint/b-6cf2659ad09741288f3f6d7dae6924db.sh",
+  "scanType": "full",
+  "skipPaths": [
+    ".*/\\.svn/.*",
+    ".*/\\.git/.*",
+    ".*/\\.temp/.*",
+    ".*/pinpoint_piggy/.*",
+    ".*/\\.git",
+    ".*/thirdparty/.*",
+    ".*/google.golang.org/.*",
+    ".*/externlibs/.*",
+    ".*/lua/jit/.*",
+    ".*/third/.*",
+    ".*/.git/.*",
+    ".*/.*\\.dll",
+    ".*/gopkg.in/.*",
+    ".*/tdrbuf/.*",
+    ".*/third_party/.*",
+    ".*/tools/.*",
+    ".*/third-party/.*",
+    ".*/3rd/.*",
+    ".*/highcharts.*.js",
+    ".*/pbprotocol/.*",
+    ".*/boost/.*",
+    ".*/vendor/.*",
+    ".*/jquery.*.js",
+    ".*/tinyxml/.*",
+    ".*/.*\\.exe",
+    ".*/lib_3rd/.*",
+    ".*/github.com/.*",
+    ".*/node_modules/.*",
+    ".*/3rdParty/.*",
+    ".*/tinyxml2/.*",
+    ".*/universaldetector.py",
+    ".*/demo/.*",
+    ".*/mobdebug.lua",
+    ".*/external/.*",
+    ".*/3rdparty/.*",
+    ".*/ProgramFiles/.*",
+    ".*/.*\\.pb\\.cc",
+    ".*.min.js",
+    ".*/tool/.*",
+    ".*/3rdlib/.*",
+    ".*/.*\\.svg",
+    ".*/ProgramFiles(x86)/.*",
+    ".*/luajit/jit/.*",
+    ".*/protobuf/.*",
+    ".*/extensions/.*",
+    ".*/Tdr/.*",
+    ".*/.git",
+    ".*/ThirdPart/.*",
+    ".*/lib/.*",
+    ".*/echarts.*.js",
+    ".*/gtest/.*",
+    ".*/curl/.*",
+    ".*/lib3rd/.*",
+    ".*/.temp/.*",
+    ".*/.*\\.tar",
+    ".*/New3rdpartylib/.*",
+    ".*/vendors/.*",
+    ".*/ThirdPartyCode/.*",
+    ".*/Plugins/.*",
+    ".*/third_lib/.*",
+    ".*/vue.*.js",
+    ".*/golang.org/.*",
+    ".*/TDRExported/.*"
+  ],
+  "incrementalFiles": [],
+  "openCheckers": [
+    {
+      "checkerName": "operator-linebreak",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "brace-style",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "no-mixed-operators",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "no-undef",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "padded-blocks",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "camelcase",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "no-useless-escape",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "no-multi-assign",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "prefer-const",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "prefer-template",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "quote-props",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "max-len",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "no-var",
+      "nativeChecker": true
+    },
+    {
+      "checkerName": "eol-last",
+      "nativeChecker": true
+    }
+  ]
+}

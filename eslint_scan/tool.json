@@ -1,0 +1,10 @@
+{
+	"name":"ESLINT",
+	"displayName":"ESLINT",
+	"type":"STANDARD",
+	"briefIntroduction":"ESLINT",
+	"supportedLanguages":["JS"],
+	"dockerTriggerShell": "/bin/bash##-c##\"python /usr/codecc/sdk/src/scan.py --input={input.json} --output={output.json}\"",
+	"dockerImageURL": "csighub.tencentyun.com/codecc/eslint-codecc-plugin:temp",
+    "dockerImageVersion": "latest"
+}
