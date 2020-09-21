@@ -1,0 +1,3052 @@
+{
+    "dup_line_count": 31533,
+    "dupc_files": [
+        {
+            "block_list": [
+                {
+                    "end_lines": 60098,
+                    "finger_print": "38baa013caa294bd5b20cab5dd7f00f9",
+                    "start_lines": 60038
+                },
+                {
+                    "end_lines": 54720,
+                    "finger_print": "44f1b2b7a720eaf550fdd5cc6fac7415",
+                    "start_lines": 54696
+                },
+                {
+                    "end_lines": 51508,
+                    "finger_print": "e5643cb05d288c6681ce6951f3f7f5e8",
+                    "start_lines": 51422
+                },
+                {
+                    "end_lines": 60017,
+                    "finger_print": "eaa56bc4ddfb2e919e8207e900863b6f",
+                    "start_lines": 59969
+                },
+                {
+                    "end_lines": 56881,
+                    "finger_print": "2a601f42eee5f3983442912a7d376781",
+                    "start_lines": 56861
+                },
+                {
+                    "end_lines": 59730,
+                    "finger_print": "f841bdf3eb4bdae5a03a49100a2ea19a",
+                    "start_lines": 59705
+                },
+                {
+                    "end_lines": 58442,
+                    "finger_print": "8ebf1aa050dea793f4d305cd53b8b499",
+                    "start_lines": 58417
+                },
+                {
+                    "end_lines": 56204,
+                    "finger_print": "64b702d2699a5055c15fd7e57e21eaba",
+                    "start_lines": 56189
+                },
+                {
+                    "end_lines": 56198,
+                    "finger_print": "7b74ded2ffa9b3e3358a2b9b579d0524",
+                    "start_lines": 56183
+                },
+                {
+                    "end_lines": 56244,
+                    "finger_print": "835e443fc96fa615eb284e6fefab3827",
+                    "start_lines": 56213
+                },
+                {
+                    "end_lines": 54350,
+                    "finger_print": "f720badb0aa20877c9aa3501a3e3be1b",
+                    "start_lines": 54179
+                },
+                {
+                    "end_lines": 56174,
+                    "finger_print": "f4d9ac85862f07304bbfb804483bc6ad",
+                    "start_lines": 56151
+                },
+                {
+                    "end_lines": 59970,
+                    "finger_print": "c6d8dbf9c315a6a3118ef0da8a184b7b",
+                    "start_lines": 59871
+                },
+                {
+                    "end_lines": 57854,
+                    "finger_print": "47bd5ac6f767233c52cb4879d7009b82",
+                    "start_lines": 57750
+                },
+                {
+                    "end_lines": 51000,
+                    "finger_print": "c450bb32da33782f1ffa5090001bf6ba",
+                    "start_lines": 50985
+                },
+                {
+                    "end_lines": 59872,
+                    "finger_print": "ba1e2bcceee7899f75a86b2c5a6bbb86",
+                    "start_lines": 59797
+                },
+                {
+                    "end_lines": 56176,
+                    "finger_print": "c778e2ddaf2969c8464226884e123bb0",
+                    "start_lines": 56151
+                },
+                {
+                    "end_lines": 55164,
+                    "finger_print": "153eb111319185987df9a9232d44fd80",
+                    "start_lines": 55039
+                },
+                {
+                    "end_lines": 57595,
+                    "finger_print": "8182a2adff031c145c5ce032ed934065",
+                    "start_lines": 57487
+                },
+                {
+                    "end_lines": 59634,
+                    "finger_print": "d0d8ea7441124b788535b9674d5416d4",
+                    "start_lines": 59587
+                },
+                {
+                    "end_lines": 53385,
+                    "finger_print": "cc6f160e542d24cd5356c4f5d9eb99bd",
+                    "start_lines": 53353
+                },
+                {
+                    "end_lines": 51385,
+                    "finger_print": "e561ea3521553e8ef844089b2da97402",
+                    "start_lines": 51361
+                },
+                {
+                    "end_lines": 57188,
+                    "finger_print": "5236b4b6ab67209703c08553588aa917",
+                    "start_lines": 57105
+                },
+                {
+                    "end_lines": 59549,
+                    "finger_print": "a7f780d8ecb58b1852b60678ae7f446e",
+                    "start_lines": 59505
+                },
+                {
+                    "end_lines": 56676,
+                    "finger_print": "b3e864d8f35559096ee60332a5a00b50",
+                    "start_lines": 56653
+                },
+                {
+                    "end_lines": 56636,
+                    "finger_print": "cb5bcfedd75b35c5f6dda030d257f911",
+                    "start_lines": 56610
+                },
+                {
+                    "end_lines": 52736,
+                    "finger_print": "f2d9016a6bd2013706c76544b34cda09",
+                    "start_lines": 51507
+                },
+                {
+                    "end_lines": 56293,
+                    "finger_print": "79a3244900b9fe4b6f4c0cee0c3c2a67",
+                    "start_lines": 56280
+                },
+                {
+                    "end_lines": 54868,
+                    "finger_print": "be5b644c1a95d54266f662c81f78506a",
+                    "start_lines": 54778
+                },
+                {
+                    "end_lines": 55592,
+                    "finger_print": "6088c5690dcbfdd482945694d9c17da4",
+                    "start_lines": 55568
+                },
+                {
+                    "end_lines": 57751,
+                    "finger_print": "edea740c7efae2c350de94453303cc79",
+                    "start_lines": 57696
+                },
+                {
+                    "end_lines": 57483,
+                    "finger_print": "d2926caf49a9a3fec076f771b18ee610",
+                    "start_lines": 57404
+                },
+                {
+                    "end_lines": 59790,
+                    "finger_print": "f0fdaf5b9a3f742fd7d503bbacf5bba9",
+                    "start_lines": 59769
+                },
+                {
+                    "end_lines": 57364,
+                    "finger_print": "8f7e7ccafc123eac035a595f7d3b0e6a",
+                    "start_lines": 57226
+                },
+                {
+                    "end_lines": 56244,
+                    "finger_print": "b00f4863dc67e0bb762ad9bd5eaabfb6",
+                    "start_lines": 56210
+                },
+                {
+                    "end_lines": 56127,
+                    "finger_print": "f206cd48c4f56d3d9401385b8f6c77ff",
+                    "start_lines": 56115
+                },
+                {
+                    "end_lines": 59673,
+                    "finger_print": "0abe31237d33244bb37e8ec3af3bd7ae",
+                    "start_lines": 59633
+                },
+                {
+                    "end_lines": 56284,
+                    "finger_print": "d58f92df3ade47b3ee7edad70b523d10",
+                    "start_lines": 56213
+                },
+                {
+                    "end_lines": 56923,
+                    "finger_print": "952148da954d5905366e3d0676556e4b",
+                    "start_lines": 56896
+                },
+                {
+                    "end_lines": 57984,
+                    "finger_print": "d293f0457f5eb10d06f187cc9c0d0d64",
+                    "start_lines": 57926
+                },
+                {
+                    "end_lines": 55312,
+                    "finger_print": "84143666454cb12f83ab70bf79d7b01d",
+                    "start_lines": 55269
+                },
+                {
+                    "end_lines": 56327,
+                    "finger_print": "8815309ab523a8e108937ad87bdc10f4",
+                    "start_lines": 56296
+                },
+                {
+                    "end_lines": 56246,
+                    "finger_print": "c778e2ddaf2969c8464226884e123bb0",
+                    "start_lines": 56221
+                },
+                {
+                    "end_lines": 56327,
+                    "finger_print": "b00f4863dc67e0bb762ad9bd5eaabfb6",
+                    "start_lines": 56293
+                },
+                {
+                    "end_lines": 56130,
+                    "finger_print": "64b702d2699a5055c15fd7e57e21eaba",
+                    "start_lines": 56115
+                },
+                {
+                    "end_lines": 58910,
+                    "finger_print": "2a4eabc456a9d8812a8e371f224fb4d5",
+                    "start_lines": 58870
+                },
+                {
+                    "end_lines": 55634,
+                    "finger_print": "e6a83cb155bbd1cb8dac2c23c864c01d",
+                    "start_lines": 55606
+                },
+                {
+                    "end_lines": 54691,
+                    "finger_print": "1469b721fc0cbd0e9447641fae6d3b9b",
+                    "start_lines": 54578
+                },
+                {
+                    "end_lines": 57087,
+                    "finger_print": "35d80a1c738afa896d92c17097d75fca",
+                    "start_lines": 56973
+                },
+                {
+                    "end_lines": 50261,
+                    "finger_print": "9517200ec8536717864cb7f7f3d795a6",
+                    "start_lines": 50225
+                },
+                {
+                    "end_lines": 58856,
+                    "finger_print": "2e17817741bb62b4f7f40a5b83a681f3",
+                    "start_lines": 58496
+                },
+                {
+                    "end_lines": 56281,
+                    "finger_print": "7b74ded2ffa9b3e3358a2b9b579d0524",
+                    "start_lines": 56266
+                },
+                {
+                    "end_lines": 56327,
+                    "finger_print": "f4d9ac85862f07304bbfb804483bc6ad",
+                    "start_lines": 56304
+                },
+                {
+                    "end_lines": 56891,
+                    "finger_print": "c882f706fc0681b4ae2385a4526ccefb",
+                    "start_lines": 56683
+                },
+                {
+                    "end_lines": 56472,
+                    "finger_print": "9a33fb40d167df9628d6f355628ab6f1",
+                    "start_lines": 56395
+                },
+                {
+                    "end_lines": 56351,
+                    "finger_print": "9b57e69e4709bbce11558d79edef2539",
+                    "start_lines": 56296
+                },
+                {
+                    "end_lines": 54415,
+                    "finger_print": "3c33bd42cd36dd3b7f16c5276f9066a9",
+                    "start_lines": 54369
+                },
+                {
+                    "end_lines": 52827,
+                    "finger_print": "2c159cb57ab415af7b9028f96643c1e0",
+                    "start_lines": 52775
+                },
+                {
+                    "end_lines": 54579,
+                    "finger_print": "56549c5a9c95ce8831b6d539f284fcb6",
+                    "start_lines": 54456
+                },
+                {
+                    "end_lines": 58341,
+                    "finger_print": "2efca63e6519853b5fd7044ff6b776f5",
+                    "start_lines": 57999
+                },
+                {
+                    "end_lines": 60429,
+                    "finger_print": "ed1d4a97bc352f3b21d200531472f01c",
+                    "start_lines": 60375
+                },
+                {
+                    "end_lines": 56091,
+                    "finger_print": "ccc54582fd4d0e179310c03518dc84e8",
+                    "start_lines": 56051
+                },
+                {
+                    "end_lines": 53441,
+                    "finger_print": "843fe39496d1aa99e7f007a06523221b",
+                    "start_lines": 53383
+                },
+                {
+                    "end_lines": 56201,
+                    "finger_print": "e99e7be9e910a964307ce75a70c61fc1",
+                    "start_lines": 56186
+                },
+                {
+                    "end_lines": 59480,
+                    "finger_print": "c628a49724733195c01a1928741bff94",
+                    "start_lines": 59276
+                },
+                {
+                    "end_lines": 56611,
+                    "finger_print": "a70803cb9d93a5d2b9a48d72f6513b29",
+                    "start_lines": 56586
+                },
+                {
+                    "end_lines": 53058,
+                    "finger_print": "ff0972d423265a6c0eacd5ddaf07911e",
+                    "start_lines": 52926
+                },
+                {
+                    "end_lines": 56396,
+                    "finger_print": "c2e59c2d5bb020cd8b5ed32ea39e5832",
+                    "start_lines": 56350
+                },
+                {
+                    "end_lines": 60350,
+                    "finger_print": "b51fbac78d5fc9fffaa0bc19fac4f4d5",
+                    "start_lines": 60296
+                },
+                {
+                    "end_lines": 50380,
+                    "finger_print": "6cb4f32950e37788e7592a009951474e",
+                    "start_lines": 50305
+                },
+                {
+                    "end_lines": 60569,
+                    "finger_print": "4528f29f95b8cf54915472b17438d0bc",
+                    "start_lines": 60440
+                },
+                {
+                    "end_lines": 53269,
+                    "finger_print": "9cc796f0be606f75fb4a3bf3d85b8a70",
+                    "start_lines": 53107
+                },
+                {
+                    "end_lines": 55416,
+                    "finger_print": "425da48a7953785a83fe2fee1613c076",
+                    "start_lines": 55337
+                },
+                {
+                    "end_lines": 60296,
+                    "finger_print": "1122cb86d4396a92524ca59dfa136ff8",
+                    "start_lines": 60102
+                },
+                {
+                    "end_lines": 56210,
+                    "finger_print": "79a3244900b9fe4b6f4c0cee0c3c2a67",
+                    "start_lines": 56197
+                },
+                {
+                    "end_lines": 55900,
+                    "finger_print": "c366a87dbaed40c3836b346a632b2157",
+                    "start_lines": 55745
+                },
+                {
+                    "end_lines": 56049,
+                    "finger_print": "9eb401e27fd73da2723409d678f4c10a",
+                    "start_lines": 55960
+                },
+                {
+                    "end_lines": 55270,
+                    "finger_print": "33b67bccb85b0a42917832a32aafcaa4",
+                    "start_lines": 55164
+                },
+                {
+                    "end_lines": 53518,
+                    "finger_print": "11b4ac541a4fff8c1cab7d2ab19c0aeb",
+                    "start_lines": 53476
+                },
+                {
+                    "end_lines": 59136,
+                    "finger_print": "f538c1b81e87330e0ebd826f3ca88c91",
+                    "start_lines": 58915
+                },
+                {
+                    "end_lines": 55545,
+                    "finger_print": "e0f0c29e851ac29f173acec41b48052f",
+                    "start_lines": 55469
+                },
+                {
+                    "end_lines": 56959,
+                    "finger_print": "bc31866cada6cccc5a8bd6fa1906ec57",
+                    "start_lines": 56927
+                },
+                {
+                    "end_lines": 56201,
+                    "finger_print": "d8a02dd95e0c8a760d707108c85ecb3d",
+                    "start_lines": 56139
+                },
+                {
+                    "end_lines": 54123,
+                    "finger_print": "8c31f8984290669c7668cbeb53fd8fad",
+                    "start_lines": 53982
+                },
+                {
+                    "end_lines": 59267,
+                    "finger_print": "8dafd91c2a02a4cd970cb3e626a620f3",
+                    "start_lines": 59251
+                },
+                {
+                    "end_lines": 50826,
+                    "finger_print": "f5c1b745464f14dd0bea12458ec33b7e",
+                    "start_lines": 50790
+                },
+                {
+                    "end_lines": 50874,
+                    "finger_print": "0df487e59c193ddc2abf9450823bcbf6",
+                    "start_lines": 50859
+                },
+                {
+                    "end_lines": 54984,
+                    "finger_print": "7e82749889cdba462caf1c3026229c46",
+                    "start_lines": 54868
+                },
+                {
+                    "end_lines": 57106,
+                    "finger_print": "a546b479b32af286e688ad52076b7a65",
+                    "start_lines": 57092
+                },
+                {
+                    "end_lines": 56567,
+                    "finger_print": "9fad8d0481828d47293306dd3684deb5",
+                    "start_lines": 56518
+                },
+                {
+                    "end_lines": 53983,
+                    "finger_print": "f1992ee9aa222fd333ddba1f08641ad6",
+                    "start_lines": 53532
+                },
+                {
+                    "end_lines": 59223,
+                    "finger_print": "99a53c7be0a9d3d6f2c7bf296c75a6b6",
+                    "start_lines": 59144
+                },
+                {
+                    "end_lines": 50789,
+                    "finger_print": "4e879ad820f1e9a392631e2f8c24096d",
+                    "start_lines": 50770
+                },
+                {
+                    "end_lines": 58413,
+                    "finger_print": "0ecd62f7aaf6011669f7e42104bfafb6",
+                    "start_lines": 58369
+                },
+                {
+                    "end_lines": 56506,
+                    "finger_print": "13d16a632e40a7e402f4c104e74ef8f5",
+                    "start_lines": 56480
+                },
+                {
+                    "end_lines": 57682,
+                    "finger_print": "6ea1c82c8759a8e91ae44f6555d0ac52",
+                    "start_lines": 57594
+                },
+                {
+                    "end_lines": 56856,
+                    "finger_print": "2a601f42eee5f3983442912a7d376781",
+                    "start_lines": 56836
+                }
+            ],
+            "block_num": 97,
+            "dup_lines": 7866,
+            "dup_rate": "12.98%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/bench/large.js",
+            "total_lines": 60608
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 4284,
+                    "finger_print": "8815309ab523a8e108937ad87bdc10f4",
+                    "start_lines": 4253
+                },
+                {
+                    "end_lines": 4245,
+                    "finger_print": "26c2c95a654cfe4782bdc4142e3f7681",
+                    "start_lines": 4228
+                },
+                {
+                    "end_lines": 9128,
+                    "finger_print": "f2d9016a6bd2013706c76544b34cda09",
+                    "start_lines": 7900
+                },
+                {
+                    "end_lines": 5148,
+                    "finger_print": "a546b479b32af286e688ad52076b7a65",
+                    "start_lines": 5134
+                },
+                {
+                    "end_lines": 2393,
+                    "finger_print": "8c31f8984290669c7668cbeb53fd8fad",
+                    "start_lines": 2258
+                },
+                {
+                    "end_lines": 5125,
+                    "finger_print": "35d80a1c738afa896d92c17097d75fca",
+                    "start_lines": 5011
+                },
+                {
+                    "end_lines": 832,
+                    "finger_print": "4528f29f95b8cf54915472b17438d0bc",
+                    "start_lines": 703
+                },
+                {
+                    "end_lines": 9395,
+                    "finger_print": "e561ea3521553e8ef844089b2da97402",
+                    "start_lines": 9375
+                },
+                {
+                    "end_lines": 4219,
+                    "finger_print": "c778e2ddaf2969c8464226884e123bb0",
+                    "start_lines": 4194
+                },
+                {
+                    "end_lines": 4648,
+                    "finger_print": "a70803cb9d93a5d2b9a48d72f6513b29",
+                    "start_lines": 4624
+                },
+                {
+                    "end_lines": 24,
+                    "finger_print": "4e879ad820f1e9a392631e2f8c24096d",
+                    "start_lines": 5
+                },
+                {
+                    "end_lines": 4174,
+                    "finger_print": "26c2c95a654cfe4782bdc4142e3f7681",
+                    "start_lines": 4157
+                },
+                {
+                    "end_lines": 6115,
+                    "finger_print": "f841bdf3eb4bdae5a03a49100a2ea19a",
+                    "start_lines": 6090
+                },
+                {
+                    "end_lines": 3966,
+                    "finger_print": "c366a87dbaed40c3836b346a632b2157",
+                    "start_lines": 3817
+                },
+                {
+                    "end_lines": 2632,
+                    "finger_print": "3c33bd42cd36dd3b7f16c5276f9066a9",
+                    "start_lines": 2586
+                },
+                {
+                    "end_lines": 4551,
+                    "finger_print": "13d16a632e40a7e402f4c104e74ef8f5",
+                    "start_lines": 4525
+                },
+                {
+                    "end_lines": 9159,
+                    "finger_print": "c450bb32da33782f1ffa5090001bf6ba",
+                    "start_lines": 9145
+                },
+                {
+                    "end_lines": 9742,
+                    "finger_print": "6cb4f32950e37788e7592a009951474e",
+                    "start_lines": 9667
+                },
+                {
+                    "end_lines": 4284,
+                    "finger_print": "dfc1625a1314153726ed707e277e5a52",
+                    "start_lines": 4251
+                },
+                {
+                    "end_lines": 4240,
+                    "finger_print": "7b74ded2ffa9b3e3358a2b9b579d0524",
+                    "start_lines": 4225
+                },
+                {
+                    "end_lines": 1375,
+                    "finger_print": "ff0972d423265a6c0eacd5ddaf07911e",
+                    "start_lines": 1244
+                },
+                {
+                    "end_lines": 2568,
+                    "finger_print": "f720badb0aa20877c9aa3501a3e3be1b",
+                    "start_lines": 2397
+                },
+                {
+                    "end_lines": 293,
+                    "finger_print": "eaa56bc4ddfb2e919e8207e900863b6f",
+                    "start_lines": 246
+                },
+                {
+                    "end_lines": 5938,
+                    "finger_print": "a7f780d8ecb58b1852b60678ae7f446e",
+                    "start_lines": 5895
+                },
+                {
+                    "end_lines": 5393,
+                    "finger_print": "8f7e7ccafc123eac035a595f7d3b0e6a",
+                    "start_lines": 5255
+                },
+                {
+                    "end_lines": 6023,
+                    "finger_print": "d0d8ea7441124b788535b9674d5416d4",
+                    "start_lines": 5976
+                },
+                {
+                    "end_lines": 9467,
+                    "finger_print": "0df487e59c193ddc2abf9450823bcbf6",
+                    "start_lines": 9452
+                },
+                {
+                    "end_lines": 9629,
+                    "finger_print": "9517200ec8536717864cb7f7f3d795a6",
+                    "start_lines": 9593
+                },
+                {
+                    "end_lines": 10388,
+                    "finger_print": "d592f81ccca96219dfb2d92f250352fe",
+                    "start_lines": 10362
+                },
+                {
+                    "end_lines": 5610,
+                    "finger_print": "8182a2adff031c145c5ce032ed934065",
+                    "start_lines": 5503
+                },
+                {
+                    "end_lines": 7265,
+                    "finger_print": "2a4eabc456a9d8812a8e371f224fb4d5",
+                    "start_lines": 7225
+                },
+                {
+                    "end_lines": 7899,
+                    "finger_print": "e5643cb05d288c6681ce6951f3f7f5e8",
+                    "start_lines": 7813
+                },
+                {
+                    "end_lines": 3762,
+                    "finger_print": "e6a83cb155bbd1cb8dac2c23c864c01d",
+                    "start_lines": 3733
+                },
+                {
+                    "end_lines": 6762,
+                    "finger_print": "0ecd62f7aaf6011669f7e42104bfafb6",
+                    "start_lines": 6710
+                },
+                {
+                    "end_lines": 5494,
+                    "finger_print": "d2926caf49a9a3fec076f771b18ee610",
+                    "start_lines": 5415
+                },
+                {
+                    "end_lines": 4364,
+                    "finger_print": "f4d9ac85862f07304bbfb804483bc6ad",
+                    "start_lines": 4341
+                },
+                {
+                    "end_lines": 1694,
+                    "finger_print": "cc6f160e542d24cd5356c4f5d9eb99bd",
+                    "start_lines": 1662
+                },
+                {
+                    "end_lines": 4364,
+                    "finger_print": "835e443fc96fa615eb284e6fefab3827",
+                    "start_lines": 4333
+                },
+                {
+                    "end_lines": 4364,
+                    "finger_print": "dfc1625a1314153726ed707e277e5a52",
+                    "start_lines": 4331
+                },
+                {
+                    "end_lines": 5865,
+                    "finger_print": "47bd5ac6f767233c52cb4879d7009b82",
+                    "start_lines": 5762
+                },
+                {
+                    "end_lines": 4243,
+                    "finger_print": "f206cd48c4f56d3d9401385b8f6c77ff",
+                    "start_lines": 4231
+                },
+                {
+                    "end_lines": 7487,
+                    "finger_print": "f538c1b81e87330e0ebd826f3ca88c91",
+                    "start_lines": 7266
+                },
+                {
+                    "end_lines": 6797,
+                    "finger_print": "8ebf1aa050dea793f4d305cd53b8b499",
+                    "start_lines": 6772
+                },
+                {
+                    "end_lines": 4890,
+                    "finger_print": "2a601f42eee5f3983442912a7d376781",
+                    "start_lines": 4870
+                },
+                {
+                    "end_lines": 633,
+                    "finger_print": "b51fbac78d5fc9fffaa0bc19fac4f4d5",
+                    "start_lines": 579
+                },
+                {
+                    "end_lines": 7211,
+                    "finger_print": "2e17817741bb62b4f7f40a5b83a681f3",
+                    "start_lines": 6851
+                },
+                {
+                    "end_lines": 4388,
+                    "finger_print": "9b57e69e4709bbce11558d79edef2539",
+                    "start_lines": 4333
+                },
+                {
+                    "end_lines": 3567,
+                    "finger_print": "425da48a7953785a83fe2fee1613c076",
+                    "start_lines": 3488
+                },
+                {
+                    "end_lines": 2259,
+                    "finger_print": "f1992ee9aa222fd333ddba1f08641ad6",
+                    "start_lines": 1810
+                },
+                {
+                    "end_lines": 3430,
+                    "finger_print": "33b67bccb85b0a42917832a32aafcaa4",
+                    "start_lines": 3324
+                },
+                {
+                    "end_lines": 4136,
+                    "finger_print": "ccc54582fd4d0e179310c03518dc84e8",
+                    "start_lines": 4097
+                },
+                {
+                    "end_lines": 2915,
+                    "finger_print": "44f1b2b7a720eaf550fdd5cc6fac7415",
+                    "start_lines": 2891
+                },
+                {
+                    "end_lines": 1587,
+                    "finger_print": "9cc796f0be606f75fb4a3bf3d85b8a70",
+                    "start_lines": 1427
+                },
+                {
+                    "end_lines": 7564,
+                    "finger_print": "99a53c7be0a9d3d6f2c7bf296c75a6b6",
+                    "start_lines": 7485
+                },
+                {
+                    "end_lines": 60,
+                    "finger_print": "f5c1b745464f14dd0bea12458ec33b7e",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 4320,
+                    "finger_print": "7b74ded2ffa9b3e3358a2b9b579d0524",
+                    "start_lines": 4305
+                },
+                {
+                    "end_lines": 1756,
+                    "finger_print": "843fe39496d1aa99e7f007a06523221b",
+                    "start_lines": 1699
+                },
+                {
+                    "end_lines": 10138,
+                    "finger_print": "d592f81ccca96219dfb2d92f250352fe",
+                    "start_lines": 10112
+                },
+                {
+                    "end_lines": 3176,
+                    "finger_print": "7e82749889cdba462caf1c3026229c46",
+                    "start_lines": 3061
+                },
+                {
+                    "end_lines": 3673,
+                    "finger_print": "e0f0c29e851ac29f173acec41b48052f",
+                    "start_lines": 3596
+                },
+                {
+                    "end_lines": 576,
+                    "finger_print": "1122cb86d4396a92524ca59dfa136ff8",
+                    "start_lines": 382
+                },
+                {
+                    "end_lines": 1041,
+                    "finger_print": "c6d8dbf9c315a6a3118ef0da8a184b7b",
+                    "start_lines": 942
+                },
+                {
+                    "end_lines": 4612,
+                    "finger_print": "9fad8d0481828d47293306dd3684deb5",
+                    "start_lines": 4563
+                },
+                {
+                    "end_lines": 4099,
+                    "finger_print": "9eb401e27fd73da2723409d678f4c10a",
+                    "start_lines": 4010
+                },
+                {
+                    "end_lines": 1159,
+                    "finger_print": "2c159cb57ab415af7b9028f96643c1e0",
+                    "start_lines": 1107
+                },
+                {
+                    "end_lines": 7581,
+                    "finger_print": "8dafd91c2a02a4cd970cb3e626a620f3",
+                    "start_lines": 7565
+                },
+                {
+                    "end_lines": 943,
+                    "finger_print": "ba1e2bcceee7899f75a86b2c5a6bbb86",
+                    "start_lines": 869
+                },
+                {
+                    "end_lines": 1817,
+                    "finger_print": "11b4ac541a4fff8c1cab7d2ab19c0aeb",
+                    "start_lines": 1775
+                },
+                {
+                    "end_lines": 2890,
+                    "finger_print": "1469b721fc0cbd0e9447641fae6d3b9b",
+                    "start_lines": 2777
+                },
+                {
+                    "end_lines": 5763,
+                    "finger_print": "edea740c7efae2c350de94453303cc79",
+                    "start_lines": 5708
+                },
+                {
+                    "end_lines": 4172,
+                    "finger_print": "e99e7be9e910a964307ce75a70c61fc1",
+                    "start_lines": 4157
+                },
+                {
+                    "end_lines": 4925,
+                    "finger_print": "c882f706fc0681b4ae2385a4526ccefb",
+                    "start_lines": 4717
+                },
+                {
+                    "end_lines": 3064,
+                    "finger_print": "be5b644c1a95d54266f662c81f78506a",
+                    "start_lines": 2974
+                },
+                {
+                    "end_lines": 4673,
+                    "finger_print": "cb5bcfedd75b35c5f6dda030d257f911",
+                    "start_lines": 4647
+                },
+                {
+                    "end_lines": 4959,
+                    "finger_print": "952148da954d5905366e3d0676556e4b",
+                    "start_lines": 4932
+                },
+                {
+                    "end_lines": 6332,
+                    "finger_print": "d293f0457f5eb10d06f187cc9c0d0d64",
+                    "start_lines": 6274
+                },
+                {
+                    "end_lines": 3719,
+                    "finger_print": "6088c5690dcbfdd482945694d9c17da4",
+                    "start_lines": 3695
+                },
+                {
+                    "end_lines": 1062,
+                    "finger_print": "f0fdaf5b9a3f742fd7d503bbacf5bba9",
+                    "start_lines": 1041
+                },
+                {
+                    "end_lines": 6062,
+                    "finger_print": "0abe31237d33244bb37e8ec3af3bd7ae",
+                    "start_lines": 6022
+                },
+                {
+                    "end_lines": 707,
+                    "finger_print": "ed1d4a97bc352f3b21d200531472f01c",
+                    "start_lines": 653
+                },
+                {
+                    "end_lines": 6685,
+                    "finger_print": "2efca63e6519853b5fd7044ff6b776f5",
+                    "start_lines": 6343
+                },
+                {
+                    "end_lines": 5697,
+                    "finger_print": "6ea1c82c8759a8e91ae44f6555d0ac52",
+                    "start_lines": 5609
+                },
+                {
+                    "end_lines": 376,
+                    "finger_print": "38baa013caa294bd5b20cab5dd7f00f9",
+                    "start_lines": 316
+                },
+                {
+                    "end_lines": 4915,
+                    "finger_print": "2a601f42eee5f3983442912a7d376781",
+                    "start_lines": 4895
+                },
+                {
+                    "end_lines": 3325,
+                    "finger_print": "153eb111319185987df9a9232d44fd80",
+                    "start_lines": 3200
+                },
+                {
+                    "end_lines": 4509,
+                    "finger_print": "9a33fb40d167df9628d6f355628ab6f1",
+                    "start_lines": 4432
+                },
+                {
+                    "end_lines": 5230,
+                    "finger_print": "5236b4b6ab67209703c08553588aa917",
+                    "start_lines": 5147
+                },
+                {
+                    "end_lines": 4172,
+                    "finger_print": "f206cd48c4f56d3d9401385b8f6c77ff",
+                    "start_lines": 4160
+                },
+                {
+                    "end_lines": 4323,
+                    "finger_print": "d58f92df3ade47b3ee7edad70b523d10",
+                    "start_lines": 4253
+                },
+                {
+                    "end_lines": 4243,
+                    "finger_print": "d8a02dd95e0c8a760d707108c85ecb3d",
+                    "start_lines": 4182
+                },
+                {
+                    "end_lines": 3472,
+                    "finger_print": "84143666454cb12f83ab70bf79d7b01d",
+                    "start_lines": 3429
+                },
+                {
+                    "end_lines": 4711,
+                    "finger_print": "b3e864d8f35559096ee60332a5a00b50",
+                    "start_lines": 4688
+                },
+                {
+                    "end_lines": 4433,
+                    "finger_print": "c2e59c2d5bb020cd8b5ed32ea39e5832",
+                    "start_lines": 4387
+                },
+                {
+                    "end_lines": 4217,
+                    "finger_print": "f4d9ac85862f07304bbfb804483bc6ad",
+                    "start_lines": 4194
+                },
+                {
+                    "end_lines": 7786,
+                    "finger_print": "c628a49724733195c01a1928741bff94",
+                    "start_lines": 7582
+                },
+                {
+                    "end_lines": 4997,
+                    "finger_print": "bc31866cada6cccc5a8bd6fa1906ec57",
+                    "start_lines": 4965
+                },
+                {
+                    "end_lines": 2778,
+                    "finger_print": "56549c5a9c95ce8831b6d539f284fcb6",
+                    "start_lines": 2657
+                },
+                {
+                    "end_lines": 4286,
+                    "finger_print": "c778e2ddaf2969c8464226884e123bb0",
+                    "start_lines": 4261
+                }
+            ],
+            "block_num": 98,
+            "dup_lines": 7861,
+            "dup_rate": "69.36%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/performance/jshint.js",
+            "total_lines": 11333
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 531,
+                    "finger_print": "16b4b6282bc7fafbbb5986fa4ea38d61",
+                    "start_lines": 1
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 530,
+            "dup_rate": "99.81%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/rules/indent/indent-invalid-fixture-1.js",
+            "total_lines": 531
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 531,
+                    "finger_print": "16b4b6282bc7fafbbb5986fa4ea38d61",
+                    "start_lines": 1
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 530,
+            "dup_rate": "99.81%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/rules/indent/indent-valid-fixture-1.js",
+            "total_lines": 531
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 531,
+                    "finger_print": "16b4b6282bc7fafbbb5986fa4ea38d61",
+                    "start_lines": 1
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 530,
+            "dup_rate": "99.81%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/rules/indent-legacy/indent-invalid-fixture-1.js",
+            "total_lines": 531
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 531,
+                    "finger_print": "16b4b6282bc7fafbbb5986fa4ea38d61",
+                    "start_lines": 1
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 530,
+            "dup_rate": "99.81%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/rules/indent-legacy/indent-valid-fixture-1.js",
+            "total_lines": 531
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 1035,
+                    "finger_print": "2bae81bba066d290db936cb6ce9767a0",
+                    "start_lines": 952
+                },
+                {
+                    "end_lines": 344,
+                    "finger_print": "98800f3521e164356d60ee359cb09a0f",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 952,
+                    "finger_print": "7387f3554f5144b421b38eeac904e1c2",
+                    "start_lines": 717
+                },
+                {
+                    "end_lines": 1275,
+                    "finger_print": "7387f3554f5144b421b38eeac904e1c2",
+                    "start_lines": 1040
+                },
+                {
+                    "end_lines": 1040,
+                    "finger_print": "faa726f3ee344ee57ce140614d8c1191",
+                    "start_lines": 682
+                },
+                {
+                    "end_lines": 1633,
+                    "finger_print": "98800f3521e164356d60ee359cb09a0f",
+                    "start_lines": 1313
+                },
+                {
+                    "end_lines": 1036,
+                    "finger_print": "98800f3521e164356d60ee359cb09a0f",
+                    "start_lines": 716
+                },
+                {
+                    "end_lines": 1632,
+                    "finger_print": "2bae81bba066d290db936cb6ce9767a0",
+                    "start_lines": 1549
+                },
+                {
+                    "end_lines": 343,
+                    "finger_print": "2bae81bba066d290db936cb6ce9767a0",
+                    "start_lines": 260
+                },
+                {
+                    "end_lines": 719,
+                    "finger_print": "f8675280098ed2e1dfc7ca39a5f6b5b6",
+                    "start_lines": 680
+                },
+                {
+                    "end_lines": 1720,
+                    "finger_print": "2bae81bba066d290db936cb6ce9767a0",
+                    "start_lines": 1637
+                },
+                {
+                    "end_lines": 1637,
+                    "finger_print": "faa726f3ee344ee57ce140614d8c1191",
+                    "start_lines": 1279
+                },
+                {
+                    "end_lines": 1316,
+                    "finger_print": "7cddaea0efdf65728e6512cbff7f58f8",
+                    "start_lines": 1279
+                },
+                {
+                    "end_lines": 1549,
+                    "finger_print": "7387f3554f5144b421b38eeac904e1c2",
+                    "start_lines": 1314
+                },
+                {
+                    "end_lines": 260,
+                    "finger_print": "7387f3554f5144b421b38eeac904e1c2",
+                    "start_lines": 25
+                }
+            ],
+            "block_num": 15,
+            "dup_lines": 1356,
+            "dup_rate": "78.52%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/babel-eslint5/destructuring-object-spread.js",
+            "total_lines": 1727
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 485,
+                    "finger_print": "9d88294cd48b3063c0045fd80cce55b4",
+                    "start_lines": 397
+                },
+                {
+                    "end_lines": 686,
+                    "finger_print": "c6256ebbceeb6aac638c167c916bbea5",
+                    "start_lines": 377
+                },
+                {
+                    "end_lines": 464,
+                    "finger_print": "a9804454c1f89305e7c16e74a953cf94",
+                    "start_lines": 397
+                },
+                {
+                    "end_lines": 78,
+                    "finger_print": "3bfe183124a06bfd5ecd971c25cef64e",
+                    "start_lines": 41
+                },
+                {
+                    "end_lines": 133,
+                    "finger_print": "42ae6ff40439db8260f6dbb023745cc9",
+                    "start_lines": 96
+                }
+            ],
+            "block_num": 5,
+            "dup_lines": 383,
+            "dup_rate": "35.96%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/functions-with-abstract-class-invalid.js",
+            "total_lines": 1065
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 485,
+                    "finger_print": "9d88294cd48b3063c0045fd80cce55b4",
+                    "start_lines": 397
+                },
+                {
+                    "end_lines": 686,
+                    "finger_print": "c6256ebbceeb6aac638c167c916bbea5",
+                    "start_lines": 377
+                },
+                {
+                    "end_lines": 464,
+                    "finger_print": "a9804454c1f89305e7c16e74a953cf94",
+                    "start_lines": 397
+                },
+                {
+                    "end_lines": 78,
+                    "finger_print": "3bfe183124a06bfd5ecd971c25cef64e",
+                    "start_lines": 41
+                },
+                {
+                    "end_lines": 133,
+                    "finger_print": "42ae6ff40439db8260f6dbb023745cc9",
+                    "start_lines": 96
+                }
+            ],
+            "block_num": 5,
+            "dup_lines": 383,
+            "dup_rate": "35.96%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/functions-with-abstract-class-valid.js",
+            "total_lines": 1065
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 809,
+                    "finger_print": "0760703e8008a6d9199c7c25a9ab911a",
+                    "start_lines": 506
+                },
+                {
+                    "end_lines": 118,
+                    "finger_print": "70ff9b1458ed5eab92f105f96b318e68",
+                    "start_lines": 79
+                },
+                {
+                    "end_lines": 205,
+                    "finger_print": "5d8e017f8837eacd4d02e868bca15a5b",
+                    "start_lines": 145
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 402,
+            "dup_rate": "33.25%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/abstract-class-invalid.js",
+            "total_lines": 1209
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 809,
+                    "finger_print": "0760703e8008a6d9199c7c25a9ab911a",
+                    "start_lines": 506
+                },
+                {
+                    "end_lines": 118,
+                    "finger_print": "70ff9b1458ed5eab92f105f96b318e68",
+                    "start_lines": 79
+                },
+                {
+                    "end_lines": 205,
+                    "finger_print": "5d8e017f8837eacd4d02e868bca15a5b",
+                    "start_lines": 145
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 402,
+            "dup_rate": "33.28%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/abstract-class-valid.js",
+            "total_lines": 1208
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 782,
+                    "finger_print": "4045bea26cf04fbb5df6b19a54e4151c",
+                    "start_lines": 502
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "efaf07c85691f6424fc587f1dacf4cf4",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 529,
+                    "finger_print": "b999e89e7e54774c3454ebe8fb316494",
+                    "start_lines": 482
+                },
+                {
+                    "end_lines": 660,
+                    "finger_print": "7cddaea0efdf65728e6512cbff7f58f8",
+                    "start_lines": 623
+                },
+                {
+                    "end_lines": 469,
+                    "finger_print": "9a69078218b1befe0cd5f310c0d55ee4",
+                    "start_lines": 428
+                },
+                {
+                    "end_lines": 264,
+                    "finger_print": "db3134413c6d2a9ab11609c07ef085a7",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 660,
+                    "finger_print": "f8675280098ed2e1dfc7ca39a5f6b5b6",
+                    "start_lines": 621
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "90b4a666a97fd3deb026bbf852aa88c3",
+                    "start_lines": 657
+                },
+                {
+                    "end_lines": 1027,
+                    "finger_print": "aa0fc07f589a04102c6f5cf78f64e195",
+                    "start_lines": 859
+                },
+                {
+                    "end_lines": 662,
+                    "finger_print": "be8453e805eb3cf2d545e2f8a045b981",
+                    "start_lines": 621
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "efaf07c85691f6424fc587f1dacf4cf4",
+                    "start_lines": 658
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "04fc1e8be46a4611fbb6ce88fa2a96b9",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 899,
+                    "finger_print": "1cc57f72a1c92bba1ae7f5763c3fe1b4",
+                    "start_lines": 657
+                },
+                {
+                    "end_lines": 191,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 145
+                },
+                {
+                    "end_lines": 1070,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 1024
+                },
+                {
+                    "end_lines": 1143,
+                    "finger_print": "db3134413c6d2a9ab11609c07ef085a7",
+                    "start_lines": 903
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "3064801f6561658077f8acb9c401b444",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 429,
+                    "finger_print": "66f79de283a3e684ddb30fe2c771e66b",
+                    "start_lines": 368
+                },
+                {
+                    "end_lines": 328,
+                    "finger_print": "aea56a4c25819f391b47f903db92d0f9",
+                    "start_lines": 261
+                },
+                {
+                    "end_lines": 369,
+                    "finger_print": "90fba943df6b7a1a41d54f63b4e0a85e",
+                    "start_lines": 225
+                },
+                {
+                    "end_lines": 1027,
+                    "finger_print": "55782f594b3d6b37c127c236c0451f9f",
+                    "start_lines": 903
+                },
+                {
+                    "end_lines": 825,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 779
+                },
+                {
+                    "end_lines": 1149,
+                    "finger_print": "4f3329d9a125826e31fe3f83597f466a",
+                    "start_lines": 1104
+                },
+                {
+                    "end_lines": 898,
+                    "finger_print": "db3134413c6d2a9ab11609c07ef085a7",
+                    "start_lines": 658
+                },
+                {
+                    "end_lines": 265,
+                    "finger_print": "1cc57f72a1c92bba1ae7f5763c3fe1b4",
+                    "start_lines": 23
+                }
+            ],
+            "block_num": 25,
+            "dup_lines": 1135,
+            "dup_rate": "98.78%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/comma-dangle/object-pattern-1.js",
+            "total_lines": 1149
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 1027,
+                    "finger_print": "aa0fc07f589a04102c6f5cf78f64e195",
+                    "start_lines": 859
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "4045bea26cf04fbb5df6b19a54e4151c",
+                    "start_lines": 502
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "90b4a666a97fd3deb026bbf852aa88c3",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 264,
+                    "finger_print": "b82a97d721010602ae8ba214646181a5",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 662,
+                    "finger_print": "be8453e805eb3cf2d545e2f8a045b981",
+                    "start_lines": 621
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "3064801f6561658077f8acb9c401b444",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 1149,
+                    "finger_print": "4f3329d9a125826e31fe3f83597f466a",
+                    "start_lines": 1104
+                },
+                {
+                    "end_lines": 660,
+                    "finger_print": "7cddaea0efdf65728e6512cbff7f58f8",
+                    "start_lines": 623
+                },
+                {
+                    "end_lines": 1027,
+                    "finger_print": "efaf07c85691f6424fc587f1dacf4cf4",
+                    "start_lines": 903
+                },
+                {
+                    "end_lines": 1143,
+                    "finger_print": "b82a97d721010602ae8ba214646181a5",
+                    "start_lines": 903
+                },
+                {
+                    "end_lines": 265,
+                    "finger_print": "aeab895be783fc03b03500cacded350d",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 369,
+                    "finger_print": "90fba943df6b7a1a41d54f63b4e0a85e",
+                    "start_lines": 225
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "04fc1e8be46a4611fbb6ce88fa2a96b9",
+                    "start_lines": 657
+                },
+                {
+                    "end_lines": 148,
+                    "finger_print": "55782f594b3d6b37c127c236c0451f9f",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 660,
+                    "finger_print": "f8675280098ed2e1dfc7ca39a5f6b5b6",
+                    "start_lines": 621
+                },
+                {
+                    "end_lines": 898,
+                    "finger_print": "b82a97d721010602ae8ba214646181a5",
+                    "start_lines": 658
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "55782f594b3d6b37c127c236c0451f9f",
+                    "start_lines": 658
+                },
+                {
+                    "end_lines": 328,
+                    "finger_print": "aea56a4c25819f391b47f903db92d0f9",
+                    "start_lines": 261
+                },
+                {
+                    "end_lines": 899,
+                    "finger_print": "aeab895be783fc03b03500cacded350d",
+                    "start_lines": 657
+                }
+            ],
+            "block_num": 19,
+            "dup_lines": 1015,
+            "dup_rate": "88.34%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/comma-dangle/object-pattern-2.js",
+            "total_lines": 1149
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 17,
+                    "finger_print": "0c2c1280e29a0fd1da383edad576ae44",
+                    "start_lines": 16
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 1,
+            "dup_rate": "4.17%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/enhanced-parser2.js",
+            "total_lines": 24
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 54,
+                    "finger_print": "0c2c1280e29a0fd1da383edad576ae44",
+                    "start_lines": 53
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 1,
+            "dup_rate": "1.56%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/enhanced-parser3.js",
+            "total_lines": 64
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 198,
+                    "finger_print": "4183605bed4298619e86137ecfee3bd9",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 725,
+                    "finger_print": "4183605bed4298619e86137ecfee3bd9",
+                    "start_lines": 550
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "51a435d409191afb03541e28ff561946",
+                    "start_lines": 415
+                },
+                {
+                    "end_lines": 282,
+                    "finger_print": "76c2abebbd34134762980f2e9a301e53",
+                    "start_lines": 165
+                },
+                {
+                    "end_lines": 261,
+                    "finger_print": "aea56a4c25819f391b47f903db92d0f9",
+                    "start_lines": 194
+                },
+                {
+                    "end_lines": 555,
+                    "finger_print": "be8453e805eb3cf2d545e2f8a045b981",
+                    "start_lines": 514
+                },
+                {
+                    "end_lines": 553,
+                    "finger_print": "7cddaea0efdf65728e6512cbff7f58f8",
+                    "start_lines": 516
+                },
+                {
+                    "end_lines": 442,
+                    "finger_print": "b999e89e7e54774c3454ebe8fb316494",
+                    "start_lines": 395
+                },
+                {
+                    "end_lines": 793,
+                    "finger_print": "8c62f91d2e3e8f08aa6cbc78a40d0656",
+                    "start_lines": 692
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "d47606b9c50161049ae1044b85fce581",
+                    "start_lines": 551
+                },
+                {
+                    "end_lines": 553,
+                    "finger_print": "f8675280098ed2e1dfc7ca39a5f6b5b6",
+                    "start_lines": 514
+                },
+                {
+                    "end_lines": 902,
+                    "finger_print": "a4a9964fd61f9599ac0564d4baf050fa",
+                    "start_lines": 729
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "f73f094de25d758448b82ca4b66bfc3a",
+                    "start_lines": 550
+                },
+                {
+                    "end_lines": 197,
+                    "finger_print": "a4a9964fd61f9599ac0564d4baf050fa",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 724,
+                    "finger_print": "a4a9964fd61f9599ac0564d4baf050fa",
+                    "start_lines": 551
+                },
+                {
+                    "end_lines": 793,
+                    "finger_print": "b7a83a5bf42859b34afdd791a1420a95",
+                    "start_lines": 729
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "62ffef4cd3ee879731094247d0840a56",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "11ea1f76ec736f1519335586d6349beb",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "d47606b9c50161049ae1044b85fce581",
+                    "start_lines": 24
+                }
+            ],
+            "block_num": 19,
+            "dup_lines": 788,
+            "dup_rate": "86.78%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/comma-dangle/return-type-1.js",
+            "total_lines": 908
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 836,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 790
+                },
+                {
+                    "end_lines": 198,
+                    "finger_print": "0746f62578eb38aa32c2d7cc4086df40",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "f73f094de25d758448b82ca4b66bfc3a",
+                    "start_lines": 23
+                },
+                {
+                    "end_lines": 553,
+                    "finger_print": "f8675280098ed2e1dfc7ca39a5f6b5b6",
+                    "start_lines": 514
+                },
+                {
+                    "end_lines": 261,
+                    "finger_print": "aea56a4c25819f391b47f903db92d0f9",
+                    "start_lines": 194
+                },
+                {
+                    "end_lines": 658,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 612
+                },
+                {
+                    "end_lines": 553,
+                    "finger_print": "7cddaea0efdf65728e6512cbff7f58f8",
+                    "start_lines": 516
+                },
+                {
+                    "end_lines": 362,
+                    "finger_print": "66f79de283a3e684ddb30fe2c771e66b",
+                    "start_lines": 301
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "11ea1f76ec736f1519335586d6349beb",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 131,
+                    "finger_print": "d642e16abc4ed4fcbb7c7d9124222a06",
+                    "start_lines": 85
+                },
+                {
+                    "end_lines": 725,
+                    "finger_print": "0746f62578eb38aa32c2d7cc4086df40",
+                    "start_lines": 550
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "51a435d409191afb03541e28ff561946",
+                    "start_lines": 415
+                },
+                {
+                    "end_lines": 197,
+                    "finger_print": "55e3712c33f3c46b995d7a8449d91077",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 555,
+                    "finger_print": "be8453e805eb3cf2d545e2f8a045b981",
+                    "start_lines": 514
+                },
+                {
+                    "end_lines": 793,
+                    "finger_print": "8c62f91d2e3e8f08aa6cbc78a40d0656",
+                    "start_lines": 692
+                },
+                {
+                    "end_lines": 724,
+                    "finger_print": "55e3712c33f3c46b995d7a8449d91077",
+                    "start_lines": 551
+                },
+                {
+                    "end_lines": 88,
+                    "finger_print": "b7a83a5bf42859b34afdd791a1420a95",
+                    "start_lines": 24
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "b7a83a5bf42859b34afdd791a1420a95",
+                    "start_lines": 551
+                },
+                {
+                    "end_lines": 402,
+                    "finger_print": "9a69078218b1befe0cd5f310c0d55ee4",
+                    "start_lines": 361
+                },
+                {
+                    "end_lines": 793,
+                    "finger_print": "d47606b9c50161049ae1044b85fce581",
+                    "start_lines": 729
+                },
+                {
+                    "end_lines": 282,
+                    "finger_print": "76c2abebbd34134762980f2e9a301e53",
+                    "start_lines": 165
+                },
+                {
+                    "end_lines": 615,
+                    "finger_print": "62ffef4cd3ee879731094247d0840a56",
+                    "start_lines": 550
+                },
+                {
+                    "end_lines": 902,
+                    "finger_print": "55e3712c33f3c46b995d7a8449d91077",
+                    "start_lines": 729
+                }
+            ],
+            "block_num": 23,
+            "dup_lines": 869,
+            "dup_rate": "95.70%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/comma-dangle/return-type-2.js",
+            "total_lines": 908
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 131,
+                    "finger_print": "74abe817e2f0f29b3216eb9be13ad7aa",
+                    "start_lines": 94
+                },
+                {
+                    "end_lines": 622,
+                    "finger_print": "e3baabe54d39d430455ca2bb9fd4aa71",
+                    "start_lines": 430
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 229,
+            "dup_rate": "19.07%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/namespace-with-functions-with-abstract-class-invalid.js",
+            "total_lines": 1201
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 131,
+                    "finger_print": "74abe817e2f0f29b3216eb9be13ad7aa",
+                    "start_lines": 94
+                },
+                {
+                    "end_lines": 622,
+                    "finger_print": "e3baabe54d39d430455ca2bb9fd4aa71",
+                    "start_lines": 430
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 229,
+            "dup_rate": "19.05%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/namespace-with-functions-with-abstract-class-valid.js",
+            "total_lines": 1202
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 664,
+                    "finger_print": "0c82945447c0ff409320215be1a4531f",
+                    "start_lines": 515
+                },
+                {
+                    "end_lines": 115,
+                    "finger_print": "ccd1cb9702beb84d01eaadd164f20562",
+                    "start_lines": 28
+                },
+                {
+                    "end_lines": 213,
+                    "finger_print": "69e0558818854a122f3b37397943527d",
+                    "start_lines": 28
+                },
+                {
+                    "end_lines": 75,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 29
+                },
+                {
+                    "end_lines": 93,
+                    "finger_print": "a3f5fb8510a7320a96489c5d90357c7c",
+                    "start_lines": 29
+                }
+            ],
+            "block_num": 5,
+            "dup_lines": 334,
+            "dup_rate": "40.63%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-newline/flow-stub-parser-multiline-type-literal.js",
+            "total_lines": 822
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 115,
+                    "finger_print": "ccd1cb9702beb84d01eaadd164f20562",
+                    "start_lines": 28
+                },
+                {
+                    "end_lines": 213,
+                    "finger_print": "69e0558818854a122f3b37397943527d",
+                    "start_lines": 28
+                },
+                {
+                    "end_lines": 504,
+                    "finger_print": "0c82945447c0ff409320215be1a4531f",
+                    "start_lines": 355
+                },
+                {
+                    "end_lines": 75,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 29
+                },
+                {
+                    "end_lines": 93,
+                    "finger_print": "a3f5fb8510a7320a96489c5d90357c7c",
+                    "start_lines": 29
+                }
+            ],
+            "block_num": 5,
+            "dup_lines": 334,
+            "dup_rate": "56.42%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-newline/flow-stub-parser-multiline.js",
+            "total_lines": 592
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 661,
+                    "finger_print": "de12d6885a83d5ff33c3ae141dc95871",
+                    "start_lines": 512
+                },
+                {
+                    "end_lines": 112,
+                    "finger_print": "ccd1cb9702beb84d01eaadd164f20562",
+                    "start_lines": 25
+                },
+                {
+                    "end_lines": 90,
+                    "finger_print": "a3f5fb8510a7320a96489c5d90357c7c",
+                    "start_lines": 26
+                },
+                {
+                    "end_lines": 210,
+                    "finger_print": "8a7f34d3cc6042e4b97f401af460dc14",
+                    "start_lines": 25
+                },
+                {
+                    "end_lines": 192,
+                    "finger_print": "c62e74169397d785637bd6de8ca8e2e2",
+                    "start_lines": 106
+                },
+                {
+                    "end_lines": 72,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 26
+                },
+                {
+                    "end_lines": 172,
+                    "finger_print": "86c2376d7564d655b54199f1b9f00b4b",
+                    "start_lines": 106
+                }
+            ],
+            "block_num": 7,
+            "dup_lines": 334,
+            "dup_rate": "40.78%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-newline/flow-stub-parser-singleline-type-literal.js",
+            "total_lines": 819
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 112,
+                    "finger_print": "ccd1cb9702beb84d01eaadd164f20562",
+                    "start_lines": 25
+                },
+                {
+                    "end_lines": 90,
+                    "finger_print": "a3f5fb8510a7320a96489c5d90357c7c",
+                    "start_lines": 26
+                },
+                {
+                    "end_lines": 210,
+                    "finger_print": "8a7f34d3cc6042e4b97f401af460dc14",
+                    "start_lines": 25
+                },
+                {
+                    "end_lines": 192,
+                    "finger_print": "c62e74169397d785637bd6de8ca8e2e2",
+                    "start_lines": 106
+                },
+                {
+                    "end_lines": 501,
+                    "finger_print": "de12d6885a83d5ff33c3ae141dc95871",
+                    "start_lines": 352
+                },
+                {
+                    "end_lines": 72,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 26
+                },
+                {
+                    "end_lines": 172,
+                    "finger_print": "86c2376d7564d655b54199f1b9f00b4b",
+                    "start_lines": 106
+                }
+            ],
+            "block_num": 7,
+            "dup_lines": 334,
+            "dup_rate": "56.71%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-newline/flow-stub-parser-singleline.js",
+            "total_lines": 589
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 512,
+                    "finger_print": "1a9cdaa712a920c3432a97e909868965",
+                    "start_lines": 329
+                },
+                {
+                    "end_lines": 410,
+                    "finger_print": "c36b5cbc972657f9dde4619e699ff97f",
+                    "start_lines": 370
+                },
+                {
+                    "end_lines": 158,
+                    "finger_print": "2a107f47f52698da9818f5c1c54214f7",
+                    "start_lines": 98
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 243,
+            "dup_rate": "29.24%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/namespace-invalid.js",
+            "total_lines": 831
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 512,
+                    "finger_print": "1a9cdaa712a920c3432a97e909868965",
+                    "start_lines": 329
+                },
+                {
+                    "end_lines": 410,
+                    "finger_print": "c36b5cbc972657f9dde4619e699ff97f",
+                    "start_lines": 370
+                },
+                {
+                    "end_lines": 158,
+                    "finger_print": "2a107f47f52698da9818f5c1c54214f7",
+                    "start_lines": 98
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 243,
+            "dup_rate": "29.24%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/namespace-valid.js",
+            "total_lines": 831
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 379,
+                    "finger_print": "8d4f4da840a52d1c2c3eb14bff0bc8dd",
+                    "start_lines": 219
+                },
+                {
+                    "end_lines": 65,
+                    "finger_print": "582dbff6543cdedd40c12832ba0bbeea",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 568,
+                    "finger_print": "5d529c1fde499804f460c2a1ad3ee0df",
+                    "start_lines": 520
+                },
+                {
+                    "end_lines": 64,
+                    "finger_print": "ba330b02e9dc2bc961c6b79694f66198",
+                    "start_lines": 17
+                }
+            ],
+            "block_num": 4,
+            "dup_lines": 272,
+            "dup_rate": "47.89%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/array-bracket-spacing/flow-destructuring-1.js",
+            "total_lines": 568
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 379,
+                    "finger_print": "8d4f4da840a52d1c2c3eb14bff0bc8dd",
+                    "start_lines": 219
+                },
+                {
+                    "end_lines": 65,
+                    "finger_print": "582dbff6543cdedd40c12832ba0bbeea",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 568,
+                    "finger_print": "5d529c1fde499804f460c2a1ad3ee0df",
+                    "start_lines": 520
+                },
+                {
+                    "end_lines": 64,
+                    "finger_print": "ba330b02e9dc2bc961c6b79694f66198",
+                    "start_lines": 17
+                }
+            ],
+            "block_num": 4,
+            "dup_lines": 272,
+            "dup_rate": "47.89%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/array-bracket-spacing/flow-destructuring-2.js",
+            "total_lines": 568
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 216,
+                    "finger_print": "32d85680a4b0b28e2cdcbff76859ddc2",
+                    "start_lines": 77
+                },
+                {
+                    "end_lines": 69,
+                    "finger_print": "88695c9408f8c11b96210ffdc085836c",
+                    "start_lines": 29
+                },
+                {
+                    "end_lines": 355,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 309
+                },
+                {
+                    "end_lines": 455,
+                    "finger_print": "ae67e9cfc9e9ed526bf62a65e770c72b",
+                    "start_lines": 306
+                },
+                {
+                    "end_lines": 475,
+                    "finger_print": "c62e74169397d785637bd6de8ca8e2e2",
+                    "start_lines": 389
+                }
+            ],
+            "block_num": 5,
+            "dup_lines": 348,
+            "dup_rate": "57.24%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-spacing/flow-stub-parser-never-invalid.js",
+            "total_lines": 608
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 216,
+                    "finger_print": "32d85680a4b0b28e2cdcbff76859ddc2",
+                    "start_lines": 77
+                },
+                {
+                    "end_lines": 69,
+                    "finger_print": "88695c9408f8c11b96210ffdc085836c",
+                    "start_lines": 29
+                },
+                {
+                    "end_lines": 455,
+                    "finger_print": "ae67e9cfc9e9ed526bf62a65e770c72b",
+                    "start_lines": 306
+                },
+                {
+                    "end_lines": 355,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 309
+                },
+                {
+                    "end_lines": 559,
+                    "finger_print": "56c005ff3363067f96062375155b24bd",
+                    "start_lines": 507
+                },
+                {
+                    "end_lines": 455,
+                    "finger_print": "86c2376d7564d655b54199f1b9f00b4b",
+                    "start_lines": 389
+                }
+            ],
+            "block_num": 6,
+            "dup_lines": 380,
+            "dup_rate": "62.50%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/object-curly-spacing/flow-stub-parser-never-valid.js",
+            "total_lines": 608
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 62,
+                    "finger_print": "50a84787302292f75454ff3d3bb0baf4",
+                    "start_lines": 21
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 41,
+            "dup_rate": "66.13%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/rules/no-global-assign.js",
+            "total_lines": 62
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 63,
+                    "finger_print": "50a84787302292f75454ff3d3bb0baf4",
+                    "start_lines": 22
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 41,
+            "dup_rate": "65.08%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/rules/no-native-reassign.js",
+            "total_lines": 63
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 336,
+                    "finger_print": "9eb8fec548252d8c21bc7098e8e60baa",
+                    "start_lines": 257
+                },
+                {
+                    "end_lines": 127,
+                    "finger_print": "4ebb60e5c227109065d60e112603da4f",
+                    "start_lines": 21
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 185,
+            "dup_rate": "42.14%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/babel-eslint7/object-pattern-with-annotation.js",
+            "total_lines": 439
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 356,
+                    "finger_print": "9eb8fec548252d8c21bc7098e8e60baa",
+                    "start_lines": 277
+                },
+                {
+                    "end_lines": 127,
+                    "finger_print": "4ebb60e5c227109065d60e112603da4f",
+                    "start_lines": 21
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 185,
+            "dup_rate": "42.05%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/babel-eslint7/object-pattern-with-object-annotation.js",
+            "total_lines": 440
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 69,
+                    "finger_print": "5680afa702dd814ab1f35ba8290f3e2a",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 350,
+                    "finger_print": "3d3b5560e5eb3904caf7ca242462f473",
+                    "start_lines": 255
+                },
+                {
+                    "end_lines": 216,
+                    "finger_print": "12827648204cd50e3f21ee41e30926ed",
+                    "start_lines": 158
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 221,
+            "dup_rate": "63.14%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/arrow-parens/identifer-type.js",
+            "total_lines": 350
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 351,
+                    "finger_print": "3d3b5560e5eb3904caf7ca242462f473",
+                    "start_lines": 256
+                },
+                {
+                    "end_lines": 69,
+                    "finger_print": "5680afa702dd814ab1f35ba8290f3e2a",
+                    "start_lines": 1
+                },
+                {
+                    "end_lines": 217,
+                    "finger_print": "12827648204cd50e3f21ee41e30926ed",
+                    "start_lines": 159
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 221,
+            "dup_rate": "62.96%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/arrow-parens/return-type.js",
+            "total_lines": 351
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 458,
+                    "finger_print": "5acaee5ad73a9c3caf4e6e2a764a789c",
+                    "start_lines": 373
+                },
+                {
+                    "end_lines": 475,
+                    "finger_print": "acfeae04bdd810bd9139f82d35ccf786",
+                    "start_lines": 373
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 102,
+            "dup_rate": "11.45%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/typescript-parsers/decorator-with-class-methods.js",
+            "total_lines": 891
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 574,
+                    "finger_print": "acfeae04bdd810bd9139f82d35ccf786",
+                    "start_lines": 472
+                },
+                {
+                    "end_lines": 557,
+                    "finger_print": "5acaee5ad73a9c3caf4e6e2a764a789c",
+                    "start_lines": 472
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 102,
+            "dup_rate": "8.59%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/typescript-parsers/decorator-with-static-class-methods.js",
+            "total_lines": 1188
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 122,
+                    "finger_print": "5819d3a98c3b311c43fc599af53a0640",
+                    "start_lines": 80
+                },
+                {
+                    "end_lines": 297,
+                    "finger_print": "8d2c39ab52822d2517b9e3848ec03209",
+                    "start_lines": 205
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 134,
+            "dup_rate": "33.84%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/variable-declarator-type-indent-two-spaces.js",
+            "total_lines": 396
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 122,
+                    "finger_print": "5819d3a98c3b311c43fc599af53a0640",
+                    "start_lines": 80
+                },
+                {
+                    "end_lines": 297,
+                    "finger_print": "8d2c39ab52822d2517b9e3848ec03209",
+                    "start_lines": 205
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 134,
+            "dup_rate": "33.84%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/variable-declarator-type-no-indent.js",
+            "total_lines": 396
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 218,
+                    "finger_print": "9d88294cd48b3063c0045fd80cce55b4",
+                    "start_lines": 130
+                },
+                {
+                    "end_lines": 238,
+                    "finger_print": "426b7622bc0847261367d61a6f72cd8b",
+                    "start_lines": 197
+                },
+                {
+                    "end_lines": 197,
+                    "finger_print": "394e167f6fea9d8330d18c677e3c7729",
+                    "start_lines": 128
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 110,
+            "dup_rate": "36.91%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/type-annotations/function-return-type-annotation.js",
+            "total_lines": 298
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 554,
+                    "finger_print": "5acaee5ad73a9c3caf4e6e2a764a789c",
+                    "start_lines": 469
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 85,
+            "dup_rate": "7.18%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/typescript-parsers/decorator-with-keywords-class-method.js",
+            "total_lines": 1184
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 163,
+                    "finger_print": "9e7f4be24946e3c2a9560737ac494bf9",
+                    "start_lines": 131
+                },
+                {
+                    "end_lines": 101,
+                    "finger_print": "9e7f4be24946e3c2a9560737ac494bf9",
+                    "start_lines": 69
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 64,
+            "dup_rate": "17.02%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/html.js",
+            "total_lines": 376
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 286,
+                    "finger_print": "394e167f6fea9d8330d18c677e3c7729",
+                    "start_lines": 217
+                },
+                {
+                    "end_lines": 286,
+                    "finger_print": "a9804454c1f89305e7c16e74a953cf94",
+                    "start_lines": 219
+                },
+                {
+                    "end_lines": 327,
+                    "finger_print": "426b7622bc0847261367d61a6f72cd8b",
+                    "start_lines": 286
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 110,
+            "dup_rate": "22.59%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/type-annotations/function-declaration-type-annotation-no-space.js",
+            "total_lines": 487
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 443,
+                    "finger_print": "0fec6595c799a59763dc6f72834c8fae",
+                    "start_lines": 397
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 46,
+            "dup_rate": "8.65%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/codeframe.js",
+            "total_lines": 532
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 355,
+                    "finger_print": "0fec6595c799a59763dc6f72834c8fae",
+                    "start_lines": 310
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 45,
+            "dup_rate": "9.55%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/stylish.js",
+            "total_lines": 471
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 234,
+                    "finger_print": "a3f5fb8510a7320a96489c5d90357c7c",
+                    "start_lines": 170
+                },
+                {
+                    "end_lines": 380,
+                    "finger_print": "56c005ff3363067f96062375155b24bd",
+                    "start_lines": 328
+                },
+                {
+                    "end_lines": 216,
+                    "finger_print": "83552b0984ad384cb261e4dc4ecea8fe",
+                    "start_lines": 170
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 116,
+            "dup_rate": "29.44%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/type-annotations/function-parameter-type-annotation.js",
+            "total_lines": 394
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 383,
+                    "finger_print": "a21fc6c435f988dbe23e7eed167512db",
+                    "start_lines": 349
+                },
+                {
+                    "end_lines": 426,
+                    "finger_print": "b5f8960194d8ba3472c7928751255731",
+                    "start_lines": 391
+                },
+                {
+                    "end_lines": 340,
+                    "finger_print": "b5f8960194d8ba3472c7928751255731",
+                    "start_lines": 305
+                },
+                {
+                    "end_lines": 297,
+                    "finger_print": "a21fc6c435f988dbe23e7eed167512db",
+                    "start_lines": 263
+                }
+            ],
+            "block_num": 4,
+            "dup_lines": 138,
+            "dup_rate": "23.92%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/code-path-analysis/code-path-analyzer.js",
+            "total_lines": 577
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 803,
+                    "finger_print": "8b6c15fa71d3abd9247ae379cae5624e",
+                    "start_lines": 779
+                },
+                {
+                    "end_lines": 840,
+                    "finger_print": "fbaaede0370aa78a2e32a5ab1ae46c1d",
+                    "start_lines": 815
+                },
+                {
+                    "end_lines": 890,
+                    "finger_print": "285bc8709911671c2cafd00072467318",
+                    "start_lines": 869
+                },
+                {
+                    "end_lines": 766,
+                    "finger_print": "285bc8709911671c2cafd00072467318",
+                    "start_lines": 744
+                },
+                {
+                    "end_lines": 992,
+                    "finger_print": "fbaaede0370aa78a2e32a5ab1ae46c1d",
+                    "start_lines": 967
+                },
+                {
+                    "end_lines": 955,
+                    "finger_print": "8b6c15fa71d3abd9247ae379cae5624e",
+                    "start_lines": 931
+                }
+            ],
+            "block_num": 6,
+            "dup_lines": 141,
+            "dup_rate": "12.97%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/cli.js",
+            "total_lines": 1087
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 101,
+                    "finger_print": "754e84332e16db288648178f223f822f",
+                    "start_lines": 82
+                },
+                {
+                    "end_lines": 64,
+                    "finger_print": "754e84332e16db288648178f223f822f",
+                    "start_lines": 45
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 38,
+            "dup_rate": "14.84%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/tools/eslint-fuzzer.js",
+            "total_lines": 256
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 992,
+                    "finger_print": "49705559fe4be4395e1733b46660040d",
+                    "start_lines": 981
+                },
+                {
+                    "end_lines": 139,
+                    "finger_print": "7d91d4b9e13ba2d633be2b951f07a3e8",
+                    "start_lines": 131
+                },
+                {
+                    "end_lines": 1035,
+                    "finger_print": "bac1639e29a25b944c9ec89efa4d16c5",
+                    "start_lines": 1024
+                },
+                {
+                    "end_lines": 1419,
+                    "finger_print": "30d4824d961e6827df32221d5231e92e",
+                    "start_lines": 1405
+                },
+                {
+                    "end_lines": 1013,
+                    "finger_print": "bac1639e29a25b944c9ec89efa4d16c5",
+                    "start_lines": 1002
+                },
+                {
+                    "end_lines": 929,
+                    "finger_print": "49705559fe4be4395e1733b46660040d",
+                    "start_lines": 918
+                },
+                {
+                    "end_lines": 168,
+                    "finger_print": "7d91d4b9e13ba2d633be2b951f07a3e8",
+                    "start_lines": 160
+                },
+                {
+                    "end_lines": 1398,
+                    "finger_print": "30d4824d961e6827df32221d5231e92e",
+                    "start_lines": 1384
+                },
+                {
+                    "end_lines": 2232,
+                    "finger_print": "059f1d0809a066f7a07f33611fd25a0c",
+                    "start_lines": 2207
+                },
+                {
+                    "end_lines": 2287,
+                    "finger_print": "059f1d0809a066f7a07f33611fd25a0c",
+                    "start_lines": 2261
+                }
+            ],
+            "block_num": 10,
+            "dup_lines": 139,
+            "dup_rate": "4.05%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/cli-engine.js",
+            "total_lines": 3434
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 68,
+                    "finger_print": "ba330b02e9dc2bc961c6b79694f66198",
+                    "start_lines": 21
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 47,
+            "dup_rate": "12.05%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/babel-eslint7/array-pattern-with-annotation.js",
+            "total_lines": 390
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 1264,
+                    "finger_print": "725e8e1b3e6f607fe1640f10f4f7d926",
+                    "start_lines": 1248
+                },
+                {
+                    "end_lines": 1244,
+                    "finger_print": "f2c9687bdc7407bfa3c7c8badfe2217e",
+                    "start_lines": 1228
+                },
+                {
+                    "end_lines": 1282,
+                    "finger_print": "725e8e1b3e6f607fe1640f10f4f7d926",
+                    "start_lines": 1266
+                },
+                {
+                    "end_lines": 1226,
+                    "finger_print": "f2c9687bdc7407bfa3c7c8badfe2217e",
+                    "start_lines": 1210
+                }
+            ],
+            "block_num": 4,
+            "dup_lines": 64,
+            "dup_rate": "4.53%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/token-store.js",
+            "total_lines": 1414
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 2554,
+                    "finger_print": "ad65654725ebb6d77f35b5cdfb2e6369",
+                    "start_lines": 2538
+                },
+                {
+                    "end_lines": 1327,
+                    "finger_print": "b047818ba7b9083a239b923a2ac99ccc",
+                    "start_lines": 1307
+                },
+                {
+                    "end_lines": 1732,
+                    "finger_print": "2e97f91b0140b49bc69b51afaba7c21a",
+                    "start_lines": 1717
+                },
+                {
+                    "end_lines": 2587,
+                    "finger_print": "5497730b7605cdf25e7c3082702c966c",
+                    "start_lines": 2572
+                },
+                {
+                    "end_lines": 583,
+                    "finger_print": "87ffe48855dd087138b1ee3ada6e5e76",
+                    "start_lines": 567
+                },
+                {
+                    "end_lines": 2602,
+                    "finger_print": "5497730b7605cdf25e7c3082702c966c",
+                    "start_lines": 2587
+                },
+                {
+                    "end_lines": 804,
+                    "finger_print": "a2ca432182d491009f7a8358f4818fe2",
+                    "start_lines": 785
+                },
+                {
+                    "end_lines": 1496,
+                    "finger_print": "50c35bd5a011f1a3a7499c6c3811d2f7",
+                    "start_lines": 1478
+                },
+                {
+                    "end_lines": 2572,
+                    "finger_print": "2e97f91b0140b49bc69b51afaba7c21a",
+                    "start_lines": 2557
+                },
+                {
+                    "end_lines": 1456,
+                    "finger_print": "50c35bd5a011f1a3a7499c6c3811d2f7",
+                    "start_lines": 1438
+                },
+                {
+                    "end_lines": 1287,
+                    "finger_print": "b047818ba7b9083a239b923a2ac99ccc",
+                    "start_lines": 1267
+                },
+                {
+                    "end_lines": 602,
+                    "finger_print": "87ffe48855dd087138b1ee3ada6e5e76",
+                    "start_lines": 586
+                },
+                {
+                    "end_lines": 2520,
+                    "finger_print": "ad65654725ebb6d77f35b5cdfb2e6369",
+                    "start_lines": 2504
+                },
+                {
+                    "end_lines": 782,
+                    "finger_print": "a2ca432182d491009f7a8358f4818fe2",
+                    "start_lines": 763
+                }
+            ],
+            "block_num": 14,
+            "dup_lines": 238,
+            "dup_rate": "4.95%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/linter.js",
+            "total_lines": 4809
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 1332,
+                    "finger_print": "3bd67b9165c5baa6c7bdc358120e70c7",
+                    "start_lines": 1313
+                },
+                {
+                    "end_lines": 720,
+                    "finger_print": "af30ffbf37cfe789a7a100481ba75bc9",
+                    "start_lines": 696
+                },
+                {
+                    "end_lines": 506,
+                    "finger_print": "3a38d2ec7f4525ff50d3e5a576fdc2f7",
+                    "start_lines": 479
+                },
+                {
+                    "end_lines": 385,
+                    "finger_print": "3a38d2ec7f4525ff50d3e5a576fdc2f7",
+                    "start_lines": 358
+                },
+                {
+                    "end_lines": 295,
+                    "finger_print": "7aa67cb61a28c26835ff6de8039d2c8d",
+                    "start_lines": 271
+                },
+                {
+                    "end_lines": 690,
+                    "finger_print": "af30ffbf37cfe789a7a100481ba75bc9",
+                    "start_lines": 666
+                },
+                {
+                    "end_lines": 385,
+                    "finger_print": "eac5ba0da76eb81270a0a2e25bec850f",
+                    "start_lines": 360
+                },
+                {
+                    "end_lines": 506,
+                    "finger_print": "3253f6203f93419644159d3c50cdb689",
+                    "start_lines": 478
+                },
+                {
+                    "end_lines": 537,
+                    "finger_print": "eac5ba0da76eb81270a0a2e25bec850f",
+                    "start_lines": 513
+                },
+                {
+                    "end_lines": 446,
+                    "finger_print": "3253f6203f93419644159d3c50cdb689",
+                    "start_lines": 417
+                },
+                {
+                    "end_lines": 446,
+                    "finger_print": "3a38d2ec7f4525ff50d3e5a576fdc2f7",
+                    "start_lines": 418
+                },
+                {
+                    "end_lines": 1301,
+                    "finger_print": "3bd67b9165c5baa6c7bdc358120e70c7",
+                    "start_lines": 1282
+                },
+                {
+                    "end_lines": 628,
+                    "finger_print": "7747d9401e604e60f5a703a802eefc5c",
+                    "start_lines": 604
+                },
+                {
+                    "end_lines": 506,
+                    "finger_print": "eac5ba0da76eb81270a0a2e25bec850f",
+                    "start_lines": 481
+                },
+                {
+                    "end_lines": 267,
+                    "finger_print": "7aa67cb61a28c26835ff6de8039d2c8d",
+                    "start_lines": 243
+                },
+                {
+                    "end_lines": 568,
+                    "finger_print": "7747d9401e604e60f5a703a802eefc5c",
+                    "start_lines": 544
+                },
+                {
+                    "end_lines": 446,
+                    "finger_print": "eac5ba0da76eb81270a0a2e25bec850f",
+                    "start_lines": 420
+                }
+            ],
+            "block_num": 17,
+            "dup_lines": 290,
+            "dup_rate": "14.06%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/util/source-code.js",
+            "total_lines": 2062
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 128,
+                    "finger_print": "2f13f101ec250647a1fc522ba730ee83",
+                    "start_lines": 99
+                },
+                {
+                    "end_lines": 46,
+                    "finger_print": "f79dcbc7aa186391f1325c5a09b47bbb",
+                    "start_lines": 13
+                },
+                {
+                    "end_lines": 128,
+                    "finger_print": "639718c35f1ec57cc726860dcb43c628",
+                    "start_lines": 99
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 62,
+            "dup_rate": "38.51%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/compact.js",
+            "total_lines": 161
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 128,
+                    "finger_print": "2f13f101ec250647a1fc522ba730ee83",
+                    "start_lines": 99
+                },
+                {
+                    "end_lines": 46,
+                    "finger_print": "f79dcbc7aa186391f1325c5a09b47bbb",
+                    "start_lines": 13
+                },
+                {
+                    "end_lines": 128,
+                    "finger_print": "639718c35f1ec57cc726860dcb43c628",
+                    "start_lines": 99
+                }
+            ],
+            "block_num": 3,
+            "dup_lines": 62,
+            "dup_rate": "38.51%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/unix.js",
+            "total_lines": 161
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 698,
+                    "finger_print": "a99cd3d9143f1920c93ff38b2312b958",
+                    "start_lines": 687
+                },
+                {
+                    "end_lines": 714,
+                    "finger_print": "a7f7cb3a5e65abe6f07c0d16246ba612",
+                    "start_lines": 702
+                },
+                {
+                    "end_lines": 714,
+                    "finger_print": "4fbe6bc6622d5fe10245395a4d911c95",
+                    "start_lines": 702
+                },
+                {
+                    "end_lines": 732,
+                    "finger_print": "78da46023c52a7a952f219dd8fca6aed",
+                    "start_lines": 720
+                },
+                {
+                    "end_lines": 751,
+                    "finger_print": "9485984f3fe05508ca3cefb117794dc4",
+                    "start_lines": 738
+                },
+                {
+                    "end_lines": 750,
+                    "finger_print": "78da46023c52a7a952f219dd8fca6aed",
+                    "start_lines": 738
+                },
+                {
+                    "end_lines": 698,
+                    "finger_print": "5e8d4d699bec59232468a6f64268f45c",
+                    "start_lines": 687
+                },
+                {
+                    "end_lines": 679,
+                    "finger_print": "a7f7cb3a5e65abe6f07c0d16246ba612",
+                    "start_lines": 666
+                },
+                {
+                    "end_lines": 713,
+                    "finger_print": "5e8d4d699bec59232468a6f64268f45c",
+                    "start_lines": 702
+                },
+                {
+                    "end_lines": 731,
+                    "finger_print": "5e8d4d699bec59232468a6f64268f45c",
+                    "start_lines": 720
+                },
+                {
+                    "end_lines": 679,
+                    "finger_print": "5d4c49609e16d4411df83a61367f16a1",
+                    "start_lines": 666
+                },
+                {
+                    "end_lines": 677,
+                    "finger_print": "a99cd3d9143f1920c93ff38b2312b958",
+                    "start_lines": 666
+                },
+                {
+                    "end_lines": 750,
+                    "finger_print": "5d4c49609e16d4411df83a61367f16a1",
+                    "start_lines": 738
+                },
+                {
+                    "end_lines": 679,
+                    "finger_print": "4b75231a507215c6ebd3e7a628f70bad",
+                    "start_lines": 666
+                },
+                {
+                    "end_lines": 732,
+                    "finger_print": "4fbe6bc6622d5fe10245395a4d911c95",
+                    "start_lines": 720
+                },
+                {
+                    "end_lines": 715,
+                    "finger_print": "9485984f3fe05508ca3cefb117794dc4",
+                    "start_lines": 702
+                },
+                {
+                    "end_lines": 732,
+                    "finger_print": "4b75231a507215c6ebd3e7a628f70bad",
+                    "start_lines": 720
+                }
+            ],
+            "block_num": 17,
+            "dup_lines": 62,
+            "dup_rate": "7.95%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/util/ignored-paths.js",
+            "total_lines": 780
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 134,
+                    "finger_print": "2f13f101ec250647a1fc522ba730ee83",
+                    "start_lines": 105
+                },
+                {
+                    "end_lines": 134,
+                    "finger_print": "639718c35f1ec57cc726860dcb43c628",
+                    "start_lines": 105
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 29,
+            "dup_rate": "18.47%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/checkstyle.js",
+            "total_lines": 157
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 128,
+                    "finger_print": "2f13f101ec250647a1fc522ba730ee83",
+                    "start_lines": 99
+                },
+                {
+                    "end_lines": 128,
+                    "finger_print": "639718c35f1ec57cc726860dcb43c628",
+                    "start_lines": 99
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 29,
+            "dup_rate": "18.01%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/visualstudio.js",
+            "total_lines": 161
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 212,
+                    "finger_print": "2f13f101ec250647a1fc522ba730ee83",
+                    "start_lines": 183
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 29,
+            "dup_rate": "11.60%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/formatters/tap.js",
+            "total_lines": 250
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 266,
+                    "finger_print": "c36b5cbc972657f9dde4619e699ff97f",
+                    "start_lines": 226
+                }
+            ],
+            "block_num": 1,
+            "dup_lines": 40,
+            "dup_rate": "8.95%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/fixtures/parsers/unknown-nodes/interface.js",
+            "total_lines": 447
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 81,
+                    "finger_print": "8c501e591901926a46430f5f7f0d30f3",
+                    "start_lines": 68
+                },
+                {
+                    "end_lines": 113,
+                    "finger_print": "60f3908b9958af724d11ddf6421fe124",
+                    "start_lines": 101
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 25,
+            "dup_rate": "2.58%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/rules/array-bracket-spacing.js",
+            "total_lines": 968
+        },
+        {
+            "block_list": [
+                {
+                    "end_lines": 62,
+                    "finger_print": "60f3908b9958af724d11ddf6421fe124",
+                    "start_lines": 50
+                },
+                {
+                    "end_lines": 39,
+                    "finger_print": "8c501e591901926a46430f5f7f0d30f3",
+                    "start_lines": 27
+                }
+            ],
+            "block_num": 2,
+            "dup_lines": 24,
+            "dup_rate": "6.58%",
+            "file_path": "/data/iegci/tmp/dupc_scan/test/lib/rules/computed-property-spacing.js",
+            "total_lines": 365
+        }
+    ]
+}
