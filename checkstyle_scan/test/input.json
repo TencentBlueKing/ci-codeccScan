@@ -1,0 +1,72 @@
+{
+    "buildScript": "/data/landun/workspace/.temp/codecc_coverity_b-d302dee9999848b28f954306a468c2af/CODECC_698F8F928C852980_eslint/b-d302dee9999848b28f954306a468c2af.sh",
+    "incrementalFiles": [],
+    "openCheckers":  [{
+			"checkerName": "AbstractClassName",
+			"nativeChecker": true
+		},
+		{
+			"checkerName": "ArrayTypeStyle",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "AvoidNestedBlocks",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "BooleanExpressionComplexity",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "ConstantName",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "DeclarationOrder",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "EmptyBlock",
+			"nativeChecker": true
+		},
+        {
+			"checkerName": "EmptyCatchBlock",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "EmptyStatement",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "EqualsAvoidNull",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "EqualsHashCode",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "FallThrough",
+			"nativeChecker": true
+		}, 
+        {
+			"checkerName": "FileLength",
+			"nativeChecker": true
+		}],
+    "projName": "CODECC_698F8F928C852980",
+    "scanPath": "/data/landun/workspace",
+    "scanType": "full",
+    "skipPaths": [
+        ".*/TDRExported/.*",
+        ".*/.temp/.*",
+        ".*/.svn/.*",
+        ".*/.git/.*"
+    ],
+    "toolOptions": [
+        {
+            "optionName": "SHELL",
+            "optionValue": "",
+            "osType": "LINUX"
+        }
+    ]
+}
