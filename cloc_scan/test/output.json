@@ -1,0 +1,25 @@
+{
+    "defectsCompress": [
+        {
+            "filePath": "/data/iegci/tmp/cpp_test_jim/example_closure.cpp",
+            "blank": 9,
+            "code": 64,
+            "comment": 18,
+            "language": "C++"
+        },
+        {
+            "filePath": "/data/iegci/tmp/cpp_test_jim/co_hook_sys_call.cpp",
+            "blank": 167,
+            "code": 762,
+            "comment": 38,
+            "language": "C++"
+        }
+    ],
+    "languages": "C++",
+    "tool_name": "cloc",
+    "task_id": "352342",
+    "stream_name": "456dgfg",
+    "buildId": "797979",
+    "projectId": "5675676",
+    "reportId": "sdfwer"
+}
