@@ -1,0 +1,12 @@
+{
+	"name":"KTLINT",
+	"displayName":"ktlint",
+	"type":"STANDARD",
+	"briefIntroduction":"ktlint",
+	"supportedLanguages":["KOTLIN"],
+	"dockerTriggerShell": "/bin/bash##-c##\"cd /usr/codecc/tool_scan; python3 ./sdk/src/scan.py --input={input.json} --output={output.json}\"",
+	"dockerImageURL": "csighub.tencentyun.com/codecc/ktlint-codecc-plugin",
+    "dockerImageVersion": "latest",
+    "toolScanCommand": "/bin/bash##-c##\"python3 ./sdk/src/scan.py --input={input.json} --output={output.json}\"",
+    "toolRunType": "docker"
+}

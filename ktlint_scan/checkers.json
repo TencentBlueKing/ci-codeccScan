@@ -1,0 +1,587 @@
+[
+    {
+        "checkerName": "final-newline",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "final-newline",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "modifier-order",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "modifier-order",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "dot-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "dot-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "indent",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "indent",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-unit-return",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-unit-return",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "comma-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "comma-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-line-break-after-else",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-line-break-after-else",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "comment-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "comment-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-consecutive-blank-lines",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-consecutive-blank-lines",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "curly-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "curly-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-semi",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-semi",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "import-ordering",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "import-ordering",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-wildcard-imports",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-wildcard-imports",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-blank-line-before-rbrace",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-blank-line-before-rbrace",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "op-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "op-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-line-break-before-assignment",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-line-break-before-assignment",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "chain-wrapping",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "chain-wrapping",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-unused-imports",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-unused-imports",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-multi-spaces",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-multi-spaces",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "paren-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "paren-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "colon-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "colon-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "string-template",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "string-template",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "max-line-length",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "max-line-length",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "keyword-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "keyword-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-empty-class-body",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-empty-class-body",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "parameter-list-wrapping",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "parameter-list-wrapping",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-trailing-spaces",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-trailing-spaces",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "range-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "range-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-var",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-var",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "no-empty-first-line-in-method-block",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "no-empty-first-line-in-method-block",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "unary-op-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "unary-op-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "enum-entry-name-case",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "enum-entry-name-case",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "spacing-between-declarations-with-annotations",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "spacing-between-declarations-with-annotations",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "spacing-around-angle-brackets",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "spacing-around-angle-brackets",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "double-colon-spacing",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "double-colon-spacing",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "package-name",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "package-name",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "multiline-if-else",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "multiline-if-else",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "annotation",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "annotation",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    },
+    {
+        "checkerName": "spacing-between-declarations-with-comments",
+        "severity": "1",
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "spacing-between-declarations-with-comments",
+        "checkerLanguage": [
+            "KOTLIN"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "USER_DEFINED",
+        "checkerTag": [
+            "风格"
+        ]
+    }
+]
