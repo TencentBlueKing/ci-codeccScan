@@ -1,0 +1,6662 @@
+[
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CNT-ROUGH-CONSTANT-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Rough value of known constant found"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-BOOLEAN-RETURN-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method with Boolean return type returns explicit null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SW-SWING-METHODS-INVOKED-IN-SWING-THREAD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Certain swing methods needs to be invoked in Swing thread"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-FINALIZER-ONLY-NULLS-FIELDS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer only nulls fields"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-FINALIZER-NULLS-FIELDS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer nulls fields"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UI-INHERITANCE-UNSAFE-GETRESOURCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Usage of GetResource may be unsafe if class is extended"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "AM-CREATES-EMPTY-ZIP-FILE-ENTRY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Creates an empty zip file entry"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "AM-CREATES-EMPTY-JAR-FILE-ENTRY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Creates an empty jar file entry"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IMSE-DONT-CATCH-IMSE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dubious catching of IllegalMonitorStateException"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CN-IMPLEMENTS-CLONE-BUT-NOT-CLONEABLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines clone() but doesn’t implement Cloneable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CN-IDIOM",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class implements Cloneable but does not define or use clone method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CN-IDIOM-NO-SUPER-CALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "clone method does not call super.clone()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DE-MIGHT-DROP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method might drop exception"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DE-MIGHT-IGNORE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method might ignore exception"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-EXIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes System.exit(…)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-FUTURE-KEYWORD-USED-AS-IDENTIFIER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Use of identifier that is a keyword in later versions of Java"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-FUTURE-KEYWORD-USED-AS-MEMBER-IDENTIFIER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Use of identifier that is a keyword in later versions of Java"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "JCIP-FIELD-ISNT-FINAL-IN-IMMUTABLE-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Fields of immutable classes should be final"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-RUN-FINALIZERS-ON-EXIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes dangerous method runFinalizersOnExit"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-EQUALS-SHOULD-HANDLE-NULL-ARGUMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals() method does not check for null argument"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-EMPTY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Empty finalizer should be deleted"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-NULLIFY-SUPER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer nullifies superclass finalizer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-USELESS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer does nothing but call superclass finalizer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-MISSING-SUPER-CALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer does not call superclass finalizer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-EXPLICIT-INVOCATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Explicit invocation of finalizer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-CHECK-FOR-OPERAND-NOT-COMPATIBLE-WITH-THIS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Equals checks for incompatible operand"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-GETCLASS-AND-CLASS-CONSTANT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals method fails for subtypes"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-SELF-NO-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant equals() method defined"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CO-SELF-NO-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant compareTo() method defined"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CO-COMPARETO-RESULTS-MIN-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "compareTo()/compare() returns Integer.MIN_VALUE"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CO-COMPARETO-INCORRECT-FLOATING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "compareTo()/compare() incorrectly handles float or double value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-NEGATING-RESULT-OF-COMPARETO",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Negating the result of compareTo()/compare()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ES-COMPARING-STRINGS-WITH-EQ",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Comparison of String objects using == or !="
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ES-COMPARING-PARAMETER-STRING-WITH-EQ",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Comparison of String parameter using == or !="
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-COMPARETO-USE-OBJECT-EQUALS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines compareTo(…) and uses Object.equals()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-HASHCODE-USE-OBJECT-EQUALS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines hashCode() and uses Object.equals()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-HASHCODE-NO-EQUALS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines hashCode() but not equals()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-EQUALS-USE-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines equals() and uses Object.hashCode()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-INHERITS-EQUALS-USE-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class inherits equals() and uses Object.hashCode()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-EQUALS-NO-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines equals() but not hashCode()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-ABSTRACT-SELF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Abstract class defines covariant equals() method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CO-ABSTRACT-SELF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Abstract class defines covariant compareTo() method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IC-SUPERCLASS-USES-SUBCLASS-DURING-INITIALIZATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Superclass uses subclass during initialization"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SI-INSTANCE-BEFORE-FINALS-ASSIGNED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Static initializer creates instance before all static final fields assigned"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IT-NO-SUCH-ELEMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Iterator next() method can’t throw NoSuchElementException"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ME-MUTABLE-ENUM-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Enum field is public and mutable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ME-ENUM-FIELD-SETTER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Public enum method unconditionally sets its field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-METHOD-NAMING-CONVENTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method names should start with a lower case letter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-FIELD-NAMING-CONVENTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field names should start with a lower case letter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-SAME-SIMPLE-NAME-AS-INTERFACE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class names shouldn’t shadow simple name of implemented interface"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-SAME-SIMPLE-NAME-AS-SUPERCLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class names shouldn’t shadow simple name of superclass"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-CLASS-NAMING-CONVENTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class names should start with an upper case letter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-VERY-CONFUSING-INTENTIONAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Very confusing method names (but perhaps intentional)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-WRONG-PACKAGE-INTENTIONAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method doesn’t override method in superclass due to wrong package for parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-CONFUSING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Confusing method names"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-CLASS-NOT-EXCEPTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class is not derived from an Exception, even though it is named as such"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RR-NOT-CHECKED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method ignores results of InputStream.read()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SR-NOT-CHECKED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method ignores results of InputStream.skip()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NO-SUITABLE-CONSTRUCTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class is Serializable but its superclass doesn’t define a void constructor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NO-SUITABLE-CONSTRUCTOR-FOR-EXTERNALIZATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class is Externalizable but doesn’t define a void constructor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-COMPARATOR-SHOULD-BE-SERIALIZABLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Comparator doesn’t implement Serializable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NO-SERIALVERSIONID",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class is Serializable, but doesn’t define serialVersionUID"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-READ-RESOLVE-MUST-RETURN-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "The readResolve method must be declared with a return type of Object."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-TRANSIENT-FIELD-NOT-RESTORED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Transient field that isn’t set by deserialization."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NONFINAL-SERIALVERSIONID",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "serialVersionUID isn’t final"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NONSTATIC-SERIALVERSIONID",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "serialVersionUID isn’t static"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-NONLONG-SERIALVERSIONID",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "serialVersionUID isn’t long"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-BAD-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non-transient non-serializable instance field in serializable class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-INNER-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Serializable inner class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-BAD-FIELD-INNER-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non-serializable class has a serializable inner class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-BAD-FIELD-STORE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non-serializable value stored into instance field of a serializable class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-RETURN-VALUE-IGNORED-BAD-PRACTICE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method ignores exceptional return value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-TOSTRING-COULD-RETURN-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "toString method may return null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-CLONE-COULD-RETURN-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Clone method may return null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "OS-OPEN-STREAM",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to close stream"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "OS-OPEN-STREAM-EXCEPTION-PATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to close stream on exception"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RC-REF-COMPARISON-BAD-PRACTICE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Suspicious reference comparison to constant"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RC-REF-COMPARISON-BAD-PRACTICE-BOOLEAN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Suspicious reference comparison of Boolean values"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "VA-FORMAT-STRING-USES-NEWLINE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Format string should use %n rather than n"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-SIGNED-CHECK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Check for sign of bitwise operation"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ODR-OPEN-DATABASE-RESOURCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to close database resource"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ODR-OPEN-DATABASE-RESOURCE-EXCEPTION-PATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to close database resource on exception"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ISC-INSTANTIATE-STATIC-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Needless instantiation of class that only supplies static methods"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-RANDOM-USED-ONLY-ONCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Random object created and used only once"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-EQUALS-METHOD-SHOULD-WORK-FOR-ALL-OBJECTS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Equals method should not assume anything about the type of its argument"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "J2EE-STORE-OF-NON-SERIALIZABLE-OBJECT-INTO-SESSION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Store of non serializable object into HttpSession"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "GC-UNCHECKED-TYPE-IN-GENERIC-CALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unchecked type in generic call"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "PZ-DONT-REUSE-ENTRY-OBJECTS-IN-ITERATORS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Don’t reuse entry objects in iterators"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-ENTRY-SETS-MAY-REUSE-ENTRY-OBJECTS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Adding elements of an entry set may fail due to reuse of Entry objects"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-USING-REMOVEALL-TO-CLEAR-COLLECTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Don’t use removeAll to clear a collection"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "OVERRIDING-METHODS-MUST-INVOKE-SUPER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Super method is annotated with @OverridingMethodsMustInvokeSuper, but the overriding method isn’t calling the super method."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-OPTIONAL-RETURN-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method with Optional return type returns explicit null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NONNULL-FIELD-NOT-INITIALIZED-IN-CONSTRUCTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non-null field is not initialized"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "VR-UNRESOLVABLE-REFERENCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class makes reference to unresolvable class or method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IL-INFINITE-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "An apparent infinite loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IO-APPENDING-TO-OBJECT-OUTPUT-STREAM",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Doomed attempt to append to an object output stream"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IL-INFINITE-RECURSIVE-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "An apparent infinite recursive loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IL-CONTAINER-ADDED-TO-ITSELF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A collection is added to itself"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RpC-REPEATED-CONDITIONAL-TEST",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Repeated conditional tests"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FL-MATH-USING-FLOAT-PRECISION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method performs math using floating point precision"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CAA-COVARIANT-ARRAY-ELEMENT-STORE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possibly incompatible element is stored in covariant array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-VACUOUS-CALL-TO-EASYMOCK-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless/vacuous call to EasyMock method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-FUTILE-ATTEMPT-TO-CHANGE-MAXPOOL-SIZE-OF-SCHEDULED-THREAD-POOL-EXECUTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Futile attempt to change max pool size of ScheduledThreadPoolExecutor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-BIGDECIMAL-CONSTRUCTED-FROM-DOUBLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "BigDecimal constructed from double that isn’t represented precisely"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-SCHEDULED-THREAD-POOL-EXECUTOR-WITH-ZERO-CORE-THREADS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Creation of ScheduledThreadPoolExecutor with zero core threads"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-ANNOTATION-IS-NOT-VISIBLE-TO-REFLECTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Can’t use reflection to check for presence of annotation without runtime retention"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-ARGUMENT-MIGHT-BE-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method does not check for null argument"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-ABSOLUTE-VALUE-OF-RANDOM-INT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad attempt to compute absolute value of signed random integer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-ABSOLUTE-VALUE-OF-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad attempt to compute absolute value of signed 32-bit hashcode"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-01-TO-INT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Random value from 0 to 1 is coerced to the integer 0"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-INVALID-MIN-MAX",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Incorrect combination of Math.max and Math.min"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-COMPARING-CLASS-NAMES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals method compares class names rather than class objects"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-ALWAYS-TRUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals method always returns true"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-ALWAYS-FALSE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals method always returns false"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-OVERRIDING-EQUALS-NOT-SYMMETRIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals method overrides equals in superclass and may not be symmetric"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-DONT-DEFINE-EQUALS-FOR-ENUM",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant equals() method defined for enum"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-SELF-USE-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant equals() method defined, Object.equals(Object) inherited"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-OTHER-USE-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals() method defined that doesn’t override Object.equals(Object)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-OTHER-NO-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals() method defined that doesn’t override equals(Object)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-SIGNATURE-DECLARES-HASHING-OF-UNHASHABLE-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Signature declares use of unhashable class in hashed construct"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HE-USE-OF-UNHASHABLE-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Use of class without a hashCode() method in a hashed data structure"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UR-UNINIT-READ",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Uninitialized read of field in constructor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UR-UNINIT-READ-CALLED-FROM-SUPER-CONSTRUCTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Uninitialized read of field method called from constructor of superclass"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-VERY-CONFUSING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Very confusing method names"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-WRONG-PACKAGE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method doesn’t override method in superclass due to wrong package for parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-METHOD-CONSTRUCTOR-CONFUSION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Apparent method/constructor confusion"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-LCASE-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines hashcode(); should it be hashCode()?"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-LCASE-TOSTRING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines tostring(); should it be toString()?"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NM-BAD-EQUAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines equal(Object); should it be equals(Object)?"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-READ-RESOLVE-IS-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "The readResolve method must not be declared as a static method."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-METHOD-MUST-BE-PRIVATE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method must be private in order for serialization to work"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SF-DEAD-STORE-DUE-TO-SWITCH-FALLTHROUGH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store due to switch statement fall through"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SF-DEAD-STORE-DUE-TO-SWITCH-FALLTHROUGH-TO-THROW",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store due to switch statement fall through to throw"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-UNWRITTEN-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Read of unwritten field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UWF-NULL-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field only ever set to null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UWF-UNWRITTEN-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unwritten field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SIC-THREADLOCAL-DEADLY-EMBRACE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Deadly embrace of non-static inner class and thread local"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RANGE-ARRAY-INDEX",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Array index is out of bounds"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RANGE-ARRAY-OFFSET",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Array offset is out of bounds"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RANGE-ARRAY-LENGTH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Array length is out of bounds"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RANGE-STRING-INDEX",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "String index is out of bounds"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-RETURN-VALUE-IGNORED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method ignores return value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-EXCEPTION-NOT-THROWN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Exception created and dropped rather than thrown"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-CHECK-COMPARETO-FOR-SPECIFIC-RETURN-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Code checks for specific values returned by compareTo"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-ALWAYS-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Null pointer dereference"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-CLOSING-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "close() invoked on a value that is always null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-STORE-INTO-NONNULL-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Store of null value into field annotated @Nonnull"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-ALWAYS-NULL-EXCEPTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Null pointer dereference in method on exception path"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-ON-SOME-PATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible null pointer dereference"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-ON-SOME-PATH-EXCEPTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible null pointer dereference in method on exception path"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-PARAM-DEREF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method call passes null for non-null parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-PARAM-DEREF-NONVIRTUAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non-virtual method call passes null for non-null parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-PARAM-DEREF-ALL-TARGETS-DANGEROUS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method call passes null for non-null parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NONNULL-PARAM-VIOLATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method call passes null to a non-null parameter"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NONNULL-RETURN-VIOLATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may return null, but is declared @Nonnull"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-GUARANTEED-DEREF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Null value is guaranteed to be dereferenced"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-GUARANTEED-DEREF-ON-EXCEPTION-PATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value is null and guaranteed to be dereferenced on exception path"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-ARGUMENTS-WRONG-ORDER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Reversed method arguments"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RCN-REDUNDANT-NULLCHECK-WOULD-HAVE-BEEN-A-NPE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Nullcheck of value previously dereferenced"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RC-REF-COMPARISON",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Suspicious reference comparison"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "VA-PRIMITIVE-ARRAY-PASSED-TO-OBJECT-VARARG",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Primitive array passed to function expecting a variable number of object arguments"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-UNRELATED-TYPES-USING-POINTER-EQUALITY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Using pointer equality to compare different types"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-UNRELATED-TYPES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to equals() comparing different types"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-ARRAY-AND-NONARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals() used to compare array and nonarray"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-NULL-ARG",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to equals(null)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-UNRELATED-INTERFACES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to equals() comparing different interface types"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-UNRELATED-CLASS-AND-INTERFACE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to equals() comparing unrelated class and interface"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-LOCAL-SELF-ASSIGNMENT-INSTEAD-OF-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Self assignment of local rather than assignment to field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-BAD-COMPARISON-WITH-INT-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad comparison of int value with long constant"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-BAD-COMPARISON-WITH-SIGNED-BYTE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad comparison of signed byte"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-BAD-COMPARISON-WITH-NONNEGATIVE-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad comparison of nonnegative value with negative constant or zero"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-ADD-OF-SIGNED-BYTE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bitwise add of signed byte value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-IOR-OF-SIGNED-BYTE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bitwise OR of signed byte value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-SIGNED-CHECK-HIGH-BIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Check for sign of bitwise operation involving negative number"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-AND",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Incompatible bit masks"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-AND-ZZ",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Check to see if ((…) & 0) == 0"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BIT-IOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Incompatible bit masks"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-FIELD-SELF-ASSIGNMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Self assignment of field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-FIELD-SELF-COMPUTATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Nonsensical self computation involving a field (e.g., x & x)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-LOCAL-SELF-COMPUTATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Nonsensical self computation involving a variable (e.g., x & x)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-FIELD-SELF-COMPARISON",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Self comparison of field with itself"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-LOCAL-SELF-COMPARISON",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Self comparison of value with itself"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UMAC-UNCALLABLE-METHOD-OF-ANONYMOUS-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Uncallable method defined in anonymous class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-ASSERT-METHOD-INVOKED-FROM-RUN-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "JUnit assertion in run method will not be noticed by JUnit"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-BAD-SUITE-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "TestCase declares a bad suite method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-SETUP-NO-SUPER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "TestCase defines setUp that doesn’t call super.setUp()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-TEARDOWN-NO-SUPER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "TestCase defines tearDown that doesn’t call super.tearDown()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-SUITE-NOT-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "TestCase implements a non-static suite method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IJU-NO-TESTS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "TestCase has no tests"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BOA-BADLY-OVERRIDDEN-ADAPTER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class overrides a method implemented in super class Adapter wrongly"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SQL-BAD-RESULTSET-ACCESS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method attempts to access a result set field with index 0"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SQL-BAD-PREPARED-STATEMENT-ACCESS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method attempts to access a prepared statement parameter with index 0"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SIO-SUPERFLUOUS-INSTANCEOF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unnecessary type check done using instanceof operator"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BAC-BAD-APPLET-CONSTRUCTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad Applet Constructor relies on uninitialized AppletStub"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-INCOMPATIBLE-ARRAY-COMPARE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "equals(…) used to compare incompatible arrays"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EC-BAD-ARRAY-COMPARE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invocation of equals() on an array, which is equivalent to =="
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STI-INTERRUPTED-ON-CURRENTTHREAD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unneeded use of currentThread() call, to call interrupted()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STI-INTERRUPTED-ON-UNKNOWNTHREAD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Static Thread.interrupted() method invoked on thread instance"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-LOCAL-INCREMENT-IN-RETURN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless increment in return statement"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-STORE-OF-CLASS-LITERAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store of class literal"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IP-PARAMETER-IS-DEAD-BUT-OVERWRITTEN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A parameter is dead upon entry to a method but overwritten"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MF-METHOD-MASKS-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method defines a variable that obscures a field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MF-CLASS-MASKS-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class defines field that masks a superclass field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FE-TEST-IF-EQUAL-TO-NOT-A-NUMBER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Doomed test for equality to NaN"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-INT-2-LONG-AS-INSTANT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "int value converted to long and used as absolute time"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-INT-CAST-TO-DOUBLE-PASSED-TO-CEIL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Integral value cast to double and then passed to Math.ceil"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-INT-CAST-TO-FLOAT-PASSED-TO-ROUND",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "int value cast to float and then passed to Math.round"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-INSTANCEOF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A known null value is checked to see if it is an instance of a type"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-LONG-BITS-TO-DOUBLE-INVOKED-ON-INT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Double.longBitsToDouble invoked on an int"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-IMPOSSIBLE-CAST",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Impossible cast"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-IMPOSSIBLE-DOWNCAST",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Impossible downcast"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-IMPOSSIBLE-DOWNCAST-OF-TOARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Impossible downcast of toArray() result"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-IMPOSSIBLE-INSTANCEOF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "instanceof will always return false"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RE-POSSIBLE-UNINTENDED-PATTERN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "“.” or “|” used for regular expression"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RE-BAD-SYNTAX-FOR-REGULAR-EXPRESSION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invalid syntax for regular expression"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RE-CANT-USE-FILE-SEPARATOR-AS-REGULAR-EXPRESSION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "File.separator used for regular expression"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-OVERWRITTEN-INCREMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Overwritten increment"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-BAD-SHIFT-AMOUNT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "32 bit int shifted by an amount not in the range -31..31"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BSHIFT-WRONG-ADD-PRIORITY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible bad parsing of shift operation"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IM-MULTIPLYING-RESULT-OF-IREM",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Integer multiply of result of integer remainder"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-INVOKING-HASHCODE-ON-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invocation of hashCode on an array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-INVOKING-TOSTRING-ON-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invocation of toString on an array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-INVOKING-TOSTRING-ON-ANONYMOUS-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invocation of toString on an unnamed array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-BAD-MONTH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bad constant value for month"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-CALLING-NEXT-FROM-HASNEXT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "hasNext method invokes next"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "QBA-QUESTIONABLE-BOOLEAN-ASSIGNMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method assigns boolean literal in boolean expression"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "GC-UNRELATED-TYPES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "No relationship between generic parameter and method argument"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-VACUOUS-SELF-COLLECTION-CALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Vacuous call to collections"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-DOH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "D’oh! A nonsensical method invocation"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-COLLECTIONS-SHOULD-NOT-CONTAIN-THEMSELVES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Collections should not contain themselves"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-UNKNOWN-VALUE-USED-WHERE-ALWAYS-STRICTLY-REQUIRED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value without a type qualifier used where a value is required to have that qualifier"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-COMPARING-VALUES-WITH-INCOMPATIBLE-TYPE-QUALIFIERS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Comparing values with incompatible type qualifiers"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-ALWAYS-VALUE-USED-WHERE-NEVER-REQUIRED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value annotated as carrying a type qualifier used where a value that must not carry that qualifier is required"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-NEVER-VALUE-USED-WHERE-ALWAYS-REQUIRED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value annotated as never carrying a type qualifier used where value carrying that qualifier is required"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-MAYBE-SOURCE-VALUE-REACHES-ALWAYS-SINK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value that might not carry a type qualifier is always used in a way requires that type qualifier"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-MAYBE-SOURCE-VALUE-REACHES-NEVER-SINK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value that might carry a type qualifier is always used in a way prohibits it from having that type qualifier"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FB-UNEXPECTED-WARNING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unexpected/undesired warning from SpotBugs"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FB-MISSING-EXPECTED-WARNING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Missing expected or desired warning from SpotBugs"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "OBL-UNSATISFIED-OBLIGATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to clean up stream or resource"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "OBL-UNSATISFIED-OBLIGATION-EXCEPTION-EDGE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method may fail to clean up stream or resource on checked"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "LG-LOST-LOGGER-DUE-TO-WEAK-REFERENCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Potential lost logger changes due to weak reference in OpenJDK"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-CONVERT-CASE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Consider using Locale parameterized version of invoked method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-DEFAULT-ENCODING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Reliance on default encoding"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DP-DO-INSIDE-DO-PRIVILEGED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invoked that should be only be invoked inside a doPrivileged block"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DP-CREATE-CLASSLOADER-INSIDE-DO-PRIVILEGED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Classloaders should only be created inside doPrivileged block"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FI-PUBLIC-SHOULD-BE-PROTECTED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Finalizer should be protected, not public"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-EXPOSE-REP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Public static method may expose internal representation by returning array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EI-EXPOSE-REP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "May expose internal representation by returning reference to mutable object"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EI-EXPOSE-REP2",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "May expose internal representation by incorporating reference to mutable object"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EI-EXPOSE-STATIC-REP2",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "May expose internal static state by storing a mutable object into a static field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-OOI-PKGPROTECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field should be moved out of an interface and made package protected"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-FINAL-PKGPROTECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field should be both final and package protected"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-SHOULD-BE-FINAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field isn’t final but should be"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-SHOULD-BE-REFACTORED-TO-BE-FINAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field isn’t final but should be refactored to be so"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-PKGPROTECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field should be package protected"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-MUTABLE-HASHTABLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field is a mutable Hashtable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-MUTABLE-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field is a mutable array"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-MUTABLE-COLLECTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field is a mutable collection"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-MUTABLE-COLLECTION-PKGPROTECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field is a mutable collection which should be package protected"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MS-CANNOT-BE-FINAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field isn’t final and can’t be protected from malicious code"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "AT-OPERATION-SEQUENCE-ON-CONCURRENT-ABSTRACTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Sequence of calls to concurrent abstraction may not be atomic"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STCAL-STATIC-CALENDAR-INSTANCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Static Calendar field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STCAL-STATIC-SIMPLE-DATE-FORMAT-INSTANCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Static DateFormat"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STCAL-INVOKE-ON-STATIC-CALENDAR-INSTANCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to static Calendar"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "STCAL-INVOKE-ON-STATIC-DATE-FORMAT-INSTANCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to static DateFormat"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-SYNC-AND-NULL-CHECK-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronize and null check on the same field."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "VO-VOLATILE-REFERENCE-TO-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A volatile reference to an array doesn’t treat the array elements as volatile"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "VO-VOLATILE-INCREMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "An increment to a volatile field isn’t atomic"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-MONITOR-WAIT-ON-CONDITION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Monitor wait() called on Condition"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-USELESS-THREAD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A thread was created using the default empty run method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DC-DOUBLECHECK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible double check of field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DC-PARTIALLY-CONSTRUCTED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible exposure of partially initialized object"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DL-SYNCHRONIZATION-ON-SHARED-CONSTANT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on interned String"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DL-SYNCHRONIZATION-ON-BOOLEAN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on Boolean"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DL-SYNCHRONIZATION-ON-BOXED-PRIMITIVE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on boxed primitive"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DL-SYNCHRONIZATION-ON-UNSHARED-BOXED-PRIMITIVE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on boxed primitive values"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "WL-USING-GETCLASS-RATHER-THAN-CLASS-LITERAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on getClass rather than class literal"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ESync-EMPTY-SYNC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Empty synchronized block"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MSF-MUTABLE-SERVLET-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Mutable servlet field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IS2-INCONSISTENT-SYNC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Inconsistent synchronization"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NN-NAKED-NOTIFY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Naked notify"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RU-INVOKE-RUN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invokes run on a thread (did you mean to start it instead?)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SP-SPIN-ON-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method spins on field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TLW-TWO-LOCK-WAIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Wait with two locks held"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UW-UNCOND-WAIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unconditional wait"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UG-SYNC-SET-UNSYNC-GET",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unsynchronized get method, synchronized set method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IS-FIELD-NOT-GUARDED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field not guarded against concurrent access"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ML-SYNC-ON-FIELD-TO-GUARD-CHANGING-THAT-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization on field in futile attempt to guard that field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ML-SYNC-ON-UPDATED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method synchronizes on an updated field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "WS-WRITEOBJECT-SYNC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class’s writeObject() method is synchronized but nothing else is"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RS-READOBJECT-SYNC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class’s readObject() method is synchronized"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SC-START-IN-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Constructor invokes Thread.start()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "WA-NOT-IN-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Wait not in loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "WA-AWAIT-NOT-IN-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Condition.await() not in loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NO-NOTIFY-NOT-NOTIFYALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Using notify() rather than notifyAll()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UL-UNRELEASED-LOCK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method does not release lock on all paths"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UL-UNRELEASED-LOCK-EXCEPTION-PATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method does not release lock on all exception paths"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MWN-MISMATCHED-WAIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Mismatched wait()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MWN-MISMATCHED-NOTIFY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Mismatched notify()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "LI-LAZY-INIT-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Incorrect lazy initialization of static field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "LI-LAZY-INIT-UPDATE-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Incorrect lazy initialization and update of static field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "JLM-JSR166-UTILCONCURRENT-MONITORENTER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization performed on util.concurrent instance"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "JML-JSR166-CALLING-WAIT-RATHER-THAN-AWAIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Using monitor style wait methods on util.concurrent abstraction"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "JLM-JSR166-LOCK-MONITORENTER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Synchronization performed on Lock"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SWL-SLEEP-WITH-LOCK-HELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method calls Thread.sleep() with a lock held"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-RETURN-VALUE-OF-PUTIFABSENT-IGNORED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Return value of putIfAbsent ignored, value passed to putIfAbsent reused"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NOISE-NULL-DEREFERENCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bogus warning about a null pointer dereference"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NOISE-METHOD-CALL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bogus warning about a method call"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NOISE-FIELD-REFERENCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bogus warning about a field reference"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NOISE-OPERATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Bogus warning about an operation"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HSC-HUGE-SHARED-STRING-CONSTANT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Huge string constants is duplicated across multiple class files"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-BLOCKING-METHODS-ON-URL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "The equals and hashCode methods of URL are blocking"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-COLLECTION-OF-URLS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Maps and sets of URLs can be performance hogs"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-STRING-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes inefficient new String(String) constructor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-STRING-VOID-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes inefficient new String() constructor"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-STRING-TOSTRING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes toString() method on a String"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-GC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Explicit garbage collection; extremely dubious except in benchmarking code"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-BOOLEAN-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes inefficient Boolean constructor; use Boolean.valueOf(…) instead"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-NUMBER-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes inefficient Number constructor; use static valueOf instead"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-FP-NUMBER-CTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method invokes inefficient floating-point Number constructor; use static valueOf instead"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-BOXED-PRIMITIVE-TOSTRING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method allocates a boxed primitive just to call toString"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-BOXED-PRIMITIVE-FOR-PARSING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Boxing/unboxing to parse a primitive"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-BOXED-PRIMITIVE-FOR-COMPARE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Boxing a primitive to compare"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BX-UNBOXED-AND-COERCED-FOR-TERNARY-OPERATOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Primitive value is unboxed and coerced for ternary operator"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BX-UNBOXING-IMMEDIATELY-REBOXED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Boxed value is unboxed and then immediately reboxed"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BX-BOXING-IMMEDIATELY-UNBOXED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Primitive value is boxed and then immediately unboxed"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BX-BOXING-IMMEDIATELY-UNBOXED-TO-PERFORM-COERCION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Primitive value is boxed then unboxed to perform primitive coercion"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-NEW-FOR-GETCLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method allocates an object, only to get the class object"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DM-NEXTINT-VIA-NEXTDOUBLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Use the nextInt method of Random rather than nextDouble to generate a random integer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SS-SHOULD-BE-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unread field: should this field be static?"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UUF-UNUSED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unused field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "URF-UNREAD-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unread field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SIC-INNER-SHOULD-BE-STATIC",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Should be a static inner class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SIC-INNER-SHOULD-BE-STATIC-NEEDS-THIS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Could be refactored into a static inner class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SIC-INNER-SHOULD-BE-STATIC-ANON",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Could be refactored into a named static inner class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UPM-UNCALLED-PRIVATE-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Private method is never called"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SBSC-USE-STRINGBUFFER-CONCATENATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method concatenates strings using + in a loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIL-ELEMENTS-GET-LENGTH-IN-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "NodeList.getLength() called in a loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIL-PREPARE-STATEMENT-IN-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method calls prepareStatement in a loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIL-PATTERN-COMPILE-IN-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method calls Pattern.compile in a loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIL-PATTERN-COMPILE-IN-LOOP-INDIRECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method compiles the regular expression in a loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIO-INEFFICIENT-INDEX-OF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Inefficient use of String.indexOf(String)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IIO-INEFFICIENT-LAST-INDEX-OF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Inefficient use of String.lastIndexOf(String)"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ITA-INEFFICIENT-TO-ARRAY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method uses toArray() with zero-length array argument"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "WMI-WRONG-MAP-ITERATOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Inefficient use of keySet iterator instead of entrySet iterator"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UM-UNNECESSARY-MATH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method calls static Math class method on a constant value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IMA-INEFFICIENT-MEMBER-ACCESS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method accesses a private member variable of owning class"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "XSS-REQUEST-PARAMETER-TO-SEND-ERROR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Servlet reflected cross site scripting vulnerability in error page"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "XSS-REQUEST-PARAMETER-TO-SERVLET-WRITER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Servlet reflected cross site scripting vulnerability"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "XSS-REQUEST-PARAMETER-TO-JSP-WRITER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "JSP reflected cross site scripting vulnerability"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HRS-REQUEST-PARAMETER-TO-HTTP-HEADER",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "HTTP Response splitting vulnerability"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "HRS-REQUEST-PARAMETER-TO-COOKIE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "HTTP cookie formed from untrusted input"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "PT-ABSOLUTE-PATH-TRAVERSAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Absolute path traversal in servlet"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "PT-RELATIVE-PATH-TRAVERSAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Relative path traversal in servlet"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-CONSTANT-DB-PASSWORD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Hardcoded constant database password"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-EMPTY-DB-PASSWORD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Empty database password"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SQL-NONCONSTANT-STRING-PASSED-TO-EXECUTE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Nonconstant string passed to execute or addBatch method on an SQL statement"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SQL-PREPARED-STATEMENT-GENERATED-FROM-NONCONSTANT-STRING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A prepared statement is generated from a nonconstant String"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CAA-COVARIANT-ARRAY-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant array assignment to a field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CAA-COVARIANT-ARRAY-RETURN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant array is returned from the method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CAA-COVARIANT-ARRAY-LOCAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Covariant array assignment to a local variable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-UNSUPPORTED-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Call to unsupported method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-THREAD-PASSED-WHERE-RUNNABLE-EXPECTED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Thread passed where Runnable expected"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-DEREFERENCE-OF-READLINE-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dereference of the result of readLine() without nullcheck"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-IMMEDIATE-DEREFERENCE-OF-READLINE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Immediate dereference of the result of readLine()"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-REM-OF-RANDOM-INT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Remainder of 32-bit signed random integer"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-REM-OF-HASHCODE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Remainder of hashCode could be negative"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-UNUSUAL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unusual equals method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "EQ-DOESNT-OVERRIDE-EQUALS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class doesn’t override equals in superclass"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NS-NON-SHORT-CIRCUIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Questionable use of non-short-circuit logic"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NS-DANGEROUS-NON-SHORT-CIRCUIT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Potentially dangerous use of non-short-circuit logic"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IC-INIT-CIRCULARITY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Initialization circularity"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IA-AMBIGUOUS-INVOCATION-OF-INHERITED-OR-OUTER-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Potentially ambiguous invocation of either an inherited or outer method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-PRIVATE-READ-RESOLVE-NOT-INHERITED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Private readResolve method not inherited by subclasses"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SE-TRANSIENT-FIELD-OF-NONSERIALIZABLE-CLASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Transient field of class that isn’t Serializable."
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SF-SWITCH-FALLTHROUGH",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Switch statement found where one case falls through to the next case"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SF-SWITCH-NO-DEFAULT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Switch statement found where default case is missing"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UUF-UNUSED-PUBLIC-OR-PROTECTED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unused public or protected field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "URF-UNREAD-PUBLIC-OR-PROTECTED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unread public/protected field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "QF-QUESTIONABLE-FOR-LOOP",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Complicated, subtle or wrong increment in for-loop"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-UNWRITTEN-PUBLIC-OR-PROTECTED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Read of unwritten public or protected field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UWF-FIELD-NOT-INITIALIZED-IN-CONSTRUCTOR",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Field not initialized in constructor but dereferenced without null check"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UWF-UNWRITTEN-PUBLIC-OR-PROTECTED-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unwritten public or protected field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UC-USELESS-VOID-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless non-empty void method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UC-USELESS-CONDITION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Condition has no effect"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UC-USELESS-CONDITION-TYPE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Condition has no effect due to the variable type"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UC-USELESS-OBJECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless object created"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UC-USELESS-OBJECT-STACK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless object created on stack"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-RETURN-VALUE-IGNORED-INFERRED",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method ignores return value, is this OK?"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-RETURN-VALUE-IGNORED-NO-SIDE-EFFECT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Return value of method without side effect is ignored"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-CHECK-FOR-POSITIVE-INDEXOF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method checks to see if result of String.indexOf is positive"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RV-DONT-JUST-NULL-CHECK-READLINE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method discards result of readLine after checking if it is non-null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-PARAMETER-MUST-BE-NONNULL-BUT-MARKED-AS-NULLABLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Parameter must be non-null but is marked as nullable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-ON-SOME-PATH-FROM-RETURN-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible null pointer dereference due to return value of called method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-NULL-ON-SOME-PATH-MIGHT-BE-INFEASIBLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Possible null pointer dereference on branch that might be infeasible"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-LOAD-OF-KNOWN-NULL-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Load of known null value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "PZLA-PREFER-ZERO-LENGTH-ARRAYS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Consider returning a zero length array rather than null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UCF-USELESS-CONTROL-FLOW",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless control flow"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "UCF-USELESS-CONTROL-FLOW-NEXT-LINE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless control flow to next line"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RCN-REDUNDANT-NULLCHECK-OF-NULL-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Redundant nullcheck of value known to be null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RCN-REDUNDANT-NULLCHECK-OF-NONNULL-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Redundant nullcheck of value known to be non-null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RCN-REDUNDANT-COMPARISON-TWO-NULL-VALUES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Redundant comparison of two null values"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RCN-REDUNDANT-COMPARISON-OF-NULL-AND-NONNULL-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Redundant comparison of non-null value to null"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-LOCAL-SELF-ASSIGNMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Self assignment of local variable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-BAD-REM-BY-1",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Integer remainder modulo 1"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-VACUOUS-COMPARISON",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Vacuous comparison of integer value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "INT-VACUOUS-BIT-OPERATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Vacuous bit mask operation on integer value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-LOCAL-DOUBLE-ASSIGNMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Double assignment of local variable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "SA-FIELD-DOUBLE-ASSIGNMENT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Double assignment of field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-LOCAL-STORE-IN-RETURN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Useless assignment in return statement"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-LOCAL-STORE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store to local variable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-LOCAL-STORE-SHADOWS-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store to local variable that shadows field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DLS-DEAD-LOCAL-STORE-OF-NULL",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Dead store of null to local variable"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "REC-CATCH-EXCEPTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Exception is caught when Exception is not thrown"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "FE-FLOATING-POINT-EQUALITY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Test for floating point equality"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CD-CIRCULAR-DEPENDENCY",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Test for circular dependencies among classes"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "RI-REDUNDANT-INTERFACES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class implements same interface as superclass"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MTIA-SUSPECT-STRUTS-INSTANCE-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class extends Struts Action class and uses instance variables"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "MTIA-SUSPECT-SERVLET-INSTANCE-FIELD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class extends Servlet class and uses instance variables"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "PS-PUBLIC-SEMAPHORES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class exposes synchronization and semaphores in its public interface"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-INTEGER-MULTIPLY-CAST-TO-LONG",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Result of integer multiplication cast to long"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-IDIV-CAST-TO-DOUBLE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Integral division result cast to double or float"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-BAD-CAST-TO-CONCRETE-COLLECTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Questionable cast to concrete collection"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-UNCONFIRMED-CAST",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unchecked/unconfirmed cast"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-UNCONFIRMED-CAST-OF-RETURN-VALUE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unchecked/unconfirmed cast of return value from method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-VACUOUS-INSTANCEOF",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "instanceof will always return true"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "BC-BAD-CAST-TO-ABSTRACT-COLLECTION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Questionable cast to abstract collection"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IM-BAD-CHECK-FOR-ODD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Check for oddness that won’t work for negative numbers"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "IM-AVERAGE-COMPUTATION-COULD-OVERFLOW",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Computation of average could overflow"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ICAST-QUESTIONABLE-UNSIGNED-RIGHT-SHIFT",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Unsigned right shift cast to short/byte"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-HARDCODED-ABSOLUTE-FILENAME",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Code contains a hard coded reference to an absolute pathname"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-USELESS-SUBSTRING",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Invocation of substring(0), which returns the original value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "ST-WRITE-TO-STATIC-FROM-INSTANCE-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Write to static field from instance method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DMI-NONSERIALIZABLE-OBJECT-WRITTEN",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Non serializable object written to ObjectOutput"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DB-DUPLICATE-BRANCHES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method uses the same code for two branches"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "DB-DUPLICATE-SWITCH-CLAUSES",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method uses the same code for two switch clauses"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "XFB-XML-FACTORY-BYPASS",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method directly allocates a specific implementation of xml interfaces"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "USM-USELESS-SUBCLASS-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method superfluously delegates to parent class method"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "USM-USELESS-ABSTRACT-METHOD",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Abstract Method is already defined in implemented interface"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "CI-CONFUSED-INHERITANCE",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Class is final but declares protected field"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-EXPLICIT-UNKNOWN-SOURCE-VALUE-REACHES-NEVER-SINK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value required to not have type qualifier, but marked as unknown"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "TQ-EXPLICIT-UNKNOWN-SOURCE-VALUE-REACHES-ALWAYS-SINK",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Value required to have type qualifier, but marked as unknown"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-METHOD-RETURN-RELAXING-ANNOTATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method relaxes nullness annotation on return value"
+    },
+    {
+        "checkerLanguage": [
+            "JAVA"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "NP-METHOD-PARAMETER-TIGHTENS-ANNOTATION",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "Method tightens nullness annotation on parameter"
+    }
+]

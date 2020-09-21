@@ -1,0 +1,12 @@
+{
+    "name": "SPOTBUGS",
+    "displayName": "SpotBugs",
+    "type": "DEFECT",
+    "briefIntroduction": "",
+    "supportedLanguages": ["JAVA"],
+    "dockerTriggerShell": "python3 ./src/spotbugs.py --input={input.json} --output={output.json}",
+    "dockerImageURL": "csighub.tencentyun.com/codecc/spotbugs",
+    "toolScanCommand": "python3 ./src/spotbugs.py --input={input.json} --output={output.json}",
+    "toolRunType": "local",
+    "dockerImageVersion": "latest"
+}

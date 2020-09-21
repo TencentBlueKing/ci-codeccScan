@@ -1,0 +1,10 @@
+{
+    "scanType": "full",
+    "openCheckers": [
+        {
+            "checkerName": "RCN-REDUNDANT-NULLCHECK-OF-NONNULL-VALUE"
+        }
+    ],
+    "scanPath": "/data/iegci/test_tool/spotbugs/",
+    "buildScript": "./1.sh"
+}
