@@ -1,0 +1,5 @@
+{
+    "workspace":["/data/landun/workspace"],
+    "bk_ci_hook_source_branch": "support_auto_tool_scan",
+    "bk_ci_hook_target_branch": "master"
+}

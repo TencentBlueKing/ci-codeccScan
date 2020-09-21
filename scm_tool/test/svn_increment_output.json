@@ -1,0 +1,29 @@
+{
+    "scm_increment": [
+        {
+            "deleteFileList": [
+                "E:\\test_code\\Python-3.5.1\\jimxcai"
+            ],
+            "latestRevision": "252",
+            "updateFileList": [
+                "E:\\test_code\\Python-3.5.1\\Include\\abstract.h",
+                "E:\\test_code\\Python-3.5.1\\demo.cpp"
+            ]
+        },
+        {
+            "deleteFileList": [
+                "E:\\test_code\\Python-3.5.1_2\\testbuild.py"
+            ],
+            "latestRevision": "557",
+            "updateFileList": [
+                "E:\\test_code\\Python-3.5.1_2\\Doc\\binlog_record.cpp",
+                "E:\\test_code\\Python-3.5.1_2\\Include\\abstract.h",
+                "E:\\test_code\\Python-3.5.1_2\\Include\\ast.h",
+                "E:\\test_code\\Python-3.5.1_2\\Modules\\expat\\xmlparse.c",
+                "E:\\test_code\\Python-3.5.1_2\\website\\content\\js\\apply.js",
+                "E:\\test_code\\Python-3.5.1_2\\website\\content\\js\\base.js",
+                "E:\\test_code\\Python-3.5.1_2\\setup.py"
+            ]
+        }
+    ]
+}
