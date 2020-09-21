@@ -1,0 +1,865 @@
+{
+    "buildScript": "/data/landun/workspace/.temp/codecc_coverity_b-960e382ff8ce4692874799aeeb86e883/CODECC_8DDB382985370163_stylecop/b-960e382ff8ce4692874799aeeb86e883.sh",
+    "incrementalFiles": [],
+    "openCheckers": [
+        {
+        
+            "checkerName": "AllAccessorsMustBeMultiLineOrSingleLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "AttributeConstructorMustNotUseUnnecessaryParenthesis",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "BlockStatementsMustNotContainEmbeddedRegions",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingParenthesisMustBeOnLineOfLastParameter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingParenthesisMustBeOnLineOfOpeningParenthesis",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainEmptyStatements",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainMultipleStatementsOnOneLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CommaMustBeOnSameLineAsPreviousParameter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CommentsMustContainText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ConditionalExpressionsMustDeclarePrecedence",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ConstFieldNamesMustBeginWithUpperCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CurlyBracketsForMultiLineStatementsMustNotShareLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DoNotPlaceRegionsWithinElements",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DoNotUseRegions",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementMustNotBeOnSingleLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileMayOnlyContainASingleClass",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileMayOnlyContainASingleNamespace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InterfaceNamesMustBeginWithI",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningParenthesisMustBeOnDeclarationLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ParameterListMustFollowDeclaration",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ParameterMustNotSpanMultipleLines",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertyAccessorsMustFollowOrder",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ProtectedMustComeBeforeInternal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "RemoveDelegateParenthesisWhenPossible",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "RemoveUnnecessaryCode",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StatementMustNotBeOnSingleLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StaticReadonlyElementsMustAppearBeforeStaticNonReadonlyElements",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StaticReadonlyFieldsMustBeginWithUpperCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UsingStaticDirectivesMustBePlacedAtTheCorrectLocation",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DoNotPrefixCallsWithBaseUnlessLocalImplementationExists",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PrefixCallsCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PrefixLocalCallsWithThis",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "AccessibleFieldsMustBeginWithUpperCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ArithmeticExpressionsMustDeclarePrecedence",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "BlockStatementsMustNotContainEmbeddedComments",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ChainedStatementBlocksMustNotBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClassFieldShouldNotBePublicOrProtected",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingAttributeBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingCurlyBracketMustBeFollowedByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingCurlyBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingCurlyBracketsMustNotBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingGenericBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingParenthesisMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ClosingSquareBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainBlankLinesAtEndOfFile",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainBlankLinesAtStartOfFile",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainMultipleBlankLinesInARow",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainMultipleWhitespaceInARow",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeMustNotContainSpaceAfterNewKeywordInImplicitlyTypedArrayAllocation",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ColonsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CommasMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ConstantsMustAppearBeforeFields",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ConstructorSummaryDocumentationMustBeginWithStandardText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CurlyBracketsMustNotBeOmitted",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DeclarationKeywordsMustFollowOrder",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DelegateNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DelegateNameShouldEndsWithEventHandler",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DereferenceAndAccessOfSymbolsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DestructorSummaryDocumentationMustBeginWithStandardText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DoNotSplitNullConditionalOperators",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationHeadersMustNotContainBlankLines",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationLinesMustBeginWithSingleSpace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationMustContainValidXml",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationMustMeetCharacterPercentage",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationTextMustBeginWithACapitalLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationTextMustContainWhitespace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationTextMustEndWithAPeriod",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationTextMustMeetMinimumCharacterLength",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DocumentationTextMustNotBeEmpty",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationHeaderMustBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationHeadersMustNotBeFollowedByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationMustBeSpelledCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationMustHaveSummary",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationMustHaveSummaryText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationMustNotBeCopiedAndPasted",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementDocumentationMustNotHaveDefaultSummary",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementMustBeginWithLowerCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementMustBeginWithUpperCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementParameterDocumentationMustDeclareParameterName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementParameterDocumentationMustHaveText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementParameterDocumentationMustMatchElementParameters",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementParametersMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementReturnValueDocumentationMustHaveText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementReturnValueMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementsMustAppearInTheCorrectOrder",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementsMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementsMustBeOrderedByAccess",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ElementsMustBeSeparatedByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EnumItemNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EnumItemNameShouldNotContainEnumName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EnumNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EnumNameShouldNotContainEnum",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EnumerationItemsMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EventAccessorsMustFollowOrder",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "EventNameShouldEndsWithEvent",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNameShouldNotContainStructName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNamesMustBeginWithLowerCaseLetter",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNamesMustNotBeginWithUnderscore",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNamesMustNotContainUnderscore",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldNamesMustNotUseHungarianNotation",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileEncodingUTF8",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHasCR",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderCompanyNameTextMustMatch",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderCopyrightTextMustMatch",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderFileNameDocumentationMustMatchFileName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderFileNameDocumentationMustMatchTypeName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderMustContainFileName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderMustHaveCopyrightText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderMustHaveSummary",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderMustHaveValidCompanyText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileHeaderMustShowCopyright",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileMustHaveHeader",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileNameShouldBePacal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileShouldHaveHeaderDescription",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FileShouldHaveSpecDesc",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "GenericTypeParameterDocumentationMustDeclareParameterName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "GenericTypeParameterDocumentationMustHaveText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "GenericTypeParameterDocumentationMustMatchTypeParameters",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "GenericTypeParametersMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "GenericTypeParametersMustBeDocumentedPartialClass",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "IncludeNodeDoesNotContainValidFileAndPath",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "IncludedDocumentationFileDoesNotExist",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "IncludedDocumentationXPathDoesNotExist",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "IncrementDecrementSymbolsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InheritDocMustBeUsedWithInheritingClass",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InterfaceNamingPascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InterfaceNamingStartWithI",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "InterfaceNamingUnderscore",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "KeywordsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "MemberAccessSymbolsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "MethodNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "MethodParameterHasUnderscore",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "MethodParameterShouldBeCamel",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "NamespaceShouldContainGCloud",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "NegativeSignsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "NullableTypeSymbolsMustNotBePrecededBySpace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningAttributeBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningCurlyBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningCurlyBracketsMustNotBeFollowedByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningCurlyBracketsMustNotBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningGenericBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningParenthesisMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OpeningSquareBracketsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "OperatorKeywordMustBeFollowedBySpace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ParameterMustFollowComma",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ParametersMustBeOnSameLineOrSeparateLines",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PartialElementDocumentationMustHaveSummary",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PartialElementDocumentationMustHaveSummaryText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PartialElementsMustBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PartialElementsMustDeclareAccess",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PositiveSignsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PreprocessorKeywordsMustNotBePrecededBySpace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertyDocumentationMustHaveValue",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertyDocumentationMustHaveValueText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertyNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertySummaryDocumentationMustMatchAccessors",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "PropertySummaryDocumentationMustOmitSetAccessorWithRestrictedAccess",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "QueryClauseMustBeginOnNewLineWhenPreviousClauseSpansMultipleLines",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "QueryClauseMustFollowPreviousClause",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "QueryClausesMustBeOnSeparateLinesOrAllOnOneLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "QueryClausesSpanningMultipleLinesMustBeginOnOwnLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SemicolonsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "ShouldContainRegionBlock",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SingleLineCommentMustBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SingleLineCommentsMustBeginWithSingleSpace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SingleLineCommentsMustNotBeFollowedByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SingleLineCommentsMustNotUseDocumentationStyleSlashes",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SplitParametersMustStartOnLineAfterDeclaration",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StatementMustNotUseUnnecessaryParenthesis",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StaticElementsMustAppearBeforeInstanceElements",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StructNameShouldBePascal",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "StructNameShouldNotContainStruct",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SymbolsMustBeSpacedCorrectly",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TabsMustNotBeUsed",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UsingDirectivesMustBeOrderedAlphabeticallyByNamespace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UsingDirectivesMustBePlacedWithinNamespace",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "VariableNamesMustNotBePrefixed",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "VoidReturnValueMustNotBeDocumented",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "WhileDoFooterMustNotBePrecededByBlankLine",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "AccessModifierMustBeDeclared",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "CodeAnalysisSuppressionMustHaveJustification",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DebugAssertMustProvideMessageText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "DebugFailMustProvideMessageText",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "FieldsMustBePrivate",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UseBuiltInTypeAlias",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UseReadableConditions",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UseShorthandForNullableTypes",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "UseStringEmptyForEmptyStrings",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSABadIndentation",
+            "checkerOptions": [
+                {
+                    "checkerOptionName": "SpaceIndentationLength",
+                    "checkerOptionValue": "4"
+                }
+            ],
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSACommentRatio",
+            "checkerOptions": [
+                {
+                    "checkerOptionName": "MinimumCommentRatio",
+                    "checkerOptionValue": "10"
+                }
+            ],
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSAFileEncodingUTF8",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSAFileHasCR",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSAFileShouldHaveLicenseInfo",
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSAFunctionNameLength",
+            "checkerOptions": [
+                {
+                    "checkerOptionName": "FunctionNameLength",
+                    "checkerOptionValue": "35"
+                }
+            ],
+            "nativeChecker": true
+        },
+        {
+            "checkerName": "TOSALineLength",
+            "checkerOptions": [
+                {
+                    "checkerOptionName": "LineLength",
+                    "checkerOptionValue": "120"
+                }
+            ],
+            "nativeChecker": true
+        }
+    ],
+    "projName": "CODECC_8DDB382985370163",
+    "scanPath": "/data/landun/workspace",
+    "scanType": "full",
+    "skipPaths": [
+        ".*/Lib/.*",
+        ".*/jquery.*.js",
+        ".*/third_lib/.*",
+        ".*/vendors/.*",
+        ".*/lib_3rd/.*",
+        ".*/tool/.*",
+        ".*/ThirdPart/.*",
+        ".*/curl/.*",
+        ".*/extensions/.*",
+        ".*/tools/.*",
+        ".*/tinyxml2/.*",
+        ".*/lib(s)/.*",
+        ".*/thirdparty/.*",
+        ".*/third-party/.*",
+        ".*/TDRExported/.*",
+        ".*/.temp/.*",
+        ".*/.svn/.*",
+        ".*/.git/.*"
+    ],
+    "toolOptions": [
+        {
+            "optionName": "SHELL",
+            "optionValue": "# \u60a8\u53ef\u4ee5\u901a\u8fc7setEnv\u51fd\u6570\u8bbe\u7f6e\u539f\u5b50\u95f4\u4f20\u9012\u7684\u53c2\u6570\n# setEnv \"FILENAME\" \"package.zip\"\n# \u7136\u540e\u5728\u540e\u7eed\u7684\u539f\u5b50\u7684\u8868\u5355\u4e2d\u4f7f\u7528${FILENAME}\u5f15\u7528\u8fd9\u4e2a\u53d8\u91cf\n# \u8bf7\u4f7f\u7528\u4f9d\u8d56\u7684\u6784\u5efa\u5de5\u5177\u5982maven/cmake\u7b49\u5199\u4e00\u4e2a\u7f16\u8bd1\u811a\u672cbuild.sh\n# \u786e\u4fddbuild.sh\u80fd\u591f\u7f16\u8bd1\u4ee3\u7801\n# cd path/to/build.sh\n# sh build.sh\n",
+            "osType": "LINUX"
+        }
+    ]
+}

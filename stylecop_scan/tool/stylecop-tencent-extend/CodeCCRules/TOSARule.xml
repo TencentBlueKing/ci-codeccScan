@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SourceAnalyzer Name="CodeCC Rule">
+    <Description> this is CodeCC Rule for StyleCop. </Description>
+    <Properties>
+        <IntegerProperty
+            Name="LineLength"
+            DefaultValue="100"
+            FriendlyName="Line Length"
+            Description="Line Length should not be too long"
+        />
+        <IntegerProperty
+            Name="FunctionNameLength"
+            DefaultValue="35"
+            FriendlyName="Function Name Length"
+            Description="Function Name Length should not be too long"
+        />
+        <IntegerProperty
+                Name="SpaceIndentationLength"
+                DefaultValue="4"
+                FriendlyName="Space Indentation Length"
+                Description="Bad indentation"
+        />
+        <IntegerProperty
+                Name="MinimumCommentRatio"
+                DefaultValue="35"
+                FriendlyName="Minimum comment ratio"
+                Description="Require a minimum comment ratio"
+        />
+    </Properties>       
+    <Rules>
+        <RuleGroup Name="TOSARules">
+            <Rule Name="TOSAFileShouldHaveLicenseInfo" CheckId="TO0001">
+                <Context>文件头没有包含腾讯开源相关协议信息</Context>
+                <Description>tosa license not found</Description>
+            </Rule>
+            <Rule Name="TOSAFileEncodingUTF8" CheckId="TO0002">
+                <Context>文件不是UTF8编码</Context>
+                <Description>tosa license not found</Description>
+            </Rule>
+            <Rule Name="TOSAFileHasCR" CheckId="TO0003">
+                <Context>文件存在回车键(CR)，只能使用换行符(LF)</Context>
+                <Description>tosa license not found</Description>
+            </Rule>
+            <Rule Name="TOSAFunctionNameLength" CheckId="TO0004">
+                <Context>方法名长度过长，不应该超过{0}个字符</Context>
+                <Description>function name should not be too long</Description>
+            </Rule>
+            <Rule Name="TOSALineLength" CheckId="TO0005">
+                <Context>该行字符数过多，不应该超过{0}个字符</Context>
+                <Description>line length should not be too long</Description>
+            </Rule>
+            <Rule Name="TOSACommentRatio" CheckId="TO0006">
+                <Context>代码注释率{0:0.00}%低于{1:0.00}%</Context>
+                <Description>require a minimum comment ratio</Description>
+            </Rule>
+            <Rule Name="TOSABadIndentation" CheckId="TO0007">
+                <Context>{0}</Context>
+                <Description>bad indentation</Description>
+            </Rule>
+        </RuleGroup>
+    </Rules>
+</SourceAnalyzer>
