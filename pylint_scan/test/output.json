@@ -1,0 +1,16 @@
+{
+    "defects": [
+        {
+            "checkerName": null,
+            "description": "Parsing error: Unexpected token\n\n> 1 | <?php\n    |  ^\n  2 | class Procontrol extends BaseController {\n  3 | \t//\u9879\u76ee\u8be6\u60c5\u9875\u9762\n  4 |     /*barryflash-2017-3-27*/",
+            "filePath": "/data/landun/workspace/application/controllers/procontrol.php",
+            "line": 1
+        },
+        {
+            "checkerName": null,
+            "description": "Parsing error: Unexpected token\n\n> 1 | <!DOCTYPE html>\n    |  ^\n  2 | <html lang=\"en\">\n  3 | <head>\n  4 |     <meta charset=\"UTF-8\">",
+            "filePath": "/data/landun/workspace/application/views/procontrol/ccndatareport.php",
+            "line": 1
+        }
+    ]
+}
