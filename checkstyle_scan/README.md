@@ -49,7 +49,7 @@ docker run -it checkstyle_scan:latest /bin/bash -c "cd /usr/codecc/tool_scan; py
 ### output.json字段说明:
 | 字段名 | 说明 |
 | --- | --- |
-| defects | 方法圈复杂度告警列表 |
+| defects | 告警列表 |
 | filePath | 文件路径 |
 | line | 文件行 |
 | checkerName | 规则名称 |
