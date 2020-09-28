@@ -19,14 +19,13 @@ complexity : 0.1.1
 
 ### input.json模版：
 
-{"projName":"DEVOPS_214A69F1F4F935DE","scanPath":"/data/project/code ","language":32,"whitePathList":[],"scanType":"full","skipPaths":[".*/\\.svn/.*",".*/\\.git/.*",".*/\\.temp/.*",".*/\\.git"],"incrementalFiles":[],"openCheckers":[{"checkerName":"CCN_threshold","nativeChecker":true,"checkerOptions":[{"checkerOptionName":"ccn_threshold","checkerOptionValue":"30"}]}]}
+{"projName":"DEVOPS_214A69F1F4F935DE","scanPath":"/data/project/code ","whitePathList":[],"scanType":"full","skipPaths":[".*/\\.svn/.*",".*/\\.git/.*",".*/\\.temp/.*",".*/\\.git"],"incrementalFiles":[],"openCheckers":[{"checkerName":"CCN_threshold","nativeChecker":true,"checkerOptions":[{"checkerOptionName":"ccn_threshold","checkerOptionValue":"30"}]}]}
 
 ### input.json字段说明:
 | 字段名 | 说明 | 举例 |
 | --- | --- | --- |
 | projName | 项目名称 | DEVOPS_214A69F1F4F935DE |
 | scanPath | 待扫描的路径，此处需使用绝对路径 | /data/project/code |
-| language | 值为数字，参考附1描述 | 32 |
 | whitePathList | 指定扫描路径列表(白名单) | /data/project/code/src |
 | scanType | 进行全量或增量检查 | full或increment |
 | skipPaths | 屏蔽路径正则表达式列表(黑名单) | [".\*/demo/.\*", ".\*/protobuf/.\*"] |
@@ -46,6 +45,7 @@ docker run -it ccn_scan:latest /bin/bash -c "cd /usr/codecc/tool_scan; python3 .
 
 ### output.json字段说明:
 | 字段名 | 说明 |
+| --- | --- |
 | defects | 方法圈复杂度告警列表 |
 | filePath | 文件路径 |
 | ccn | 方法圈复杂度值 |
@@ -59,19 +59,22 @@ docker run -it ccn_scan:latest /bin/bash -c "cd /usr/codecc/tool_scan; python3 .
 | filesTotalCCN | 文件平均圈复杂度数列表 |
 | total_ccn_count | 文件平均圈复杂度数 |
 
+
 ### 附1：
 以下为语言对应数字，如果项目存在多语言，则数字相加：
-1: cs
-2: cpp
-4: java
-8: php
-16: objectivec
-32: python
-64: ecmascript;vue
-128: ruby
-512: go
-1024: swift
-4096: kotlin
+| 数字 | 对应语言 |
+| --- | --- |
+| 1 | cs |
+| 2 | cpp |
+| 4 | java |
+| 8 | php |
+| 16 | objectivec |
+| 32 | python |
+| 64 | js |
+| 128 | ruby |
+| 512 | go |
+| 1024 | swift |
+| 4096 | kotlin |
 
 ### 附2 规则对应表
 | 规则名 | 规则描述 | 适用语言 |
