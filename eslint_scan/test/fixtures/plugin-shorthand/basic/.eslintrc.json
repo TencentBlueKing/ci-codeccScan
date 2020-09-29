@@ -1,7 +1,0 @@
-{
-    "root": true,
-    "plugins": ["@scope"],
-    "rules": {
-        "@scope/rule": "error"
-    }
-}
