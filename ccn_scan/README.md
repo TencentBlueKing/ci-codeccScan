@@ -60,23 +60,6 @@ docker run -it ccn_scan:latest /bin/bash -c "cd /usr/codecc/tool_scan; python3 .
 | filesTotalCCN | 文件平均圈复杂度数列表 |
 | total_ccn_count | 文件平均圈复杂度数 |
 
-
-### 附1：
-以下为语言对应数字，如果项目存在多语言，则数字相加：
-| 数字 | 对应语言 |
-| --- | --- |
-| 1 | cs |
-| 2 | cpp |
-| 4 | java |
-| 8 | php |
-| 16 | objectivec |
-| 32 | python |
-| 64 | js |
-| 128 | ruby |
-| 512 | go |
-| 1024 | swift |
-| 4096 | kotlin |
-
 ### 附2 规则对应表
 | 规则名 | 规则描述 | 适用语言 |
 | --- | --- | --- |
