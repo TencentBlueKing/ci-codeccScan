@@ -144,7 +144,7 @@ def main(argv):
             f.write(cla.strip() + '\n')
 
     spotBugsLog = scanPath + "/spotbugs.xml"
-    command = "java -jar " + subPath + "/../lib/spotbugs.jar -textui -low -xdocs -output " + spotBugsLog + " -analyzeFromFile " + classFiles
+    command = "java -jar " + subPath + "/lib/spotbugs.jar -textui -low -xdocs -output " + spotBugsLog + " -analyzeFromFile " + classFiles
     print("command: " + command)
     os.system(command)
 
