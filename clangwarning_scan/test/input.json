@@ -1,0 +1,11 @@
+{
+    "scanType": "full",
+    "openCheckers":[
+        {
+            "checkerName": "unused-function"
+        },{
+            "checkerName": "documentation"
+        }
+    ],
+    "scanPath": "/usr/codecc/tool_scan"
+}

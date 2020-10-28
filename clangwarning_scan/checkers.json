@@ -1,0 +1,1907 @@
+[
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "a symbol of warnings",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "#warnings",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "absolute value type or function cause warnings",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "absolute-value",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "performSelector may cause a leak because its selector is unknown",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "arc-performSelector-leaks",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "weak variable/property/implicit property/instance variable B is accessed multiple times in this function/method/block/lambda but may be unpredictably set to nil; assign to a strong variable to keep the object alive",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "arc-repeated-use-of-weak",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "capturing A strongly in this block is likely to lead to a retain cycle",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "arc-retain-cycles",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "assigning A to a weak property/variable; object will be released after assignment",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "arc-unsafe-retained-assign",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "writable atomic property A cannot pair a synthesized getter/setter with a user defined getter/setter",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "atomic-property-with-user-defined-accessor",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "unknown platform A in availability macro; availability does not match previous declaration",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "availability",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "block captures an autoreleasing out-parameter, which may result in use-after-free bugs",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "block-capture-autoreleasing",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "initialization of pointer of type A to null from a constant boolean expression",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "bool-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "redefining builtin macro; undefining builtin macro",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "builtin-macro-redefined",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "C++11产生的告警，如’A’ is a keyword in C++11; ‘auto’ storage class specifier is redundant and incompatible with C++11等",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "c++11-compat",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "conversion from string literal to A is deprecated",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "c++11-compat-deprecated-writable-strings",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "c99-extensions产生的告警如 ’A’ is a C99 extension; compound literals are a C99-specific feature等",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "c99-extensions",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "possible misuse of comma operator here",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "comma",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "// comments are not allowed in this language or multi-line // comment or ’/*’ within block comment",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "comment",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "comparison of distinct pointer types",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "compare-distinct-pointer-types",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "variable A may be uninitialized when used here/captured by block",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "conditional-uninitialized",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "implicit conversion from C to D changes value from A to B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "constant-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "add explicit braces to avoid dangling else",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "dangling-else",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "property access is using A method which is deprecated",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "deprecated-declarations",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "implementing unavailable method; implementing deprecated method/class/category",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "deprecated-implementations",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "‘register’ storage class specifier is deprecated and incompatible with C++17",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "deprecated-register",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "remainder/division by zero is undefined",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "division-by-zero",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "command should not be used in a comment attached to a non-container declaration",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "documentation",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "declaration is marked with ‘@ \\ deprecated’ command but does not have a deprecation attribute",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "documentation-deprecated-sync",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "HTML end tag ‘A’ is forbidden; HTML end tag does not match any start tag; HTML tag ‘A’ requires an end tag",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "documentation-html",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "multiple declarations of method A found and ignored",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "duplicate-method-match",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "duplicate protocol definition of A is ignored",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "duplicate-protocol",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "for loop/while loop/statement/range-based has empty body",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "empty-body",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "implicit conversion from enumeration type A to different enumeration type B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "enum-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "‘extern’ variable has an initializer",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "extern-initializer",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "extra tokens at end of #A directive; extra tokens at the end of ‘#pragma omp A’ are ignored",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "extra-tokens",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "use not valid format",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "format",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "data argument not used by format string",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "format-extra-args",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "invalid conversion specifier ‘A’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "format-invalid-specifier",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "format string is not a string literal (potentially insecure)",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "format-security",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "format string is empty",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "format-zero-length",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "type specifier missing, defaults to ‘int’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "implicit-int",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "block implicitly retains ‘self’; explicitly mention ‘self’ to indicate this is intended behavior",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "implicit-retain-self",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "incompatible pointer types",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "incompatible-pointer-types",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "action discards qualifiers in nested pointer types",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "incompatible-pointer-types-discards-qualifiers",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "property type A is incompatible with type B inherited from C",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "incompatible-property-type",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "method definition for A not found",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "incomplete-implementation",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "missing submodule ‘A’; umbrella directory ‘A’ not found; umbrella header for module ‘A’ does not include header ‘B’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "incomplete-umbrella",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A overrides a member function but is not marked ‘override’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "inconsistent-missing-override",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "all paths through this function will call itself",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "infinite-recursion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "incompatible integer to pointer conversion",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "int-conversions",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "cast integer type to pointer type",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "int-to-pointer-cast",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "cast integer type to void",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "int-to-void-pointer-cast",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "overflow in expression; result is A with type B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "integer-overflow",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "empty character constant; missing terminating '/“ character",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "invalid-pp-token",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "illegal character encoding in character literal/string literal",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "invalid-source-encoding",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "logical not is only applied to the left hand side of this comparison/bitwise operator",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "logical-not-parentheses",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "’&&’ within ‘||’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "logical-op-parentheses",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A macro redefined",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "macro-redefined",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "delete[] applied to a pointer that was allocated with new[]",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "mismatched-new-delete",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "conflicting parameter types in implementation of A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "mismatched-parameter-types",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "conflicting return type in implementation of A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "mismatched-return-types",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "declaration does not declare anything; ’A’ is not permitted on a declaration of a type",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "missing-declarations",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "parameter of overriding method should be annotated with __attribute__((noescape))",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "missing-noescape",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "no previous prototype for function A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "missing-prototypes",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A used as the name of the previous parameter rather than as part of the selector",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "missing-selector-name",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "multi-character character constant",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "multichar",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "expression which evaluates to zero treated as a null pointer constant of type A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "non-literal-null-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "null passed to a callee that requires a non-null argument; null returned from function/method that requires a non-null return value",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nonnull",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "non-portable path to file ‘A’; specified path differs in case from file name on disk",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nonportable-include-path",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "use of NULL in arithmetic operation; comparison between NULL and non-pointer",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "null-arithmetic",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "conflicting nullability specifier on parameter/return types",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nullability",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "pointer/block pointer/member pointer is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified)",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nullability-completeness",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "array parameter is missing a nullability type specifier (_Nonnull, _Nullable, or _Null_unspecified)",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nullability-completeness-on-arrays",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "inferring ‘_Nonnull’ for pointer type within array/reference is deprecated",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "nullability-inferred-on-nested-type",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "autosynthesized property A will use synthesized instance variable C, not existing instance variable D",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-autosynthesis-property-ivar-name-match",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "designated initializer missing a ‘super’ call to a designated initializer of the super class; designated initializer invoked a non-designated initializer",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-designated-initializers",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "implicit boolean conversion of Objective-C object literal always evaluates to true; type not compatible",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-literal-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "class/instance method not found",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-method-access",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "method possibly missing a [super A] call",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-missing-super-calls",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "multiple methods named A found",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-multiple-method-names",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "(class) property A requires method B to be defined",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-property-implementation",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "property follows Cocoa naming convention for returning ‘owned’ objects",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-property-matches-cocoa-ownership-rule",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "default property attribute ‘assign’ not appropriate for object",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-property-no-attribute",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "auto property synthesis will not synthesize property A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-property-synthesis",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "category is implementing a method which will also be implemented by its primary class",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-protocol-method-implementation",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "auto property synthesis will not synthesize property A declared in protocol B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-protocol-property-synthesis",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "class A defined without specifying a base class",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "objc-root-class",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "using the result of an assignment as a condition without parentheses; A has lower precedence than B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "parentheses",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "nonnull function call/parameter ’B’ will evaluate to ‘true’ on first encounter",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "pointer-bool-conversion",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "converts between pointers to integer types with different sign",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "pointer-sign",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "the current #pragma pack alignment value is modified in the included file; unterminated ‘#pragma pack (push, …)’ at end of file",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "pragma-pack",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "property attribute in class extension does not match the primary class",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "property-attribute-mismatch",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "method A in protocol B not implemented",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "protocol",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "receiver type A is not ‘id’ or interface pointer, consider casting it to ‘id’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "receiver-expr",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "receiver A is a forward class and corresponding @interface may not exist; receiver type A for instance message is a forward declaration",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "receiver-forward-class",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "returning address of label, which is local",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "return-stack-address",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "void function/constructor should not return a value; non-void function/lambda should return a value",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "return-type",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "not enough variable arguments in A declaration to fit a sentinel",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "sentinel",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "declaration shadows a local variable",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "shadow",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "implicit conversion loses integer precision: A to B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "shorten-64-to-32",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "variable A is used/captured uninitialized whenever some condition",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "sometimes-uninitialized",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "this function/block declaration is not a prototype",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "strict-prototypes",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "overflow converting case value to switch condition type (A to B); case value not in enumerated type A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "switch",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "aligning a value to 1 byte is a no-op/always true; comparison always evaluates to a constant/true/false",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "tautological-compare",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "result of comparison of constant A/true/false with boolean expression is always B",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "tautological-constant-out-of-range-compare",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "comparison of nonnull function call/parameter ‘B’ not equal to a null pointer is true/false on first encounter",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "tautological-pointer-compare",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "redefinition of typedef A is a C11 feature",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "typedef-redefinition",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A may be unavailable because the receiver type is unknown",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unavailable-declarations",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "undeclared selector A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "undeclared-selector",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A is only available on B C or newer",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unguarded-availability",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A is only available on B C or newer",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unguarded-availability-new",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "treating Unicode character <U+A> as identifier character rather than as ‘B’ symbol",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unicode-homoglyph",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "treating Unicode character as whitespace",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unicode-whitespace",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "A is uninitialized when used here",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "uninitialized",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "unknown escape sequence ‘\\A’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unknown-escape-sequence",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "unknown warning group/option ‘A’",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unknown-warning-option",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "function is not needed and will not be emitted",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unneeded-internal-declaration",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "code will never be executed",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unreachable-code",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "loop will run at most once (loop increment never executed)",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unreachable-code-loop-increment",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "@available does not guard availability here",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unsupported-availability-guard",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "comparison result unused",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-comparison",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "unused variable A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-const-variable",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "unused function A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-function",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "property access result unused - getters should not be used for side effects",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-getter-return-value",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "ignoring return value of function declared with A attribute",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-value",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "unused-variable",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "second argument to ‘va_start’ is not the last named parameter",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "varargs",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "declaration/redefinition of A will not be visible outside of this function",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "visibility",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    },
+    {
+        "checkerCategory": "CODE_DEFECT",
+        "checkerDesc": "ISO C++11 does not allow conversion from string literal to A",
+        "checkerLanguage": [
+            "OC"
+        ],
+        "checkerName": "writable-strings",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerTag": [
+            "编译器警告"
+        ],
+        "errExample": "",
+        "rightExample": "",
+        "severity": "1"
+    }
+]

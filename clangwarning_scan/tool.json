@@ -1,0 +1,12 @@
+{
+    "name": "CLANGWARNING",
+    "displayName": "ClangWarning",
+    "type": "DEFECT",
+    "briefIntroduction": "Clang编译器提供的警告信息，可在项目编译过程中扫描出代码警告",
+    "supportedLanguages": ["OC"],
+    "dockerTriggerShell": "/bin/bash##-c##\"python3 ./src/clangwarning.py --input={input.json} --output={output.json}\"",
+    "dockerImageURL": "csighub.tencentyun.com/codecc/clangwarning",
+    "toolScanCommand": "",
+    "toolRunType": "local",
+    "dockerImageVersion": "latest"
+}
