@@ -1,0 +1,58 @@
+#!/usr/bin/env node
+
+/**!
+ * cnpm - bin/cnpm-doc
+ *
+ * Copyright(c) cnpmjs.org and other contributors.
+ * MIT Licensed
+ *
+ * Authors:
+ *  fengmk2 <fengmk2@gmail.com> (http://fengmk2.github.com)
+ */
+
+'use strict';
+
+/**
+ * Module dependencies.
+ */
+
+var request = require('npm-request');
+var giturl = require('giturl');
+var utils = require('../utils');
+var argv = require('../parse_argv')('doc');
+var pkgName = argv.args[1];
+var docurl = argv.registryweb + '/package/' + pkgName;
+
+if (!pkgName) {
+  return argv.help();
+}
+
+if (!argv.git) {
+  return utils.openurl(docurl);
+}
+
+console.log('getting "%s" package info...', pkgName);
+request({
+  method: 'GET',
+  path: pkgName + '/latest'
+}, {
+  registry: argv.registry
+}, function (err, info) {
+  if (err) {
+    console.error(err);
+    process.exit(-1);
+  }
+
+  if (!info.name) {
+    console.log('"%s" package not exists', name);
+    process.exit(0);
+  }
+
+  var repository = info.repository;
+  if (!repository || !repository.url) {
+    return utils.openurl(docurl);
+  }
+
+  var url = giturl.parse(repository.url) || docurl;
+  utils.openurl(url);
+});
