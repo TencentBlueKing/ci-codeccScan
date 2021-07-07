@@ -1,4 +1,5 @@
-﻿import os, sys
+﻿import os
+import sys
 import json
 import shutil
 
@@ -26,17 +27,17 @@ def update_rule_config(properties_info):
                 if 'checkerName' in checker:
                     checkers_list.append(checker['checkerName'])
                 if 'checkerOptions' in checker:
-                      for option in checker['checkerOptions']:
-                          if 'checkerOptionName' in option and 'checkerOptionValue' in option:
-                              checker_options[option['checkerOptionName']] = option['checkerOptionValue']
+                    for option in checker['checkerOptions']:
+                        if 'checkerOptionName' in option and 'checkerOptionValue' in option:
+                            checker_options[option['checkerOptionName']] = option['checkerOptionValue']
 
         with open(rule_config_file, "w", encoding = 'utf-8') as file:
-                file.write('[MESSAGES CONTROL]\n')
-                file.write('[FORMAT]\n')
-                file.write('disable=all\n')
-                file.write('enable='+','.join(checkers_list)+'\n')
-                for key in checker_options.keys():
-                    file.write(key+'='+checker_options[key]+'\n')
+            file.write('[MESSAGES CONTROL]\n')
+            file.write('[FORMAT]\n')
+            file.write('disable=all\n')
+            file.write('enable='+','.join(checkers_list)+'\n')
+            for key in checker_options.keys():
+                file.write(key+'='+checker_options[key]+'\n')
 
     except Exception as e:
         raise Exception(e)

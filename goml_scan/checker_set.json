@@ -1,0 +1,62 @@
+{
+    "checker_set_id" : "standard_go",
+    "checker_set_name" : "腾讯代码规范(Golang)",
+    "checker_set_lang" : "GOLANG",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [ 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "goimports/notimport"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "tosa/linelength",
+            "props" : "[{\"displayValue\":\"120\",\"propValue\":\"120\",\"propName\":\"line-length\"}]"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/comment"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/fnsize",
+            "props" : "[{\"displayValue\":\"80\",\"propValue\":\"80\",\"propName\":\"fnsize\"}]"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/noptr"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/package"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/naming"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/funccomment"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/interfacecomment"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/funcret"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/funcpara"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "golint/nogoto"
+        }, 
+        {
+            "tool_name" : "GOML",
+            "checker_key" : "staticcheck/defer"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+2020.08.28:
+    1、修复了build/include规则会一并扫出多余的build/include_*告警的bug。
+    问题：cpplint.py源码中，检查build/include规则的函数会一并检查build/include_subdir、build/include_what_you_use、build/include_alpha、build/include_order规则。
+    调整内容：cpplint_external.py中在生成规则文件时，加入了 ‘当build/include规则打开时，把没有打开的build/include_*规则在其后进行关闭’
+
+    2、修复了检查规则build/head_guard抛出修改意见有误的bug。
+    问题：之前cpplint工具启动时没有注入启动选项—root，导致在扫描时头文件没有加上项目名前缀，和腾讯规范要求有出入。
+    调整内容：cpplint.py中在判断—root选项时，加入了当参数非项目中的路径选项时直接拼接结果前面（由于流水线特性，拉取代码时没有包含项目名）。CodeCC检查插件支持了在input.json里传入仓库路径，工具脚本内部截取仓库名作为项目名注入在—root后。
+    可能会出现的问题：当用户拉取代码时填入代码保存路径为项目(仓库)名时，--root=项目名 就会使得参数生效不再拼接(的确是项目下的路径)。详见cpplin.py源码注释。
+
+    3、修复了build/include规则对代码文件在根路径时误报not include header file的bug。
+    问题：代码文件在根路径时会由于头文件前没有任何路径而误报，这种情况腾讯规范中没有对其约束，工具侧对其做了适配。
+    调整内容：cpplint.py中对检查头文件的函数加入一处逻辑，当预期的头文件和文件在项目中的相对路径一致，并且存在于#include中即通过检查。
+
+
+2020.09.24:
+1、升级cpplint版本1.4.4到1.4.5，修复以下规则误报情况：告警数量会相对变少
+build/include_alpha build/include readability/utf8
+
+2020.11.12:
+1、修复cpplint.py的build/head_guard支持忽略SRC目录：
+代码行2138添加：
+  if '_SRC_' in cppvar:
+    cppvar = cppvar.replace('_SRC_', '_')
+
+2020.11.19:
+1、修复cpplint.py的build/namespaces 只对头文件做检查：
+代码行3019更改为：
+  elif isinstance(obj, _NamespaceInfo) and os.path.splitext(filename)[1][1:] in ['H','h','hh','hpp','hxx']:
+代码行5073更改为：
+  if os.path.splitext(filename)[1][1:] in ['H','h','hh','hpp','hxx']:
+代码行5122更改为：
+  and line[-1] != '\\') and os.path.splitext(filename)[1][1:] in ['H','h','hh','hpp','hxx']:
+
+2020.11.30:
+1、兼容build/head_guard告警支持头文件保护路径为.git根路径或带项目名称路径
+修改cpplint.py 行2140～2152
+  #支持以下两种模式：
+  #1、头文件保护路径为根路径开始
+  #2、头文件保护路径前面添加项目名称<project>
+  cppvar = cppvar_root = GetHeaderGuardCPPVariable(filename)
+
+  file_name_upper = re.sub(r'[^a-zA-Z0-9]', '_', os.path.basename(filename)).upper() + '_'
+  file_path = cppvar.replace(file_name_upper, '')
+
+  if not re.match('^'+_root.upper(), file_path):
+    cppvar_root = _root.upper() + '_' + cppvar
+
+  if '_SRC_' in cppvar:
+    cppvar = cppvar.replace('_SRC_', '_')
+
+  if '_SRC_' in cppvar_root:
+    cppvar_root = cppvar_root.replace('_SRC_', '_')

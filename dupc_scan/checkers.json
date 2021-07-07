@@ -1,0 +1,20 @@
+[
+{
+    "checkerName" : "DUPC_threshold", 
+    "checkerDesc" : "检查代码中不同位置的相同的代码片段。帮助开发者发现冗余代码，以便代码抽象和重构。", 
+    "severity" : 3, 
+    "checkerType" : "重复率",
+	"checkerTypeDesc":"检查代码中不同位置的相同的代码片段。帮助开发者发现冗余代码，以便代码抽象和重构。",
+    "checkerTypeSort" : "8", 
+    "editable" : false, 
+    "checkerLanguage" : [
+        "JAVA",  "SWIFT", "JS", "TYPESCRIPT", "PYTHON", "GOLANG", "OC", "PHP", "LUA", "C_CPP", "RUBY", "KOTLIN", "C_SHARP"
+    ], 
+    "checkerCategory" : "DUPLICATE", 
+    "checkerTag" : [
+        "系统推荐"
+    ], 
+    "checkerRecommend" : "SYSTEM_DEFAULT", 
+	"checkerProps": []
+}
+]

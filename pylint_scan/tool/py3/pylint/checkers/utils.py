@@ -34,6 +34,9 @@
 # Copyright (c) 2019 Nathan Marrow <nmarrow@google.com>
 # Copyright (c) 2019 Svet <svet@hyperscience.com>
 # Copyright (c) 2019 Pascal Corpet <pcorpet@users.noreply.github.com>
+# Copyright (c) 2020 Damien Baty <damien.baty@polyconseil.fr>
+# Copyright (c) 2020 Andrew Simmons <anjsimmo@gmail.com>
+# Copyright (c) 2020 Ram Rachum <ram@rachum.com>
 # Copyright (c) 2020 Slavfox <slavfoxman@gmail.com>
 # Copyright (c) 2020 Anthony Sottile <asottile@umich.edu>
 
@@ -50,12 +53,11 @@ import string
 from functools import lru_cache, partial
 from typing import Callable, Dict, Iterable, List, Match, Optional, Set, Tuple, Union
 
+import _string
 import astroid
 from astroid import bases as _bases
 from astroid import helpers, scoped_nodes
 from astroid.exceptions import _NonDeducibleTypeHierarchy
-
-import _string  # pylint: disable=wrong-import-position, wrong-import-order
 
 BUILTINS_NAME = builtins.__name__
 COMP_NODE_TYPES = (
@@ -374,13 +376,17 @@ def is_defined_before(var_node: astroid.Name) -> bool:
     return False
 
 
-def is_default_argument(node: astroid.node_classes.NodeNG) -> bool:
+def is_default_argument(
+    node: astroid.node_classes.NodeNG,
+    scope: Optional[astroid.node_classes.NodeNG] = None,
+) -> bool:
     """return true if the given Name node is used in function or lambda
     default argument's value
     """
-    parent = node.scope()
-    if isinstance(parent, (astroid.FunctionDef, astroid.Lambda)):
-        for default_node in parent.args.defaults:
+    if not scope:
+        scope = node.scope()
+    if isinstance(scope, (astroid.FunctionDef, astroid.Lambda)):
+        for default_node in scope.args.defaults:
             for default_name_node in default_node.nodes_of_class(astroid.Name):
                 if default_name_node is node:
                     return True
@@ -533,8 +539,8 @@ def parse_format_string(
 def split_format_field_names(format_string) -> Tuple[str, Iterable[Tuple[bool, str]]]:
     try:
         return _string.formatter_field_name_split(format_string)
-    except ValueError:
-        raise IncompleteFormatString()
+    except ValueError as e:
+        raise IncompleteFormatString() from e
 
 
 def collect_string_fields(format_string) -> Iterable[Optional[str]]:
@@ -566,7 +572,7 @@ def collect_string_fields(format_string) -> Iterable[Optional[str]]:
             yield ""
             yield "1"
             return
-        raise IncompleteFormatString(format_string)
+        raise IncompleteFormatString(format_string) from exc
 
 
 def parse_format_method_string(
@@ -591,8 +597,8 @@ def parse_format_method_string(
                 explicit_pos_args.add(str(keyname))
             try:
                 keyword_arguments.append((keyname, list(fielditerator)))
-            except ValueError:
-                raise IncompleteFormatString()
+            except ValueError as e:
+                raise IncompleteFormatString() from e
         else:
             implicit_pos_args_cnt += 1
     return keyword_arguments, implicit_pos_args_cnt, len(explicit_pos_args)
@@ -856,6 +862,24 @@ def find_try_except_wrapper_node(
 
     if current and isinstance(current.parent, ignores):
         return current.parent
+    return None
+
+
+def find_except_wrapper_node_in_scope(
+    node: astroid.node_classes.NodeNG,
+) -> Optional[Union[astroid.ExceptHandler, astroid.TryExcept]]:
+    """Return the ExceptHandler in which the node is, without going out of scope."""
+    current = node
+    while current.parent is not None:
+        current = current.parent
+        if isinstance(current, astroid.scoped_nodes.LocalsDictNodeNG):
+            # If we're inside a function/class definition, we don't want to keep checking
+            # higher ancestors for `except` clauses, because if these exist, it means our
+            # function/class was defined in an `except` clause, rather than the current code
+            # actually running in an `except` clause.
+            return None
+        if isinstance(current, astroid.ExceptHandler):
+            return current
     return None
 
 

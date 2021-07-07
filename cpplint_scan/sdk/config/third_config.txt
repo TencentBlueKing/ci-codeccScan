@@ -2,3 +2,10 @@
 +build/jce_comment
 +readability/preprocessor_directives
 +security/sensitivecontents
++tosa/comment
++tosa/copyright
++tosa/cr
++tosa/fn_name_length
++tosa/indent
++tosa/line_length
++runtime/assert

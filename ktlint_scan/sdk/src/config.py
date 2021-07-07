@@ -1,4 +1,5 @@
-﻿import os, sys
+﻿import os
+import sys
 import json
 import re
 import xml.etree.ElementTree as ET

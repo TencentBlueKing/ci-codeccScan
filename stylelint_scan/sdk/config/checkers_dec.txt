@@ -1,0 +1,210 @@
+color-no-invalid-hex: Disallow invalid hex colors.
+font-family-no-duplicate-names: Disallow duplicate font family names.
+font-family-no-missing-generic-family-keyword: Disallow missing generic families in lists of font family names.
+function-calc-no-invalid: Disallow an invalid expression within calc functions.
+function-calc-no-unspaced-operator: Disallow an unspaced operator within calc functions.
+function-linear-gradient-no-nonstandard-direction: Disallow direction values in linear-gradient() calls that are not valid according to the standard syntax.
+string-no-newline: Disallow (unescaped) newlines in strings.
+unit-no-unknown: Disallow unknown units.
+property-no-unknown: Disallow unknown properties.
+keyframe-declaration-no-important: Disallow !important within keyframe declarations.
+declaration-block-no-duplicate-custom-properties: Disallow duplicate custom properties within declaration blocks.
+declaration-block-no-duplicate-properties: Disallow duplicate properties within declaration blocks.
+declaration-block-no-shorthand-property-overrides: Disallow shorthand properties that override related longhand properties.
+block-no-empty: Disallow empty blocks.
+selector-pseudo-class-no-unknown: Disallow unknown pseudo-class selectors.
+selector-pseudo-element-no-unknown: Disallow unknown pseudo-element selectors.
+selector-type-no-unknown: Disallow unknown type selectors.
+media-feature-name-no-unknown: Disallow unknown media feature names.
+at-rule-no-unknown: Disallow unknown at-rules.
+comment-no-empty: Disallow empty comments.
+no-descending-specificity: Disallow selectors of lower specificity from coming after overriding selectors of higher specificity.
+no-duplicate-at-import-rules: Disallow duplicate @import rules within a stylesheet.
+no-duplicate-selectors: Disallow duplicate selectors within a stylesheet.
+no-empty-source: Disallow empty sources.
+no-extra-semicolons: Disallow extra semicolons (Autofixable).
+no-invalid-double-slash-comments: Disallow double-slash comments (//...) which are not supported by CSS.
+alpha-value-notation: Specify percentage or number notation for alpha-values (Autofixable).
+hue-degree-notation: Specify number or angle notation for degree hues (Autofixable).
+color-function-notation: Specify modern or legacy notation for applicable color-functions (Autofixable).
+color-named: Require (where possible) or disallow named colors.
+color-no-hex: Disallow hex colors.
+length-zero-no-unit: Disallow units for zero lengths (Autofixable).
+font-weight-notation: Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.
+function-allowed-list: Specify a list of allowed functions.
+function-blacklist: Specify a list of disallowed functions. (deprecated)
+function-disallowed-list: Specify a list of disallowed functions.
+function-url-no-scheme-relative: Disallow scheme-relative urls.
+function-url-scheme-allowed-list: Specify a list of allowed URL schemes.
+function-url-scheme-blacklist: Specify a list of disallowed URL schemes. (deprecated)
+function-url-scheme-disallowed-list: Specify a list of disallowed URL schemes.
+function-url-scheme-whitelist: Specify a list of allowed URL schemes. (deprecated)
+function-whitelist: Specify a list of allowed functions. (deprecated)
+keyframes-name-pattern: Specify a pattern for keyframe names.
+number-max-precision: Limit the number of decimal places allowed in numbers.
+time-min-milliseconds: Specify the minimum number of milliseconds for time values.
+unit-allowed-list: Specify a list of allowed units.
+unit-blacklist: Specify a list of disallowed units. (deprecated)
+unit-disallowed-list: Specify a list of disallowed units.
+unit-whitelist: Specify a list of allowed units. (deprecated)
+shorthand-property-no-redundant-values: Disallow redundant values in shorthand properties (Autofixable).
+2#value-no-vendor-prefix: Disallow vendor prefixes for values (Autofixable). [tencent standards/css 2.1.12](https://{github.com/xxxxx}/standards/css/tree/master）
+custom-property-pattern: Specify a pattern for custom properties.
+property-allowed-list: Specify a list of allowed properties.
+property-blacklist: Specify a list of disallowed properties. (deprecated)
+property-disallowed-list: Specify a list of disallowed properties.
+property-no-vendor-prefix: Disallow vendor prefixes for properties (Autofixable).
+property-whitelist: Specify a list of allowed properties. (deprecated)
+declaration-block-no-redundant-longhand-properties: Disallow longhand properties that can be combined into one shorthand property.
+1#: Disallow !important within declarations. [tencent standards/css 2.1.9](https://{github.com/xxxxx}/standards/css/tree/master）
+declaration-property-unit-allowed-list: Specify a list of allowed property and unit pairs within declarations.
+declaration-property-unit-blacklist: Specify a list of disallowed property and unit pairs within declarations. (deprecated)
+declaration-property-unit-disallowed-list: Specify a list of disallowed property and unit pairs within declarations.
+declaration-property-unit-whitelist: Specify a list of allowed property and unit pairs within declarations. (deprecated)
+declaration-property-value-allowed-list: Specify a list of allowed property and value pairs within declarations.
+declaration-property-value-blacklist: Specify a list of disallowed property and value pairs within declarations. (deprecated)
+1#declaration-property-value-disallowed-list: Specify a list of disallowed property and value pairs within declarations. [tencent standards/css 2.1.10](https://{github.com/xxxxx}/standards/css/tree/master）
+declaration-property-value-whitelist: Specify a list of allowed property and value pairs within declarations. (deprecated)
+1#: Limit the number of declarations within a single-line declaration block. [tencent standards/css 2.1.15](https://{github.com/xxxxx}/standards/css/tree/master）
+selector-attribute-name-disallowed-list: Specify a list of disallowed attribute names.
+selector-attribute-operator-allowed-list: Specify a list of allowed attribute operators.
+selector-attribute-operator-blacklist: Specify a list of disallowed attribute operators. (deprecated)
+selector-attribute-operator-disallowed-list: Specify a list of disallowed attribute operators.
+selector-attribute-operator-whitelist: Specify a list of allowed attribute operators. (deprecated)
+selector-class-pattern: Specify a pattern for class selectors.
+selector-combinator-allowed-list: Specify a list of allowed combinators.
+selector-combinator-blacklist: Specify a list of disallowed combinators. (deprecated)
+selector-combinator-disallowed-list: Specify a list of disallowed combinators.
+selector-combinator-whitelist: Specify a list of allowed combinators. (deprecated)
+selector-id-pattern: Specify a pattern for ID selectors.
+selector-max-attribute: Limit the number of attribute selectors in a selector.
+selector-max-class: Limit the number of classes in a selector.
+selector-max-combinators: Limit the number of combinators in a selector.
+selector-max-compound-selectors: Limit the number of compound selectors in a selector.
+selector-max-empty-lines: Limit the number of adjacent empty lines within selectors (Autofixable).
+1#selector-max-id: Limit the number of ID selectors in a selector. [tencent standards/css 2.1.3](https://{github.com/xxxxx}/standards/css/tree/master）
+selector-max-pseudo-class: Limit the number of pseudo-classes in a selector.
+selector-max-specificity: Limit the specificity of selectors.
+selector-max-type: Limit the number of type in a selector.
+selector-max-universal: Limit the number of universal selectors in a selector.
+selector-nested-pattern: Specify a pattern for the selectors of rules nested within rules.
+selector-no-qualifying-type: Disallow qualifying a selector by type.
+selector-no-vendor-prefix: Disallow vendor prefixes for selectors (Autofixable).
+selector-pseudo-class-allowed-list: Specify a list of allowed pseudo-class selectors.
+selector-pseudo-class-blacklist: Specify a list of disallowed pseudo-class selectors. (deprecated)
+selector-pseudo-class-disallowed-list: Specify a list of disallowed pseudo-class selectors.
+selector-pseudo-class-whitelist: Specify a list of allowed pseudo-class selectors. (deprecated)
+selector-pseudo-element-allowed-list: Specify a list of allowed pseudo-element selectors.
+selector-pseudo-element-blacklist: Specify a list of disallowed pseudo-element selectors. (deprecated)
+selector-pseudo-element-colon-notation: Specify single or double colon notation for applicable pseudo-elements (Autofixable).
+selector-pseudo-element-disallowed-list: Specify a list of disallowed pseudo-element selectors.
+selector-pseudo-element-whitelist: Specify a list of allowed pseudo-element selectors. (deprecated)
+media-feature-name-allowed-list: Specify a list of allowed media feature names.
+media-feature-name-blacklist: Specify a list of disallowed media feature names. (deprecated)
+media-feature-name-disallowed-list: Specify a list of disallowed media feature names.
+media-feature-name-no-vendor-prefix: Disallow vendor prefixes for media feature names (Autofixable).
+media-feature-name-value-allowed-list: Specify a list of allowed media feature name and value pairs.
+media-feature-name-value-whitelist: Specify a list of allowed media feature name and value pairs. (deprecated)
+media-feature-name-whitelist: Specify a list of allowed media feature names. (deprecated)
+custom-media-pattern: Specify a pattern for custom media query names.
+at-rule-allowed-list: Specify a list of allowed at-rules.
+at-rule-blacklist: Specify a list of disallowed at-rules. (deprecated)
+at-rule-disallowed-list: Specify a list of disallowed at-rules.
+at-rule-no-vendor-prefix: Disallow vendor prefixes for at-rules (Autofixable).
+at-rule-property-required-list: Specify a list of required properties for an at-rule.
+at-rule-property-requirelist: Specify a list of required properties for an at-rule. (deprecated)
+at-rule-whitelist: Specify a list of allowed at-rules. (deprecated)
+comment-pattern: Specify a pattern for comments.
+comment-word-blacklist: Specify a list of disallowed words within comments. (deprecated)
+comment-word-disallowed-list: Specify a list of disallowed words within comments.
+2#max-nesting-depth: Limit the depth of nesting. [tencent standards/css 2.1.16](https://{github.com/xxxxx}/standards/css/tree/master）
+no-unknown-animations: Disallow unknown animations.
+2#color-hex-case: Specify lowercase or uppercase for hex colors (Autofixable). [tencent standards/css 2.1.8](https://{github.com/xxxxx}/standards/css/tree/master）
+2#: Specify short or long notation for hex colors (Autofixable). [tencent standards/css 2.1.8](https://{github.com/xxxxx}/standards/css/tree/master）
+font-family-name-quotes: Specify whether or not quotation marks should be used around font family names.
+function-comma-newline-after: Require a newline or disallow whitespace after the commas of functions (Autofixable).
+function-comma-newline-before: Require a newline or disallow whitespace before the commas of functions (Autofixable).
+function-comma-space-after: Require a single space or disallow whitespace after the commas of functions (Autofixable).
+function-comma-space-before: Require a single space or disallow whitespace before the commas of functions (Autofixable).
+function-max-empty-lines: Limit the number of adjacent empty lines within functions (Autofixable).
+function-name-case: Specify lowercase or uppercase for function names (Autofixable).
+function-parentheses-newline-inside: Require a newline or disallow whitespace on the inside of the parentheses of functions (Autofixable).
+function-parentheses-space-inside: Require a single space or disallow whitespace on the inside of the parentheses of functions (Autofixable).
+function-url-quotes: Require or disallow quotes for urls.
+function-whitespace-after: Require or disallow whitespace after functions (Autofixable).
+1#number-leading-zero: Require or disallow a leading zero for fractional numbers less than 1 (Autofixable). [tencent standards/css 2.1.13](https://{github.com/xxxxx}/standards/css/tree/master）
+number-no-trailing-zeros: Disallow trailing zeros in numbers (Autofixable).
+1#string-quotes: Specify single or double quotes around strings (Autofixable). [tencent standards/css 2.1.14](https://{github.com/xxxxx}/standards/css/tree/master）
+unit-case: Specify lowercase or uppercase for units (Autofixable).
+value-keyword-case: Specify lowercase or uppercase for keywords values (Autofixable).
+value-list-comma-newline-after: Require a newline or disallow whitespace after the commas of value lists (Autofixable).
+value-list-comma-newline-before: Require a newline or disallow whitespace before the commas of value lists.
+value-list-comma-space-after: Require a single space or disallow whitespace after the commas of value lists (Autofixable).
+value-list-comma-space-before: Require a single space or disallow whitespace before the commas of value lists (Autofixable).
+value-list-max-empty-lines: Limit the number of adjacent empty lines within value lists (Autofixable).
+custom-property-empty-line-before: Require or disallow an empty line before custom properties (Autofixable).
+property-case: Specify lowercase or uppercase for properties (Autofixable).
+declaration-bang-space-after: Require a single space or disallow whitespace after the bang of declarations (Autofixable).
+declaration-bang-space-before: Require a single space or disallow whitespace before the bang of declarations (Autofixable).
+declaration-colon-newline-after: Require a newline or disallow whitespace after the colon of declarations (Autofixable).
+1#declaration-colon-space-after: Require a single space or disallow whitespace after the colon of declarations (Autofixable). [tencent standards/css 2.1.6](https://{github.com/xxxxx}/standards/css/tree/master）
+1#declaration-colon-space-before: Require a single space or disallow whitespace before the colon of declarations (Autofixable). [tencent standards/css 2.1.6](https://{github.com/xxxxx}/standards/css/tree/master）
+declaration-empty-line-before: Require or disallow an empty line before declarations (Autofixable).
+declaration-block-semicolon-newline-after: Require a newline or disallow whitespace after the semicolons of declaration blocks (Autofixable).
+declaration-block-semicolon-newline-before: Require a newline or disallow whitespace before the semicolons of declaration blocks.
+declaration-block-semicolon-space-after: Require a single space or disallow whitespace after the semicolons of declaration blocks (Autofixable).
+declaration-block-semicolon-space-before: Require a single space or disallow whitespace before the semicolons of declaration blocks (Autofixable).
+declaration-block-trailing-semicolon: Require or disallow a trailing semicolon within declaration blocks (Autofixable).
+block-closing-brace-empty-line-before: Require or disallow an empty line before the closing brace of blocks (Autofixable).
+block-closing-brace-newline-after: Require a newline or disallow whitespace after the closing brace of blocks (Autofixable).
+block-closing-brace-newline-before: Require a newline or disallow whitespace before the closing brace of blocks (Autofixable).
+block-closing-brace-space-after: Require a single space or disallow whitespace after the closing brace of blocks.
+block-closing-brace-space-before: Require a single space or disallow whitespace before the closing brace of blocks (Autofixable).
+block-opening-brace-newline-after: Require a newline after the opening brace of blocks (Autofixable).
+block-opening-brace-newline-before: Require a newline or disallow whitespace before the opening brace of blocks (Autofixable).
+block-opening-brace-space-after: Require a single space or disallow whitespace after the opening brace of blocks (Autofixable).
+1#block-opening-brace-space-before: Require a single space or disallow whitespace before the opening brace of blocks (Autofixable). [tencent standards/css 2.1.5](https://{github.com/xxxxx}/standards/css/tree/master）
+selector-attribute-brackets-space-inside: Require a single space or disallow whitespace on the inside of the brackets within attribute selectors (Autofixable).
+selector-attribute-operator-space-after: Require a single space or disallow whitespace after operators within attribute selectors (Autofixable).
+selector-attribute-operator-space-before: Require a single space or disallow whitespace before operators within attribute selectors (Autofixable).
+selector-attribute-quotes: Require or disallow quotes for attribute values.
+selector-combinator-space-after: Require a single space or disallow whitespace after the combinators of selectors (Autofixable).
+selector-combinator-space-before: Require a single space or disallow whitespace before the combinators of selectors (Autofixable).
+selector-descendant-combinator-no-non-space: Disallow non-space characters for descendant combinators of selectors (Autofixable).
+selector-pseudo-class-case: Specify lowercase or uppercase for pseudo-class selectors (Autofixable).
+selector-pseudo-class-parentheses-space-inside: Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors (Autofixable).
+selector-pseudo-element-case: Specify lowercase or uppercase for pseudo-element selectors (Autofixable).
+selector-type-case: Specify lowercase or uppercase for type selectors (Autofixable).
+1#selector-list-comma-newline-after: Require a newline or disallow whitespace after the commas of selector lists (Autofixable). [tencent standards/css 2.1.4](https://{github.com/xxxxx}/standards/css/tree/master）
+selector-list-comma-newline-before: Require a newline or disallow whitespace before the commas of selector lists (Autofixable).
+selector-list-comma-space-after: Require a single space or disallow whitespace after the commas of selector lists (Autofixable).
+selector-list-comma-space-before: Require a single space or disallow whitespace before the commas of selector lists (Autofixable).
+rule-empty-line-before: Require or disallow an empty line before rules (Autofixable).
+media-feature-colon-space-after: Require a single space or disallow whitespace after the colon in media features (Autofixable).
+media-feature-colon-space-before: Require a single space or disallow whitespace before the colon in media features (Autofixable).
+media-feature-name-case: Specify lowercase or uppercase for media feature names (Autofixable).
+media-feature-parentheses-space-inside: Require a single space or disallow whitespace on the inside of the parentheses within media features (Autofixable).
+media-feature-range-operator-space-after: Require a single space or disallow whitespace after the range operator in media features (Autofixable).
+media-feature-range-operator-space-before: Require a single space or disallow whitespace before the range operator in media features (Autofixable).
+media-query-list-comma-newline-after: Require a newline or disallow whitespace after the commas of media query lists (Autofixable).
+media-query-list-comma-newline-before: Require a newline or disallow whitespace before the commas of media query lists.
+media-query-list-comma-space-after: Require a single space or disallow whitespace after the commas of media query lists (Autofixable).
+media-query-list-comma-space-before: Require a single space or disallow whitespace before the commas of media query lists (Autofixable).
+at-rule-empty-line-before: Require or disallow an empty line before at-rules (Autofixable).
+at-rule-name-case: Specify lowercase or uppercase for at-rules names (Autofixable).
+at-rule-name-newline-after: Require a newline after at-rule names.
+at-rule-name-space-after: Require a single space after at-rule names (Autofixable).
+at-rule-semicolon-newline-after: Require a newline after the semicolon of at-rules (Autofixable).
+at-rule-semicolon-space-before: Require a single space or disallow whitespace before the semicolons of at-rules.
+2#comment-empty-line-before: Require or disallow an empty line before comments (Autofixable). [tencent standards/css 2.2.4](https://{github.com/xxxxx}/standards/css/tree/master）
+comment-whitespace-inside: Require or disallow whitespace on the inside of comment markers (Autofixable).
+1#indentation: Specify indentation (Autofixable). [tencent standards/css 2.1](https://{github.com/xxxxx}/standards/css/tree/master）
+linebreaks: Specify unix or windows linebreaks (Autofixable).
+max-empty-lines: Limit the number of adjacent empty lines (Autofixable).
+max-line-length: Limit the length of a line.
+no-eol-whitespace: Disallow end-of-line whitespace (Autofixable).
+no-missing-end-of-source-newline: Disallow missing end-of-source newlines (Autofixable).
+no-empty-first-line: Disallow empty first lines (Autofixable).
+unicode-bom: Require or disallow Unicode BOM.
+2#scss/dollar-variable-pattern: 指定sass变量指定模式 [tencent standards/css 3.1.4](https://{github.com/xxxxx}/standards/css/tree/master）
+2#scss/at-extend-no-missing-placeholder: 禁止在@extend后缺失占位符 [tencent standards/css 3.1.5](https://{github.com/xxxxx}/standards/css/tree/master）

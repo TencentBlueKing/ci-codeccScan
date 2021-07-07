@@ -1,0 +1,34 @@
+{
+  "name": "@tencent/complexity",
+  "version": "0.1.2",
+  "description": "A cyclomatic complexity analysis tool for Javascript and Typescript",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:linux": "pkg -t node10-linux-x64 --out ./bin/complexity-linux .",
+    "build:mac": "pkg -t node10-macos-x64 --out ./bin/complexity-macos .",
+    "build:win": "pkg -t node10-win-x64 --out ./bin/complexity-win.exe .",
+    "build": "pkg --out-path ./bin ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://{github.com/xxxxx}/ziofatli/complexity.git"
+  },
+  "author": "ziofatli <ziofatli@tencent.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@typescript-eslint/parser": "^2.27.0",
+    "arg": "^4.1.3",
+    "eslint": "^6.8.0",
+    "typescript": "^3.8.3"
+  },
+  "pkg": {
+    "scripts": "./node_modules/@typescript-eslint/**/*.js",
+    "assets": "./node_modules/@typescript-eslint/**/*"
+  },
+  "bin": {
+    "complexity": "./lib/index.js"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.6"
+  }
+}

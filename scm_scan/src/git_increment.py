@@ -1,6 +1,10 @@
-import sys,subprocess,json,os
+import sys
+import subprocess
+import json
+import os
 import platform
 import util
+import re
 
 options = {}
 os_type = platform.system()
@@ -97,7 +101,21 @@ def increment_run(git_dir_path, pre_revision):
             update_file_list.append(file_path.replace('//', '/'))
         else:
             delete_file_list.append(file_path.replace('//', '/'))
-                    
+    
+    #获取未暂存文件
+    git_status_untracked_files = 'git status -s'
+    p = subprocess.Popen(git_status_untracked_files, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True)
+    for line in p.stdout:
+        try:
+            line = bytes.decode(line.strip())
+            if re.search('^\?\? ', line) or re.search('^M ', line):
+                file_path = os.path.join(git_dir_path, line.strip().replace('?? ', '').replace('M ', ''))
+                if os.path.isfile(file_path)  and not util.is_binary_file(file_path):
+                    print("git untracked file: "+file_path.replace('//', '/'))
+                    update_file_list.append(file_path.replace('//', '/'))
+        except:
+            pass
+
     increment_files['updateFileList'] = update_file_list
     print('diffFileList: '+'\n'.join(update_file_list))
     increment_files['deleteFileList'] = delete_file_list
@@ -156,7 +174,8 @@ if __name__ == "__main__":
                     if git_dir_path != '' and pre_revision != '' :
                         try:
                             increment_files = increment_run(git_dir_path, pre_revision)
-                            increment_files = submodule_run(increment_files, git_dir_path, workspacke_path, pre_revision)
+                            increment_files = submodule_run(increment_files, git_dir_path, \
+                                                            workspacke_path, pre_revision)
                             increment_repo_list.append(increment_files)
                         except:
                             print('git_increment except '+git_dir_path)
@@ -167,8 +186,8 @@ if __name__ == "__main__":
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_info, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')
     
             

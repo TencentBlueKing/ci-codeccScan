@@ -2,7 +2,7 @@
 # Copyright (c) 2012 Ry4an Brase <ry4an-hg@ry4an.org>
 # Copyright (c) 2012 Google, Inc.
 # Copyright (c) 2012 Anthony VEREZ <anthony.verez.external@cassidian.com>
-# Copyright (c) 2014-2019 Claudiu Popa <pcmanticore@gmail.com>
+# Copyright (c) 2014-2020 Claudiu Popa <pcmanticore@gmail.com>
 # Copyright (c) 2014 Brett Cannon <brett@python.org>
 # Copyright (c) 2014 Arun Persaud <arun@nubati.net>
 # Copyright (c) 2015 Ionel Cristian Maries <contact@ionelmc.ro>
@@ -13,6 +13,7 @@
 # Copyright (c) 2019 Hugo van Kemenade <hugovk@users.noreply.github.com>
 # Copyright (c) 2019 Taewon D. Kim <kimt33@mcmaster.ca>
 # Copyright (c) 2019 Pierre Sassoulas <pierre.sassoulas@gmail.com>
+# Copyright (c) 2020 Shiv Venkatasubrahmanyam <shvenkat@users.noreply.github.com>
 
 # Licensed under the GPL: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 # For details: https://github.com/PyCQA/pylint/blob/master/COPYING
@@ -179,11 +180,13 @@ def stripped_lines(lines, ignore_comments, ignore_docstrings, ignore_imports):
     for lineno, line in enumerate(lines, start=1):
         line = line.strip()
         if ignore_docstrings:
-            if not docstring and any(
-                line.startswith(i) for i in ['"""', "'''", 'r"""', "r'''"]
-            ):
-                docstring = line[:3]
-                line = line[3:]
+            if not docstring:
+                if line.startswith('"""') or line.startswith("'''"):
+                    docstring = line[:3]
+                    line = line[3:]
+                elif line.startswith('r"""') or line.startswith("r'''"):
+                    docstring = line[1:4]
+                    line = line[4:]
             if docstring:
                 if line.endswith(docstring):
                     docstring = None

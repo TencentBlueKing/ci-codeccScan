@@ -1,0 +1,57 @@
+.magic-footer {
+    min-width: 950px;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.magic-copyright {
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+    font: 13px/24px "hiragino sans gb", "microsoft yahei";
+    .magic-contact {
+        color: #555;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #ddd;
+        display: inline-block;
+        text-decoration: none;
+        img {
+            width: 17px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+}
+
+.magic-button {
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+}
+
+.magic-button a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    text-align: center;
+    background: #9a9a9a;
+    border-radius: 2px;
+}
+
+.magic-button a:hover {
+    background: #454545;
+}
+
+.magic-button {
+    .magic-feedback {
+        margin-top: 5px;
+        img {
+            vertical-align: middle;
+        }
+    }
+}

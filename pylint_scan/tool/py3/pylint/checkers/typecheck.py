@@ -38,6 +38,7 @@
 # Copyright (c) 2019 yory8 <39745367+yory8@users.noreply.github.com>
 # Copyright (c) 2019 Federico Bond <federicobond@gmail.com>
 # Copyright (c) 2019 Pascal Corpet <pcorpet@users.noreply.github.com>
+# Copyright (c) 2020 Ram Rachum <ram@rachum.com>
 # Copyright (c) 2020 Anthony Sottile <asottile@umich.edu>
 # Copyright (c) 2020 Anubhav <35621759+anubh-v@users.noreply.github.com>
 
@@ -536,9 +537,9 @@ def _determine_callable(callable_obj):
             try:
                 # Use the last definition of __init__.
                 callable_obj = callable_obj.local_attr("__init__")[-1]
-            except exceptions.NotFoundError:
+            except exceptions.NotFoundError as e:
                 # do nothing, covered by no-init.
-                raise ValueError
+                raise ValueError from e
         else:
             callable_obj = new
 
@@ -1413,7 +1414,12 @@ accessed. Python regular expressions are accepted.",
 
         for name in kwparams:
             defval, assigned = kwparams[name]
-            if defval is None and not assigned and not has_no_context_keywords_variadic:
+            if (
+                defval is None
+                and not assigned
+                and not has_no_context_keywords_variadic
+                and not overload_function
+            ):
                 self.add_message("missing-kwoa", node=node, args=(name, callable_name))
 
     def _check_invalid_sequence_index(self, subscript: astroid.Subscript):

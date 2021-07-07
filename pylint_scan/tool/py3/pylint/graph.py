@@ -1,9 +1,12 @@
-# Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+# -*- coding: utf-8 -*-
+# Copyright (c) 2015-2018, 2020 Claudiu Popa <pcmanticore@gmail.com>
 # Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
 # Copyright (c) 2016 Ashley Whetter <ashley@awhetter.co.uk>
 # Copyright (c) 2018 ssolanki <sushobhitsolanki@gmail.com>
 # Copyright (c) 2019 Nick Drozd <nicholasdrozd@gmail.com>
 # Copyright (c) 2019 Pierre Sassoulas <pierre.sassoulas@gmail.com>
+# Copyright (c) 2020 Damien Baty <damien.baty@polyconseil.fr>
+# Copyright (c) 2020 谭九鼎 <109224573@qq.com>
 # Copyright (c) 2020 Benjamin Graham <benwilliamgraham@gmail.com>
 
 # Licensed under the GPL: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -13,13 +16,12 @@
 
 (dot generation adapted from pypy/translator/tool/make_dot.py)
 """
-
 import codecs
 import os
-import os.path as osp
 import subprocess
 import sys
 import tempfile
+from os import path as osp
 
 
 def target_info_from_filename(filename):
@@ -131,7 +133,7 @@ class DotBackend:
 
     def emit_edge(self, name1, name2, **props):
         """emit an edge from <name1> to <name2>.
-        edge properties: see http://www.graphviz.org/doc/info/attrs.html
+        edge properties: see https://www.graphviz.org/doc/info/attrs.html
         """
         attrs = ['%s="%s"' % (prop, value) for prop, value in props.items()]
         n_from, n_to = normalize_node_id(name1), normalize_node_id(name2)
@@ -139,7 +141,7 @@ class DotBackend:
 
     def emit_node(self, name, **props):
         """emit a node with given properties.
-        node properties: see http://www.graphviz.org/doc/info/attrs.html
+        node properties: see https://www.graphviz.org/doc/info/attrs.html
         """
         attrs = ['%s="%s"' % (prop, value) for prop, value in props.items()]
         self.emit("%s [%s];" % (normalize_node_id(name), ", ".join(sorted(attrs))))

@@ -1,3 +1,4 @@
 gometalinter
 _linters/bin
 _linters/pkg
+/_linters/src/github.com/golang/lint/golint/golint.exe

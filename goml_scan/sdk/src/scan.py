@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import config
@@ -92,9 +93,15 @@ def scan(filename, third_rules, skip_path_list):
         if '' != skip_path:
             skip_option += ' --skip=\"'+skip_path+'\"'
     if os.path.isdir(filename):
-        cmd = "gometalinter %s/... --sort=path --deadline=60m --format={{.Path.Abs}}'->'{{.Line}}'->'{{.Linter}}'->'{{.Message}} --enable-all %s %s %s %s --exclude=vendor -j 2 ; nakedret %s" % (filename, skip_option, config.checker_options, default_disable_linter, build_failed_disable_linter, filename)
+        cmd = "gometalinter %s/... --sort=path --deadline=60m --format={{.Path.Abs}}'->'{{.Line}}'->'{{.Linter}}'->'{{.Message}} \
+              --enable-all %s %s %s %s --exclude=vendor -j 2 ; nakedret %s" % \
+              (filename, skip_option, config.checker_options, \
+              default_disable_linter, build_failed_disable_linter, filename)
     else:
-        cmd = "gometalinter %s --sort=path --deadline=60m --format={{.Path.Abs}}'->'{{.Line}}'->'{{.Linter}}'->'{{.Message}} --enable-all %s %s %s %s --exclude=vendor -j 2 ; nakedret %s" % (filename, skip_option, config.checker_options, default_disable_linter, build_failed_disable_linter, filename)
+        cmd = "gometalinter %s --sort=path --deadline=60m --format={{.Path.Abs}}'->'{{.Line}}'->'{{.Linter}}'->'{{.Message}} \
+              --enable-all %s %s %s %s --exclude=vendor -j 2 ; nakedret %s" % \
+              (filename, skip_option, config.checker_options, \
+              default_disable_linter, build_failed_disable_linter, filename)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
@@ -112,7 +119,8 @@ def scan(filename, third_rules, skip_path_list):
     for data in cmd_result:
         data = data.split('->')
         if check_path_match_skip(data[0], skip_path_list):
-            if not os.path.exists(data[0]): continue
+            if not os.path.exists(data[0]):
+                continue
             defect = {}
             defect['filePath'] = data[0]
             defect['line'] = data[1]
@@ -184,6 +192,6 @@ if __name__ == "__main__" :
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

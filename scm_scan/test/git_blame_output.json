@@ -1,0 +1,26 @@
+[
+    {
+        "branch": "master",
+        "changeRecords": [
+            {
+                "author": "jimxzcai(\u8521\u70dc\u81fb)",
+                "authorMail": "<jimxzcai@tencent.com>",
+                "lineRevisionId": "ec151f2003717e806e1aa8252e9085baf3287eb3",
+                "lineShortRevisionId": "ec151f20",
+                "lineUpdateTime": 1574388417000,
+                "lines": [
+                    [
+                        1,
+                        66
+                    ]
+                ]
+            }
+        ],
+        "filePath": "/workspace/kw_platform_agent/bin/agent_init.py",
+        "fileRelPath": "/bin/agent_init.py",
+        "fileUpdateTime": 1574388417000,
+        "revision": "ec151f2",
+        "scmType": "git",
+        "url": "/codecc-tools/kw_platform_agent.git"
+    }
+]

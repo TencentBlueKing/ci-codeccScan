@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import traceback
@@ -27,6 +28,7 @@ lang_map = {
     "128" : "ruby",
     "512" : "go",
     "1024" : "swift",
+    "2048" : "typescript",
     "4096" : "kotlin"
 }
 cloc_lang_map = {
@@ -40,6 +42,7 @@ cloc_lang_map = {
     "128" : "Ruby",
     "512" : "Go",
     "1024" : "Swift",
+    "2048": "TypeScript",
     "4096" : "Kotlin"
 }
 
@@ -55,19 +58,23 @@ lang_suffix = {
     "ruby" : ".rb",
     "go" : ".go",
     "swift" : ".Swift",
+    "typescript": ".ts",
     "kotlin" : ".kt"
 }
 
-lang_list="'C#','C++','C/C++ Header','C','Java','PHP','Objective C','Objective C++','C/C++ Header','Python','JavaScript','Vuejs Component','Ruby','Go','Swift','Kotlin'"
+lang_list="'C#','C++','C/C++ Header','C','Java','PHP','Objective C','Objective C++','C/C++ Header','Python','JavaScript','Vuejs Component','Ruby','Go','Swift','TypeScript','Kotlin'"
 
-suffix_lang_array = ['.cs','.c','.ec','.pgc','.C','.c++','.cc','.CPP','.cpp','.cxx','.inl','.pcc','.H','.h','.hh','.hpp','.hxx','.java','.php','.php3','.php4','.php5','.phtml','.vue','.rake','.rb','.go','.Swift','.m','.mm','.py','.pyw','.es6','.js','.kt','.kts']
+suffix_lang_array = ['.cs','.c','.ec','.pgc','.C','.c++','.cc','.CPP','.cpp','.cxx','.inl', \
+                     '.pcc','.H','.h','.hh','.hpp','.hxx','.java','.php','.php3','.php4','.php5',\
+                     '.phtml','.vue','.rake','.rb','.go','.Swift','.m','.mm','.py','.pyw','.es6','.js','.kt','.ts','.kts']
 
 def list_all_files(root_path, list_file_path, skip_path_list):
     with open(list_file_path, 'a+', encoding='utf-8') as file:
         for path,dir_list,file_list in os.walk(root_path) :  
             for file_name in file_list:
                 file_path = os.path.join(path, file_name)
-                if check_path_match_skip(file_path, skip_path_list) and os.path.splitext(file_path)[-1] in suffix_lang_array and os.path.isfile(file_path) :
+                if check_path_match_skip(file_path, skip_path_list) \
+                   and os.path.splitext(file_path)[-1] in suffix_lang_array and os.path.isfile(file_path) :
                     file.write(file_path+'\n')
 
 def merge_intervals(intervals):
@@ -121,7 +128,8 @@ def get_md5(code_fragment):
     return md5
 
 def skip_error_msg(line):
-    msg_list = ['Digest::MD5 not installed', 'Complex regular subexpression recursion limit', 'Unable to read', 'Diff error', 'exceeded timeout', 'Neither file nor directory']
+    msg_list = ['Digest::MD5 not installed', 'Complex regular subexpression recursion limit', \
+                'Unable to read', 'Diff error', 'exceeded timeout', 'Neither file nor directory']
     for msg in msg_list:
         if msg in line:
             return True
@@ -132,7 +140,8 @@ def account_total_codes_for_lang(scan_path):
     global lang_list
     cmd_result = []
     os.chmod(current_path+'/../../tool/cloc-1.82.pl', 0o755)
-    cmd = "%s/../../tool/cloc-1.82.pl --skip-uniqueness --exclude-dir=.temp --include-lang=%s --json \"%s\" " % (current_path, lang_list, scan_path)
+    cmd = "%s/../../tool/cloc-1.82.pl --skip-uniqueness --exclude-dir=.temp --include-lang=%s --json \"%s\" " % \
+          (current_path, lang_list, scan_path)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
@@ -170,7 +179,9 @@ def scan(filename, suffix, skip_path_list):
     file_block_info = {}
     file_path_list = []
     os.chmod(current_path+'/../../tool/dupc/bin/run.sh', 0o755)
-    cmd = "%s/../../tool/dupc/bin/run.sh cpd --minimum-tokens 100 --format csv_with_linecount_per_file --encoding utf-8 --filelist %s --language %s --skip-lexical-errors 2>/dev/null" % (current_path, filename, suffix)
+    cmd = "%s/../../tool/dupc/bin/run.sh cpd --minimum-tokens 100 --format csv_with_linecount_per_file \
+           --encoding utf-8 --filelist %s --language %s --skip-lexical-errors 2>/dev/null" % \
+          (current_path, filename, suffix)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
@@ -201,7 +212,8 @@ def scan(filename, suffix, skip_path_list):
             try:
                 options = dup.split(',')
                 file_path = options[2].strip()
-                if not check_path_match_skip(file_path, skip_path_list) or not os.path.splitext(file_path)[-1] in lang_suffix.get(suffix).split(';'):
+                if not check_path_match_skip(file_path, skip_path_list) \
+                   or not os.path.splitext(file_path)[-1] in lang_suffix.get(suffix).split(';'):
                     continue
                 single_dup_lines = options[1].strip()
                 start_lines = int(options[0].strip())
@@ -225,7 +237,8 @@ def scan(filename, suffix, skip_path_list):
                             data = str(data).replace('\\r\\n','\\n').replace('\\r','\\n')
                             data_array = str(data).split('\\n')
                             total_lines = len(data_array)
-                    file_info[file_path] = {'block_num': 1, 'dup_lines_list': [(start_lines, end_lines)], 'total_lines': int(total_lines)}
+                    file_info[file_path] = {'block_num': 1, 'dup_lines_list': [(start_lines, end_lines)], \
+                                            'total_lines': int(total_lines)}
                 else:
                     file_info[file_path]['block_num'] += 1
                     file_info[file_path]['dup_lines_list'].append((start_lines, end_lines))
@@ -236,7 +249,8 @@ def scan(filename, suffix, skip_path_list):
     if len(file_path_list) > 0:
         for file_path in file_path_list:
             try:
-                if file_path in file_info and file_info[file_path] != {} and file_path in file_block_info and file_block_info[file_path] != {}:
+                if file_path in file_info and file_info[file_path] != {} \
+                   and file_path in file_block_info and file_block_info[file_path] != {}:
                     dup_file = file_info[file_path]
                     dup_file['file_path'] = file_path
                     file_block = file_block_info[file_path]
@@ -260,14 +274,17 @@ def scan(filename, suffix, skip_path_list):
                         else:
                             current_buffer = retain_size
                             is_stop=True 
-                        line_temp =  abs(eval(str(file_merge_lines_intervals[start:start+current_buffer]).replace(' ','').replace('),(',')+(').replace(',', '-').replace('[','').replace(']','')))
+                        line_temp =  abs(eval(str(file_merge_lines_intervals[start:start+current_buffer])\
+                                     .replace(' ','').replace('),(',')+(')\
+                                     .replace(',', '-').replace('[','').replace(']','')))
                         dup_line_number += line_temp
                         start += current_buffer
                         if is_stop:
                             break
                     dup_file['dup_lines'] = dup_line_number
                     dup_line_count += int(dup_line_number)
-                    dup_file['dup_rate'] = '{:.2f}'.format(float(dup_file['dup_lines'] / dup_file['total_lines']*100))+'%'
+                    dup_file['dup_rate'] = '{:.2f}'.\
+                                           format(float(dup_file['dup_lines'] / dup_file['total_lines']*100))+'%'
                     dupc_files.append(dup_file)
             except:
                 print('pase failed '+filename)

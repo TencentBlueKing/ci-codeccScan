@@ -7,7 +7,7 @@ def runChecker(filePath, codeLineObj, errorHandler, option_info):
     hasVersion = False
     hasModule = False
     hasAuthor = False
-    for line in xrange(1, min(len(codeLineObj.raw_lines), 11)):
+    for line in range(1, min(len(codeLineObj.raw_lines), 11)):
         if 'Module' in codeLineObj.raw_lines[line]:
             hasModule = True
         if 'Version' in codeLineObj.raw_lines[line]:

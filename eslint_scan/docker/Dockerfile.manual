@@ -1,0 +1,22 @@
+FROM docker.io/bkci/codecc:latest
+RUN mkdir -p /usr/codecc/software
+COPY software/node-v8.9.0-linux-x64.tar.gz /usr/codecc/software
+WORKDIR /usr/codecc/software
+RUN tar zxvf node-v8.9.0-linux-x64.tar.gz -C /usr/codecc/software
+RUN rm -rf /usr/codecc/software/node-v8.9.0-linux-x64.tar.gz
+COPY tool/lib/rules /usr/codecc/software/rules/
+COPY tool/lib/built-in-rules-index.js /usr/codecc/software/
+RUN cp -rf /usr/codecc/software/rules/* /usr/codecc/software/node-v8.9.0-linux-x64/lib/node_modules/eslint/lib/rules/
+RUN cp -rf /usr/codecc/software/built-in-rules-index.js /usr/codecc/software/node-v8.9.0-linux-x64/lib/node_modules/eslint/lib/
+RUN rm -rf /usr/codecc/software/rules
+RUN rm -rf /usr/codecc/software/built-in-rules-index.js
+RUN chmod -R 755 /usr/codecc/software/node-v8.9.0-linux-x64
+ENV NODE_PATH=/usr/codecc/software/node-v8.9.0-linux-x64
+ENV PATH="${NODE_PATH}/bin:${PATH}"
+RUN mkdir -p /usr/codecc/tool_scan
+COPY sdk /usr/codecc/tool_scan/sdk/
+RUN rm -rf /usr/codecc/tool_scan/sdk/config.bak
+COPY third_rules /usr/codecc/tool_scan/third_rules
+RUN chmod -R 755 /usr/codecc/tool_scan
+RUN tnpm install @tencent/eslint-config-tencent
+WORKDIR /usr/codecc/tool_scan

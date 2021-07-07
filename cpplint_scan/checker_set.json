@@ -1,0 +1,188 @@
+{
+    "checker_set_id" : "standard_cpp",
+    "checker_set_name" : "腾讯代码规范(C++)",
+    "checker_set_lang" : "C/C++",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/header_guard",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/endif_comment",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/forward_decl",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/include_order",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/include",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "build/namespaces",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/namespace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/string",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/explicit",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/operator",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/fn_size",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/arrays",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/casting",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/int",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "legal/copyright",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/comments",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/todo",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/todo",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/comma",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/semicolon",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/line_length",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/utf8",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/tab",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/parens",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "readability/braces",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/indent",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "runtime/indentation_namespace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/end_of_line",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/newline",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/forcolon",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/empty_conditional_body",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/empty_if_body",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/empty_loop_body",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/braces",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/operators",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CPPLINT",
+            "checker_key" : "whitespace/blank_line",
+            "props" : ""
+        }
+    ]
+}

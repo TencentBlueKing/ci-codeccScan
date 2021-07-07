@@ -116,11 +116,11 @@ def is_number(num):
     return False
 
 def GetMiddleStr(content,startStr,endStr):
-  startIndex = content.find(startStr)
-  if startIndex>=0:
-    startIndex += len(startStr)
-  endIndex = content.find(endStr)
-  return content[startIndex:endIndex]
+    startIndex = content.find(startStr)
+    if startIndex>=0:
+        startIndex += len(startStr)
+    endIndex = content.find(endStr)
+    return content[startIndex:endIndex]
  
 def base64toencode(content):
     return base64.b64encode(content).decode('utf-8')

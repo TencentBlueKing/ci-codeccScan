@@ -1,0 +1,2899 @@
+[
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "anyobject_protocol",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using AnyObject over class for class-only protocols."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "array_init",
+        "checkerTag": [
+            "API使用"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using Array(seq) over seq.map { $0 } to convert a sequence into an Array."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "attributes",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Attributes should be on their own lines in functions and types, but on the same line as variables and imports."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "block_based_kvo",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer the new block based KVO API with keypaths when using Swift 3.2 or later."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "class_delegate_protocol",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Delegate protocols should be class-only so they can be weakly referenced."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "closing_brace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Closing brace with closing parenthesis should not have any whitespaces in the middle."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "closure_body_length",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Closure bodies should not span too many lines."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "closure_end_indentation",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Closure end should have the same indentation as the line that started it."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "closure_parameter_position",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Closure parameters should be on the same line as opening brace."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "closure_spacing",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Closure expressions should have a single space inside each brace."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "collection_alignment",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "All elements in a collection literal should be vertically aligned"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "colon",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Colons should be next to the identifier when specifying a type and next to the key in dictionary literals."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "comma",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "There should be no space before and one after any comma."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "compiler_protocol_init",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "The initializers declared in compiler protocols such as ExpressibleByArrayLiteral shouldn’t be called directly."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "conditional_returns_on_newline",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Conditional statements should always return on the next line"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "contains_over_filter_count",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer contains over comparing filter(where:).count to 0."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "contains_over_filter_is_empty",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer contains over using filter(where:).isEmpty"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "contains_over_first_not_nil",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer contains over first(where:) != nil and firstIndex(where:) != nil."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "contains_over_range_nil_comparison",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer contains over range(of:) != nil and range(of:) == nil."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "control_statement",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "if, for, guard, switch, while, and catch statements shouldn’t unnecessarily wrap their conditionals or arguments in parentheses."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "convenience_type",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Types used for hosting only static members should be implemented as a caseless enum to avoid instantiation."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "cyclomatic_complexity",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Complexity of function bodies should be limited."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "deployment_target",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Availability checks or attributes shouldn’t be using older versions that are satisfied by the deployment target."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "discarded_notification_center_observer",
+        "checkerTag": [
+            "代码可维护性"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "When registering for a notification using a block, the opaque observer that is returned should be stored so it can be removed later."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "discouraged_direct_init",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Discouraged direct initialization of types that can be harmful."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "discouraged_object_literal",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer initializers over object literals."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "discouraged_optional_boolean",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer non-optional booleans over optional booleans."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "discouraged_optional_collection",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer empty collection over optional collection."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "duplicate_enum_cases",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Enum can’t contain multiple cases with the same name."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "duplicate_imports",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Imports should be unique."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "dynamic_inline",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Avoid using ‘dynamic’ and ‘@inline(__always)’ together."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_collection_literal",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer checking isEmpty over comparing collection to an empty array or dictionary literal."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_count",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer checking isEmpty over comparing count to zero."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_enum_arguments",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Arguments can be omitted when matching enums with associated types if they are not used."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_parameters",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer () -> over Void ->."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_parentheses_with_trailing_closure",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "When using trailing closures, empty parentheses should be avoided after the method call."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_string",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer checking isEmpty over comparing string to an empty string literal."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "empty_xctest_method",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Empty XCTest method should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "enum_case_associated_values_count",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Number of associated values in an enum case should be low"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "expiring_todo",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "TODOs and FIXMEs should be resolved prior to their expiry date."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_acl",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "All declarations should specify Access Control Level keywords explicitly."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_enum_raw_value",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Enums should be explicitly assigned their raw values."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_init",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Explicitly calling .init() should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_self",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Instance variables and functions should be explicitly accessed with ‘self.’."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_top_level_acl",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Top-level declarations should specify Access Control Level keywords explicitly."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "explicit_type_interface",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Properties should have a type interface"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "extension_access_modifier",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer to use extension access modifiers"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "fallthrough",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Fallthrough should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "fatal_error_message",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "A fatalError call should have a message."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "file_header",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Header comments should be consistent with project patterns. The SWIFTLINT_CURRENT_FILENAME placeholder can optionally be used in the required and forbidden patterns. It will be replaced by the real file name."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "file_length",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Files should not span too many lines.",
+        "checkerProps": [
+            {
+                "propName": "warning",
+                "propValue": "500",
+                "displayValue": "500"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "file_name",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "File name should match a type or extension declared in the file (if any)."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "file_name_no_space",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "File name should not contain any whitespace."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "file_types_order",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Specifies how the types within a file should be ordered."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "first_where",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using .first(where:) over .filter { }.first in collections."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "flatmap_over_map_reduce",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer flatMap over map followed by reduce([], +)."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "for_where",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "where clauses are preferred over a single if inside a for."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "force_cast",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Force casts should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "force_try",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Force tries should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "force_unwrapping",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Force unwrapping should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "function_body_length",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Functions bodies should not span too many lines."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "function_default_parameter_at_end",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer to locate parameters with defaults toward the end of the parameter list."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "function_parameter_count",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Number of function parameters should be low."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "generic_type_name",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Generic type name should only contain alphanumeric characters, start with an uppercase character and span between 1 and 20 characters in length."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "identical_operands",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Comparing two identical operands is likely a mistake."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "identifier_name",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Identifier names should only contain alphanumeric characters and start with a lowercase character or should only contain capital letters. In an exception to the above, variable names may start with a capital letter when they are declared static and immutable. Variable names should not be too long or too short.",
+        "checkerProps": [
+            {
+                "propName": "min_length",
+                "propValue": "4",
+                "displayValue": "4"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "implicit_getter",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Computed read-only properties and subscripts should avoid using the get keyword."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "implicit_return",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer implicit returns in closures, functions and getters."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "implicitly_unwrapped_optional",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Implicitly unwrapped optionals should be avoided when possible."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "indentation_width",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Indent code using either one tab or the configured amount of spaces, unindent to match previous indentations. Don’t indent the first line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "inert_defer",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "If defer is at the end of its parent scope, it will be executed right where it is anyway."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "is_disjoint",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using Set.isDisjoint(with:) over Set.intersection(_:).isEmpty."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "joined_default_parameter",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Discouraged explicit usage of the default separator."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "large_tuple",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Tuples shouldn’t have too many members. Create a custom type instead."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "last_where",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using .last(where:) over .filter { }.last in collections."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "leading_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Files should not contain leading whitespace."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_cggeometry_functions",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Struct extension properties and methods are preferred over legacy functions"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_constant",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Struct-scoped constants are preferred over legacy global constants."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_constructor",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Swift constructors are preferred over legacy convenience functions."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_hashing",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using the hash(into:) function instead of overriding hashValue"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_multiple",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using the isMultiple(of:) function instead of using the remainder operator (%)."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_nsgeometry_functions",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Struct extension properties and methods are preferred over legacy functions"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "legacy_random",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using type.random(in:) over legacy functions."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "let_var_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Let and var should be separated from other statements by a blank line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "line_length",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Lines should not span too many characters.",
+        "checkerProps": [
+            {
+                "propName": "warning",
+                "propValue": "150",
+                "displayValue": "150"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "literal_expression_end_indentation",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Array and dictionary literal end should have the same indentation as the line that started it."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "lower_acl_than_parent",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Ensure definitions have a lower access control level than their enclosing parent"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "mark",
+        "checkerTag": [
+            "注释"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "MARK comment should be in valid format. e.g. ‘// MARK: …’ or ‘// MARK: - …’"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "missing_docs",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Declarations should be documented."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "modifier_order",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Modifier order should be consistent."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_arguments",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Arguments should be either on the same line, or one per line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_arguments_brackets",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Multiline arguments should have their surrounding brackets in a new line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_function_chains",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Chained function calls should be either on the same line, or one per line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_literal_brackets",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Multiline literals should have their surrounding brackets in a new line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_parameters",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Functions and methods parameters should be either on the same line, or one per line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiline_parameters_brackets",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Multiline parameters should have their surrounding brackets in a new line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "multiple_closures_with_trailing_closure",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Trailing closure syntax should not be used when passing more than one closure argument."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "nesting",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Types should be nested at most 1 level deep, and statements should be nested at most 5 levels deep."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "nimble_operator",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer Nimble operator overloads over free matcher functions."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "no_extension_access_modifier",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer not to use extension access modifiers"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "no_fallthrough_only",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Fallthroughs can only be used if the case contains at least one other statement."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "no_grouping_extension",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Extensions shouldn’t be used to group code within the same source file."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "no_space_in_method_call",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Don’t add a space between the method name and the parentheses."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "notification_center_detachment",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "An object should only remove itself as an observer in deinit."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "nslocalizedstring_key",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Static strings should be used as key in NSLocalizedString in order to genstrings work."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "nslocalizedstring_require_bundle",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Calls to NSLocalizedString should specify the bundle which contains the strings file."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "nsobject_prefer_isequal",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "NSObject subclasses should implement isEqual instead of ==."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "number_separator",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Underscores should be used as thousand separator in large decimal numbers."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "object_literal",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer object literals over image and color inits."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "opening_brace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Opening braces should be preceded by a single space and on the same line as the declaration."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "operator_usage_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Operators should be surrounded by a single whitespace when they are being used."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "operator_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Operators should be surrounded by a single whitespace when defining them."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "optional_enum_case_matching",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Matching an enum case against an optional enum without ‘?’ is supported on Swift 5.1 and above."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "orphaned_doc_comment",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "A doc comment should be attached to a declaration."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "overridden_super_call",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Some overridden methods should always call super"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "override_in_extension",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Extensions shouldn’t override declarations."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "pattern_matching_keywords",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Combine multiple pattern matching bindings by moving keywords out of tuples."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "prefer_self_type_over_type_of_self",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer Self over type(of: self) when accessing properties or calling methods."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "prefixed_toplevel_constant",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Top-level constants should be prefixed by k."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "private_action",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "IBActions should be private."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "private_outlet",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "IBOutlets should be private to avoid leaking UIKit to higher layers."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "private_over_fileprivate",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer private over fileprivate declarations."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "private_unit_test",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Unit tests marked private are silently skipped."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "prohibited_interface_builder",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Creating views using Interface Builder should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "prohibited_super_call",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Some methods should not call super"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "protocol_property_accessors_order",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "When declaring properties in protocols, the order of accessors should be get set."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "quick_discouraged_call",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Discouraged call inside ‘describe’ and/or ‘context’ block."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "quick_discouraged_focused_test",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Discouraged focused test. Other tests won’t run while this one is focused."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "quick_discouraged_pending_test",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Discouraged pending test. This test won’t run while it’s marked as pending."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "raw_value_for_camel_cased_codable_enum",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Camel cased cases of Codable String enums should have raw value."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "reduce_boolean",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using .allSatisfy() or .contains() over reduce(true) or reduce(false)"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "reduce_into",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer reduce(into:_:) over reduce(_:_:) for copy-on-write types"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_discardable_let",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer _ = foo() over let _ = foo() when discarding a result from a function."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_nil_coalescing",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "nil coalescing operator is only evaluated if the lhs is nil, coalescing operator with nil as rhs is redundant"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_objc_attribute",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Objective-C attribute (@objc) is redundant in declaration."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_optional_initialization",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Initializing an optional variable with nil is redundant."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_set_access_control",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Property setter access level shouldn’t be explicit if it’s the same as the variable access level."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_string_enum_value",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "String enum values can be omitted when they are equal to the enumcase name."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_type_annotation",
+        "checkerTag": [
+            "注释"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Variables should not have redundant type annotation"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "redundant_void_return",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Returning Void in a function declaration is redundant."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "required_deinit",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Classes should have an explicit deinit method."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "required_enum_case",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Enums conforming to a specified protocol must implement a specific case(s)."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "return_arrow_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Return arrow and return type should be separated by a single space or on a separate line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "shorthand_operator",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer shorthand operators (+=, -=, *=, /=) over doing the operation and assigning."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "single_test_class",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Test files should contain a single QuickSpec or XCTestCase class."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "sorted_first_last",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer using min() or max() over sorted().first or sorted().last"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "sorted_imports",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Imports should be sorted."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "statement_position",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Else and catch should be on the same line, one space after the previous declaration."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "static_operator",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Operators should be declared as static functions, not free functions."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "strict_fileprivate",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "fileprivate should be avoided."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "strong_iboutlet",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "@IBOutlets shouldn’t be declared as weak."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "superfluous_disable_command",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "SwiftLint ‘disable’ commands are superfluous when the disabled rule would not have triggered a violation in the disabled region. Use “ - ” if you wish to document a command."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "switch_case_alignment",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Case statements should vertically align with their enclosing switch statement, or indented if configured otherwise."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "switch_case_on_newline",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Cases inside a switch should always be on a newline"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "syntactic_sugar",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Shorthand syntactic sugar should be used, i.e. [Int] instead of Array."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "todo",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "TODOs and FIXMEs should be resolved."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "toggle_bool",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer someBool.toggle() over someBool = !someBool."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "trailing_closure",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Trailing closure syntax should be used whenever possible."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "trailing_comma",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Trailing commas in arrays and dictionaries should be avoided/enforced.",
+        "checkerProps": [
+            {
+                "propName": "mandatory_comma",
+                "propValue": true,
+                "displayValue": "true"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "trailing_newline",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Files should have a single trailing newline."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 1,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "trailing_semicolon",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Lines should not have trailing semicolons."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "trailing_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Lines should not have trailing whitespace."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "type_body_length",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Type bodies should not span too many lines.",
+        "checkerProps": [
+            {
+                "propName": "warning",
+                "propValue": "300",
+                "displayValue": "300"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "type_contents_order",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Specifies the order of subtypes, properties, methods & more within a type."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "type_name",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Type name should only contain alphanumeric characters, start with an uppercase character and span between 3 and 40 characters in length.",
+        "checkerProps": [
+            {
+                "propName": "min_length",
+                "propValue": "4",
+                "displayValue": "4"
+            },
+            {
+                "propName": "max_length",
+                "propValue": "40",
+                "displayValue": "40"
+            }
+        ]
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unavailable_function",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Unimplemented functions should be marked as unavailable."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unneeded_break_in_switch",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Avoid using unneeded break statements."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unneeded_parentheses_in_closure_argument",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Parentheses are not needed when declaring closure arguments."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unowned_variable_capture",
+        "checkerTag": [
+            "潜在的错误"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer capturing references as weak to avoid potential crashes."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "untyped_error_in_catch",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Catch statements should not declare error variables without type casting."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_capture_list",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Unused reference in a capture list should be removed."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_closure_parameter",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Unused parameter in a closure should be replaced with _."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_control_flow_label",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Unused control flow label should be removed."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_declaration",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Declarations should be referenced at least once within all files linted."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_enumerated",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "When the index or the item is not used, .enumerated() can be removed."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_import",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "All imported modules should be required to make the file compile."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_optional_binding",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer != nil over let _ ="
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "unused_setter_value",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Setter value is not used."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "valid_ibinspectable",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "@IBInspectable should be applied to variables only, have its type explicit and be of a supported type"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_parameter_alignment",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Function parameters should be aligned vertically if they’re in multiple lines in a declaration."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_parameter_alignment_on_call",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Function parameters should be aligned vertically if they’re in multiple lines in a method call."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_whitespace",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Limit vertical whitespace to a single empty line."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_whitespace_between_cases",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Include a single empty line between switch cases."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_whitespace_closing_braces",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Don’t include vertical whitespace (empty line) before closing braces."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "vertical_whitespace_opening_braces",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Don’t include vertical whitespace (empty line) after opening braces."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "void_return",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer -> Void over -> ()."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "weak_delegate",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Delegates should be weak to avoid reference cycles."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "xct_specific_matcher",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "Prefer specific XCTest matchers over XCTAssertEqual and XCTAssertNotEqual"
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "xctfail_message",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "An XCTFail call should include a description of the assertion."
+    },
+    {
+        "checkerLanguage": [
+            "SWIFT"
+        ],
+        "severity": 2,
+        "errExample": "",
+        "rightExample": "",
+        "checkerRecommend": "SYSTEM_DEFAULT",
+        "checkerName": "yoda_condition",
+        "checkerTag": [
+            "风格规范"
+        ],
+        "checkerCategory": "CODE_FORMAT",
+        "checkerDesc": "The variable should be placed on the left, the constant on the right of a comparison operator."
+    }
+]

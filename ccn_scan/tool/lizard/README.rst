@@ -20,7 +20,7 @@ A list of supported languages:
 -  C/C++ (works with C++14)
 -  Java
 -  C# (C Sharp)
--  JavaScript
+-  JavaScript (With ES6 and JSX)
 -  Objective-C
 -  Swift
 -  Python
@@ -31,6 +31,7 @@ A list of supported languages:
 -  GDScript
 -  Golang
 -  Lua
+-  Rust
 
 By default lizard will search for any source code that it knows and mix
 all the results together. This might not be what you want. You can use
@@ -329,7 +330,7 @@ Lizard may choose not to deal with some advanced or complicated language feature
 
 
 Literatures Referring to Lizard
-------------------------------
+-------------------------------
 
 Lizard is often used in software related researches. If you used it to support your work, you may contact the lizard author to add your work in the following list.
 
@@ -339,5 +340,5 @@ Lizard is often used in software related researches. If you used it to support y
 
 Lizard is also used as a plugin for fastlane to help check code complexity and submit xml report to sonar.
 
-- [fastlane-plugin-lizard](https://github.com/liaogz82/fastlane-plugin-lizard)
-- [sonar](https://github.com/Backelite/sonar-swift/blob/develop/docs/sonarqube-fastlane.md)
+- `fastlane-plugin-lizard <https://github.com/liaogz82/fastlane-plugin-lizard>`_
+- `sonar <https://github.com/Backelite/sonar-swift/blob/develop/docs/sonarqube-fastlane.md>`_

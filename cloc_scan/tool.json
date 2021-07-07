@@ -1,0 +1,33 @@
+{
+  "name": "CLOC",
+  "displayName": "CLOC",
+  "pattern": "CLOC",
+  "type": "CLOC",
+  "briefIntroduction": "cloc (Count Lines Of Code) counts, and computes differences of, comment lines, blank lines, and physical lines of source code in many programming languages.",
+  "description": "cloc (Count Lines Of Code) counts, and computes differences of, comment lines, blank lines, and physical lines of source code in many programming languages.",
+  "lang": 0,
+  "dockerTriggerShell": "/bin/bash##-c##\"cd /usr/codecc/tool_scan; python3 ./sdk/src/scan.py --input={input.json} --output={output.json}\"",
+  "toolScanCommand": "/bin/bash##-c##\"python3 ./sdk/src/scan.py --input={input.json} --output={output.json}\"",
+  "dockerImageURL": "http://mirrors.tencent.com/codecc-test/cloc-codecc-plugin",
+  "dockerImageVersion": "latest",
+  "toolOptions": [],
+  "supportedLanguages" : [
+        "JAVA",
+        "Golang",
+        "C#",
+        "JS",
+        "Kotlin",
+        "C/C++",
+        "OC/OC++",
+        "Solidity",
+        "PHP",
+        "Swift",
+        "Ruby",
+        "Dart",
+        "Python",
+        "TS",
+        "LUA",
+        "其他"
+    ],
+  "logo": "x}TÉ\u000e6\u0014ü *\u0001\t¤U\u000f¶\u00035\u001dna5;\u0004B¾¾¤½×¬y£y¶Æò8{¼\u001eVÝ£Ìé±/ÿJ\u001es.pT>¼Û+£Éå\u0000öa:\u001e\u0011½rGò¯\u0011\u0002Ñ\u000fhs¡s?\u0000BÓ±\u0019\u0005<g.\u0015ð°{ì±\u0010\u0000ô©×å\u001caïGª©Hât\u0005à:\u001b{yº4[&ù×`ÚgCÿFòSü´«·\nD1<Ò§)ÞV\f\rDì\u0003LÐ§\u001dYtcí\u000bù4\u001fCb([gô\u0011å[|\u001f\u0017\u00035/Å7í\r`\u001b*`Ó\u001b\u0010K\u00022\u0010{¡S×`´? 8 ûiyUÞ\u00186á ¬ºgDfÞÅò¾°ÉkV¾\u000e&ó,C\u0003ê,iIsÏÂ!AïH*\u0000Ýs\u0007cÇûRÖ:\u001däYØ¼À\u0012·#åÜ,þd¨è\u0011ê\u0015Ì Æª5ÛJ}ôY\u0016KS¹Þ\u000bKu_\u001f<U(UmãKñº\\¬^ØEÚ\u0007°¦±6;,p¼öz\t¢avü\u001d/1æùg+<ë\r¬\u000e¸©U\u0018TÜéh\u0004Cq*}Îô\u0018¦T¯1\u001dØY_-zÍ\u000f+ÿht¤\u0000­ß4\u0017\u0007\u0016\t>§T\u0016È}@£1õ2i|¨ñ¶¢¶ò=É¾µ\u0000gëütÌq¸ø(óv_1m\u0014-R÷8\u0018\"$íZÑ1ýª\u0004ë¼¥´ß9\nâÁÜË±Ý)ýEø\u001ep.äB]lð¾of5a\u0007[ÔooÈümU\u001aÉÀâÞÏÁ¶\u000biQW°q³\u000bÂ³c\u0003·¹!ç\u0006ó\u0000k]\u001eÑÕ|µ\u000eÀçöÓ(£î[#ÐëôxÌ7/¤Û¦Ë¨¸|n»j¿5oiÆB8ü\u0018\u0007;~¥9Vn\u0003nGw­VØç_\u0007\u0019y|{º3ÑJÔ¨*V¸ÛEÅG½ã-\u001b3fc\u001f\u0000*E$p/¨õtÎ\u000etFª\u0012áf\u0001®àÓäxi±çä{³¡.Lªõ>nVBMµÜ¥YS ®w]øÓÉ0£7ßõÏR°\r\u0004E¤\u0012½ÕÌu\"¡=\u0007â\nXk\fóåP\t\u001a\u0000ªìU6<SýôK^¤\u00055uµ\u0011nQ(B\u000f)d\u0005~ð¶ \u0016%þÙ\"\u0010ºÍÒJM \u0003\u0007¢Íí\u000fN( 0ÑàÑ\n:¶Ð!\u0001»\u0017t¨\u0000ÊànkÁ¢\u0007\u0015\\5,ã¦¹ªsÒ\u0004Û}A\u0007õõÔ o \b\u0011RçÁ5À2²0=uÿ¼\u0007±¬êÀ»2\u0016\u000bÏ¨+HNÃ4OÑ0¨ËW}Ö}&1¸éksWvPþËæÝ@íMÛ³\u0004±¿\u0001£âlçe\r^øSz\u0003·þOî\u001fÕ&\u0014\u001c\u001a¾\u001fÏoÛ(ÿ~_çïNx\u0014)Êßÿ\u0000¾:©\r"
+}

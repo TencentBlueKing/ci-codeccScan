@@ -1,4 +1,7 @@
-import sys,subprocess,json,os
+import sys
+import subprocess
+import json
+import os
 import xml.etree.ElementTree as ET
 import util
 
@@ -29,7 +32,8 @@ def get_info(dir_path):
                 date_format = "%Y-%m-%d %H:%M:%S"
                 if 'T' in str(elem.text):
                     date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
-                scm_info['fileUpdateTime'] = int(str(util.datetime_to_timestamp(str(elem.text).rsplit(' ', 1)[0], date_format))+'000')
+                scm_info['fileUpdateTime'] = int(str(util.datetime_to_timestamp(\
+                                                 str(elem.text).rsplit(' ', 1)[0], date_format))+'000')
             elif "url" == elem.tag:
                 scm_info['url'] = elem.text
             elif "root" == elem.tag:
@@ -68,7 +72,7 @@ if __name__ == "__main__":
                 print('generate output json file: '+options['output'])
                 file.write(json.dumps({"scm_info": scm_info_list}, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')
             

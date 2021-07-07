@@ -1,8 +1,10 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import traceback
+import ijson
 
 options = {}
 languages = set([])
@@ -24,7 +26,8 @@ def check_path_match_skip(file_path, skip_path_list):
     return no_skip
     
 def skip_error_msg(line):
-    msg_list = ['Digest::MD5 not installed', 'Complex regular subexpression recursion limit', 'Unable to read', 'Diff error', 'exceeded timeout', 'Neither file nor directory']
+    msg_list = ['Digest::MD5 not installed', 'Complex regular subexpression recursion limit',
+                'Unable to read', 'Diff error', 'exceeded timeout', 'Neither file nor directory', 'Use of uninitialized']
     for msg in msg_list:
         if msg in line:
             return True
@@ -37,34 +40,54 @@ def scan(filename, skip_path_list):
     cmd = ''
     os.chmod(current_path+'/../../tool/cloc-1.82.pl', 0o755)
     if os.path.isdir(filename):
-        cmd = "%s/../../tool/cloc-1.82.pl --exclude-dir=.temp --by-file-by-lang --json \"%s\" " % (current_path, filename)
+        cmd = "%s/../../tool/cloc-1.82.pl --exclude-dir=.temp --by-file-by-lang --json \"%s\" " % \
+               (current_path, filename)
     else:
-        cmd = "%s/../../tool/cloc-1.82.pl --exclude-dir=.temp --list-file=%s --by-file-by-lang --json " % (current_path,filename)
+        cmd = "%s/../../tool/cloc-1.82.pl --exclude-dir=.temp --list-file=%s --by-file-by-lang --json " % \
+               (current_path,filename)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True)
     try:
         for line in p.stdout:
-            line = bytes.decode(line.strip()) 
-            if skip_error_msg(line):
-                continue
-            cmd_result.append(line)
+            try:
+                line = bytes.decode(line.strip()) 
+                if skip_error_msg(line):
+                    continue
+                cmd_result.append(line)
+            except:
+                print(line)
+                traceback.print_exc()
     finally:
         p.terminate()
         p.wait()
     
     if ''.join(cmd_result) != '':
         try:
-            data = json.loads(''.join(cmd_result))
-            if 'by_file' in data:
-                by_file_json_data = data['by_file']
-                for key in by_file_json_data.keys():
+            data = ijson.items(''.join(cmd_result).replace("\\", ""), 'by_file')
+            for object in data:
+                for key in object:
+                    # print(object[key])
+                    # print(key)
                     if os.path.isfile(key) and check_path_match_skip(key, skip_path_list):
                         filedata = {}
                         filedata["filePath"] = key
-                        info = by_file_json_data[key]
+                        info = object[key]
                         if 'language' in info:
                             languages.add(info['language'])
                         filedata = dict(filedata, **info)
                         file_defects.append(filedata)
+
+            # data = json.loads(''.join(cmd_result))
+            # if 'by_file' in data:
+            #     by_file_json_data = data['by_file']
+            #     for key in by_file_json_data.keys():
+            #         if os.path.isfile(key) and check_path_match_skip(key, skip_path_list):
+            #             filedata = {}
+            #             filedata["filePath"] = key
+            #             info = by_file_json_data[key]
+            #             if 'language' in info:
+            #                 languages.add(info['language'])
+            #             filedata = dict(filedata, **info)
+            #             file_defects.append(filedata)
         except:
             print(''.join(cmd_result))
             traceback.print_exc()  
@@ -98,7 +121,8 @@ if __name__ == "__main__" :
                 #增量扫描
                 if 'scanType' in input_data and input_data['scanType'] == 'increment':
                     for file_path in input_data['incrementalFiles']:
-                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 and check_path_match_skip(file_path, input_data['whitePathList']):
+                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 \
+                           and check_path_match_skip(file_path, input_data['whitePathList']):
                             continue
                         if os.path.isfile(file_path):
                             file_scan_path_list.append(file_path)
@@ -134,12 +158,12 @@ if __name__ == "__main__" :
             output_data['defects'] = all_file_defects
             output_data["tool_name"] = 'cloc'
             if len(languages) > 0:
-              output_data['languages'] = ';'.join(languages)
+                output_data['languages'] = ';'.join(languages)
             if 'output' in options:
                 with open(options['output'], 'w') as file:
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

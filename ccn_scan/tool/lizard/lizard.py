@@ -21,6 +21,7 @@ languages including C/C++ (doesn't require all the header files).
 For more information visit http://www.lizard.ws
 """
 from __future__ import print_function, division
+import codecs
 import sys
 import itertools
 import re
@@ -48,6 +49,7 @@ except ImportError:
 DEFAULT_CCN_THRESHOLD, DEFAULT_WHITELIST, \
     DEFAULT_MAX_FUNC_LENGTH = 15, "whitelizard.txt", 1000
 
+
 # pylint: disable-msg=too-many-arguments
 def analyze(paths, exclude_pattern=None, threads=1, exts=None,
             lans=None):
@@ -61,7 +63,7 @@ def analyze(paths, exclude_pattern=None, threads=1, exts=None,
 
 
 def analyze_files(files, threads=1, exts=None):
-    extensions = exts or []
+    extensions = exts or get_extensions([])
     file_analyzer = FileAnalyzer(extensions)
     result = map_files_to_analyzer(files, file_analyzer, threads)
     for extension in extensions:
@@ -127,6 +129,13 @@ def arg_parser(prog=None):
                         ''',
                         type=str,
                         dest="input_file")
+    parser.add_argument("-o", "--output_file",
+                        help='''Output file. The output format is inferred
+                        from the file extension (e.g. .html), unless it is
+                        explicitly specified (e.g. using --xml).
+                        ''',
+                        type=str,
+                        dest="output_file")
     parser.add_argument("-L", "--length",
                         help='''Threshold for maximum function length
                         warning. The default value is %d.
@@ -269,7 +278,7 @@ class FunctionInfo(Nesting):  # pylint: disable=R0902
         self.long_name = name
         self.start_line = start_line
         self.end_line = start_line
-        self.parameters = []
+        self.full_parameters = []
         self.filename = filename
         self.top_nesting_level = -1
         self.length = 0
@@ -296,7 +305,13 @@ class FunctionInfo(Nesting):  # pylint: disable=R0902
                         " %(name)s@%(start_line)s-%(end_line)s@%(filename)s"
                         % self.__dict__)
 
-    parameter_count = property(lambda self: len(self.parameters))
+    parameter_count = property(lambda self: len(self.full_parameters))
+
+    @property
+    def parameters(self):
+        matches = [re.search(r'(\w+)(\s=.*)?$', f)
+                   for f in self.full_parameters]
+        return [m.group(1) for m in matches if m]
 
     def add_to_function_name(self, app):
         self.name += app
@@ -311,10 +326,12 @@ class FunctionInfo(Nesting):  # pylint: disable=R0902
     def add_parameter(self, token):
         self.add_to_long_name(" " + token)
 
-        if not self.parameters or token == ",":
-            self.parameters.append(token)
+        if not self.full_parameters:
+            self.full_parameters.append(token)
+        elif token == ",":
+            self.full_parameters.append('')
         else:
-            self.parameters[-1] = token
+            self.full_parameters[-1] += " " + token
 
 
 class FileInformation(object):  # pylint: disable=R0903
@@ -399,6 +416,7 @@ class FileInfoBuilder(object):
         self.newline = True
         self.global_pseudo_function = FunctionInfo('*global*', filename, 0)
         self.current_function = self.global_pseudo_function
+        self.stacked_functions = []
         self._nesting_stack = NestingStack()
 
     def __getattr__(self, attr):
@@ -436,17 +454,18 @@ class FileInfoBuilder(object):
 
     def confirm_new_function(self):
         self.start_new_function_nesting(self.current_function)
-        self.reset_complexity()
+        self.current_function.cyclomatic_complexity = 1
 
-    def start_new_function(self, name):
+    def restart_new_function(self, name):
         self.try_new_function(name)
         self.confirm_new_function()
 
+    def push_new_function(self, name):
+        self.stacked_functions.append(self.current_function)
+        self.restart_new_function(name)
+
     def add_condition(self, inc=1):
         self.current_function.cyclomatic_complexity += inc
-
-    def reset_complexity(self):
-        self.current_function.cyclomatic_complexity = 1
 
     def add_to_long_function_name(self, app):
         self.current_function.add_to_long_name(app)
@@ -461,7 +480,10 @@ class FileInfoBuilder(object):
         if not self.forgive:
             self.fileinfo.function_list.append(self.current_function)
         self.forgive = False
-        self.current_function = self.global_pseudo_function
+        if self.stacked_functions:
+            self.current_function = self.stacked_functions.pop()
+        else:
+            self.current_function = self.global_pseudo_function
 
 
 def preprocessing(tokens, reader):
@@ -829,7 +851,6 @@ def silent_printer(result, *_):
 
 def print_clang_style_warning(code_infos, option, scheme, _):
     count = 0
-    filename = ''
     for warning in get_warnings(code_infos, option):
         print(scheme.clang_warning_format().format(f=warning))
         count += 1
@@ -937,9 +958,40 @@ def parse_args(argv):
         opt.thresholds["max_nested_structures"] = opt.NS
     if "length" not in opt.thresholds:
         opt.thresholds["length"] = opt.length
+    if "nloc" not in opt.thresholds:
+        opt.thresholds["nloc"] = 1000000
     if "parameter_count" not in opt.thresholds:
         opt.thresholds["parameter_count"] = opt.arguments
+    if opt.output_file:
+        inferred_printer = infer_printer_from_file_ext(opt.output_file)
+        if inferred_printer:
+            if not opt.printer:
+                opt.printer = inferred_printer
+            else:
+                msg = "Warning: overriding output file extension.\n"
+                sys.stderr.write(msg)
     return opt
+
+
+def infer_printer_from_file_ext(path):
+    mapping = {
+        '.csv': print_csv,
+        '.htm': html_output,
+        '.html': html_output,
+        '.xml': print_xml
+    }
+    _, ext = os.path.splitext(path)
+    printer = mapping.get(ext)
+    return printer
+
+
+def open_output_file(path):
+    try:
+        return codecs.open(path, 'w', encoding='utf8')
+    except OSError:
+        msg = "Error: failed to open output file '{}'\n.".format(path)
+        sys.stderr.write(msg)
+        sys.exit(2)
 
 
 def get_extensions(extension_names):
@@ -983,6 +1035,11 @@ def main(argv=None):
     schema.patch_for_extensions()
     if options.input_file:
         options.paths = auto_read(options.input_file).splitlines()
+    original_stdout = sys.stdout
+    output_file = None
+    if options.output_file:
+        output_file = open_output_file(options.output_file)
+        sys.stdout = output_file
     result = analyze(
         options.paths,
         options.exclude,
@@ -992,6 +1049,9 @@ def main(argv=None):
     warning_count = printer(result, options, schema, AllResult)
     print_extension_results(options.extensions)
     list(result)
+    if output_file:
+        sys.stdout = original_stdout
+        output_file.close()
     if 0 <= options.number < warning_count:
         sys.exit(1)
 

@@ -6,7 +6,7 @@
 def runChecker(filePath, codeLineObj, errorHandler, option_info):
 
         hasSensitiveWords = False
-        for line in xrange(1, min(len(codeLineObj.raw_lines), 11)):
+        for line in range(1, min(len(codeLineObj.raw_lines), 11)):
             if u'敏感词' in codeLineObj.raw_lines[line]:
                 hasSensitiveWords = True
                 errorHandler(filePath, line, 'security/sensitivecontents', 'file contains sensitive contents')

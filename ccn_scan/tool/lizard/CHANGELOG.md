@@ -1,5 +1,42 @@
 # Change Log
 
+## 1.17.6
+
+Bug fixing. `.mm` file was not recognized as object-c(++) file.
+
+## 1.17.5
+
+Bug fixing in function parameter names. Previously if the parameter has
+default value, it will take the value as the parameter name.
+
+## 1.17.3
+
+Bug fixing in Lua and Scala support
+
+## 1.17.2
+
+Fix missing file when install
+
+## 1.17.1
+
+Fix HTML Output template problem.
+
+## 1.17.0
+
+Support JavaScript with ES6 and JSX.
+Support Rust
+
+## 1.16.6
+
+Bug fixes:
+
+'for' keyword in Swift label should not be counted as ccn.
+
+'guard' keyword should be counted.
+
+'-o' or '--output_file' parameter added.
+
+
 ## 1.16.3
 
 Fix the performance issue

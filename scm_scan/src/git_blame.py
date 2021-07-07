@@ -1,4 +1,9 @@
-import sys,util,subprocess,os,re,json
+import sys
+import util
+import subprocess
+import os
+import re
+import json
 import multiprocessing
 
 options = {}
@@ -22,7 +27,8 @@ def set_file_info(commits):
         git_root_path = find_git_dir_path(file_folder_path)
         commits['fileRelPath'] = file_path.replace(git_root_path, '').replace('//', '/')
         cmd = 'git log --pretty=format:%h '+util.format_file_path(file_path)
-        log_revision_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        log_revision_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                            shell=True, start_new_session=True)
         try:
             for line in log_revision_cmd.stdout:
                 commits['revision'] = bytes.decode(line.strip())
@@ -31,7 +37,8 @@ def set_file_info(commits):
             log_revision_cmd.terminate()
             log_revision_cmd.wait()
         cmd = 'git log --pretty=format:%H '+util.format_file_path(file_path)
-        log_revision_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        log_revision_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                            shell=True, start_new_session=True)
         try:
             for line in log_revision_cmd.stdout:
                 commits['longRevision'] = bytes.decode(line.strip())
@@ -40,7 +47,8 @@ def set_file_info(commits):
             log_revision_cmd.terminate()
             log_revision_cmd.wait()
         cmd = 'git log --pretty=format:\"%ad\"  --date=raw --reverse '+ util.format_file_path(file_path)
-        log_changetime_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        log_changetime_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                              shell=True, start_new_session=True)
         try:
             for line in log_changetime_cmd.stdout:
                 line = bytes.decode(line.strip())
@@ -51,7 +59,8 @@ def set_file_info(commits):
             log_changetime_cmd.terminate()
             log_changetime_cmd.wait()
         cmd = 'git branch '
-        branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                      shell=True, start_new_session=True)
         try:
             for line in branch_cmd.stdout:
                 line = line.decode().strip()
@@ -63,13 +72,13 @@ def set_file_info(commits):
                         commits['branch'] = git_branch.rstrip().rsplit(' ', 1)[1].replace(')', '')
                     else:
                         commits['branch'] = git_branch.strip()
-                    # commits['branch'] = git_branch.strip().replace('HEAD detached at ', '').replace('(', '').replace(')', '')
                     break
         finally:
             branch_cmd.terminate()
             branch_cmd.wait()
         cmd = 'git remote -v '
-        url_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        url_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                   shell=True, start_new_session=True)
         try:
             for line in url_cmd.stdout:
                 url = line.decode().strip()
@@ -92,7 +101,8 @@ def blame_run_new(file_path):
             file_folder_path = os.path.dirname(file_path)
             os.chdir(file_folder_path)
             cmd = 'git blame %s --line-porcelain ' % (util.format_file_path(file_path))
-            blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+            blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                         shell=True, start_new_session=True)
             try:
                 commit = {}
                 info = {}
@@ -102,21 +112,21 @@ def blame_run_new(file_path):
                     try:
                         line = bytes.decode(line.strip()) 
                         if re.search('^[a-z0-9]{20,}', line):
-                                if info != {}:
-                                    base64_info = util.base64toencode(util.str_to_bytes(json.dumps(info)))
-                                    records.add(base64_info)
-                                info = {}
-                                info['lineRevisionId'] = line.split(' ')[0]
-                                if line.split(' ')[0] in commit:
-                                    line_num = int(line.split(' ')[2])
-                                    lines = commit[line.split(' ')[0]]
-                                    zoom_lines = util.zoom_list(lines, line_num)
-                                    commit[line.split(' ')[0]] = zoom_lines
-                                else:
-                                    zoom_lines = []
-                                    zoom_lines.append(int(line.split(' ')[2]))
-                                    commit[line.split(' ')[0]] = zoom_lines
-                                info['lineShortRevisionId'] = str(line.split(' ')[0])[0:8]
+                            if info != {}:
+                                base64_info = util.base64toencode(util.str_to_bytes(json.dumps(info)))
+                                records.add(base64_info)
+                            info = {}
+                            info['lineRevisionId'] = line.split(' ')[0]
+                            if line.split(' ')[0] in commit:
+                                line_num = int(line.split(' ')[2])
+                                lines = commit[line.split(' ')[0]]
+                                zoom_lines = util.zoom_list(lines, line_num)
+                                commit[line.split(' ')[0]] = zoom_lines
+                            else:
+                                zoom_lines = []
+                                zoom_lines.append(int(line.split(' ')[2]))
+                                commit[line.split(' ')[0]] = zoom_lines
+                            info['lineShortRevisionId'] = str(line.split(' ')[0])[0:8]
                         elif re.search('^author ', line) and not '=' in line:
                             info['author'] = line.split(' ', 1)[1]
                         elif re.search('^author-mail ', line):
@@ -154,7 +164,8 @@ def blame_run_old(file_path):
         file_folder_path = os.path.dirname(file_path)
         os.chdir(file_folder_path)
         cmd = 'git blame %s -tln ' % (util.format_file_path(file_path))
-        blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                     shell=True, start_new_session=True)
         try:
             commit = {}
             records = set([])
@@ -183,7 +194,7 @@ def blame_run_old(file_path):
                     base64_info = util.base64toencode(util.str_to_bytes(json.dumps(info)))
                     records.add(base64_info)
                 except:
-                   continue
+                    continue
 
             for base64_info in records:
                 try:
@@ -224,7 +235,8 @@ if __name__ == "__main__":
         blame_new = True
         current_version = ''
         cmd = 'git --version '
-        version_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        version_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                       shell=True, start_new_session=True)
         try:
             for line in version_cmd.stdout:
                 line = line.decode().strip()
@@ -274,6 +286,6 @@ if __name__ == "__main__":
             print('generate output json file: '+options['output'])
             file.write(json.dumps(files_scm_blame, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

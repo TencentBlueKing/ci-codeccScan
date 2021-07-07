@@ -1,18 +1,27 @@
-import sys,subprocess,json,os
+import sys
+import subprocess
+import json
+import os
+import datetime
 
 options = {}
+
+def get_datetime():
+    return datetime.datetime.now().strftime('%Y-%m-%d_%H.%M.%S')
 
 def get_info(git_dir_path):
     scm_info = {}
     scm_info['scmType'] = 'git'
     cmd = 'git branch '
-    branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+    branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                  shell=True, start_new_session=True)
     try:
         for line in branch_cmd.stdout:
             line = line.decode().strip()
             if '*' in line:
                 git_branch = line.split('*')[1]
-                scm_info['branch'] = git_branch.strip().replace('HEAD detached at ', '').replace('(', '').replace(')', '')
+                scm_info['branch'] = git_branch.strip().replace('HEAD detached at ', '')\
+                                                       .replace('(', '').replace(')', '')
                 break
     finally:
         branch_cmd.terminate()
@@ -36,12 +45,11 @@ def get_info(git_dir_path):
                 scm_info['revision'] = msg_array[1]
                 scm_info['commitID'] = msg_array[2]
                 scm_info['fileUpdateTime'] = int(str(msg_array[3]).rsplit(' ', 1)[0]+'000')
-         
-
     
     # cmd = 'git ls-remote --get-url '
     cmd = 'git remote -v '
-    url_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+    url_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                               shell=True, start_new_session=True)
     try:
         for line in url_cmd.stdout:
             url = line.decode().strip()
@@ -88,6 +96,7 @@ def get_submodule(git_dir_path, scm_info):
     return scm_info
 
 if __name__ == "__main__":
+    start_date = get_datetime()
     scm_info_list = []
     if len(sys.argv) > 2:
         for i in range(len(sys.argv)-1):
@@ -107,15 +116,20 @@ if __name__ == "__main__":
                 if os.path.isdir(dir_path):
                     os.chdir(dir_path)
                     scm_info = get_info(dir_path)
+                    if "fileUpdateAuthor" not in scm_info:
+                        continue
                     scm_info = get_submodule(dir_path, scm_info)
                     scm_info_list.append(scm_info)
                     
-        if len(scm_info_list) >0 and 'output' in options:
+        if 'output' in options:
             with open(options['output'], 'w', encoding='utf-8') as file:
                 print('generate output json file: '+options['output'])
                 file.write(json.dumps({"scm_info": scm_info_list}, sort_keys=True, indent=4))
+        finish_date = get_datetime()
+        print('scm info finish: ' + start_date + ' to ' + finish_date)
+        
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')
             

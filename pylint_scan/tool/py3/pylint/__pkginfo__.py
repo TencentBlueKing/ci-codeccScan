@@ -14,10 +14,13 @@
 # Copyright (c) 2018-2019 Ashley Whetter <ashley@awhetter.co.uk>
 # Copyright (c) 2018 ssolanki <sushobhitsolanki@gmail.com>
 # Copyright (c) 2018 Sushobhit <31987769+sushobhit27@users.noreply.github.com>
-# Copyright (c) 2019 Ville Skyttä <ville.skytta@iki.fi>
+# Copyright (c) 2019-2020 Ville Skyttä <ville.skytta@iki.fi>
 # Copyright (c) 2019 Hugo van Kemenade <hugovk@users.noreply.github.com>
 # Copyright (c) 2019 Dan Hemberger <846186+hemberger@users.noreply.github.com>
 # Copyright (c) 2019 jab <jab@users.noreply.github.com>
+# Copyright (c) 2020 hippo91 <guillaume.peillex@gmail.com>
+# Copyright (c) 2020 Damien Baty <damien.baty@polyconseil.fr>
+# Copyright (c) 2020 Pierre Sassoulas <pierre.sassoulas@gmail.com>
 
 # Licensed under the GPL: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 # For details: https://github.com/PyCQA/pylint/blob/master/COPYING
@@ -25,10 +28,11 @@
 # pylint: disable=redefined-builtin,invalid-name
 """pylint packaging information"""
 
+
 from os.path import join
 
 # For an official release, use dev_version = None
-numversion = (2, 5, 2)
+numversion = (2, 6, 0)
 dev_version = None
 
 version = ".".join(str(num) for num in numversion)
@@ -37,7 +41,7 @@ if dev_version is not None:
 
 install_requires = [
     "astroid>=2.4.0,<=2.5",
-    "isort>=4.2.5,<5",
+    "isort>=4.2.5,<6",
     "mccabe>=0.6,<0.7",
     "toml>=0.7.1",
 ]
@@ -51,6 +55,7 @@ license = "GPL"
 description = "python code static checker"
 web = "https://github.com/PyCQA/pylint"
 mailinglist = "mailto:code-quality@python.org"
+project_urls = {"What's New": "https://pylint.pycqa.org/en/latest/whatsnew/"}
 author = "Python Code Quality Authority"
 author_email = "code-quality@python.org"
 

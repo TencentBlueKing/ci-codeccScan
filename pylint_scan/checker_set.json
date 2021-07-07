@@ -1,0 +1,113 @@
+{
+    "checker_set_id" : "standard_python",
+    "checker_set_name" : "腾讯代码规范(Python)",
+    "checker_set_lang" : "Python",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "mixed-indentation",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "bad-indentation",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "line-too-long",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "bad-whitespace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "missing-final-newline",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "trailing-newlines",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "multiple-statements",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "mixed-line-endings",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "unexpected-line-ending-format-tosa",
+            "props" : "[{\"displayValue\":\"LF\",\"propValue\":\"LF\",\"propName\":\"expected-line-ending-format\"}]"
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "multiple-imports",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "misplaced-future",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "invalid-name",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "broad-except",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "bare-except",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "singleton-comparison",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "len-as-condition",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "function-redefined",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "dangerous-default-value",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "unused-variable",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "wrong-import-order",
+            "props" : ""
+        },
+        {
+            "tool_name" : "PYLINT",
+            "checker_key" : "unused-import",
+            "props" : ""
+        }
+    ]
+}

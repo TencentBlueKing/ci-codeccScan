@@ -38,15 +38,25 @@ class Test_objc_lizard(unittest.TestCase):
         self.assertEqual("initWithRequest: delegate: startImmediately:", result[0].name)
         self.assertEqual("initWithRequest:( NSURLRequest * ) delegate:( id < NSURLConnectionDelegate > ) startImmediately:( BOOL )", result[0].long_name)
 
+    def test_typedef(self):
+        code = """
+                typedef void(^alertActionHandler)(void);
+                @implementation TestLizard
+                - (void)method1 { }
+                - (void)method2 { }
+                @end
+            """
+        result = self.create_objc_lizard(code)
+        self.assertEqual(2, len(result))
+        self.assertEqual("method1", result[0].name)
+
     def test_implementation(self):
         code = """
             @implementation classname(xx)
             + (return_type)classMethod
             {
                 if (failure){
-
                      //wefailed
-
                  }
             }
             - (return_type)instanceMethod

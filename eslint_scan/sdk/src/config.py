@@ -1,4 +1,5 @@
-﻿import os, sys
+﻿import os
+import sys
 import json
 import shutil
 
@@ -25,13 +26,18 @@ def cleanup_rule_config():
 def generate_rule_config(config_type):
     try:
         shutil.copyfile(config_path+'/tencent_standard.js', rule_config_file)
+        # if config_type == 'standard':
+        #     shutil.copyfile(config_path+'/tencent_standard.js', rule_config_file)
+        # elif config_type == 'vue':
+        #     shutil.copyfile(config_path+'/tencent_vue.js', rule_config_file)
+        # elif config_type == 'react':
+        #     shutil.copyfile(config_path+'/tencent_react.js', rule_config_file)
     except Exception as e:
         raise Exception(e)             
         
 def merge_third_rule_config():
     config_data = {}
     checker_list = {}
-    updata_overrides_list = []
     with open(third_rule_config_file, 'r') as file:
         third_config_data = json.load(file)
         if 'rules' in third_config_data:
@@ -39,13 +45,9 @@ def merge_third_rule_config():
     if checker_list != {}:
         with open(rule_config_file, 'r') as file:
             config_data = json.load(file)
-            overrides_list = config_data['overrides']
-            for overrides in overrides_list:
-                rules_list = overrides['rules']
-                overrides['rules'] = dict(rules_list, **checker_list)
-                updata_overrides_list.append(overrides)
-            config_data['overrides'] = updata_overrides_list
-
+            rules_list = config_data['rules']
+            checker_list = dict(rules_list, **checker_list)
+            config_data['rules'] = checker_list
     if config_data != {}:
         with open(rule_config_file, 'w') as file:
             file.write(json.dumps(config_data, sort_keys=True, indent=4, separators=(',', ':')))
@@ -65,16 +67,14 @@ def update_rule_config(properties_info):
         #delete filter checkers && add market rules
         with open(rule_config_file, 'r') as file:
             config_data = json.load(file)
-            overrides_list = config_data['overrides']
-            update_overrides_list = []
-            for rules in overrides_list:
-                checker_list = rules['rules']
-                for checker in checker_list.keys():
-                    if not checker in checkers_list and checker in checker_list:
-                        checker_list[checker] = 'off'
-                rules['rules'] = checker_list
-                update_overrides_list.append(rules)
-            
+            checker_list = config_data['rules']
+            delete_checkers_list = []
+            for checker in checker_list.keys():
+                if not checker in checkers_list:
+                    delete_checkers_list.append(checker)
+            for delete_checker in delete_checkers_list:
+                if delete_checker in config_data['rules']:
+                    config_data['rules'][delete_checker]='off'
 
         #update checker option
         map_checker = {'max-len':'{ "code": xxx }'}
@@ -89,15 +89,8 @@ def update_rule_config(properties_info):
                     checker_value = str(checker_value)
                 if key in map_checker.keys():
                     checker_value = json.loads(map_checker[key].replace('xxx', str(checker_value)))
-                for index, overrides in enumerate(update_overrides_list):
-                    checker_list = overrides['rules']
-                    if key in checker_list.keys():
-                        checker_list[key]= ["error", checker_value]
-                    overrides['rules'] = checker_list
-                    update_overrides_list[index] =overrides
-                    
-        config_data['overrides'] = update_overrides_list
-
+                config_data['rules'][key]= ["error", checker_value]
+            
         #write new config
         with open(rule_config_file, 'w') as file:
             file.write('module.exports =')

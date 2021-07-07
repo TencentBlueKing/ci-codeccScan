@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import config
@@ -34,7 +35,8 @@ def scan(filename, checkers_list, skip_path_list):
     skip_option = ''
     result_xml = config.current_path+'/result.xml'
     if os.path.isdir(filename):
-        cmd = "%s/../../tool/ktlint %s/**/*.kt --reporter=checkstyle,output=%s" % (config.current_path, filename, result_xml)
+        cmd = "%s/../../tool/ktlint %s/**/*.kt --reporter=checkstyle,output=%s" % \
+              (config.current_path, filename, result_xml)
     else:
         cmd = "%s/../../tool/ktlint %s --reporter=checkstyle,output=%s" % (config.current_path, filename, result_xml)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
@@ -102,7 +104,8 @@ if __name__ == "__main__" :
             #增量扫描
             if 'scanType' in input_data and input_data['scanType'] == 'increment':
                 for file_path in input_data['incrementalFiles']:
-                    if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 and check_path_match_skip(file_path, input_data['whitePathList']):
+                    if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 \
+                       and check_path_match_skip(file_path, input_data['whitePathList']):
                         continue
                     scan_path_list.append(file_path)
             #全量扫描
@@ -125,6 +128,6 @@ if __name__ == "__main__" :
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

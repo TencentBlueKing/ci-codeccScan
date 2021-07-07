@@ -322,6 +322,12 @@ def config_fliter(cfg_path):
         if len(line_array) > 1:
           checkers_options[line_array[0][1:]] = line_array[1]
         filter_list.append(line_array[0])
+      if '+build/include' in filter_list:
+        buildLists = ['build/include_subdir', 'build/include_order',
+                       'build/include_what_you_use', 'build/include_alpha']
+        for build in buildLists:
+          if '+'+build not in filter_list:
+            filter_list.append('-' + build)
   return ','.join(filter_list)
 
 def thirdError(filename,linenum, checkerName, message):
@@ -409,6 +415,7 @@ if __name__ == '__main__':
     cpplint._cpplint_state.ResetErrorCounts()
     for filename in filenames:
       cpplint.ProcessFile(filename, cpplint._cpplint_state.verbose_level)
+      print (thirdRuleSet)
       for rule in thirdRuleSet:
           third_checker = imp.load_source("", rule)
           tempfilename = os.path.split(rule)[1]

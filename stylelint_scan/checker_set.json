@@ -1,0 +1,109 @@
+{
+    "checker_set_id" : "standard_css",
+    "checker_set_name" : "腾讯代码规范(CSS)",
+    "checker_set_lang" : "CSS",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [ 
+        {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "indentation"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "number-leading-zero"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "string-quotes"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "selector-max-id"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "selector-list-comma-newline-after"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "comment-empty-line-before"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "block-opening-brace-space-before"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "declaration-colon-space-after"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "declaration-colon-space-before"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "declaration-block-single-line-max-declarations"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "declaration-property-value-disallowed-list"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "max-nesting-depth"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "scss/dollar-variable-pattern"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "scss/at-extend-no-missing-placeholder"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "order/order"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "media-feature-name-no-vendor-prefix"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "at-rule-no-vendor-prefix"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "selector-no-vendor-prefix"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "property-no-vendor-prefix"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "value-no-vendor-prefix"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "color-hex-case"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "color-hex-length"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "declaration-no-important"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "rule-empty-line-before"
+            }, 
+            {
+            "tool_name" : "STYLELINT",
+            "checker_key" : "at-rule-empty-line-before"
+            }
+            
+    ]
+}

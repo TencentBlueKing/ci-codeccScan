@@ -22,6 +22,7 @@
 # Copyright (c) 2019 Djailla <bastien.vallet@gmail.com>
 # Copyright (c) 2019 Hugo van Kemenade <hugovk@users.noreply.github.com>
 # Copyright (c) 2019 Pierre Sassoulas <pierre.sassoulas@gmail.com>
+# Copyright (c) 2020 谭九鼎 <109224573@qq.com>
 # Copyright (c) 2020 Anthony <tanant@users.noreply.github.com>
 
 
@@ -828,7 +829,7 @@ class StringConstantChecker(BaseTokenChecker):
         #
         # Accept a backslash when it escapes a backslash, or a quote, or
         # end-of-line, or one of the letters that introduce a special escape
-        # sequence <http://docs.python.org/reference/lexical_analysis.html>
+        # sequence <https://docs.python.org/reference/lexical_analysis.html>
         #
         index = 0
         while True:

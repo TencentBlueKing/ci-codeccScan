@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import config
@@ -37,7 +38,12 @@ def scan(filename, config_path, third_rules, skip_path_list):
     for skip_path in skip_path_list:
         if '' != skip_path and not '$' in skip_path:
             skip_option += ' -x \"'+skip_path+'\"'
-    cmd = "java -classpath %s com.puppycrawl.tools.checkstyle.Main %s -c %s -f xml \"%s\" -o \"%s\"" % (class_path, skip_option, config.rule_config_file, filename, result_xml)
+    if os.path.isdir(filename):
+        cmd = "java -classpath %s com.puppycrawl.tools.checkstyle.Main %s -c %s -f xml \"%s\" -o \"%s\"" \
+          % (class_path, skip_option, config.rule_config_file, filename, result_xml)
+    else:
+        cmd = "java -classpath %s com.puppycrawl.tools.checkstyle.Main %s -c %s -f xml -inc-file-path \"%s\" -o \"%s\"" \
+          % (class_path, skip_option, config.rule_config_file, filename, result_xml)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
@@ -61,8 +67,10 @@ def scan(filename, config_path, third_rules, skip_path_list):
                             defect = {}
                             defect['filePath'] = file_path
                             defect['line'] = sub_elem.attrib['line']
-                            if not 'onesdk.' in sub_elem.attrib['source'] and len(sub_elem.attrib['source'].rsplit('.', 1)) > 1:
+                            if not 'onesdk.' in sub_elem.attrib['source'] \
+                               and len(sub_elem.attrib['source'].rsplit('.', 1)) > 1:
                                 short_checker = sub_elem.attrib['source'].rsplit('.', 1)[1]
+                                defect['checkerName'] = short_checker
                                 if short_checker.endswith('Check'):
                                     defect['checkerName'] = short_checker[:-5]
                             else:
@@ -104,26 +112,44 @@ if __name__ == "__main__" :
                 if 'skipPaths' in input_data:
                     skip_path_list = input_data['skipPaths']
                 
-                scan_path_list = []
+                file_scan_path_list = []
+                folder_scan_path_list = []
                 #增量扫描
                 if 'scanType' in input_data and input_data['scanType'] == 'increment':
                     for file_path in input_data['incrementalFiles']:
-                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 and check_path_match_skip(file_path, input_data['whitePathList']):
+                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 \
+                           and check_path_match_skip(file_path, input_data['whitePathList']):
                             continue
-                        scan_path_list.append(file_path)
+                        if os.path.isfile(file_path):
+                            file_scan_path_list.append(file_path)
+                        elif os.path.isdir(file_path):
+                            folder_scan_path_list.append(file_path)
                 #全量扫描
                 elif 'scanType' in input_data and input_data['scanType'] == 'full':
                     if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0:
                         for white_path in input_data['whitePathList']:
-                            if os.path.isdir(white_path) or os.path.isfile(white_path):
-                                scan_path_list.append(white_path)
+                            if os.path.isfile(white_path):
+                                file_scan_path_list.append(white_path)
+                            elif os.path.isdir(white_path):
+                                folder_scan_path_list.append(white_path)
                     elif 'scanPath' in input_data and os.path.isdir(input_data['scanPath']):
-                        scan_path_list.append(input_data['scanPath'])
-                
-                for scan_path in scan_path_list:
-                    file_defects = scan(scan_path, config.rule_config_file, config.third_rules, skip_path_list)
+                        folder_scan_path_list.append(input_data['scanPath'])
+
+
+                if len(file_scan_path_list) > 0:
+                    fileslist = config.current_path+'/fileslist.txt'
+                    with open(fileslist, 'w', encoding='utf-8') as files_list:
+                        for file_path in file_scan_path_list:
+                            files_list.write(file_path+'\n')
+                    file_defects = scan(fileslist, config.rule_config_file, config.third_rules, skip_path_list)
                     if len(file_defects) > 0:
-                        all_file_defects.extend(file_defects) 
+                        all_file_defects.extend(file_defects)
+                
+                if len(folder_scan_path_list) > 0:
+                    for scan_path in folder_scan_path_list:
+                        file_defects = scan(scan_path, config.rule_config_file, config.third_rules, skip_path_list)
+                        if len(file_defects) > 0:
+                            all_file_defects.extend(file_defects)
                     
             output_data['defects'] = all_file_defects
             if 'output' in options:
@@ -131,6 +157,6 @@ if __name__ == "__main__" :
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

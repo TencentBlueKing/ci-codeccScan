@@ -1,0 +1,263 @@
+{
+    "checker_set_id" : "standard_java",
+    "checker_set_name" : "腾讯代码规范(Java)",
+    "checker_set_lang" : "JAVA",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "FileTabCharacter",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "LineLength",
+            "props" : "[{\"displayValue\":\"120\",\"propValue\":\"120\",\"propName\":\"max\"}]"
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "OuterTypeFilename",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "IllegalTokenText",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "AvoidEscapedUnicodeCharacters",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "AvoidStarImport",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "OneTopLevelClass",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "NoLineWrap",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "EmptyBlock",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "NeedBraces",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "LeftCurly",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "RightCurly",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "WhitespaceAround",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "OneStatementPerLine",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MultipleVariableDeclarations",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ArrayTypeStyle",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MissingSwitchDefault",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "FallThrough",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "UpperEll",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ModifierOrder",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "EmptyLineSeparator",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "SeparatorWrap",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "PackageName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "TypeName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MemberName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "LambdaParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "CatchParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "LocalVariableName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ClassTypeParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MethodTypeParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "InterfaceTypeParameterName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "NoFinalizer",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "GenericWhitespace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "OverloadMethodsDeclarationOrder",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "VariableDeclarationUsageDistance",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MethodParamPad",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "NoWhitespaceBefore",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ParenPad",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "OperatorWrap",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "AnnotationLocation",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "JavadocTagContinuationIndentation",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "SummaryJavadoc",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "JavadocMethod",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MethodName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "SingleLineJavadoc",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "EmptyCatchBlock",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "CommentsIndentation",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "MissingJavadocMethod",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "InvalidJavadocPosition",
+            "props" : ""
+        },
+        {
+            "tool_name" : "CHECKSTYLE",
+            "checker_key" : "ConstantName",
+            "props" : ""
+        }
+    ]
+}

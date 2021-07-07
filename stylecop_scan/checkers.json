@@ -1,0 +1,4025 @@
+[
+  {
+    "checkerName": "AccessModifierMustBeDeclared",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]类、结构体、枚举、接口、delegate定义时必须显示声明访问修饰符",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "AccessibleFieldsMustBeginWithUpperCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a public or internal field must begin with an upper-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "AllAccessorsMustBeMultiLineOrSingleLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "花括号相关",
+    "checkerTypeSort": "9",
+    "checkerDesc": "Validates that an accessor in a property or indexer is only placed on a single line if all accessors in the property or indexer are placed on a single line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ArithmeticExpressionsMustDeclarePrecedence",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "括号相关",
+    "checkerTypeSort": "12",
+    "checkerDesc": "Verifies that the code does not rely on implied arithmetic operator precedence.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "AttributeConstructorMustNotUseUnnecessaryParenthesis",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "括号相关",
+    "checkerTypeSort": "12",
+    "checkerDesc": "Verifies that parenthesis are removed from attribute constructors when there are no parameters.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "BlockStatementsMustNotContainEmbeddedComments",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "语句相关",
+    "checkerTypeSort": "20",
+    "checkerDesc": "Validates that there are no comments placed between the declaration and opening bracket in a bracketed statement.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "BlockStatementsMustNotContainEmbeddedRegions",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "语句相关",
+    "checkerTypeSort": "20",
+    "checkerDesc": "Validates that there are no regions placed between the declaration and opening bracket in a bracketed statement.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ChainedStatementBlocksMustNotBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates than an else, catch, or finally statement is not preceded by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClassFieldShouldNotBePublicOrProtected",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查类成员是否定义了Public或者Protected修饰访问，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClassStructMethodDelegateNameMustUseUpperCamelCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.1](https://{github.com/xxxxx}/standards/csharp#121-%E5%BF%85%E9%A1%BB%E7%B1%BB%E7%BB%93%E6%9E%84%E4%BD%93)，[tencent standards/csharp 1.3.1](https://{github.com/xxxxx}/standards/csharp#131-%E5%BF%85%E9%A1%BB%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingAttributeBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a closing attribute bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingCurlyBracketMustBeFollowedByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a bracketed statement or element is followed by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingCurlyBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a closing curly bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingCurlyBracketsMustNotBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a closing curly bracket in a bracketed statement or element is not preceded by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingGenericBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a closing bracket in a generic type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingParenthesisMustBeOnLineOfLastParameter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that the closing bracket of a parameter list is placed just after the last parameter, on the same line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingParenthesisMustBeOnLineOfOpeningParenthesis",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that the closing bracket of a parameter list is placed just after the opening bracket when the method has no parameters.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingParenthesisMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a closing parenthesis.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ClosingSquareBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a closing square bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeAnalysisSuppressionMustHaveJustification",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "调试相关",
+    "checkerTypeSort": "6",
+    "checkerDesc": "Validates that a Code Analysis suppression contains a justifiction describing the reason for the suppression.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainBlankLinesAtEndOfFile",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that the code does not contain blank lines at the end of the file.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainBlankLinesAtStartOfFile",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that the code does not contain blank lines at the start of the file.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainEmptyStatements",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]不允许存在空的语句",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainMultipleBlankLinesInARow",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that the code does not contain multiple blank lines in a row.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainMultipleStatementsOnOneLine",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一行只能有一个语句",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainMultipleWhitespaceInARow",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that the code does not contain more than one spacing in a row.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CodeMustNotContainSpaceAfterNewKeywordInImplicitlyTypedArrayAllocation",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that there is no space between the new keyword and the opening square bracket in an implicitly typed array allocation.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ColonsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a colon.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommaMustBeOnSameLineAsPreviousParameter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that a comma between two parameters is placed just after the previous parameter, on the same line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommaOrSemicolonMustBeFollowedBySpaceOrEndOfLine",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]逗号、分号后须跟空格或换行 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]逗号、分号后须跟空格或换行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommaOrSemicolonOrCloseParenthesisMustNotBeFollowedByComment",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]逗号、分号、右括号后不能紧跟注释 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "[必须]逗号、分号、右括号后不能紧跟注释",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommasMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and a comma.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommentMustBeFollowedByItsCommentTarget",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDescModel": "[必须]注释语句与其注释对象之间不能空行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommentMustUseCSharpXMLDocumentCommentFormat",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]注释必须使用C#标准的XML文档注释格式 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "[必须]注释必须使用C#标准的XML文档注释格式",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CommentsMustContainText",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "The comment is empty. Add text to the comment or remove it.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConditionalExpressionsMustDeclarePrecedence",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "括号相关",
+    "checkerTypeSort": "12",
+    "checkerDesc": "Verifies that the code does not rely on implied conditional operator precedence.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstFieldNameMustNotContainUnderscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]const型成员变量建议不带前缀和下划线",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstFieldNameMustUseUpperCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]const型成员变量命名建议用大驼峰形式",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstFieldNamesMustBeginWithUpperCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a constant begins with an upper-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstVariableNameMustUseUpperCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]const型变量命名须用大驼峰形式",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstantsMustAppearBeforeFields",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that all constant elements are placed before non-constant elements of the same type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ConstructorSummaryDocumentationMustBeginWithStandardText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that a constructor's summary text begins with the appropriate wording.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CurlyBracketsForMultiLineStatementsMustNotShareLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "花括号相关",
+    "checkerTypeSort": "9",
+    "checkerDesc": "Validates that the opening or closing curly bracket in a bracketed statement is placed on its own line if the statement spans multiple lines.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "CurlyBracketsMustNotBeOmitted",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "花括号相关",
+    "checkerTypeSort": "9",
+    "checkerDesc": "Validates that opening and closing curly brackets are always included, even if the statement type allows them to be omitted.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DebugAssertMustProvideMessageText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "调试相关",
+    "checkerTypeSort": "6",
+    "checkerDesc": "Validates that calls to Debug.Assert provide a message in the second parameter describing the reason for the assert.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DebugFailMustProvideMessageText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "调试相关",
+    "checkerTypeSort": "6",
+    "checkerDesc": "Validates that calls to Debug.Fail provide a message in the first parameter describing the reason for the failure.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DeclarationKeywordsMustFollowOrder",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Verifies the ordering of keywords in an element declaration.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DeclaritionInGlobalNameSpaceIsForbidden",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]禁止在全局命名空间声明类型 [tencent standards/csharp 2.1.7](https://{github.com/xxxxx}/standards/csharp#217-%E5%BF%85%E9%A1%BB%E5%85%A8%E5%B1%80%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
+    "checkerDescModel": "[必须]禁止在全局命名空间声明类型",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DelegateNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查委托的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DelegateNameShouldEndsWithEventHandler",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查委托的命名是否以EventHandler结尾，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DereferenceAndAccessOfSymbolsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a dereference or address-of symbol.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DestructorSummaryDocumentationMustBeginWithStandardText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that a destructor's summary text begins with the appropriate wording.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DoNotPlaceRegionsWithinElements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Region相关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Prevents the use of regions within code elements, which limits code readability.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DoNotPrefixCallsWithBaseUnlessLocalImplementationExists",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "成员访问相关",
+    "checkerTypeSort": "5",
+    "checkerDesc": "Verifies that the 'base.' prefix is not misused.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DoNotSplitNullConditionalOperators",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that the code does not contain new rows or spaces.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DoNotUseRegions",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Region相关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Prevents the use of regions anywhere within the code.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationHeadersMustNotContainBlankLines",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that a documentation header does not contain blank lines.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationLinesMustBeginWithSingleSpace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that the forward slashes at the beginning of an documentation header line are followed by a single space.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationMustContainValidXml",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Indicates that a documentation header is composed of invalid Xml and cannot be parsed.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationMustMeetCharacterPercentage",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that the documentation text within a documentation section does not contain an excessive amount of symbols, making it difficult to read.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationTextMustBeginWithACapitalLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that the documentation text within a documentation section begins with a capital letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationTextMustContainWhitespace",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that the documentation text within a documentation section contains at least two words, separated by whitespace.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationTextMustEndWithAPeriod",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that the documentation text within a documentation section ends with a period.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationTextMustMeetMinimumCharacterLength",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that the documentation text within a documentation section meets or exceeds the minimum length.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "DocumentationTextMustNotBeEmpty",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that the description within a documentation tag is filled-in.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationHeaderMustBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a documentation header is preceded by a blank line, or is the first item in its scope.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationHeadersMustNotBeFollowedByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a documentation header is not followed by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationMustBeSpelledCorrectly",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains correctly spelled words.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationMustHaveSummary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a documentation header contains a properly formatted summary tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationMustHaveSummaryText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's summary tag contains a filled-in description.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationMustNotBeCopiedAndPasted",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header does not contain repeated documentation text.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementDocumentationMustNotHaveDefaultSummary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that the summary tag in an element's documentation header is not the default text generated by Visual Studio.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementMustBeginWithLowerCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that names of certain types of elements begin with a lower-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementMustBeginWithUpperCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that names of certain types of elements begin with an upper-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementMustNotBeOnSingleLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "花括号相关",
+    "checkerTypeSort": "9",
+    "checkerDesc": "Validates that a bracketed element is not placement on a single line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementParameterDocumentationMustDeclareParameterName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that all param tags in an element's documentation header contain a filled-in name attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementParameterDocumentationMustHaveText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains filled-in descriptions for each parameter in the element's parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementParameterDocumentationMustMatchElementParameters",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header does not contain param tags for parameters which do not exist in the element's parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementParametersMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains a param tag for each item in the element's parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementReturnValueDocumentationMustHaveText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's returns tag contains a filled-in description.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementReturnValueMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains a returns tag if the element has a return value.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementsMustAppearInTheCorrectOrder",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that elements are placed in the correct order.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementsMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element contains a properly formatted documentation header.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementsMustBeOrderedByAccess",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that elements of the same type are placed in order by access.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ElementsMustBeSeparatedByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that adjacent elements are separated by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumItemNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查枚举值的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumItemNameShouldNotContainEnumName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查枚举值的命名是否含有枚举类型名称，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查枚举的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumNameShouldNotContainEnum",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查枚举的命名是否函数Enum单词，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumOrEnumItemNameMustUseUpperCamelCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.2](https://{github.com/xxxxx}/standards/csharp#122-%E5%BF%85%E9%A1%BB%E6%9E%9A%E4%B8%BE)",
+    "checkerDescModel": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EnumerationItemsMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an item within an enumeration contains a properly formatted documentation header.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EventAccessorsMustFollowOrder",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Verifies that add-accessors are placed before remove-accessors within events.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "EventNameShouldEndsWithEvent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查事件的命名是否以Event结尾，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查结构体成员的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNameShouldNotContainStructName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查结构体成员的命名是否含有结构体类型名，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNamesMustBeginWithLowerCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a variable or field begins with a lower-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNamesMustNotBeginWithUnderscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a field does not begin with an underscore.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNamesMustNotContainUnderscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a field does not contain underscores.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldNamesMustNotUseHungarianNotation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that a variable name is not prepended with lower-case characters matching the signature of Hungarian notation.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FieldsMustBePrivate",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "修饰符相关",
+    "checkerTypeSort": "19",
+    "checkerDesc": "Validates that a field is declared with private access.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileEncodingUTF8",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查文件的编码是否是UTF8，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHasCR",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查文件是否存在回车字符（CR），有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderCompanyNameTextMustMatch",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a company attribute which contains a specific company name.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderCopyrightTextMustMatch",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a copyright matching specific copyright text.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderFileNameDocumentationMustMatchFileName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a file attribute which contains the name of the file.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderFileNameDocumentationMustMatchTypeName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a file attribute which contains the name of the first type in the file.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderMustContainFileName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a file attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderMustHaveCopyrightText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a filled-in copyright tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderMustHaveSummary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a filled-in summary description.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderMustHaveValidCompanyText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a filled-in company attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileHeaderMustShowCopyright",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file header contains a copyright tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMayOnlyContainASingleClass",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件内容相关",
+    "checkerTypeSort": "16",
+    "checkerDesc": "Validates that a C# document does not contain more than one class at the root level.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMayOnlyContainASingleNamespace",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件内容相关",
+    "checkerTypeSort": "16",
+    "checkerDesc": "Validates that a C# document does not contain more than one namespace directive.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMustEncodeWithUTF8WithoutBOM",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]文件须以UTF-8 无BOM形式保存 [tencent standards/csharp 2.1.4](https://{github.com/xxxxx}/standards/csharp#214-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)",
+    "checkerDescModel": "[必须]文件须以UTF-8 无BOM形式保存",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMustHaveHeader",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "Validates that a file contains a properly formatted file header.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMustNotContainsTooManyClass",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一个cs文件的类的数量不宜过多 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDescModel": "[必须]一个cs文件的类的数量不宜过多",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileMustOnlyContainsSingleNamespace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一个cs文件只能包含一个NameSpace [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDescModel": "[必须]一个cs文件只能包含一个NameSpace",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileNameShouldBePacal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查文件名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileShouldHaveHeaderDescription",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查文件头是否包含注释，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FileShouldHaveSpecDesc",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查文件头的注释是否包含Version、Module、Author字段，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FirstClassStructEnumInterfaceMustBePublicOrInternal",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须是public或internal型 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDescModel": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须是public或internal型",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FirstClassStructEnumInterfaceNameMustBeSameToFileName",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须与文件同名 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDescModel": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须与文件同名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "GenericTypeParameterDocumentationMustDeclareParameterName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that all typeparam tags in an element's documentation header contain a filled-in name attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "GenericTypeParameterDocumentationMustHaveText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains filled-in descriptions for each item in the element's generic type list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "GenericTypeParameterDocumentationMustMatchTypeParameters",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header does not contain typeparam tags for types which are not part of the element's generic type list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "GenericTypeParametersMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header contains a typeparam tag for each of the element's generic types.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "GenericTypeParametersMustBeDocumentedPartialClass",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a partial class, struct, etc. contains a documentation header with a typeparam tag for each of the element's generic types, unless these types are documented on another part of the element.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "IncludeNodeDoesNotContainValidFileAndPath",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that an 'include' tag contains a valid file and path attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "IncludedDocumentationFileDoesNotExist",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that an included documentation header file can be loaded.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "IncludedDocumentationXPathDoesNotExist",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that an included documentation tag's XPath expression is valid.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "IncrementDecrementSymbolsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an increment or decrement symbol.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InheritDocMustBeUsedWithInheritingClass",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Verifies that an 'inheritdoc' tag is not used when the class or interface does not inherit from a base class or interface.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that all non-static readonly elements are placed before non-static non-readonly elements of the same type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InterfaceNameMustBeginWithIAndLeftWordsUseUpperCamelCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]接口须以I(Interface)开头，后接大驼峰形式命名 [tencent standards/csharp 1.3.2](https://{github.com/xxxxx}/standards/csharp#132-%E5%BF%85%E9%A1%BB%E6%8E%A5%E5%8F%A3)",
+    "checkerDescModel": "[必须]接口须以I(Interface)开头，后接大驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InterfaceNamesMustBeginWithI",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of an interface begins with the capital letter 'I'.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InterfaceNamingPascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查接口名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InterfaceNamingStartWithI",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查接口名是否以I开头，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "InterfaceNamingUnderscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查接口名是否有下划线，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "KeyWordMustBeFollowedBySpace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]if、for、while等关键字后须以空格隔开 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]if、for、while等关键字后须以空格隔开",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "KeywordsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a reserved keyword.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MacroNameMustUseUpperSnakeCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]宏须以大写蛇形命名 [tencent standards/csharp 1.2.3](https://{github.com/xxxxx}/standards/csharp#123-%E5%BF%85%E9%A1%BB%E5%AE%8F)",
+    "checkerDescModel": "[必须]宏须以大写蛇形命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MemberAccessSymbolsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a member access symbol.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MemberVariableAccessModifierMustBeDeclared",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]成员变量定义时必须显示声明访问修饰符",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MethodCloseParenthesisMustBeSameLineToOpenParenthesis",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]函数参数列表的左括号和右括号必须在同一行，参数列表不能分行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MethodNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查方法名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MethodOrPropertyAccessModifierMustBeDeclared",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]普通函数、属性定义时必须显示声明访问修饰符",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MethodParameterHasUnderscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查方法参数是否有下划线，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MethodParameterShouldBeCamel",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查方法参数命名是否符合Camel命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MultiLineCommentMustNotBeEmpty",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]多行注释不能为空 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "[必须]多行注释不能为空",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MustNotUseEmptyUpdate",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "性能相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]禁止添加空Update函数 [tencent standards/csharp 4.2](https://{github.com/xxxxx}/standards/csharp#42-%E6%8E%A8%E8%8D%90updatefixedupdatelateupdate%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "[必须]禁止添加空Update函数",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "NameSpaceMustUseUpperCamelCaseOrAllUpperCaseLetterForShort",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]NameSpace须以大驼峰形式或全部大写(可简称)来命名 [tencent standards/csharp 1.3.5](https://{github.com/xxxxx}/standards/csharp#135-%E5%BF%85%E9%A1%BB%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
+    "checkerDescModel": "[必须]NameSpace须以大驼峰形式或全部大写(可简称)来命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "NamespaceShouldContainGCloud",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查namespace名称是否包含Gcloud，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "NegativeSignsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a negative sign.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a non-private readonly field begins with an upper-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "NullableTypeSymbolsMustNotBePrecededBySpace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that a nullable type symbol is not preceded by white space.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OneLineMustContainsSingleVariableDeclaration",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一行只能命名一个变量 [tencent standards/csharp 2.1.8](https://{github.com/xxxxx}/standards/csharp#218-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)",
+    "checkerDescModel": "[必须]一行只能命名一个变量",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningAttributeBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an opening attribute bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningCurlyBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an opening curly bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningCurlyBracketsMustNotBeFollowedByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that an opening curly bracket in a bracketed statement or element is not followed by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningCurlyBracketsMustNotBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that an opening curly bracket in a bracketed statement or element is not preceded by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningGenericBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an opening bracket in a generic type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningParenthesisMustBeOnDeclarationLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that the opening bracket of a parameter list is placed just after the name of the method, on the same line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningParenthesisMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an opening parenthesis.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OpeningSquareBracketsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an opening square bracket.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OperatorDotSymbolMustBeSpacedCorrectly",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]操作符.前后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]操作符.前后不能跟空格",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OperatorKeywordMustBeFollowedBySpace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that there is a single space between the 'operator' keyword and the operator symbol within an operator overload.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OperatorSymbolMustBeSpacedCorrectly",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一元操作符后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]一元操作符后不能跟空格",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "OperatorTwoSymbolMustBeSpacedCorrectly",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]二元操作符须用空格与操作数前后隔开 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]二元操作符须用空格与操作数前后隔开",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ParameterListMustFollowDeclaration",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that the first parameter in a parameter list is placed on the same line as the opening bracket, parenthesis or on the next line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ParameterMustFollowComma",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that a parameter is placed on the line after the previous comma, in a multi-line parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ParameterMustNotSpanMultipleLines",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Validates that no parameter spans across multiple lines, other than the first parameter in a parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ParametersMustBeOnSameLineOrSeparateLines",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that each parameter in a parameter list is placed on its own line, unless all parameters are on the same line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PartialElementDocumentationMustHaveSummary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a partial class, struct, etc. contains a documentation header with a properly formatted summary tag or content tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PartialElementDocumentationMustHaveSummaryText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a partial class, struct, etc. contains a documentation header with a filled-in summary description.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PartialElementsMustBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a partial class, struct, etc. contains a valid documentation header which contains either a summary tag or a content tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PartialElementsMustDeclareAccess",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that a partial element has a declared access modifier, which is necessary for determining the order of partial elements.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PositiveSignsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after a positive sign.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PrefixCallsCorrectly",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "成员访问相关",
+    "checkerTypeSort": "5",
+    "checkerDesc": "Verifies that calls to members are prefixed with the correct notation. In some case from sourcecode analysis we cannot be sure which prefix is required.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PrefixLocalCallsWithThis",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "成员访问相关",
+    "checkerTypeSort": "5",
+    "checkerDesc": "Verifies that calls to local members are prefixed with the 'this.' notation.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PreprocessorKeywordsMustNotBePrecededBySpace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that there is no space between the opening hash mark and keyword within a preprocessor statement.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PrivateFieldNameMustBeginWithPrefixMAndUseLowerCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]非public型成员变量建议以m_为前缀，后接小驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PrivateStaticFieldNameMustBeginWithPrefixSAndUseLowerCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]非public型static成员变量建议以s_为前缀，后接小驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertyAccessorsMustFollowOrder",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Verifies that get-accessors are placed before set-accessors within properties and indexers.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertyDocumentationMustHaveValue",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a public or protected property contains a documentation header with a value tag.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertyDocumentationMustHaveValueText",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a property's value tag contains a filled-in description.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertyNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查属性的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertySummaryDocumentationMustMatchAccessors",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a property's summary description text begins with the correct syntax, depending upon whether the property exposes get or set accessors.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PropertySummaryDocumentationMustOmitSetAccessorWithRestrictedAccess",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that a property's summary description text does not include a description for a set accessor when the property exposes only a get accessor.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ProtectedMustComeBeforeInternal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Verifies the ordering of the internal and protected keywords in an element with protected internal access.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PublicFieldNameMustNotUsePrefixAndUseLowerCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]public型成员变量建议不加前缀，直接小驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "PublicStaticFieldNameMustNotUsePrefixSAndUseLowerCamelCase",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[推荐]public型static成员变量建议不加前缀，直接小驼峰形式命名",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "QueryClauseMustBeginOnNewLineWhenPreviousClauseSpansMultipleLines",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Query表达式相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Verifies that a query clause begins on a new line if the previous clause spans multiple lines.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "QueryClauseMustFollowPreviousClause",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Query表达式相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Validates that blank lines are not placed between clauses within a query expression.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "QueryClausesMustBeOnSeparateLinesOrAllOnOneLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Query表达式相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Verifies that each clause in a query expression must begin on a new line, unless the entire expression is on a single line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "QueryClausesSpanningMultipleLinesMustBeginOnOwnLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Query表达式相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Validates that a query clause spanning multiple lines begins on a new line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "RemoveDelegateParenthesisWhenPossible",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "括号相关",
+    "checkerTypeSort": "12",
+    "checkerDesc": "Verifies that parenthesis are removed from anonymous methods when there are no method parameters.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "RemoveUnnecessaryCode",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "无用代码块",
+    "checkerTypeSort": "18",
+    "checkerDesc": "Verifies that the code does not contain empty code elements.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SemicolonsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and a semicolon.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ShouldContainRegionBlock",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查代码是否以Region区分代码块，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SingleLineCommentMustBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a comment is preceded by a blank line, or is the first item in its scope.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SingleLineCommentMustNotBeEmpty",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]单行注释不能为空 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDescModel": "[必须]单行注释不能为空",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SingleLineCommentsMustBeginWithSingleSpace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that the forward slashes at the beginning of a comment are followed by a single space.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SingleLineCommentsMustNotBeFollowedByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that a comment is not followed by a blank line. (This does not apply to C-style comments.)",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SingleLineCommentsMustNotUseDocumentationStyleSlashes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that comments do not begin with three forward slashes in a row, making them difficult to distinguish from documentation headers.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SpecialKeywordMustNotBeFollowedBySpace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]sizeof、typeof等关键字后不能以空格隔开",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SplitParametersMustStartOnLineAfterDeclaration",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "方法参数相关",
+    "checkerTypeSort": "7",
+    "checkerDesc": "Verifies that the first parameter in a parameter list is placed on the line beneath the opening bracket, in a multi-line parameter list.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StatementMustNotBeOnSingleLine",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "花括号相关",
+    "checkerTypeSort": "9",
+    "checkerDesc": "Validates that a bracketed statement is not placed on a single line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StatementMustNotUseUnnecessaryParenthesis",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "括号相关",
+    "checkerTypeSort": "12",
+    "checkerDesc": "Verifies that the code does not contain extra, unnecessary parenthesis.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StaticElementsMustAppearBeforeInstanceElements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that all static elements are placed before non-static elements of the same type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StaticReadonlyElementsMustAppearBeforeStaticNonReadonlyElements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that all static readonly elements are placed before all static non-readonly elements of the same type.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StaticReadonlyFieldsMustBeginWithUpperCaseLetter",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a static readonly field begins with an upper-case letter.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StructNameShouldBePascal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查结构体的命名是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "StructNameShouldNotContainStruct",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "OneSDK编码规范",
+    "checkerTypeSort": "0",
+    "checkerDesc": "检查结构体的命名是否含有Struct单词，有则给出告警",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SymbolsMustBeSpacedCorrectly",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Validates the spacing before and after an operator symbol.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "using指令相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "Verifies that all using directives within the System namespace are placed before all other using directives.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSABadIndentation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "采用指定个数空格缩进（默认为4个）且禁止使用tab键",
+    "checkerDescModel": "采用指定个数空格缩进（默认为%s个）且禁止使用tab键",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSACommentRatio",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "代码注释率不低于10%",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSAFileEncodingUTF8",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "编码相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "文件不是UTF8编码",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSAFileHasCR",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式相关",
+    "checkerTypeSort": "8",
+    "checkerDesc": "行尾使用换行符LF且禁止使用回车键CR",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSAFileShouldHaveLicenseInfo",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "文件头相关",
+    "checkerTypeSort": "17",
+    "checkerDesc": "文件头没有包含腾讯开源相关协议信息",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSAFunctionNameLength",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "方法名长度不应该超过指定长度（35个字符）",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TOSALineLength",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式相关",
+    "checkerTypeSort": "8",
+    "checkerDesc": "行长度不应该超过指定长度（默认为120个字符）",
+    "checkerDescModel": "行长度不应该超过指定长度（默认为%s个字符）",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TabMustContainsFourSpaces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]一个Tab包含4个空格 [tencent standards/csharp 2.1.1](https://{github.com/xxxxx}/standards/csharp#211-%E5%BF%85%E9%A1%BB%E7%BC%A9%E8%BF%9B)",
+    "checkerDescModel": "[必须]一个Tab包含4个空格",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "TabsMustNotBeUsed",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "Verifies that the code does not contain tabs.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeAnEmptyLineAfterThisCloseCurlyBracket",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]右花括号后须跟一行空行隔开 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDescModel": "[必须]右花括号后须跟一行空行隔开",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeAnEmptyLineBeforeThisKeyWord",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]if、for、return等关键字前须隔一行空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDescModel": "[必须]if、for、return等关键字前须隔一行空行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeAnEmptyLineBetweenVariableDeclarationAndUsage",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]变量声明与使用之间须隔一行空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDescModel": "[必须]变量声明与使用之间须隔一行空行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeAnOpenCurlyBracketAfterThisKeyWord",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]if、for、while等关键字的语句要用花括号包起来，即便只有一条语句 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDescModel": "[必须]if、for、while等关键字的语句要用花括号包起来，即便只有一条语句",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeNoSpaceAfterOpenParenthesis",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]左括号后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]左括号后不能跟空格",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustBeNoSpaceBetweenMethodClassStructAndOpenParenthesis",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]类、结构体、方法与其后的左括号之间不能加空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "[必须]类、结构体、方法与其后的左括号之间不能加空格",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ThereMustNotBeOtherOnLineOfCurlyBracket",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]左、右花括号必须各自独占一行 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDescModel": "[必须]左、右花括号必须各自独占一行",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UnityLifeMethodUsedWrongLetterCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "性能相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]Unity生命周期函数大小写不正确 [tencent standards/csharp 4.1](https://{github.com/xxxxx}/standards/csharp#41-%E5%BF%85%E9%A1%BB%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "[必须]Unity生命周期函数大小写不正确",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UnityProjectMustNotUseLinq",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "性能相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]Unity项目禁止使用LINQ，GC内存分配较大，影响性能 [tencent standards/csharp 4.9](https://{github.com/xxxxx}/standards/csharp#49-%E5%BF%85%E9%A1%BB%E5%85%B3%E4%BA%8Elinq)",
+    "checkerDescModel": "[必须]Unity项目禁止使用LINQ，GC内存分配较大，影响性能",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UseBuiltInTypeAlias",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "类型相关",
+    "checkerTypeSort": "13",
+    "checkerDesc": "Enforces the use of the built-in types rather than the actual types that they represent.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UseReadableConditions",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "语句相关",
+    "checkerTypeSort": "20",
+    "checkerDesc": "Validates that value first comparison is not used.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UseShorthandForNullableTypes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "类型相关",
+    "checkerTypeSort": "13",
+    "checkerDesc": "Enforces the use of the shorthand of a nullable type rather than the Nullable<T> except inside a typeof().",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UseStringEmptyForEmptyStrings",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "字符串相关",
+    "checkerTypeSort": "23",
+    "checkerDesc": "Enforces the use of the string.Empty property for empty strings.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "using指令相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "Verifies that using alias directives are sorted alphabetically by the alias names.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "using指令相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "Verifies that all using alias directives are placed after all other using directives.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UsingDirectivesMustBeOrderedAlphabeticallyByNamespace",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "using指令相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "Verifies that using directives are sorted alphabetically by the namespaces.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UsingDirectivesMustBePlacedWithinNamespace",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "元素位置相关",
+    "checkerTypeSort": "21",
+    "checkerDesc": "Validates that all using directives are placed within a namespace, if a namespace exists in the file unless used in an assembly attribute.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "UsingStaticDirectivesMustBePlacedAtTheCorrectLocation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "using指令相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "Verifies that all using static directives are placed after all using namespace directives.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VariableNameMustNotBeginWithPrefix",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]变量不应带任何形式的前缀 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDescModel": "[必须]变量不应带任何形式的前缀",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VariableNameMustNotBeginWithUnderscore",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]变量不应以下划线开头 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDescModel": "[必须]变量不应以下划线开头",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VariableNameMustNotContainUnderscore",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]变量不必带任何形式的前缀或下划线 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDescModel": "[必须]变量不必带任何形式的前缀或下划线",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VariableNameMustUseLowerCamelCase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空格相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "[必须]变量命名须用小驼峰形式 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDescModel": "[必须]变量命名须用小驼峰形式",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "格式相关"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VariableNamesMustNotBePrefixed",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名相关",
+    "checkerTypeSort": "14",
+    "checkerDesc": "Validates that the name of a member variable does not begin with the 'm_' or '_s' syntax.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "VoidReturnValueMustNotBeDocumented",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释相关",
+    "checkerTypeSort": "22",
+    "checkerDesc": "Validates that an element's documentation header does not contain a returns tag if the element has no return value.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "WhileDoFooterMustNotBePrecededByBlankLine",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "空行相关",
+    "checkerTypeSort": "11",
+    "checkerDesc": "Validates that the while keyword in a do-while statement is not preceded by a blank line.",
+    "checkerLanguage": [
+      "C_SHARP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  }
+]

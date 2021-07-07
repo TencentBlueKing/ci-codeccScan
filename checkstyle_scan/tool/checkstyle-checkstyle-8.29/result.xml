@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.29">
+<file name="/Users/jimxzcai/workspace/checkstyle-checkstyle-8.29/./src/test/resources/com/puppycrawl/tools/checkstyle/checks/regexp/regexpsingleline/InputRegexpSinglelineSemantic.java">
+<error line="1" severity="warning" message="缺少 package-info.java 文件。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
+<error line="5" severity="warning" message="&apos;package 前应有空行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.EmptyLineSeparatorCheck"/>
+<error line="5" column="1" severity="warning" message="找不到导入控制文件。" source="ImportControlTest"/>
+<error line="7" severity="warning" message="不应使用 &apos;.*&apos; 形式的导入 - java.awt.* 。" source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="16" column="1" severity="warning" message="第 1 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="19" column="17" severity="warning" message="变量 &apos;x&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="24" column="17" severity="warning" message="变量 &apos;x&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="25" column="19" severity="warning" message="变量 &apos;y&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="28" severity="warning" message="First sentence in a comment should start with a capital letter" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="30" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="35" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="37" column="16" severity="warning" message="变量 &apos;o1&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="38" column="16" severity="warning" message="变量 &apos;o2&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="40" column="31" severity="warning" message="变量 &apos;s&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="41" column="14" severity="warning" message="变量 &apos;f&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="43" column="19" severity="warning" message="变量 &apos;dim&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="44" column="15" severity="warning" message="变量 &apos;col&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="48" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="50" column="13" severity="warning" message="避免空行。" source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
+<error line="51" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="52" severity="warning" message="空 catch 块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"/>
+<error line="53" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="54" column="9" severity="warning" message="禁止捕获： &apos;NullPointerException&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.coding.IllegalCatchCheck"/>
+<error line="57" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="59" column="13" severity="warning" message="避免空行。" source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
+<error line="62" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="64" column="13" severity="warning" message="避免内嵌块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.AvoidNestedBlocksCheck"/>
+<error line="67" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="70" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="71" column="52" severity="warning" message="第 52 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="72" severity="warning" message="空 catch 块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"/>
+<error line="72" column="52" severity="warning" message="WhitespaceAround: &apos;{&apos; is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="72" column="53" severity="warning" message="WhitespaceAround: &apos;}&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="72" column="53" severity="warning" message="第 53 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="73" severity="warning" message="空 catch 块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyCatchBlockCheck"/>
+<error line="75" column="13" severity="warning" message="空 try 块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+<error line="76" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="77" column="17" severity="warning" message="空 finally 块。" source="com.puppycrawl.tools.checkstyle.checks.blocks.EmptyBlockCheck"/>
+<error line="81" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="86" column="13" severity="warning" message="避免空行。" source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
+<error line="87" column="9" severity="warning" message="第 9 个字符 &apos;}&apos;应该与当前多代码块的下一部分 （if/else-if/else, do/while 或 try/catch/finally）位于同一行。" source="RightCurlySame"/>
+<error line="89" column="13" severity="warning" message="避免空行。" source="com.puppycrawl.tools.checkstyle.checks.coding.EmptyStatementCheck"/>
+<error line="93" severity="warning" message="First sentence in a comment should start with a capital letter" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="94" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="94" column="5" severity="warning" message="静态属性定义顺序错误。" source="com.puppycrawl.tools.checkstyle.checks.coding.DeclarationOrderCheck"/>
+<error line="94" column="40" severity="warning" message="请使用大写&apos;L&apos; 。" source="com.puppycrawl.tools.checkstyle.checks.UpperEllCheck"/>
+<error line="97" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="100" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="103" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="106" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="109" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="112" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="116" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="117" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="118" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="118" column="24" severity="warning" message="重载&apos;equals()&apos;方法时，必须确保重载了&apos;eauals(java.lang.Object)方法。" source="com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheck"/>
+<error line="119" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="124" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="125" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="126" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="126" column="24" severity="warning" message="重载&apos;equals()&apos;方法时，必须确保重载了&apos;eauals(java.lang.Object)方法。" source="com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheck"/>
+<error line="127" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="132" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="133" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="134" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="135" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="140" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="145" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="146" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="148" column="9" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="148" column="31" severity="warning" message="变量 &apos;bos1&apos; 应定义为 private 的，并配置访问方法。" source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="149" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="150" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="151" column="13" severity="warning" message="第 13 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="156" column="13" severity="warning" message="第 13 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="161" column="9" severity="warning" message="缺少 Javadoc 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocVariableCheck"/>
+<error line="161" column="31" severity="warning" message="变量 &apos;bos2&apos; 应定义为 private 的，并配置访问方法。" source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="162" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="163" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="163" column="13" severity="warning" message="重载&apos;equals()&apos;方法后，必须重载&apos;hashCode()&apos;方法。" source="com.puppycrawl.tools.checkstyle.checks.coding.EqualsHashCodeCheck"/>
+<error line="164" column="13" severity="warning" message="第 13 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="170" column="5" severity="warning" message="Return 次数 1 次（最大允許為void方法/構造函數/ 拉姆达： 0 次）。" source="com.puppycrawl.tools.checkstyle.checks.coding.ReturnCountCheck"/>
+<error line="170" column="5" severity="warning" message="属性和方法声明应位于内部类之前。" source="com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck"/>
+<error line="171" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="173" severity="warning" message="&apos;if&apos; 结构必须使用大括号 &apos;{}&apos;。" source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+<error line="181" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="182" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="183" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="183" column="28" severity="warning" message="重载&apos;equals()&apos;方法时，必须确保重载了&apos;eauals(java.lang.Object)方法。" source="com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheck"/>
+<error line="184" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="189" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="190" column="5" severity="warning" message="第 5 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="191" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="191" column="28" severity="warning" message="重载&apos;equals()&apos;方法时，必须确保重载了&apos;eauals(java.lang.Object)方法。" source="com.puppycrawl.tools.checkstyle.checks.coding.CovariantEqualsCheck"/>
+<error line="192" column="9" severity="warning" message="第 9 个字符 &apos;{&apos; 应位于前一行。" source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="197" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="201" severity="warning" message="缺少 null 标签。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.WriteTagCheck"/>
+<error line="205" column="5" severity="warning" message="属性和方法声明应位于内部类之前。" source="com.puppycrawl.tools.checkstyle.checks.design.InnerTypeLastCheck"/>
+<error line="206" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="206" column="29" severity="warning" message="WhitespaceAround: &apos;{&apos; is not followed by whitespace. Empty blocks may only be represented as {} when not part of a multi-block statement (4.1.3)" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="206" column="30" severity="warning" message="WhitespaceAround: &apos;}&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="207" severity="warning" message="不要使用行尾注释。" source="com.puppycrawl.tools.checkstyle.checks.TrailingCommentCheck"/>
+<error line="212" severity="warning" message="Unnecessary consecutive lines" source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpMultilineCheck"/>
+<error line="217" column="9" severity="warning" message="变量 &apos;a&apos; 应被声明为 final 的。" source="com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck"/>
+<error line="217" column="14" severity="warning" message="&apos;;&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck"/>
+<error line="217" column="15" severity="warning" message="WhitespaceAround: &apos;}&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="217" column="15" severity="warning" message="第 15 个字符 &apos;}&apos; 应独占一行。" source="RightCurlyAlone"/>
+</file>
+</checkstyle>

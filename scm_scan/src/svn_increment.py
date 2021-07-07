@@ -1,4 +1,7 @@
-import sys,subprocess,json,os
+import sys
+import subprocess
+import json
+import os
 import util
 
 options = {}
@@ -8,7 +11,8 @@ def increment_run(increment_path, pre_revision, svn_increment_options):
     update_file_list = []
     delete_file_list = []
     get_latest_version = 'svn info --show-item revision'
-    increment_command = 'svn diff --non-interactive  --no-auth-cache --trust-server-cert -r '+pre_revision+':HEAD --summarize '+svn_increment_options
+    increment_command = 'svn diff --non-interactive  --no-auth-cache --trust-server-cert -r '+\
+                        pre_revision+':HEAD --summarize '+svn_increment_options
 
     p = subprocess.Popen(get_latest_version, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True)
     for line in p.stdout:
@@ -75,7 +79,7 @@ if __name__ == "__main__":
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps({"scm_increment": increment_repo_list}, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')
             

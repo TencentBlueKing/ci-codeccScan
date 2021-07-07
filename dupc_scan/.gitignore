@@ -1,0 +1,5 @@
+/support-files/.idea
+.idea/
+*.iml
+*.log
+.DS_Store

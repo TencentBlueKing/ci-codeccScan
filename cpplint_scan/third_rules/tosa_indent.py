@@ -6,24 +6,29 @@ tosa_space_unit = 4
 tosa_tab_unit = 1
 
 def runChecker(filePath, codeLineObj, errorHandler, option_info):
-    parse_option_info(option_info)
-    for linenum in xrange(1, len(codeLineObj.raw_lines)):
+    option_type = parse_option_info(option_info)
+    for linenum in range(1, len(codeLineObj.raw_lines)):
         line = codeLineObj.raw_lines[linenum]
-        initial_spaces = IndentLength(line)
-        initial_tabs = TabLength(line)
-        if ContainSymbol(line, '\t') or IsBadIndent(initial_spaces, line, linenum, codeLineObj.raw_lines):
-            errorHandler(filePath, linenum, 'tosa/indent', 'Should use ' + str(tosa_space_unit) + '-space indent.')
-        if ContainSymbol(line, ' ') or IsBadTabIndent(initial_tabs, line, linenum, codeLineObj.raw_lines):
-            errorHandler(filePath, linenum, 'tosa/indent', 'Should use ' + str(tosa_tab_unit) + '-tab indent.')
+        if option_type == "tosa-space":
+            initial_spaces = IndentLength(line)
+            if ContainSymbol(line, '\t') or IsBadIndent(initial_spaces, line, linenum, codeLineObj.raw_lines):
+                errorHandler(filePath, linenum, 'tosa/indent', 'Should use ' + str(tosa_space_unit) + '-space indent.')
+        if option_type == "tosa-tab":
+            initial_tabs = TabLength(line)
+            if ContainSymbol(line, ' ') or IsBadTabIndent(initial_tabs, line, linenum, codeLineObj.raw_lines):
+                errorHandler(filePath, linenum, 'tosa/indent', 'Should use ' + str(tosa_tab_unit) + '-tab indent.')
 
 def parse_option_info(option_info):
     global tosa_space_unit
     global tosa_tab_unit
-    for option in json.loads(option_info):
+    for option in json.loads(str(option_info)):
         if 'checkerOptionName' in option and option['checkerOptionName'] == 'tosa-space':
             tosa_space_unit = int(option['checkerOptionValue'])
+            return "tosa-space"
         if 'checkerOptionName' in option and option['checkerOptionName'] == 'tosa-tab':
             tosa_tab_unit = int(option['checkerOptionValue'])
+            return "tosa-tab"
+    return ""
 
 def IndentLength(line):
     initial_spaces = 0
@@ -40,7 +45,7 @@ def TabLength(line):
 def ContainSymbol(line, symbol):
   count = 0
   while count < len(line):
-    if line[count] <> ' ' and line[count] <> '\t':
+    if line[count] != ' ' and line[count] != '\t':
         return False
     if line[count] == symbol:
         return True

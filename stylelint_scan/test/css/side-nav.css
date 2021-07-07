@@ -1,0 +1,77 @@
+.side-nav {
+    /* padding-left: 15px; */
+    .side-header {
+        padding: 20px 10px 15px 10px;
+        color: #333;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 5px;
+        height: 61px;
+        .title {
+            float: left;
+            padding-left: 15px;
+            margin-right: 10px;
+        }
+        .version-wrapper {
+            border: 1px solid #dde4eb;
+            border-radius: 2px;
+            height: 26px;
+            line-height: 24px;
+            float: left;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            font-size: 0;
+            span {
+                display: inline-block;
+                width: 50px;
+                font-size: 14px;
+                text-align: center;
+                padding: 0 10px;
+                background-color: #fff;
+                cursor: pointer;
+                color: #c3cdd7;
+                &:first-child {
+                    border-right: 1px solid #dde4eb;
+                }
+                &.cur {
+                    background-color: #fafbfd;
+                    color: #000;
+                    cursor: default;
+                }
+            }
+        }
+    }
+    .vue-logo {
+        width: 22px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .nav-item {
+        width: 100%;
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid #dcdee5;
+        .nav-title {
+            padding-left: 25px;
+            font-size: 18px;
+            color: #333;
+            line-height: 24px;
+            margin-bottom: 5px;
+            &.no-groupid {
+                margin-top: -15px;
+            }
+        }
+        .nav-content {
+            padding-left: 25px;
+            font-size: 14px;
+            line-height: 40px;
+            cursor: pointer;
+            &:hover {
+                background-color: #f0f1f5;
+            }
+        }
+    }
+    .nav-active {
+        color: #2d8cf0;
+        background: #f0faff;
+    }
+}

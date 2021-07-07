@@ -1,0 +1,14 @@
+{
+	"name":"SWIFTLINT",
+	"displayName":"SwiftLint",
+	"pattern": "LINT",
+	"type":"STANDARD",
+	"briefIntroduction":"SwiftLint 是一个用于强制检查 Swift 代码风格和规定的一个工具，基本上以 Ray Wenderlich's Swift 代码风格指南为基础。",
+	"description":"SwiftLint 是一个用于强制检查 Swift 代码风格和规定的一个工具，基本上以 Ray Wenderlich's Swift 代码风格指南为基础。SwiftLint Hook 了 Clang 和 SourceKit 从而能够使用 AST 来表示源代码文件的更多精确结果。",
+	"supportedLanguages":["SWIFT"],
+	"dockerTriggerShell": "/bin/bash##-c##\"cd /usr/codecc/tool_scan/; python3 ./sdk/src/scan.py --input={input.json} --output={output.json}\"",
+	"dockerImageURL": "mirrors.tencent.com/codecc-test/swiftlint-codecc-plugin",
+	"toolScanCommand" : "",
+	"dockerImageVersion": "latest",
+	"iconFileName": "icon.jpg"
+}

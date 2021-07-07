@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import config
@@ -26,11 +27,13 @@ def scan(filename, config_path, third_rules, skip_path_list):
     file_defects = []
     result_xml = config.current_path+'/result.xml'
     if os.path.isdir(filename):
-        cmd = "mono %s/../../tool/bin/StyleCopCLI.exe -set %s -cs \"%s\" -r -out \"%s\"" % (config.current_path, config.rule_config_file, filename+'/*', result_xml)
+        cmd = "mono %s/../../tool/bin/StyleCopCLI.exe -set %s -cs \"%s\" -r -out \"%s\"" % \
+              (config.current_path, config.rule_config_file, filename+'/*', result_xml)
     else:
         if os.path.isfile(filename) and not str(filename).endswith('.cs'):
             return file_defects
-        cmd = "mono %s/../../tool/bin/StyleCopCLI.exe -set %s -cs \"%s\" -out \"%s\"" % (config.current_path, config.rule_config_file, filename, result_xml)
+        cmd = "mono %s/../../tool/bin/StyleCopCLI.exe -set %s -cs \"%s\" -out \"%s\"" % \
+              (config.current_path, config.rule_config_file, filename, result_xml)
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
@@ -44,7 +47,8 @@ def scan(filename, config_path, third_rules, skip_path_list):
             tree = ET.ElementTree(file=result_xml)
             for elem in tree.iter():
                 if "Violation" == elem.tag:
-                    if elem.attrib['Rule'] == 'CurlyBracketsForMultiLineStatementsMustNotShareLine' or elem.attrib['Rule'] == 'SyntaxException':
+                    if elem.attrib['Rule'] == 'CurlyBracketsForMultiLineStatementsMustNotShareLine' \
+                       or elem.attrib['Rule'] == 'SyntaxException':
                         continue
                     if not check_path_match_skip(elem.attrib['Source'], skip_path_list):
                         continue
@@ -99,7 +103,8 @@ if __name__ == "__main__" :
                 #增量扫描
                 if 'scanType' in input_data and input_data['scanType'] == 'increment':
                     for file_path in input_data['incrementalFiles']:
-                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 and check_path_match_skip(file_path, input_data['whitePathList']):
+                        if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 \
+                           and check_path_match_skip(file_path, input_data['whitePathList']):
                             continue
                         scan_path_list.append(file_path)
                 #全量扫描
@@ -125,6 +130,6 @@ if __name__ == "__main__" :
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

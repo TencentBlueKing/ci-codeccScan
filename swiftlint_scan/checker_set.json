@@ -1,0 +1,73 @@
+{
+    "checker_set_id" : "standard_swift",
+    "checker_set_name" : "腾讯代码规范(Swift)",
+    "checker_set_lang" : "SWIFT",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [ 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "file_name"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "file_name_no_space"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "line_length",
+            "props" : "[{\"displayValue\":\"150\",\"propValue\":\"150\",\"propName\":\"warning\"}]"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "trailing_semicolon"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "number_separator"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "trailing_comma"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "syntactic_sugar"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "force_unwrapping"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "implicitly_unwrapped_optional"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "lower_acl_than_parent"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "for_where"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "fallthrough"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "no_fallthrough_only"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "compiler_protocol_init"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "explicit_init"
+        }, 
+        {
+            "tool_name" : "SWIFTLINT",
+            "checker_key" : "implicit_getter"
+        }
+    ]
+}

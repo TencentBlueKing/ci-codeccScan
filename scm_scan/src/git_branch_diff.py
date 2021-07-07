@@ -1,4 +1,7 @@
-import sys,subprocess,json,os
+import sys
+import subprocess
+import json
+import os
 import platform
 import re
 
@@ -9,7 +12,8 @@ def check_workspace(workspace, source_branch):
     if os.path.exists(workspace) and os.path.isdir(workspace):
         os.chdir(workspace)
         cmd = 'git branch'
-        branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        branch_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                      shell=True, start_new_session=True)
         try:
             for line in branch_cmd.stdout:
                 line = line.decode().strip()
@@ -36,7 +40,7 @@ def get_diff_file_list(workspace, source_branch, target_branch):
                 line = str(line.decode().strip()).rsplit('\t', 1)[1]
                 if not os.path.exists(workspace+os.sep+line):
                     continue
-                diff_file_list.append(workspace+os.sep+line)
+                diff_file_list.append(str(workspace+os.sep+line).replace("//", "/"))
         finally:
             p.terminate()
             p.wait()
@@ -124,8 +128,8 @@ if __name__ == "__main__":
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_info, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')
     
             

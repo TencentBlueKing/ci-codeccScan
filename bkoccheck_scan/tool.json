@@ -1,0 +1,17 @@
+{
+  "name": "BKCHECK-OC",
+  "displayName": "bkcheck-oc",
+  "pattern": "LINT",
+  "type": "STANDARD",
+  "briefIntroduction": "支持OC代码规范风格检查的工具",
+  "description": "支持OC代码规范风格检查的工具",
+  "supportedLanguages": [
+    "OC"
+  ],
+  "dockerTriggerShell": "/bin/bash##-c##\"source /etc/bashrc && cd /bkcheck/ && python3 bklauncher.py --input={input.json} --output={output.json}\"",
+  "toolScanCommand": "/bin/bash##-c##\"source /etc/bashrc && cd /bkcheck/ && python3 bklauncher.py --input={input.json} --output={output.json}\"",
+  "dockerImageURL": "mirrors.tencent.com/codecc-test/bkcheck-oc",
+  "dockerImageVersion": "latest",
+  "iconFileName": "icon.jpg",
+  "toolOptions": []
+}

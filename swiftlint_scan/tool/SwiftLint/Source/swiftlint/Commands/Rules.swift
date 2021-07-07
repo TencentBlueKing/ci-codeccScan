@@ -1,0 +1,164 @@
+import ArgumentParser
+#if canImport(Darwin)
+import Darwin
+#elseif canImport(Glibc)
+import Glibc
+#else
+#error("Unsupported platform")
+#endif
+import Foundation
+import SwiftLintFramework
+import SwiftyTextTable
+
+enum RuleEnablementOptions: String, EnumerableFlag {
+    case enabled, disabled
+
+    static func name(for value: RuleEnablementOptions) -> NameSpecification {
+        return .shortAndLong
+    }
+
+    static func help(for value: RuleEnablementOptions) -> ArgumentHelp? {
+        return "Only show \(value.rawValue) rules"
+    }
+}
+
+extension SwiftLint {
+    struct Rules: ParsableCommand {
+        static let configuration = CommandConfiguration(abstract: "Display the list of rules and their identifiers")
+
+        @Option(help: "The path to a SwiftLint configuration file")
+        var config: String?
+        @Flag(exclusivity: .exclusive)
+        var ruleEnablement: RuleEnablementOptions?
+        @Flag(name: .shortAndLong, help: "Only display correctable rules")
+        var correctable = false
+        @Flag(name: .shortAndLong, help: "Display full configuration details")
+        var verbose = false
+        @Argument(help: "The rule identifier to display description for")
+        var ruleID: String?
+
+        mutating func run() throws {
+            if let ruleID = ruleID {
+                guard let rule = primaryRuleList.list[ruleID] else {
+                    throw SwiftLintError.usageError(description: "No rule with identifier: \(ruleID)")
+                }
+
+                rule.description.printDescription()
+                return
+            }
+
+            let configuration = Configuration(configurationFiles: [config].compactMap({ $0 }))
+            let rules = ruleList(configuration: configuration)
+            let table = TextTable(ruleList: rules, configuration: configuration, verbose: verbose)
+            print(table.render())
+        }
+
+        private func ruleList(configuration: Configuration) -> RuleList {
+            guard ruleEnablement != nil || correctable else {
+                return primaryRuleList
+            }
+
+            let filtered: [Rule.Type] = primaryRuleList.list.compactMap { ruleID, ruleType in
+                let configuredRule = configuration.rules.first { rule in
+                    return type(of: rule).description.identifier == ruleID
+                }
+
+                if ruleEnablement == .enabled && configuredRule == nil {
+                    return nil
+                } else if ruleEnablement == .disabled && configuredRule != nil {
+                    return nil
+                } else if correctable && !(configuredRule is CorrectableRule) {
+                    return nil
+                }
+
+                return ruleType
+            }
+
+            return RuleList(rules: filtered)
+        }
+    }
+}
+
+private extension RuleDescription {
+    func printDescription() {
+        print("\(consoleDescription)")
+
+        guard !triggeringExamples.isEmpty else { return }
+
+        func indent(_ string: String) -> String {
+            return string.components(separatedBy: "\n")
+                .map { "    \($0)" }
+                .joined(separator: "\n")
+        }
+        print("\nTriggering Examples (violation is marked with '↓'):")
+        for (index, example) in triggeringExamples.enumerated() {
+            print("\nExample #\(index + 1)\n\n\(indent(example.code))")
+        }
+    }
+}
+
+// MARK: - SwiftyTextTable
+
+private extension TextTable {
+    init(ruleList: RuleList, configuration: Configuration, verbose: Bool) {
+        let columns = [
+            TextTableColumn(header: "identifier"),
+            TextTableColumn(header: "opt-in"),
+            TextTableColumn(header: "correctable"),
+            TextTableColumn(header: "enabled in your config"),
+            TextTableColumn(header: "kind"),
+            TextTableColumn(header: "analyzer"),
+            TextTableColumn(header: "configuration")
+        ]
+        self.init(columns: columns)
+        let sortedRules = ruleList.list.sorted { $0.0 < $1.0 }
+        func truncate(_ string: String) -> String {
+            let stringWithNoNewlines = string.replacingOccurrences(of: "\n", with: "\\n")
+            let minWidth = "configuration".count - "...".count
+            let configurationStartColumn = 124
+            let maxWidth = verbose ? Int.max : Terminal.currentWidth()
+            let truncatedEndIndex = stringWithNoNewlines.index(
+                stringWithNoNewlines.startIndex,
+                offsetBy: max(minWidth, maxWidth - configurationStartColumn),
+                limitedBy: stringWithNoNewlines.endIndex
+            )
+            if let truncatedEndIndex = truncatedEndIndex {
+                return stringWithNoNewlines[..<truncatedEndIndex] + "..."
+            }
+            return stringWithNoNewlines
+        }
+        for (ruleID, ruleType) in sortedRules {
+            let rule = ruleType.init()
+            let configuredRule = configuration.rules.first { rule in
+                guard type(of: rule).description.identifier == ruleID else {
+                    return false
+                }
+                guard let customRules = rule as? CustomRules else {
+                    return true
+                }
+                return !customRules.configuration.customRuleConfigurations.isEmpty
+            }
+            addRow(values: [
+                ruleID,
+                (rule is OptInRule) ? "yes" : "no",
+                (rule is CorrectableRule) ? "yes" : "no",
+                configuredRule != nil ? "yes" : "no",
+                ruleType.description.kind.rawValue,
+                (rule is AnalyzerRule) ? "yes" : "no",
+                truncate((configuredRule ?? rule).configurationDescription)
+            ])
+        }
+    }
+}
+
+private struct Terminal {
+    static func currentWidth() -> Int {
+        var size = winsize()
+#if os(Linux)
+        _ = ioctl(CInt(STDOUT_FILENO), UInt(TIOCGWINSZ), &size)
+#else
+        _ = ioctl(STDOUT_FILENO, TIOCGWINSZ, &size)
+#endif
+        return Int(size.ws_col)
+    }
+}

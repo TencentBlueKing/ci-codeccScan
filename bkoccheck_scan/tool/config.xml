@@ -1,0 +1,29 @@
+CheckOptions:
+- key: MaxLineLength.MaxLineLength
+  value: '150'
+- key: GlobalVariableNaming.GlobalVariableCase
+  value: CamelCase
+- key: ParameterNaming.ParameterCase
+  value: camelBack
+- key: MaxLinesPerFunction.LineThreshold
+  value: '80'
+- key: FunctionNaming.FunctionCase
+  value: camelBack
+- key: ParameterCount.Max
+  value: '6'
+- key: LocalVariableNaming.LocalVariableCase
+  value: camelBack
+- key: MethodNaming.MethodCase
+  value: camelBack
+- key: MacroNaming.MacroCase
+  value: UPPER_CASE
+- key: Indent.IndentSize
+  value: '4'
+- key: ClassNaming.ClassCase
+  value: CamelCase
+Checks: MaxLineLength,Copyright,GlobalVariableNaming,MissingDocProtocol,ParameterNaming,MaxLinesPerFunction,MissingDocInterface,FunctionNaming,ParameterCount,LocalVariableNaming,MethodNaming,MacroNaming,Indent,MissingDocProperty,ClassNaming
+IncrmentFiles: ''
+SkipPaths:
+- .*/\.svn/.*
+- .*/\.git/.*
+- .*/\.temp/.*

@@ -1,0 +1,610 @@
+[
+  {
+    "checkerName": "adjoining-classes",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Don't use adjoining classes.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "box-model",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Don't use width or height when using padding or border.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "box-sizing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "The box-sizing properties isn't supported in IE6 and IE7.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "bulletproof-font-face",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Use the bulletproof @font-face syntax to avoid 404's in old IE (http://www.fontspring.com/blog/the-new-bulletproof-font-face-syntax).",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "compatible-vendor-prefixes",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Include all compatible vendor prefixes to reach a wider range of users.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "display-property-grouping",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Certain properties shouldn't be used with certain display property values.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "duplicate-background-images",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Every background-image should be unique. Use a common class for e.g. sprites.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "duplicate-properties",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Duplicate properties must appear one after the other.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "empty-rules",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Rules without any properties specified should be removed.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "errors",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "This rule looks for recoverable syntax errors.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "fallback-colors",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "For older browsers that don't support RGBA, HSL, or HSLA, provide a fallback color.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "floats",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "This rule tests if the float property is used too many times",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "font-faces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Too many different web fonts in the same stylesheet.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "font-sizes",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Checks the number of font-size declarations.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "gradients",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "When using a vendor-prefixed gradient, make sure to use them all.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "ids",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Selectors should not contain IDs.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "import-ie-limit",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "IE6-9 supports up to 31 @import per stylesheet",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "import",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Don't use @import, use <link> instead.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "important",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Be careful when using !important declaration",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "known-properties",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Properties should be known (listed in CSS3 specification) or be a vendor-prefixed property.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "order-alphabetical",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Assure properties are in alphabetical order",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "outline-none",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Use of outline: none or outline: 0 should be limited to :focus rules.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "overqualified-elements",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Don't use classes or IDs with elements (a.foo or a#foo).",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "qualified-headings",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Headings should not be qualified (namespaced).",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "regex-selectors",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Selectors that look like regular expressions are slow and should be avoided.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "rules-count",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Track how many rules there are.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "selector-max-approaching",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Will warn when selector count is >= 3800 selectors.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "selector-max",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Will error when selector count is > 4095.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "selector-newline",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "New-line characters in selectors are usually a forgotten comma and not a descendant combinator.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "shorthand",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Use shorthand properties where possible.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "star-property-hack",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Checks for the star property hack (targets IE6/7)",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "text-indent",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Checks for text indent less than -99px",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "underscore-property-hack",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Checks for the underscore property hack (targets IE6)",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "unique-headings",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Headings should be defined only once.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "universal-selector",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "The universal selector (*) is known to be slow.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "unqualified-attributes",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Unqualified attribute selectors are known to be slow.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "vendor-prefix",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "When using a vendor-prefixed property, make sure to include the standard one.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+},
+{
+    "checkerName": "zero-units",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "1",
+    "checkerDesc": "You don't need to specify units when a value is 0.",
+    "checkerLanguage": [
+      "CSS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+}
+]

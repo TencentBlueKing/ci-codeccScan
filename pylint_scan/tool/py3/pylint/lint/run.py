@@ -6,6 +6,7 @@ import sys
 import warnings
 
 from pylint import __pkginfo__, config, extensions, interfaces
+from pylint.constants import full_version
 from pylint.lint.pylinter import PyLinter
 from pylint.lint.utils import ArgumentPreprocessingError, preprocess_options
 from pylint.utils import utils
@@ -74,6 +75,7 @@ group are mutually exclusive.",
         self, args, reporter=None, exit=True, do_exit=UNUSED_PARAM_SENTINEL,
     ):  # pylint: disable=redefined-builtin
         self._rcfile = None
+        self._version_asked = False
         self._plugins = []
         self.verbose = None
         try:
@@ -81,6 +83,7 @@ group are mutually exclusive.",
                 args,
                 {
                     # option: (callback, takearg)
+                    "version": (self.version_asked, False),
                     "init-hook": (cb_init_hook, True),
                     "rcfile": (self.cb_set_rcfile, True),
                     "load-plugins": (self.cb_add_plugins, True),
@@ -251,12 +254,14 @@ group are mutually exclusive.",
             pylintrc=self._rcfile,
         )
         # register standard checkers
+        if self._version_asked:
+            print(full_version)
+            sys.exit(0)
         linter.load_default_plugins()
         # load command line plugins
         linter.load_plugin_modules(self._plugins)
         # add some help section
         linter.add_help_section("Environment variables", config.ENV_HELP, level=1)
-        # pylint: disable=bad-continuation
         linter.add_help_section(
             "Output",
             "Using the default text output, the message format is :                          \n"
@@ -358,6 +363,10 @@ group are mutually exclusive.",
                 if score_value and score_value > linter.config.fail_under:
                     sys.exit(0)
                 sys.exit(self.linter.msg_status)
+
+    def version_asked(self, _, __):
+        """callback for version (i.e. before option parsing)"""
+        self._version_asked = True
 
     def cb_set_rcfile(self, name, value):
         """callback for option preprocessing (i.e. before option parsing)"""

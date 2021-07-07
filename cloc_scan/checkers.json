@@ -1,0 +1,41 @@
+[
+  {
+    "checker_name" : "CodeLineCount",
+    "checker_desc" : "统计代码中各类语言代码行、注释行、空白行的情况",
+    "severity" : 3,
+    "language" : 1073774335,
+    "status" : 0,
+    "checker_type" : "代码统计",
+    "checker_type_desc" : "统计代码中各类语言的代码行、注释行、空白行的情况",
+    "checker_type_sort" : "1",
+    "pkg_kind" : "0",
+    "standard" : 0,
+    "cov_property" : 0,
+    "native_checker" : true,
+    "checker_language" : [
+        "JAVA",
+        "Golang",
+        "C#",
+        "JS",
+        "Kotlin",
+        "C/C++",
+        "OC/OC++",
+        "Solidity",
+        "PHP",
+        "Swift",
+        "Ruby",
+        "Dart",
+        "Python",
+        "TS",
+        "LUA",
+        "其他"
+    ],
+    "checker_category" : "CODE_STATISTIC",
+    "checker_tag" : [
+        "系统推荐"
+    ],
+    "checker_recommend" : "SYSTEM_DEFAULT",
+    "create_date" : 1593845305676,
+    "created_by" : "CodeCC"
+  }
+]

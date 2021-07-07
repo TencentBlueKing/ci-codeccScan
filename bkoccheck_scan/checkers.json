@@ -1,0 +1,307 @@
+[
+  {
+    "checkerName": "ClassNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查类名的命名风格，默认为大驼峰 [tencent standards/oc 2.3](https://{github.com/xxxxx}/standards/oc#23-%E5%BF%85%E9%A1%BB%E7%B1%BB%E5%92%8C%E5%8D%8F%E8%AE%AE%E5%90%8D%E7%A7%B0)",
+    "checkerDescModel": "检查类名的命名风格，默认为大驼峰",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "ClassCase",
+        "propValue": "CamelCase",
+        "displayValue": "CamelCase"
+      }
+    ]
+  },
+  {
+    "checkerName": "Copyright",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "文件头部需要有Copyright声明,格式不限 [tencent standards/oc 3.1](https://{github.com/xxxxx}/standards/oc#31-%E6%8E%A8%E8%8D%90%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "文件头部需要有Copyright声明,格式不限",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "FunctionNaming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查函数的命名风格，默认为小驼峰 [tencent standards/oc 2.9](https://{github.com/xxxxx}/standards/oc#29-%E6%8E%A8%E8%8D%90%E6%96%B9%E6%B3%95%E5%90%8D)",
+    "checkerDescModel": "检查函数的命名风格，默认为小驼峰",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "FunctionCase",
+        "propValue": "camelBack",
+        "displayValue": "camelBack"
+      }
+    ]
+  },
+  {
+    "checkerName": "GlobalVariableNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查全局变量的命名风格 [tencent standards/oc 2.10](https://{github.com/xxxxx}/standards/oc#210-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%9E%E6%80%A7%E5%90%8D)",
+    "checkerDescModel": "检查全局变量的命名风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "GlobalVariableCase",
+        "propValue": "CamelCase",
+        "displayValue": "CamelCase"
+      }
+    ]
+  },
+  {
+    "checkerName": "Indent",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查缩进格式是否符合规范，默认以4空格为缩进单位 [tencent standards/oc 1.2](https://{github.com/xxxxx}/standards/oc#12-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDescModel": "检查缩进格式是否符合规范，默认以4空格为缩进单位",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "IndentSize",
+        "propValue": "4",
+        "displayValue": "4"
+      }
+    ]
+  },
+  {
+    "checkerName": "LocalVariableNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查局部变量的命名风格 [tencent standards/oc 2.10](https://{github.com/xxxxx}/standards/oc#210-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B1%9E%E6%80%A7%E5%90%8D)",
+    "checkerDescModel": "检查局部变量的命名风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "LocalVariableCase",
+        "propValue": "camelBack",
+        "displayValue": "camelBack"
+      }
+    ]
+  },
+  {
+    "checkerName": "MacroNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查宏变量的命名风格 [tencent standards/oc 2.8](https://{github.com/xxxxx}/standards/oc#28-%E5%BF%85%E9%A1%BB%E5%AE%8F%E5%AE%9A%E4%B9%89)",
+    "checkerDescModel": "检查宏变量的命名风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "MacroCase",
+        "propValue": "UPPER_CASE",
+        "displayValue": "UPPER_CASE"
+      }
+    ]
+  },
+  {
+    "checkerName": "MacroWithArgsNaming",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查带参数宏变量的命名风格，默认为大驼峰风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MaxLineLength",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查每行的长度 [tencent standards/oc 1.3](https://{github.com/xxxxx}/standards/oc#13-%E6%8E%A8%E8%8D%90%E6%8D%A2%E8%A1%8C)",
+    "checkerDescModel": "检查每行的长度",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "MaxLineLength",
+        "propValue": "80",
+        "displayValue": "80"
+      }
+    ]
+  },
+  {
+    "checkerName": "MaxLinesPerFunction",
+    "severity": 4,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查函数或方法的大小 [tencent standards/oc 1.4](https://{github.com/xxxxx}/standards/oc#14-%E6%8E%A8%E8%8D%90%E5%87%BD%E6%95%B0%E9%95%BF%E5%BA%A6)",
+    "checkerDescModel": "检查函数或方法的大小",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "LineThreshold",
+        "propValue": "80",
+        "displayValue": "80"
+      }
+    ]
+  },
+  {
+    "checkerName": "MethodNaming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查方法的命名风格 [tencent standards/oc 2.9](https://{github.com/xxxxx}/standards/oc#29-%E6%8E%A8%E8%8D%90%E6%96%B9%E6%B3%95%E5%90%8D)",
+    "checkerDescModel": "检查方法的命名风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "MethodCase",
+        "propValue": "camelBack",
+        "displayValue": "camelBack"
+      }
+    ]
+  },
+  {
+    "checkerName": "MissingDocInterface",
+    "severity": 4,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查接口是否有Doc注释 [tencent standards/oc 3.2](https://{github.com/xxxxx}/standards/oc#32-%E6%8E%A8%E8%8D%90%E5%A3%B0%E6%98%8E%E9%83%A8%E5%88%86%E7%9A%84%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "检查接口是否有Doc注释",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MissingDocProperty",
+    "severity": 4,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查属性是否有Doc注释 [tencent standards/oc 3.2](https://{github.com/xxxxx}/standards/oc#32-%E6%8E%A8%E8%8D%90%E5%A3%B0%E6%98%8E%E9%83%A8%E5%88%86%E7%9A%84%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "检查属性是否有Doc注释",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "MissingDocProtocol",
+    "severity": 4,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查协议是否有Doc注释 [tencent standards/oc 3.2](https://{github.com/xxxxx}/standards/oc#32-%E6%8E%A8%E8%8D%90%E5%A3%B0%E6%98%8E%E9%83%A8%E5%88%86%E7%9A%84%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "检查协议是否有Doc注释",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ParameterCount",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查函数或方法的参数个数 [tencent standards/oc 4.1](https://{github.com/xxxxx}/standards/oc#41-%E5%BF%85%E9%A1%BB%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%88%99)",
+    "checkerDescModel": "检查函数或方法的参数个数",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "Max",
+        "propValue": "6",
+        "displayValue": "6"
+      }
+    ]
+  },
+  {
+    "checkerName": "ParameterNaming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查参数的命名风格 [tencent standards/oc 2.9](https://{github.com/xxxxx}/standards/oc#29-%E6%8E%A8%E8%8D%90%E6%96%B9%E6%B3%95%E5%90%8D)",
+    "checkerDescModel": "检查参数的命名风格",
+    "checkerLanguage": [
+      "OC"
+    ],
+    "checkerRecommend": "USER_DEFINED",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "ParameterCase",
+        "propValue": "camelBack",
+        "displayValue": "camelBack"
+      }
+    ]
+  }
+]

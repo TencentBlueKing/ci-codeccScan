@@ -1,6 +1,9 @@
-# Copyright (c) 2015-2018 Claudiu Popa <pcmanticore@gmail.com>
+# -*- coding: utf-8 -*-
+# Copyright (c) 2015-2018, 2020 Claudiu Popa <pcmanticore@gmail.com>
 # Copyright (c) 2015 Florian Bruhin <me@the-compiler.org>
 # Copyright (c) 2018 ssolanki <sushobhitsolanki@gmail.com>
+# Copyright (c) 2020 Ram Rachum <ram@rachum.com>
+# Copyright (c) 2020 谭九鼎 <109224573@qq.com>
 # Copyright (c) 2020 Anthony Sottile <asottile@umich.edu>
 
 # Licensed under the GPL: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -9,7 +12,7 @@
 """Functions to generate files readable with Georg Sander's vcg
 (Visualization of Compiler Graphs).
 
-You can download vcg at http://rw4.cs.uni-sb.de/~sander/html/gshome.html
+You can download vcg at https://rw4.cs.uni-sb.de/~sander/html/gshome.html
 Note that vcg exists as a debian package.
 
 See vcg's documentation for explanation about the different values that
@@ -198,12 +201,12 @@ class VCGPrinter:
         for key, value in args.items():
             try:
                 _type = attributes_dict[key]
-            except KeyError:
+            except KeyError as e:
                 raise Exception(
                     """no such attribute %s
 possible attributes are %s"""
                     % (key, attributes_dict.keys())
-                )
+                ) from e
 
             if not _type:
                 self._stream.write('%s%s:"%s"\n' % (self._indent, key, value))

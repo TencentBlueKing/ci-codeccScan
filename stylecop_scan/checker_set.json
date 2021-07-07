@@ -1,0 +1,228 @@
+{
+    "checker_set_id" : "standard_csharp",
+    "checker_set_name" : "腾讯代码规范(C#)",
+    "checker_set_lang" : "C#",
+    "description" : "将根据公司规范持续更新…",
+    "checker_props" : [
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ClassStructMethodDelegateNameMustUseUpperCamelCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CommaOrSemicolonMustBeFollowedBySpaceOrEndOfLine",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CommaOrSemicolonOrCloseParenthesisMustNotBeFollowedByComment",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CommentMustBeFollowedByItsCommentTarget",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CommentMustUseCSharpXMLDocumentCommentFormat",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "DeclaritionInGlobalNameSpaceIsForbidden",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "EnumOrEnumItemNameMustUseUpperCamelCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "FileMustEncodeWithUTF8WithoutBOM",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "FileMustNotContainsTooManyClass",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "FileMustOnlyContainsSingleNamespace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "FirstClassStructEnumInterfaceMustBePublicOrInternal",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "FirstClassStructEnumInterfaceNameMustBeSameToFileName",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "InterfaceNameMustBeginWithIAndLeftWordsUseUpperCamelCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "KeyWordMustBeFollowedBySpace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MacroNameMustUseUpperSnakeCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MemberVariableAccessModifierMustBeDeclared",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MethodCloseParenthesisMustBeSameLineToOpenParenthesis",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MultiLineCommentMustNotBeEmpty",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "NameSpaceMustUseUpperCamelCaseOrAllUpperCaseLetterForShort",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "OneLineMustContainsSingleVariableDeclaration",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "OperatorDotSymbolMustBeSpacedCorrectly",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "OperatorSymbolMustBeSpacedCorrectly",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "OperatorTwoSymbolMustBeSpacedCorrectly",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "VariableNameMustNotBeginWithPrefix",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "VariableNameMustNotBeginWithUnderscore",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "VariableNameMustNotContainUnderscore",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "VariableNameMustUseLowerCamelCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "TabMustContainsFourSpaces",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeAnEmptyLineAfterThisCloseCurlyBracket",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeAnEmptyLineBeforeThisKeyWord",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeAnEmptyLineBetweenVariableDeclarationAndUsage",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeAnOpenCurlyBracketAfterThisKeyWord",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeNoSpaceAfterOpenParenthesis",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustBeNoSpaceBetweenMethodClassStructAndOpenParenthesis",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "ThereMustNotBeOtherOnLineOfCurlyBracket",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "SpecialKeywordMustNotBeFollowedBySpace",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "SingleLineCommentMustNotBeEmpty",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MethodOrPropertyAccessModifierMustBeDeclared",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CodeMustNotContainMultipleStatementsOnOneLine",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "AccessModifierMustBeDeclared",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "CodeMustNotContainEmptyStatements",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "MustNotUseEmptyUpdate",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "UnityLifeMethodUsedWrongLetterCase",
+            "props" : ""
+        },
+        {
+            "tool_name" : "STYLECOP",
+            "checker_key" : "UnityProjectMustNotUseLinq",
+            "props" : ""
+        }
+    ]
+}

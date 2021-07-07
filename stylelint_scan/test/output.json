@@ -1,0 +1,1900 @@
+{
+    "defects": [
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 18
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 22
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 26
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 27
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 28
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 32
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 33
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 34
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 35
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 39
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 40
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 41
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 43
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 57
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 44
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 45
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 46
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 47
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 48
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 49
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 50
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 51
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 52
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 53
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 54
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 55
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 56
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 59
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 72
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 60
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 61
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 62
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 63
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 64
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 65
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 66
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 67
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 69
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 71
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 70
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 74
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 78
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 75
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 76
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 77
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 80
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 82
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 81
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 84
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 98
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 85
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 86
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 87
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 89
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 91
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 90
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 93
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 97
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 94
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 95
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 96
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 100
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 104
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 101
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 102
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 103
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 106
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 118
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 107
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 108
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 109
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 110
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 111
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 113
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 117
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 114
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 116
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 115
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 120
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 125
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 121
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 122
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 123
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 124
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 127
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 129
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 128
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 131
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 142
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 132
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 133
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 134
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 135
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 136
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 137
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 141
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 138
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 139
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 140
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 144
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 147
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 145
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 146
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 149
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 157
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 150
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 151
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 152
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 153
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 154
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 155
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 156
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 159
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 165
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 160
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 161
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 162
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 163
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 164
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 167
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 169
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 168
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 171
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 189
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 172
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 173
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 174
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 175
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 176
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 177
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 179
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 184
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 180
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 181
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 182
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 183
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 186
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 188
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 187
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 191
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 207
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 192
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 193
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 194
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 195
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 197
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 202
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 198
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 199
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 200
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 201
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 204
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 206
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 205
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 209
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 226
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 210
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 211
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 212
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 213
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 214
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 216
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 219
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 217
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 218
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 221
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 225
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 222
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 223
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 224
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 228
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 247
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 229
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 230
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 231
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 232
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 233
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 234
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 235
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 237
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 240
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 238
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 239
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 242
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 246
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 243
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 244
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 245
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 249
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 256
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 250
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 251
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 252
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 253
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 254
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 255
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 258
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 265
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 259
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 260
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 261
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 262
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 263
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 264
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 267
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 273
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 268
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 272
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 269
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 270
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 271
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 275
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 290
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 276
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 277
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 278
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 279
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 280
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 281
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 282
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 283
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 285
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 289
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 286
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 287
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 288
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 292
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 298
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 293
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 294
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 295
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 296
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 297
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 300
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 306
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 301
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 305
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 302
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 304
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 303
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 308
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 316
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 309
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 310
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 311
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 312
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 313
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 314
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 315
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 318
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 321
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 319
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 320
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 323
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 326
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 324
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 325
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 328
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 333
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 329
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 330
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 331
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 332
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 335
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 340
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 336
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 337
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 338
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 339
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 342
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 355
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 343
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 344
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 345
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 346
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 347
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 348
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 349
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 350
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 351
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 352
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 353
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 354
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 357
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 377
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 358
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 359
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 376
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 360
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 361
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 362
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 363
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 364
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 365
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 366
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 375
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 367
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 368
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 369
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 370
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 371
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 372
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 373
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 8 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 374
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 379
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 455
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 524
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 528
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 525
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 527
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 526
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 532
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 2 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 536
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 533
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 4 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 535
+        },
+        {
+            "checkerName": "indentation",
+            "description": "Expected indentation of 6 spaces (indentation)",
+            "filename": "/Users/jimxzcai/workspace/stylelint_scan/test/css/intro.css",
+            "line": 534
+        }
+    ]
+}

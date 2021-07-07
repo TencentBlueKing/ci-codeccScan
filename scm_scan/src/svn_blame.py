@@ -1,4 +1,8 @@
-import sys,util,subprocess,os,json
+import sys
+import util
+import subprocess
+import os
+import json
 import xml.etree.ElementTree as ET
 import util
 import multiprocessing
@@ -13,7 +17,8 @@ def set_file_info(commits):
         file_folder_path = os.path.dirname(file_path)
         os.chdir(file_folder_path)
         cmd = 'svn info  --xml '+file_path
-        info_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        info_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                    shell=True, start_new_session=True)
         try:
             for line in info_cmd.stdout:
                 line = bytes.decode(line.strip()) 
@@ -37,7 +42,8 @@ def set_file_info(commits):
                             date_format = "%Y-%m-%d %H:%M:%S"
                             if 'T' in subelem.text:
                                 date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
-                            commits['fileUpdateTime'] = int(str(util.datetime_to_timestamp(subelem.text, date_format))+'000')
+                            commits['fileUpdateTime'] = int(str(util.datetime_to_timestamp(subelem.text, \
+                                                            date_format))+'000')
         except:
             commits = {}
     return commits
@@ -47,9 +53,13 @@ def blame_run(file_path, svn_blame_options):
     xml_data = []
     if os.path.isfile(file_path):
         file_folder_path = os.path.dirname(file_path)
+        if not os.path.exists(file_folder_path):
+            return set_file_info(commits) 
         os.chdir(file_folder_path)
-        cmd = 'svn blame --non-interactive  --no-auth-cache --trust-server-cert --xml %s %s ' % (svn_blame_options, file_path)
-        blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, shell=True, start_new_session=True)
+        cmd = 'svn blame --non-interactive  --no-auth-cache --trust-server-cert --xml %s %s ' % \
+              (svn_blame_options, file_path)
+        blame_cmd = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, \
+                                          shell=True, start_new_session=True)
         try:
             for line in blame_cmd.stdout:
                 line = bytes.decode(line.strip()) 
@@ -75,7 +85,8 @@ def blame_run(file_path, svn_blame_options):
                             date_format = "%Y-%m-%d %H:%M:%S"
                             if 'T' in subelem.text:
                                 date_format = "%Y-%m-%dT%H:%M:%S.%fZ"
-                            info['lineUpdateTime'] = int(str(util.datetime_to_timestamp(subelem.text, date_format))+'000')
+                            info['lineUpdateTime'] = int(str(util.datetime_to_timestamp(subelem.text, \
+                                                         date_format))+'000')
                         if "commit" == subelem.tag:
                             info['lineRevisionId'] = subelem.attrib['revision']
                             info['lineShortRevisionId'] = subelem.attrib['revision']
@@ -123,20 +134,6 @@ if __name__ == "__main__":
             svn_blame_options += ' --username '+input_data['svn_user']
         if 'svn_password' in input_data:
             svn_blame_options += ' --password '+input_data['svn_password']
-        # if 'file_path_list' in input_data:
-        #     change_svn_path = False
-        #     for file_path in input_data['file_path_list']:
-        #         #检查svn version
-        #         if not change_svn_path:
-        #             dir_path = os.path.dirname(file_path)
-        #             os.chdir(dir_path)
-        #             util.check_svn_version(dir_path)
-        #             change_svn_path = True
-        #         file_scm_blame = blame_run(file_path.strip(), svn_blame_options)
-        #         file_scm_blame = set_file_info(file_scm_blame)
-        #         if file_scm_blame != {}:
-        #             file_scm_blame['scmType'] = 'svn'
-        #             files_scm_blame.append(file_scm_blame)
         if 'file_path_list' in input_data:
             pool_processes = 1
             if multiprocessing:
@@ -148,6 +145,8 @@ if __name__ == "__main__":
                 #检查svn version
                 if not change_svn_path:
                     dir_path = os.path.dirname(file_path)
+                    if not os.path.exists(dir_path):
+                        continue
                     os.chdir(dir_path)
                     util.check_svn_version(dir_path)
                     change_svn_path = True
@@ -170,6 +169,6 @@ if __name__ == "__main__":
             print('generate output json file: '+options['output'])
             file.write(json.dumps(files_scm_blame, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

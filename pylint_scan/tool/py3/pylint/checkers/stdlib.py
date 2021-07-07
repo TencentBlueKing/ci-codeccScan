@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Copyright (c) 2013-2014 LOGILAB S.A. (Paris, FRANCE) <contact@logilab.fr>
 # Copyright (c) 2013-2014 Google, Inc.
-# Copyright (c) 2014-2019 Claudiu Popa <pcmanticore@gmail.com>
+# Copyright (c) 2014-2020 Claudiu Popa <pcmanticore@gmail.com>
 # Copyright (c) 2014 Cosmin Poieana <cmin@ropython.org>
 # Copyright (c) 2014 Vlad Temian <vladtemian@gmail.com>
 # Copyright (c) 2014 Arun Persaud <arun@nubati.net>
@@ -22,6 +22,7 @@
 # Copyright (c) 2019 Robert Schweizer <robert_schweizer@gmx.de>
 # Copyright (c) 2019 fadedDexofan <fadedDexofan@gmail.com>
 # Copyright (c) 2019 Pierre Sassoulas <pierre.sassoulas@gmail.com>
+# Copyright (c) 2020 谭九鼎 <109224573@qq.com>
 # Copyright (c) 2020 Anthony Sottile <asottile@umich.edu>
 
 # Licensed under the GPL: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -89,7 +90,7 @@ class StdlibChecker(BaseChecker):
             "bad-open-mode",
             "Python supports: r, w, a[, x] modes with b, +, "
             "and U (only with r) options. "
-            "See http://docs.python.org/2/library/functions.html#open",
+            "See https://docs.python.org/2/library/functions.html#open",
         ),
         "W1502": (
             "Using datetime.time in a boolean context.",
@@ -97,7 +98,7 @@ class StdlibChecker(BaseChecker):
             "Using datetime.time in a boolean context can hide "
             "subtle bugs when the time they represent matches "
             "midnight UTC. This behaviour was fixed in Python 3.5. "
-            "See http://bugs.python.org/issue13936 for reference.",
+            "See https://bugs.python.org/issue13936 for reference.",
             {"maxversion": (3, 5)},
         ),
         "W1503": (

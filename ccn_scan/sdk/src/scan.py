@@ -1,5 +1,6 @@
 ﻿import sys
-import os,re
+import os
+import re
 import json
 import subprocess
 import multiprocessing
@@ -12,33 +13,58 @@ if 'python' in sys.executable:
 else:
     current_path = os.path.dirname(os.path.realpath(sys.executable))
 
-def _ExpandDirectories(filenames):
-  expanded = set()
-  for filename in filenames:
-    if not os.path.isdir(filename):
-      expanded.add(filename)
-      continue
+def find_git_dir_path(file_folder_path):
+    git_dir = file_folder_path
+    while True:
+        git_dir += '/.git'
+        if os.path.isdir(git_dir):
+            break
+        elif os.path.isfile(git_dir):
+            break
+        else:
+            git_dir = os.path.dirname(os.path.dirname(git_dir))
+        if git_dir == '/':
+            break
+    if git_dir == '/':
+        git_dir = ""
+    return os.path.dirname(git_dir)
 
-    for root, _, files in os.walk(filename):
-      for loopfile in files:
-        fullname = os.path.join(root, loopfile)
-        if fullname.startswith('.' + os.path.sep):
-          fullname = fullname[len('.' + os.path.sep):]
-        expanded.add(fullname)
+class ExpandDirectories(object):
 
-  filtered = []
-  for filename in expanded:
-    if os.path.splitext(filename)[1][1:] in GetAllExtensions():
-      filtered.append(filename)
+    def __init__(self, filenames):
+        self.filenames = filenames
 
-  return filtered
+    def expand_dirs(self):
+        expanded = set()
+        for filename in self.filenames:
+            if not os.path.isdir(filename):
+                expanded.add(filename)
+                continue
 
-def GetAllExtensions():
-    return set(['cs','c','C','c++','cc','CPP','cpp','cxx','pcc','H','h','hh','hpp','hxx','java','php','php3','php4','php5','phtml','vue','rb','go','Swift','m','mm','py','pyw','es6','js','ts','tsx'])
+            for root, _, files in os.walk(filename):
+                for loopfile in files:
+                    fullname = os.path.join(root, loopfile)
+                    if fullname.startswith('.' + os.path.sep):
+                        fullname = fullname[len('.' + os.path.sep):]
+                    expanded.add(fullname)
+
+        filtered = []
+        for filename in expanded:
+            if os.path.splitext(filename)[1][1:] in self.get_all_extensions():
+                filtered.append(filename)
+
+        return filtered
+
+    def get_all_extensions(self):
+        return set(['cs', 'c', 'C', 'c++', 'cc', 'CPP', 'cpp', 'cxx', \
+                    'pcc', 'H', 'h', 'hh', 'hpp', 'hxx', 'java', 'php', \
+                    'php3', 'php4', 'php5', 'phtml', 'rb', 'go', \
+                    'Swift', 'm', 'mm', 'py', 'pyw', 'es6', 'js', 'ts', 'tsx'])
 
 def foreach_file_list(scan_path_list, skip_path_list):
     file_list = []
-    filenames = _ExpandDirectories(scan_path_list)
+    exdirs = ExpandDirectories(scan_path_list)
+    filenames = exdirs.expand_dirs()
     for file_path in filenames:
         if check_path_match_skip(file_path, skip_path_list):
             file_list.append(file_path)
@@ -56,6 +82,7 @@ def check_path_match_skip(file_path, skip_path_list):
     return no_skip
     
 def scan(filename, ccn_number, skip_path_list):
+    sys.setrecursionlimit(10000)
     file_ccn_info = {}
     file_defects = []
     cmd_result = []
@@ -74,7 +101,8 @@ def scan(filename, ccn_number, skip_path_list):
 
     for elem in cmd_result:
         try:
-            if '->' in elem and os.path.exists(elem.split('->',1)[0]) and check_path_match_skip(elem.split('->',1)[0], skip_path_list):
+            if '->' in elem and os.path.exists(elem.split('->',1)[0]) \
+               and check_path_match_skip(elem.split('->',1)[0], skip_path_list):
                 ccn_function_list = elem.split('->')
                 if len(ccn_function_list) != 7:
                     continue
@@ -87,15 +115,21 @@ def scan(filename, ccn_number, skip_path_list):
                 defect['endLine']=ccn_function_list[3].split('-') [1] #function_lines
                 defect['total_lines']=ccn_function_list[4] #total_lines
                 defect['ccn']=ccn_function_list[5] #ccn
-                defect['condition_lines']=ccn_function_list[6].replace(' ', '').replace('{','').replace('}','') #condition_lines
+                defect['condition_lines']=ccn_function_list[6].replace(' ', '')\
+                                                              .replace('{','')\
+                                                              .replace('}','')
                 file_defects.append(defect)
-            elif ':' in elem and os.path.exists(elem.split(':', 1)[0]) and check_path_match_skip(elem.split(':', 1)[0], skip_path_list):
+            elif ':' in elem and os.path.exists(elem.split(':', 1)[0]) \
+                 and check_path_match_skip(elem.split(':', 1)[0], skip_path_list):
                 ccn_list = elem.split(':')
                 if len(ccn_list) != 2:
                     continue
                 ccn_summary = {}
-                ccn_summary['file_path'] = ccn_list[0] #filename
+                ccn_summary['file_path'] = filename #filename
                 ccn_summary['total_ccn_count'] = ccn_list[1] #total_ccn
+                file_folder_path = os.path.dirname(filename)
+                git_root_path = find_git_dir_path(file_folder_path)
+                ccn_summary['file_rel_path'] = filename.replace(git_root_path, '').replace('//', '/')
                 file_ccn_info['files_ccn'] = ccn_summary
         except:
             print('pase filed '+elem)
@@ -104,6 +138,7 @@ def scan(filename, ccn_number, skip_path_list):
     return file_ccn_info
 
 def ts_scan(filename, ccn_number, skip_path_list):
+    sys.setrecursionlimit(10000)
     file_ccn_info = {}
     file_defects = []
     cmd_result = []
@@ -122,7 +157,8 @@ def ts_scan(filename, ccn_number, skip_path_list):
         p.wait()
     for elem in cmd_result:
         try:
-            if len(elem.split(',')) == 11 and os.path.exists(elem.split(',')[6].replace('\"','')) and check_path_match_skip(elem.split(',')[6].replace('\"',''), skip_path_list):
+            if len(elem.split(',')) == 11 and os.path.exists(elem.split(',')[6].replace('\"','')) \
+               and check_path_match_skip(elem.split(',')[6].replace('\"',''), skip_path_list):
                 ccn_function_list = elem.split(',')
                 if int(ccn_function_list[1]) >= int(ccn_number):
                     defect = {}
@@ -144,6 +180,9 @@ def ts_scan(filename, ccn_number, skip_path_list):
         ccn_summary = {}
         ccn_summary['file_path'] = filename
         ccn_summary['total_ccn_count'] = abs(eval('+'.join(average_ccn_list))/len(average_ccn_list))
+        file_folder_path = os.path.dirname(filename)
+        git_root_path = find_git_dir_path(file_folder_path)
+        ccn_summary['file_rel_path'] = filename.replace(git_root_path, '').replace('//', '/')
         file_ccn_info['files_ccn'] = ccn_summary
     file_ccn_info['file_defects'] = file_defects
     return file_ccn_info
@@ -174,7 +213,8 @@ if __name__ == "__main__" :
                     if 'checkerName' in checker_option and 'CCN_threshold' in checker_option['checkerName']:
                         checkerOptions = checker_option['checkerOptions']
                         for option in checkerOptions:
-                            if 'checkerOptionName' in option and 'ccn_threshold' in option['checkerOptionName'] and option['checkerOptionValue'] != '':
+                            if 'checkerOptionName' in option and 'ccn_threshold' in option['checkerOptionName'] \
+                               and option['checkerOptionValue'] != '':
                                 ccn_number = int(option['checkerOptionValue'])
                                 break
                         break
@@ -187,7 +227,8 @@ if __name__ == "__main__" :
             #增量扫描
             if 'scanType' in input_data and input_data['scanType'] == 'increment':
                 for file_path in input_data['incrementalFiles']:
-                    if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 and check_path_match_skip(file_path, input_data['whitePathList']):
+                    if 'whitePathList' in input_data and len(input_data['whitePathList']) > 0 \
+                       and check_path_match_skip(file_path, input_data['whitePathList']):
                         continue
                     scan_path_list.append(file_path)
             #全量扫描
@@ -229,6 +270,6 @@ if __name__ == "__main__" :
                     print('generate output json file: '+options['output'])
                     file.write(json.dumps(output_data, sort_keys=True, indent=4))
     else:
-         print("Usage %s --xxx=xxx" % sys.argv[0])
-         print('--input: the file path of input the json file for tool to scan')
-         print('--output the file path of output the result')
+        print("Usage %s --xxx=xxx" % sys.argv[0])
+        print('--input: the file path of input the json file for tool to scan')
+        print('--output the file path of output the result')

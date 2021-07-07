@@ -1,0 +1,1691 @@
+[
+  {
+    "checkerName": "build/c++11",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "C++11/14特性",
+    "checkerTypeSort": "1",
+    "checkerDesc": "1.检查对C++11标准提到的右值引用的使用，如果检查到使用右值引用，给出警告（未批准的C++特性）。\n2. 检查是否使用了默认的lambda捕获，如果使用了，给出警告（未批准的C++特性）。\n3. 检查是否include了未批准的C++特性的头文件，如cfenv、condition_variable等。如果检查到了，给出警告。\n4. 检查是否使用了std: : alignment_of或std: : aligned_union，如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/c++14",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "C++11/14特性",
+    "checkerTypeSort": "1",
+    "checkerDesc": "1.检查是否使用了未经批准的C++14头文件，如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/c++tr1",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "C++11/14特性",
+    "checkerTypeSort": "1",
+    "checkerDesc": "1.检查是否使用了未经批准的C++TR1头文件，如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/class",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1.检查类声明是否完整，即类声明的结束部位是否含有“}”。如果没有，给出类声明不完整警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/deprecated",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查是否使用了“&gt;?”或者“&lt;?”操作符。如果使用了，给出警告，并建议使用max或者min代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/endif_comment",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1.检查#endif后面是否跟有注释，如果没有注释，给出警告。[tencent standards/cpp 8.1](https://{github.com/xxxxx}/standards/cpp#81%E6%8E%A8%E8%8D%90%E6%B3%A8%E9%87%8A%E9%A3%8E%E6%A0%BC)，[tencent standards/cpp 8.6](https://{github.com/xxxxx}/standards/cpp#86%E6%8E%A8%E8%8D%90%E5%AE%9E%E7%8E%B0%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "1.检查#endif后面是否跟有注释，如果没有注释，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/explicit_make_pair",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "C++11/14特性",
+    "checkerTypeSort": "1",
+    "checkerDesc": "1.为了C++11的兼容性，省略make_pair中的模板参数，或者直接使用pair，或者直接构造一个pair。如果检测到make_pair中使用了模板参数，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/forward_decl",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1.在作用域内（如namespace作用域），检查是否使用了类似“class AA: : tt;”这种格式的前向声明。如果有这种前向声明，给出警告。[tencent standards/cpp 2.3](https://{github.com/xxxxx}/standards/cpp#23%E6%8E%A8%E8%8D%90%E9%81%BF%E5%85%8D%E4%BD%BF%E7%94%A8%E5%89%8D%E7%BD%AE%E5%A3%B0%E6%98%8E)",
+    "checkerDescModel": "1.在作用域内（如namespace作用域），检查是否使用了类似“class AA: : tt;”这种格式的前向声明。如果有这种前向声明，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/header_define",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "检查OneSDK头文件是否使用#ifndef...#define进行保护，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/header_guard",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "1.检查两点: (1)头文件中是否含有#ifndef、#define，(2)#ifndef和#define中的内容是否一样。如果上述两条有一条满足，给出警告。\n2. 检查#ifndef的格式是否正确，正确的命名格式是：PATH_FILE_H_。如果格式有出入，给出警告。 \n3. 检查#endif的格式是否正确，正确的格式是#endif // PATH_FILE_H_。如果不满足这种格式，给出警告。\n4. 对上一点3的补充检查：检查#endif后面的注释，如果没有/* */或者//...格式注释，给出警告。[tencent standards/cpp 2.2](https://{github.com/xxxxx}/standards/cpp#22%E5%BF%85%E9%A1%BB-%E5%A4%B4%E6%96%87%E4%BB%B6%E4%BF%9D%E6%8A%A4)",
+    "checkerDescModel": "1.检查两点: (1)头文件中是否含有#ifndef、#define，(2)#ifndef和#define中的内容是否一样。如果上述两条有一条满足，给出警告。\n2. 检查#ifndef的格式是否正确，正确的命名格式是：PATH_FILE_H_。如果格式有出入，给出警告。\n3. 检查#endif的格式是否正确，正确的格式是#endif // PATH_FILE_H_。如果不满足这种格式，给出警告。\n4. 对上一点3的补充检查：检查#endif后面的注释，如果没有/* */或者//...格式注释，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "头文件规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/include",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "1.检查每一个C++源文件是否都有一个对应的.h头文件，如果没有，给出警告。\n2. 检查include的头文件是否加上路径，如果没有，给出警告。\n3. 检查是否include了多次同一个头文件，如果是，给出警告。\n4. 不要include其他包里面的.cc文件。如果include了，给出警告。[tencent standards/cpp 2.2](https://{github.com/xxxxx}/standards/cpp#22%E5%BF%85%E9%A1%BB-%E5%A4%B4%E6%96%87%E4%BB%B6%E4%BF%9D%E6%8A%A4)",
+    "checkerDescModel": "1.检查每一个C++源文件是否都有一个对应的.h头文件，如果没有，给出警告。\n2. 检查include的头文件是否加上路径，如果没有，给出警告。\n3. 检查是否include了多次同一个头文件，如果是，给出警告。\n4. 不要include其他包里面的.cc文件。如果include了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "头文件规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/include_alpha",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "1.检查相同目录下头文件是否按字母序升序引用，如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "头文件规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/include_order",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "1.检查include文件的顺序：本文件相应头文件，C系统文件，C++系统文件，其他库文件。[tencent standards/cpp 2.5](https://{github.com/xxxxx}/standards/cpp#25%E5%BF%85%E9%A1%BBinclude-%E7%9A%84%E8%B7%AF%E5%BE%84%E5%8F%8A%E9%A1%BA%E5%BA%8F)",
+    "checkerDescModel": "1.检查include文件的顺序：本文件相应头文件，C系统文件，C++系统文件，其他库文件。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/include_subdir",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "检查头文件路径是否有包含子目录，如foo/bar.h，而不是bar.h",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "头文件规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/include_what_you_use",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1.检查是否添加必要的标准模版库，如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/namespaces",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查命名空间定义是否有结束标记，如果没有，给出警告。\n2. 检查是否使用了using编译指令，如果使用了，给出警告，提示用户使用using声明指令。\n3. 检查在.h文件中是否使用了不具名的命名控件，如果使用了，给出警告。[tencent standards/cpp 3.1](https://{github.com/xxxxx}/standards/cpp#31%E5%BF%85%E9%A1%BB%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
+    "checkerDescModel": "1. 检查命名空间定义是否有结束标记，如果没有，给出警告。\n2. 检查是否使用了using编译指令，如果使用了，给出警告，提示用户使用using声明指令。\n3. 检查在.h文件中是否使用了不具名的命名控件，如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/namespaces_literals",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "检查使用usingstd; 建议使用具体命名空间，如：using std: string",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/no_using",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法使用",
+    "checkerTypeSort": "5",
+    "checkerDesc": "检查头文件是否使用了using namespace，有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/printf_format",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查是否使用了未定义的字符转义序列，如\\%,\\[,\\(和\\{。如果检查到这些转义序列，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "build/storage_class",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 存储类型的关键字（static、extern、typedef、etc）应该放在其他关键词（如const、volatile、void等）前面。如果没有放到前面，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "legal/copyright",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 检查文件中是否包含“Copyright [year]&lt;Copyright Owner&gt;”，如果不包含，给出警告。[tencent standards/cpp 8.2](https://{github.com/xxxxx}/standards/cpp#82%E6%8E%A8%E8%8D%90%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "1. 检查文件中是否包含“Copyright [year]&lt;Copyright Owner&gt;”，如果不包含，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "naming/capitalize",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查文件名首字母是否大写，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "naming/extension",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查文件后缀名是否全部小写，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "naming/underscore",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查文件名是否有下划线，有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/alt_tokens",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "错误表达式",
+    "checkerTypeSort": "2",
+    "checkerDesc": "1. 检查符号（and、bitor、or、xor、compl、bitand、and_eq、or_eq、xor_eq、not和not_eq）的使用，建议使用（&amp;&amp;、/、//、^、~、&amp;、&amp;=、|=、^=、!、!=）代替以上几类符号。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/brace_new_line",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查{是否另起一行，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/braces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查if ... elseif ... elseif这种结构，如果其中有if或者else if使用了大括号({})，则其他的if或者else if没有使用大括号（{}），则给出警告。\n2. 检查if或else体中有多条语句时，是否有大括号{}。如果没有，则给出警告。\n3. 检查else是否和与之匹配的if有同样的缩进，如果没有，给出警告；同时建议用户，对于嵌套关系比较模糊的情况，使用{}标示。\n4. 检查右大括号}后面是否有“;”，如果有，给出警告。PS：对于namespace、class等正确的情况，不会给出警告。\n5. 检查if是否在单独一行，如果不在单独一行，给出警告。[tencent standards/cpp 9.9](https://{github.com/xxxxx}/standards/cpp#99%E5%BF%85%E9%A1%BB%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5)",
+    "checkerDescModel": "1. 检查if ... elseif ... elseif这种结构，如果其中有if或者else if使用了大括号({})，则其他的if或者else if没有使用大括号（{}），则给出警告。\n2. 检查if或else体中有多条语句时，是否有大括号{}。如果没有，则给出警告。\n3. 检查else是否和与之匹配的if有同样的缩进，如果没有，给出警告；同时建议用户，对于嵌套关系比较模糊的情况，使用{}标示。\n4. 检查右大括号}后面是否有“;”，如果有，给出警告。PS：对于namespace、class等正确的情况，不会给出警告。\n5. 检查if是否在单独一行，如果不在单独一行，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/casting",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法类型转换",
+    "checkerTypeSort": "4",
+    "checkerDesc": "1.对基本类型，检查是否使用了过时的类型转换，建议使用static_cast()代替(type)这种转换方式。检查的类型有：int,float,double,bool,char,int32,uint32,int64,uint64.\n2. 检查是否在类型转换前面使用了取址操作符。如果使用了，给出警告。如以下语句就会收到警告：&down_cast(obj)->member_;', alt_error_msg)。[tencent standards/cpp 4.2](https://{github.com/xxxxx}/standards/cpp#42%E5%BF%85%E9%A1%BB%E9%9A%90%E5%BC%8F%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)，[tencent standards/cpp 6.6](https://{github.com/xxxxx}/standards/cpp#66%E5%BF%85%E9%A1%BB%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)",
+    "checkerDescModel": "1.对基本类型，检查是否使用了过时的类型转换，建议使用static_cast()代替(type)这种转换方式。检查的类型有：int,float,double,bool,char,int32,uint32,int64,uint64.\n2. 检查是否在类型转换前面使用了取址操作符。如果使用了，给出警告。如以下语句就会收到警告：&down_cast(obj)->member_;', alt_error_msg)",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/check",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1.检查ASSERT和CHECK断言的使用，建议使用ASSERT_EQ和CHECK_EQ等方式，而不是使用ASSERT_TRUE(condition)这种形式。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "系统API"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/class_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查类名首字母大写/小写开头，默认为大写",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/constructors",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查宏DISALLOW_COPY_AND_ASSIGN和DISALLOW_IMPLICIT_CONSTRUCTORS的作用域是否正确，正确的作用域为private。\n2. 检查宏DISALLOW_COPY_AND_ASSIGN和DISALLOW_IMPLICIT_CONSTRUCTORS的位置是否正确，正确的位置是在类的结束位置。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/enum_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查枚举名首字母大写/小写开头，默认为大写",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/enum_naming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查枚举是否有名称、是否以k开头，且是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/file_header",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "检查文件头是否包含Version/Module/Author标签，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/fn_size",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "函数不规范",
+    "checkerTypeSort": "8",
+    "checkerDesc": "1. 建议编写小巧、功能集中的函数，大于50行开始给出警告，具体警告等级和代码行数关系为：50 =&gt; 0, 100 =&gt; 1, 200 =&gt; 2, 400 =&gt; 3, 800 =&gt; 4, 1600 =&gt; 5；测试代码量可以加倍。\n2. 检查到函数定义，但是没有找到函数体的时候，给出警告。[tencent standards/cpp 5.2](https://{github.com/xxxxx}/standards/cpp#52%E6%8E%A8%E8%8D%90%E7%BC%96%E5%86%99%E7%AE%80%E7%9F%AD%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "1. 建议编写小巧、功能集中的函数，大于50行开始给出警告，具体警告等级和代码行数关系为：50 =&gt; 0, 100 =&gt; 1, 200 =&gt; 2, 400 =&gt; 3, 800 =&gt; 4, 1600 =&gt; 5；测试代码量可以加倍。\n2. 检查到函数定义，但是没有找到函数体的时候，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/function",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "函数不规范",
+    "checkerTypeSort": "8",
+    "checkerDesc": "1. 检查函数参数是否是不含参数名称的参数,如果是,给出警告.(如void test(int)会给出警告)",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/function_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查函数名称是否符合Pascal命名规范，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/inheritance",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "函数不规范",
+    "checkerTypeSort": "8",
+    "checkerDesc": "1. 在函数的后面如果有关键字final或者overrider，表示该函数不可以为虚函数，如果检查到final或overrider修饰的函数有virtual修饰，会给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/interface_ctor_dtor",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "函数不规范",
+    "checkerTypeSort": "8",
+    "checkerDesc": "检查接口是否有virtual析构函数，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/interface_function",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "函数不规范",
+    "checkerTypeSort": "8",
+    "checkerDesc": "检查接口函数声明是否包含virtual修饰符，且是纯虚函数，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/interface_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查接口名称首字母大写，且以I开头，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/macro_naming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查枚举名称是否全部大写，或以下划线分隔，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/multiline_comment",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 多行注释，如果没有搜索到注释结束标识符，给出警告。\n2. 检测到了多行注释/* */，lint工具可能会对此给出警告，建议使用//代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/multiline_string",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 检测到有字符串分多行显示时，“...”这种连接多行字符串的方式在lint中会得到警告，建议使用C++11的raw strings或者concatenation代替。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/namespace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 检查namespace的结束位置是否有注释，注释格式为namespace“//namespace xxx”。\n2. 检查匿名namespace的结束位置注释是否合法，注释格式应该为“//namespace”或者“//anonymous namespace”。[tencent standards/cpp 3.2](https://{github.com/xxxxx}/standards/cpp#32%E5%BF%85%E9%A1%BB%E5%8C%BF%E5%90%8D%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E5%92%8C%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "1. 检查namespace的结束位置是否有注释，注释格式为namespace“//namespace xxx”。\n2. 检查匿名namespace的结束位置注释是否合法，注释格式应该为“//namespace”或者“//anonymous namespace”",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/nolint",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 检查文件中是否有未知的NOLINT错误分类\n2. 检查未知的分类GLOBAL_NOLINT；",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/ns_gcloud",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查OneSDK头文件是否以namepace Gcloud{}包括，没有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/nul",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法字符",
+    "checkerTypeSort": "6",
+    "checkerDesc": "1. 检查文件中是否存在'\\0'字符，即NUL字符，如果存在，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/streams",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 建议不要使用流（google  C++编程规范条目），新版本cpplint已经不支持对此条目的检查。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/struct_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查结构体名首字母大写/小写开头，默认为大写",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/struct_naming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "命名不规范",
+    "checkerTypeSort": "9",
+    "checkerDesc": "检查结构体名称、成员命名是否符合Pascal规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/todo",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "1. 检查TODO注释的格式是否正确，建议格式为“// TODO(my_username): Stuff.”[tencent standards/cpp 8.8](https://{github.com/xxxxx}/standards/cpp#88%E6%8E%A8%E8%8D%90todo-%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "1. 检查TODO注释的格式是否正确，建议格式为“// TODO(my_username): Stuff.”",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/union_name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查联合体名首字母大写/小写开头，默认为大写",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/utf8",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法字符",
+    "checkerTypeSort": "6",
+    "checkerDesc": "1. 检查文件中是否包含非法的UTF-8字符，如果存在，给出警告。[tencent standards/cpp 9.2](https://{github.com/xxxxx}/standards/cpp#92%E5%BF%85%E9%A1%BB%E9%9D%9E-ascii-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "1. 检查文件中是否包含非法的UTF-8字符，如果存在，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "readability/utf8-tosa",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "文件编码必须是utf8",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/arrays",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 检查是否使用变量来初始化数组。如果发现了，给出警告，并建议使用编译时常量来初始化数组。[tencent standards/cpp 9.14](https://{github.com/xxxxx}/standards/cpp#914%E6%8E%A8%E8%8D%90%E5%8F%98%E9%87%8F%E5%8F%8A%E6%95%B0%E7%BB%84%E5%88%9D%E5%A7%8B%E5%8C%96)",
+    "checkerDescModel": "1. 检查是否使用变量来初始化数组。如果发现了，给出警告，并建议使用编译时常量来初始化数组。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/assert",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+	"checkerType": "内存相关",
+	"checkerTypeSort": "10",
+    "checkerDesc": "请谨慎使用 assert() 方法，请检查是否需要删除掉。",
+	"checkerDescModel": "请谨慎使用 assert() 方法，请检查是否需要删除掉。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "系统API"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/casting",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法类型转换",
+    "checkerTypeSort": "4",
+    "checkerDesc": "1. 检查是否在类型转换前面使用了取址操作符。如果使用了，给出警告，因为这种用法有可能获取临时变量的地址。如以下语句就会收到警告：&amp;down_cast&lt;Obj*&gt;(obj)-&gt;member_;', alt_error_msg)",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/explicit",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查只有一个参数的构造函数(默认参数不算)是否使用了explicit关键字。如果没有使用，给出警告。\n2. 检查没有参数的构造函数是否使用了explicit关键字。如果使用了，给出警告。 3. 检查有多个参数的构造函数是否使用了explicit关键字。如果使用了，给出警告。[tencent standards/cpp 4.2](https://{github.com/xxxxx}/standards/cpp#42%E5%BF%85%E9%A1%BB%E9%9A%90%E5%BC%8F%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)",
+    "checkerDescModel": "1. 检查只有一个参数的构造函数(默认参数不算)是否使用了explicit关键字。如果没有使用，给出警告。\n2. 检查没有参数的构造函数是否使用了explicit关键字。如果使用了，给出警告。 3. 检查有多个参数的构造函数是否使用了explicit关键字。如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/indentation_namespace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查是否在namespace中存在缩进。如果有，给出警告。[tencent standards/cpp 9.18](https://{github.com/xxxxx}/standards/cpp#918%E5%BF%85%E9%A1%BB%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E6%A0%BC%E5%BC%8F)",
+    "checkerDescModel": "1. 检查是否在namespace中存在缩进。如果有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/init",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 检查是否存在使用变量自身初始化自己的情况。如果存在这种情况，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/int",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 检查port前面是否使用了unsigned short修饰。如果不是，给出警告。\n2. 检查是否使用了short、long、long long。如果发现使用了这些，给出警告，并建议使用int16、int64等代替之。[tencent standards/cpp 6.11](https://{github.com/xxxxx}/standards/cpp#611%E6%8E%A8%E8%8D%90%E6%95%B4%E5%9E%8B)",
+    "checkerDescModel": "1. 检查port前面是否使用了unsigned short修饰。如果不是，给出警告。\n2. 检查是否使用了short、long、long long。如果发现使用了这些，给出警告，并建议使用int16、int64等代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/invalid_increment",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 检查是否有使用（*++、*--）的情况。如果使用了这种情况，给出警告，提示这种情况会同时改变指针的位置。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/member_string_references",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "1. 检查是否定义了const xxx&amp;这种类型的类数据成员。如果存在，给出警告，建议使用指针代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/memset",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. 检查memset是否有书写错误。如果检查到类似于memset(buf, sizeof(buf), 0)，则是一个潜在的memset bug，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/operator",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 检查是否重载了操作符&amp;。如果重载了，鉴于该操作符的危险性，给出警告。[tencent standards/cpp 4.7](https://{github.com/xxxxx}/standards/cpp#47%E5%BF%85%E9%A1%BB%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD)",
+    "checkerDescModel": "1. 检查是否重载了操作符&amp;。如果重载了，鉴于该操作符的危险性，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/printf",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. 检查使用printf时，潜在的格式化bugs。如果发现，给出警告。\n2. 当检查到snprintf函数中存在数字（size）参数时，建议使用sizeof（变量）代替数字。\n3. 检查是否使用了sprintf。如果使用了，给出警告，并建议使用snprintf代替之。\n4. 检查是否使用了strcpy或strcat。如果使用了，给出警告，并建议使用snprintf代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/printf_format",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. 检查在使用printf打印语句时，是否使用了“%qd”。如果使用了，给出警告，建议使用“%lld”。\n2. 检查在使用printf打印语句时，是否使用了“%1$d”这种格式。如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "系统API"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/references",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "内存相关",
+    "checkerTypeSort": "10",
+    "checkerDesc": "1. 在函数参数中，查找是否使用了非const型的指针。如果发现了这种类型的指针，则给出警告，并建议使用const型或者指针代替之。[tencent standards/cpp 6.9](https://{github.com/xxxxx}/standards/cpp#69%E5%BF%85%E9%A1%BBconst-%E7%94%A8%E6%B3%95)",
+    "checkerDescModel": "1. 在函数参数中，查找是否使用了非const型的指针。如果发现了这种类型的指针，则给出警告，并建议使用const型或者指针代替之。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/rtti",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "非法类型转换",
+    "checkerTypeSort": "4",
+    "checkerDesc": "1. 小心使用dynamic_cast<>,如果需要在类层次中使用，使用static_cast<>进行向上转型.如果虚函数足够使用，不要使用RTTI（新版本cpplint已经删除）",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/sizeof",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. 建议使用sizeof(变量)的形式",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/string",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查是否使用了static或global修饰的string常量。如果检测到了，给出警告，并建议使用C风格字符串代替。[tencent standards/cpp 3.5](https://{github.com/xxxxx}/standards/cpp#35%E5%BF%85%E9%A1%BB%E9%9D%99%E6%80%81%E5%92%8C%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "1. 检查是否使用了static或global修饰的string常量。如果检测到了，给出警告，并建议使用C风格字符串代替。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/threadsafe_fn",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. 检查是否使用了在POSIX标准中非线程安全的函数，如果使用了，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/virtual",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "代码块相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "该规则说明正在补充中…",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "runtime/vlog",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "API使用错误",
+    "checkerTypeSort": "0",
+    "checkerDesc": "1. VLOG()接受数值等级参数，如果使用符号等级参数，请使用LOG()",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "tosa/comment",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "注释不规范",
+    "checkerTypeSort": "12",
+    "checkerDesc": "腾讯开源注释率要求不少于10%",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "tosa/copyright",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "头文件不规范",
+    "checkerTypeSort": "11",
+    "checkerDesc": "腾讯开源文件头需要包含开源协议信息",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "tosa/cr",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "行尾使用换行符LF且禁止使用回车键CR",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "tosa/fn_name_length",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "函数名长度限制（不得超过35个字符）",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "fn-name-length",
+        "propValue": "35",
+        "displayValue": "35"
+      }
+    ]
+  },
+  {
+    "checkerName": "tosa/indent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "采用指定个数空格缩进（默认为4个）且禁止使用tab键",
+    "checkerDescModel": "采用指定个数空格缩进（默认为%s个）且禁止使用tab键",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "tosa-space",
+        "propValue": "4",
+        "displayValue": "4"
+      }
+    ]
+  },
+  {
+    "checkerName": "tosa/line_length",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "源码每一行字符数限制（默认不得超过120个）",
+    "checkerDescModel": "源码每一行字符数限制（默认不得超过%s个）",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "line-length",
+        "propValue": "120",
+        "displayValue": "120"
+      }
+    ]
+  },
+  {
+    "checkerName": "whitespace/blank_line",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查代码块开始处是否有空行。如果在代码块开始的时候有空行，给出警告。\n2. 检查代码块结束处是否有空行。如果有空行，给出警告。\n3. 检查public\\protected\\private后面是否有空行。如果有空行，给出警告。\n4. 检查public\\protected\\private前面是否有空行。如果没有空行，给出警告  [tencent standards/cpp 9.20](https://{github.com/xxxxx}/standards/cpp#920%E5%BF%85%E9%A1%BB%E5%9E%82%E7%9B%B4%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查代码块开始处是否有空行。如果在代码块开始的时候有空行，给出警告。\n2. 检查代码块结束处是否有空行。如果有空行，给出警告。\n3. 检查public\\protected\\private后面是否有空行。如果有空行，给出警告。\n4.检查public\\protected\\private前面是否有空行。如果没有空行，给出警告.",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/braces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查“[”符号前面是否有空白。如果有，给出警告。\n2. 检查“{”符号前面是否留有空白。如果没有，给出警告。\n3. 检查“}else”这种情况的else前面是否留有空白。如果没有，给出警告。\n4. 检查“{”是否接在语句最后，即“{”是否直接跟在语句的后面，而不是单独起一行。如果单独占一行，给出警告。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查“[”符号前面是否有空白。如果有，给出警告。\n2. 检查“{”符号前面是否留有空白。如果没有，给出警告。\n3. 检查“}else”这种情况的else前面是否留有空白。如果没有，给出警告。\n4. 检查“{”是否接在语句最后，即“{”是否直接跟在语句的后面，而不是单独起一行。如果单独占一行，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/carriage_return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查是否有回车符\"\\r\"存在，有则给出告警",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/comma",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 在逗号“,”之后需要有空格。如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/comments",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查代码和注释之间的空格数量，建议最少空2格。如果没有，给出警告。\n2. 检查在注释内容和注释符号//之间的空格。如果没有空格，给出警告。[tencent standards/cpp 8.6](https://{github.com/xxxxx}/standards/cpp#86%E6%8E%A8%E8%8D%90%E5%AE%9E%E7%8E%B0%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "1. 检查代码和注释之间的空格数量，建议最少空2格。如果没有，给出警告。\n2. 检查在注释内容和注释符号//之间的空格。如果没有空格，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/empty_conditional_body",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查是否存在空条件体（对应于if）。如果存在，给出警告，建议使用{}。[tencent standards/cpp 9.9](https://{github.com/xxxxx}/standards/cpp#99%E5%BF%85%E9%A1%BB%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5)",
+    "checkerDescModel": "1. 检查是否存在空条件体（对应于if）。如果存在，给出警告，建议使用{}。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/empty_if_body",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查if语块是否有效，是否有else分支，如果没有，给出警告。[tencent standards/cpp 9.9](https://{github.com/xxxxx}/standards/cpp#99%E5%BF%85%E9%A1%BB%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5)",
+    "checkerDescModel": "1. 检查if语块是否有效，是否有else分支，如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/empty_loop_body",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查是否存在空循环体(对应for、while)。如果存在，给出警告，建议使用{}。[tencent standards/cpp 9.10](https://{github.com/xxxxx}/standards/cpp#910%E5%BF%85%E9%A1%BB%E5%BE%AA%E7%8E%AF%E5%92%8C%E5%BC%80%E5%85%B3%E9%80%89%E6%8B%A9%E8%AF%AD%E5%8F%A5)",
+    "checkerDescModel": "1. 检查是否存在空循环体(对应for、while)。如果存在，给出警告，建议使用{}。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/end_of_line",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查每一行的末尾是否有空格。如果有空格，给出警告，建议删除这些空格。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查每一行的末尾是否有空格。如果有空格，给出警告，建议删除这些空格。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/ending_newline",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查文件结尾是否有空白行，如果没有，提示用户添加一行空白行。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/forcolon",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查for循环中冒号前后是否有空格，如果没有，给出警告。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查for循环中冒号前后是否有空格，如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/indent",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查每一行开始的缩进数量是否合法。如果出现奇数个缩进的情况，给出警告。建议使用2个空格缩进。\n2. 结束的括号（如)、}）应该和开始的括号对齐。如果不对其，给出警告。\n3. 检查public、private、protected、signals和slots的缩进是否合理。建议缩进一个空格，如果不是，给出警告。[tencent standards/cpp 9.16](https://{github.com/xxxxx}/standards/cpp#916%E5%BF%85%E9%A1%BB%E7%B1%BB%E6%A0%BC%E5%BC%8F)，[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查每一行开始的缩进数量是否合法。如果出现奇数个缩进的情况，给出警告。建议使用2个空格缩进。\n2. 结束的括号（如)、}）应该和开始的括号对齐。如果不对其，给出警告。\n3. 检查public、private、protected、signals和slots的缩进是否合理。建议缩进一个空格，如果不是，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/labels",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "该规则说明正在补充中…",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/line_length",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查每一行代码的长度。对于长度超过100个字符的，给出严重级别警告。[tencent standards/cpp 9.1](https://{github.com/xxxxx}/standards/cpp#91%E5%BF%85%E9%A1%BB%E8%A1%8C%E9%95%BF%E5%BA%A6)",
+    "checkerDescModel": "检查每一行代码的长度。对于长度超过100个字符的，给出严重级别警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/newline",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查一行上是否有多条语句。如果出现，给出警告。\n2. 检查else语句的位置，建议和}在一行上。如果不在一行上，给出警告。\n3. 检查是否出现“else{”这种语句。如果出现，给出警告，建议将{放到下一行。\n4. 检查{是否和do\\while在同一行上。如果出现，给出警告，建议将{放到下一行。\n5. 检查在换行的时候，是否使用了回车\\r。如果使用了，给出警告，建议使用\\n换行。[tencent standards/cpp 11.3](https://{github.com/xxxxx}/standards/cpp#113%E6%8E%A8%E8%8D%90%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F)",
+    "checkerDescModel": "1. 检查一行上是否有多条语句。如果出现，给出警告。\n2. 检查else语句的位置，建议和}在一行上。如果不在一行上，给出警告。\n3. 检查是否出现“else{”这种语句。如果出现，给出警告，建议将{放到下一行。\n4. 检查{是否和do\\while在同一行上。如果出现，给出警告，建议将{放到下一行。\n5. 检查在换行的时候，是否使用了回车\\r。如果使用了，给出警告，建议使用\\n换行。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/operators",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查“=”号两边是否有空格。如果没有，给出警告。\n2. 检查“==|!=|&lt;=|&gt;=||”双目运算符两边是否有空格。如果没有，给出警告。\n3. 检查“&lt;|&gt;|&lt;&lt;|&gt;&gt;|!|~|--|++”等单目运算符两边是否有空格。如果没有，给出警告。\n4. 检查“&amp;&amp;”两边是否有空格。如果没有，给出警告。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 检查“=”号两边是否有空格。如果没有，给出警告。\n2. 检查“==|!=|&lt;=|&gt;=||”双目运算符两边是否有空格。如果没有，给出警告。\n3. 检查“&lt;|&gt;|&lt;&lt;|&gt;&gt;|!|~|--|++”等单目运算符两边是否有空格。如果没有，给出警告。\n4. 检查“&amp;&amp;”两边是否有空格。如果没有，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/parens",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查函数名和开始的括号(之间是否有空格，如果有空格，给出警告。\n2. 检查函数的结束括号)是否和函数名在同一行上。如果不在同一行，在下一行的话给出警告。\n3. 检查函数的结束括号）前面是否有空格，如果有空格，给出警告。\n4. 检查if\\for\\while\\switch和开始的括号(之间是否有空格，如果没有空格，给出警告。\n5. 检查if\\for\\while\\switch后面的括号()之间的空格是否对称。如果不对称。给出警告（如if( foo )这种情况）。\n6. 检查if\\for\\while\\switch后面的括号()内侧的空格情况，建议可以有0个或者1个空格。如果不是0个或者1个，给出警告。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)  [tencent standards/cpp 9.4](https://{github.com/xxxxx}/standards/cpp#94%E5%BF%85%E9%A1%BB%E5%87%BD%E6%95%B0%E5%A3%B0%E6%98%8E%E4%B8%8E%E5%AE%9A%E4%B9%89)",
+    "checkerDescModel": "1. 检查函数名和开始的括号(之间是否有空格，如果有空格，给出警告。\n2. 检查函数的结束括号)是否和函数名在同一行上。如果不在同一行，在下一行的话给出警告。\n3. 检查函数的结束括号）前面是否有空格，如果有空格，给出警告。\n4. 检查if\\for\\while\\switch和开始的括号(之间是否有空格，如果没有空格，给出警告。\n5. 检查if\\for\\while\\switch后面的括号()之间的空格是否对称。如果不对称。给出警告（如if( foo )这种情况）。\n6. 检查if\\for\\while\\switch后面的括号()内侧的空格情况，建议可以有0个或者1个空格。如果不是0个或者1个，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/pos_braces",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "检查大括号“{”不单独占一行，如果单独占一行，则告警。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/semicolon",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 在分号“;”之后需要有空格。如果没有，给出警告。\n2. 检查使用分号“;”表示空状态的语句。如果检查到了，给出警告，并提示使用{}代替。\n3. 检查每行最后一个分号“;”，看其前面是否有空格。如果有空格，给出警告。[tencent standards/cpp 9.19](https://{github.com/xxxxx}/standards/cpp#919%E5%BF%85%E9%A1%BB%E6%B0%B4%E5%B9%B3%E7%95%99%E7%99%BD)",
+    "checkerDescModel": "1. 在分号“;”之后需要有空格。如果没有，给出警告。\n2. 检查使用分号“;”表示空状态的语句。如果检查到了，给出警告，并提示使用{}代替。\n3. 检查每行最后一个分号“;”，看其前面是否有空格。如果有空格，给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/tab",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查文中是否使用了Tab。如果使用了，给出警告，建议使用空格代替。[tencent standards/cpp 9.3](https://{github.com/xxxxx}/standards/cpp#93%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC%E8%BF%98%E6%98%AF%E5%88%B6%E8%A1%A8%E4%BD%8D)",
+    "checkerDescModel": "1. 检查文中是否使用了Tab。如果使用了，给出警告，建议使用空格代替。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "whitespace/todo",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "格式不规范",
+    "checkerTypeSort": "7",
+    "checkerDesc": "1. 检查TODO注释前后的空格数量，如果没有空格，会给出警告；如果多余1个空格，也给出警告。[tencent standards/cpp 8.8](https://{github.com/xxxxx}/standards/cpp#88%E6%8E%A8%E8%8D%90todo-%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "1. 检查TODO注释前后的空格数量，如果没有空格，会给出警告；如果多余1个空格，也给出警告。",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  }
+]

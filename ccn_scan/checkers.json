@@ -1,0 +1,31 @@
+[
+	{
+		"checkerName": "CCN_threshold",
+		"checkerDesc": "检查圈复杂度大于等于特定阈值的函数，默认阈值为20。复杂度越高代码存在缺陷的风险越大。",
+		"severity": 3,
+		"checkerType": "圈复杂度",
+		"checkerTypeDesc": "检查圈复杂度大于等于特定阈值的函数，默认阈值为20。复杂度越高代码存在缺陷的风险越大。",
+		"checkerTypeSort": "8",
+		"editable": false,
+		"checkerLanguage": [
+        "JAVA", 
+        "C_SHARP", 
+        "GOLANG", 
+        "C_CPP", 
+        "OC", 
+        "JS", 
+        "PHP", 
+        "RUBY", 
+        "PYTHON", 
+        "SWIFT", 
+        "LUA", 
+        "TYPESCRIPT"
+		],
+		"checkerCategory": "COMPLEXITY",
+		"checkerTag": [
+			"系统推荐"
+		],
+		"checkerRecommend": "SYSTEM_DEFAULT",
+		"checkerProps": [{"displayValue":"20","propValue":"20","propName":"ccn_threshold"}]
+	}
+]

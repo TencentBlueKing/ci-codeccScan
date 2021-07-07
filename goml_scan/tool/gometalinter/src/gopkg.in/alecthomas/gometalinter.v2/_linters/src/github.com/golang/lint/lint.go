@@ -17,7 +17,6 @@ import (
 	"go/printer"
 	"go/token"
 	"go/types"
-	"golang.org/x/tools/go/gcexportdata"
 	"os"
 	"regexp"
 	"sort"
@@ -25,6 +24,8 @@ import (
 	"strings"
 	"unicode"
 	"unicode/utf8"
+
+	"golang.org/x/tools/go/gcexportdata"
 )
 
 const styleGuideBase = "https://golang.org/wiki/CodeReviewComments"
@@ -312,8 +313,16 @@ func (f *file) lintFunctionSize() {
 				}
 			}
 		}
-		if totalLine > Config.FuncSize {
-			f.errorf(fn, 1, fmt.Sprintf("golint/fnsize->该函数代码逻辑行和注释行的行数是%d，规范设定值为%d", totalLine, Config.FuncSize))
+
+		maxFuncSize := Config.FuncSize
+		funcType := ""
+		if strings.HasPrefix(fn.Name.Name, "Test") {
+			maxFuncSize = Config.FuncSize * 2
+			funcType = "单元测试函数"
+		}
+		fmt.Printf("Config.FuncSize:%d, maxFuncSize:%d \n", Config.FuncSize, maxFuncSize)
+		if totalLine > maxFuncSize {
+			f.errorf(fn, 1, fmt.Sprintf("golint/fnsize->该%s函数代码逻辑行和注释行的行数是%d，规范设定值为%d", funcType, totalLine, maxFuncSize))
 		}
 		return true
 	})
@@ -331,10 +340,14 @@ func (f *file) lintFunParaCount() {
 		if fn.Type == nil || fn.Body == nil {
 			return true
 		}
-		if len(fn.Type.Params.List) > 5 {
-			f.errorf(fn.Type.Params, 1, fmt.Sprintf("golint/funcparacount->函数参数个数为%d，规范设定值为5", len(fn.Type.Params.List)))
+		total := 0
+		for _, e := range fn.Type.Params.List {
+			total += len(e.Names)
 		}
 
+		if total > 5 {
+			f.errorf(fn.Type.Params, 1, fmt.Sprintf("golint/funcparacount->函数参数个数为%d，规范设定值为5", total))
+		}
 		return true
 	})
 }
@@ -760,8 +773,31 @@ func (f *file) lintTOSALineLength() {
 	var fileContent = string(f.src)
 
 	split := strings.Split(fileContent, "\n")
+	importSpecArr := f.f.Imports
+	importSpecLineArr := make([]int, 5)
+	for _, importSpec := range importSpecArr {
+		importSpecLine := f.fset.Position(importSpec.Pos()).Line
+		importSpecLineArr = append(importSpecLineArr, importSpecLine)
+	}
+
+	structTagLineArr := make([]int, 5)
+	f.walk(func(node ast.Node) bool {
+		switch v := node.(type) {
+		case *ast.StructType:
+			structFiledArr := v.Fields.List
+			for _, filed := range structFiledArr {
+				if filed.Tag != nil {
+					structTagLine := f.fset.Position(filed.Pos()).Line
+					structTagLineArr = append(structTagLineArr, structTagLine)
+				}
+			}
+		}
+		return true
+	})
 	for i, line := range split {
-		if len([]rune(line)) > Config.LineLength {
+
+		// import 模块语句和struct tag不限制行长度
+		if len([]rune(line)) > Config.LineLength && !contains(i+1, importSpecLineArr) && !contains(i+1, structTagLineArr) {
 			var position = token.Position{
 				Filename: f.filename,
 				Offset:   0,
@@ -829,7 +865,7 @@ func validUTF8(buf []byte) bool {
 
 				nBytes-- //减掉首字节的一个计数
 			}
-		} else { //处理多字节字符
+		} else {                     //处理多字节字符
 			if buf[i]&0xc0 != 0x80 { //判断多字节后面的字节是否是10开头
 				return false
 			}
@@ -1376,8 +1412,8 @@ func (f *file) lintStructDoc() {
 
 		case *ast.FuncDecl:
 			funcName := []rune(v.Name.Name)
-			if v.Doc == nil && unicode.IsUpper(funcName[0]) {
-				f.errorf(v, 1, "golint/funccomment->函数需要有注释说明")
+			if v.Doc == nil && unicode.IsUpper(funcName[0]) && !strings.HasPrefix(string(funcName), "Test") {
+				f.errorf(v, 1, "golint/funccomment->导出函数需要有注释说明")
 			}
 
 		case *ast.InterfaceType:
@@ -1389,8 +1425,22 @@ func (f *file) lintStructDoc() {
 
 		case *ast.StructType:
 			structPos := f.fset.Position(v.Struct)
-			if structPos.Line == genDeclPos.Line && genDeclComment == nil {
-				f.errorf(v, 1, "golint/structcomment->结构体需要有注释说明")
+
+			var fileContent = string(f.src)
+			fileLines := strings.Split(fileContent, "\n")
+			structLine := fileLines[structPos.Line-1]
+			structLineArr := strings.Fields(structLine)
+			var structName string
+			if structLineArr[0] == "type" {
+				structName = structLineArr[1]
+			} else {
+				structName = structLineArr[0]
+			}
+
+			structNameArr := []rune(structName)
+
+			if unicode.IsUpper(structNameArr[0]) && structPos.Line == genDeclPos.Line && genDeclComment == nil {
+				f.errorf(v, 1, "golint/structcomment->导出结构体需要有注释说明")
 			}
 			//fmt.Printf("find struct at %d\n", f.fset.Position(v.Struct).Line)
 
@@ -2226,4 +2276,13 @@ func srcLine(src []byte, p token.Position) string {
 		hi++
 	}
 	return string(src[lo:hi])
+}
+
+func contains(value int, array []int) bool {
+	for _, v := range array {
+		if v == value {
+			return true
+		}
+	}
+	return false
 }

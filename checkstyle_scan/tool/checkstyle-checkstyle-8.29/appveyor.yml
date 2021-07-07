@@ -1,0 +1,85 @@
+os: Windows Server 2012
+version: '{build}'
+skip_tags: true
+
+clone_depth: 10
+branches:
+  only:
+    - master
+  except:
+    - gh-pages
+install:
+  - ps: |
+      Add-Type -AssemblyName System.IO.Compression.FileSystem
+      if (!(Test-Path -Path "C:\maven\apache-maven-3.2.5" )) {
+        (new-object System.Net.WebClient).DownloadFile(
+          'http://www.us.apache.org/dist/maven/maven-3/3.2.5/binaries/apache-maven-3.2.5-bin.zip',
+          'C:\maven-bin.zip'
+        )
+        [System.IO.Compression.ZipFile]::ExtractToDirectory("C:\maven-bin.zip", "C:\maven")
+      }
+  - cmd: SET M2_HOME=C:\maven\apache-maven-3.2.5
+  - cmd: SET PATH=%M2_HOME%\bin;%JAVA_HOME%\bin;%PATH%
+  - cmd: git config core.autocrlf
+  - cmd: mvn --version
+  - cmd: java -version
+
+cache:
+  - C:\maven\apache-maven-3.2.5
+  - C:\Users\appveyor\.m2
+
+matrix:
+  fast_finish: true
+
+environment:
+  global:
+    CMD: " "
+  # We do matrix as AppVeyor could fail to finish simple "mvn verify"
+  #    if he loose maven cache (happens from time to time)
+  matrix:
+    # checkstyle and sevntu.checkstyle
+    - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
+      DESC: "checkstyle and sevntu.checkstyle"
+      CMD: "./.ci/appveyor.bat sevntu"
+    # verify without checkstyle (JDK8)
+    - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
+      DESC: "verify without checkstyle (JDK8)"
+      CMD: "./.ci/appveyor.bat verify_without_checkstyle"
+    # verify without checkstyle (JDK11)
+    - JAVA_HOME: C:\Program Files\Java\jdk11
+      DESC: "verify without checkstyle (JDK11)"
+      CMD: "./.ci/appveyor.bat verify_without_checkstyle_JDK11"
+    # verify without checkstyle (JDK13)
+    - JAVA_HOME: C:\Program Files\Java\jdk13
+      DESC: "verify without checkstyle (JDK13)"
+      CMD: "./.ci/appveyor.bat verify_without_checkstyle_JDK13"
+    # site, without verify (JDK8)
+    - JAVA_HOME: C:\Program Files\Java\jdk1.8.0
+      DESC: "site, without verify (JDK8)"
+      CMD: "./.ci/appveyor.bat site_without_verify"
+    # site, without verify (JDK11)
+    - JAVA_HOME: C:\Program Files\Java\jdk11
+      DESC: "site, without verify (JDK11)"
+      CMD: "./.ci/appveyor.bat site_without_verify"
+    # site, without verify (JDK13)
+    - JAVA_HOME: C:\Program Files\Java\jdk13
+      DESC: "site, without verify (JDK13)"
+      CMD: "./.ci/appveyor.bat site_without_verify"
+
+build_script:
+  - ps: |
+      $RUN_JOB=1
+      if ($RUN_JOB -eq 1) {
+        $Expr = (get-content env:CMD)
+        Write-Host "CMD: $Expr"
+        Invoke-Expression $Expr
+        Write-Host "CMD exited with exit code $LastExitCode"
+        if ($LastExitCode -ne 0) {
+          exit $LastExitCode
+        }
+      } else {
+        Write-Host "build is skipped ..."
+      }
+  - ps: echo "Size of caches (bytes):"
+  - ps: Get-ChildItem -Recurse 'C:\maven\apache-maven-3.2.5' | Measure-Object -Property Length -Sum
+  - ps: Get-ChildItem -Recurse 'C:\Users\appveyor\.m2' | Measure-Object -Property Length -Sum

@@ -14,7 +14,7 @@ def runChecker(filePath, codeLineObj, errorHandler, option_info):
 
 def parse_option_info(option_info):
     tosa_line_length = 120
-    for option in json.loads(option_info):
+    for option in json.loads(str(option_info)):
         if 'checkerOptionName' in option and option['checkerOptionName'] == 'line-length':
             tosa_line_length = int(option['checkerOptionValue'])
             break

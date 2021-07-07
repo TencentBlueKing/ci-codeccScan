@@ -6,7 +6,7 @@ import json
 
 def runChecker(filePath, codeLineObj, errorHandler, option_info):
     tosa_function_name_length = parse_option_info(option_info)
-    for linenum in xrange(1, len(codeLineObj.raw_lines)):
+    for linenum in range(1, len(codeLineObj.raw_lines)):
         line = codeLineObj.raw_lines[linenum]
         regexp = r'\w+\s+(([\w_]+)::([\w_]+))|\w+\s+([\w_]+)\W*\('
         result = re.search(regexp, line, re.I)
@@ -30,7 +30,7 @@ def runChecker(filePath, codeLineObj, errorHandler, option_info):
 
 def parse_option_info(option_info):
     tosa_function_name_length = 35
-    for option in json.loads(option_info):
+    for option in json.loads(str(option_info)):
         if 'checkerOptionName' in option and option['checkerOptionName'] == 'fn-name-length':
             tosa_function_name_length = int(option['checkerOptionValue'])
             break

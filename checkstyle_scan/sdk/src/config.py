@@ -1,4 +1,5 @@
-﻿import os, sys
+﻿import os
+import sys
 import json
 import re
 import xml.etree.ElementTree as ET
@@ -26,36 +27,48 @@ def update_rule_config(properties_info):
         
         #get the open checker and option
         checkers_list = ['SuppressWarningsHolder']
+        root_checker_list = ['RightCurly', 'SeparatorWrap', 'ImportControl', 'AnnotationLocation']
         checker_options = {}
         if 'openCheckers' in properties_info:
             for checker in properties_info['openCheckers']:
                 if 'checkerName' in checker and 'nativeChecker' in checker:
-                        if checker['nativeChecker'] == True:
-                            checkers_list.append(checker['checkerName'])
-                        else:
-                            checkers_list.append(tencent_checker_style+''+checker['checkerName'])
+                    if checker['nativeChecker']:
+                        checkers_list.append(checker['checkerName'])
+                    else:
+                        checkers_list.append(tencent_checker_style+''+checker['checkerName'])
                 if 'checkerOptions' in checker:
                     options = {}
                     for option in checker['checkerOptions']:
                         if 'checkerOptionName' in option and 'checkerOptionValue' in option:
                             options[option['checkerOptionName']] = option['checkerOptionValue']
-                    if checker['nativeChecker'] == True:
+                    if checker['nativeChecker']:
                         checker_options[checker['checkerName']] = json.dumps(options)
                     else:
                         checker_options[tencent_checker_style+''+checker['checkerName']] = json.dumps(options)
         
         #delete skip_checkers && add market rules
         for module in root.findall('module'):
-            if module.attrib['name'] != 'TreeWalker' and not module.attrib['name'] in checkers_list and not re.search('Filter$', str(module.attrib['name'])):
+            if module.attrib['name'] == 'TreeWalker':
+                for tree_walker_module in module.findall('module'):
+                    if tree_walker_module.attrib['name'] in root_checker_list and tree_walker_module.attrib['name'] not in checkers_list:
+                        for prop in tree_walker_module.findall('property'):
+                            if 'id' == prop.attrib['name'] and prop.attrib['value'] not in checkers_list:
+                                module.remove(tree_walker_module)
+                                break
+            
+            if module.attrib['name'] != 'TreeWalker' and not module.attrib['name'] in checkers_list \
+            and not re.search('Filter$', str(module.attrib['name'])):
                 root.remove(module)
             elif module.attrib['name'] == 'TreeWalker':
                 for tree_walker_module in module.findall('module'):
-                    if not tree_walker_module.attrib['name'] in checkers_list and not re.search('Filter$', str(tree_walker_module.attrib['name'])):
+                    if not tree_walker_module.attrib['name'] in checkers_list \
+                       and tree_walker_module.attrib['name'] not in root_checker_list and not re.search('Filter$', str(tree_walker_module.attrib['name'])):
                         module.remove(tree_walker_module)
 
         #update checker option
         for module in root.findall('module'):
-            if module.attrib['name'] != 'TreeWalker' and module.attrib['name'] in checkers_list and module.attrib['name'] in checker_options:
+            if module.attrib['name'] != 'TreeWalker' and module.attrib['name'] in checkers_list \
+               and module.attrib['name'] in checker_options:
                 option_list =  json.loads(checker_options[module.attrib['name']])
                 keys = option_list.keys()
                 for key in keys:
@@ -74,25 +87,31 @@ def update_rule_config(properties_info):
                             ET.SubElement(module, 'property', attrib={'name':key, 'value':option_list[key]})
             elif module.attrib['name'] == 'TreeWalker':
                 for tree_walker_module in module.findall('module'):
-                    if tree_walker_module.attrib['name'] in checkers_list and tree_walker_module.attrib['name'] in checker_options:
+                    if tree_walker_module.attrib['name'] in checkers_list \
+                       and tree_walker_module.attrib['name'] in checker_options:
                         option_list =  json.loads(checker_options[tree_walker_module.attrib['name']])
                         keys = option_list.keys()
                         for key in keys:
                             if key == 'tokens':
                                 if isinstance(option_list[key], list):
                                     for token in option_list[key]:
-                                        ET.SubElement(tree_walker_module, 'property', attrib={'name':key, 'value':token})
+                                        ET.SubElement(tree_walker_module, 'property', \
+                                                      attrib={'name':key, 'value':token})
                                 else:
-                                    ET.SubElement(tree_walker_module, 'property', attrib={'name':key, 'value':option_list[key]})
+                                    ET.SubElement(tree_walker_module, 'property', \
+                                                  attrib={'name':key, 'value':option_list[key]})
                             else:
                                 for prop in tree_walker_module.findall('property'):
                                     if key == prop.attrib['name']:
                                         prop.attrib['value'] = option_list[key]
                                         break
                                 else:
-                                    ET.SubElement(tree_walker_module, 'property', attrib={'name':key, 'value':option_list[key]})
+                                    ET.SubElement(tree_walker_module, 'property', \
+                                                  attrib={'name':key, 'value':option_list[key]})
         with open(rule_config_file, 'wb') as file:
-            file.write('<?xml version="1.0" encoding="UTF-8" ?><!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN" "https://checkstyle.org/dtds/configuration_1_3.dtd">'.encode('utf8'))
+            file.write('<?xml version="1.0" encoding="UTF-8" ?>\
+                       <!DOCTYPE module PUBLIC "-//Checkstyle//DTD Checkstyle Configuration 1.3//EN" \
+                       "https://checkstyle.org/dtds/configuration_1_3.dtd">'.encode('utf8'))
             tree.write(file, 'utf-8')
 
     except Exception as e:
