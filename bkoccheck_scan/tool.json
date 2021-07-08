@@ -10,7 +10,7 @@
   ],
   "dockerTriggerShell": "/bin/bash##-c##\"source /etc/bashrc && cd /bkcheck/ && python3 bklauncher.py --input={input.json} --output={output.json}\"",
   "toolScanCommand": "/bin/bash##-c##\"source /etc/bashrc && cd /bkcheck/ && python3 bklauncher.py --input={input.json} --output={output.json}\"",
-  "dockerImageURL": "mirrors.tencent.com/codecc-test/bkcheck-oc",
+  "dockerImageURL": "mirrors.tencent.com/codecc/bkcheck-oc",
   "dockerImageVersion": "latest",
   "iconFileName": "icon.jpg",
   "toolOptions": []

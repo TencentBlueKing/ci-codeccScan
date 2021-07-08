@@ -1,4 +1,4 @@
-FROM mirrors.tencent.com/codecc/base:latest
+FROM docker.io/bkci/codecc:latest
 RUN pip3 install pyyaml -i http://mirrors.cloud.tencent.com/pypi/simple/ --trusted-host mirrors.cloud.tencent.com
 RUN mkdir -p /bkcheck
 COPY tool/occheck.jar /bkcheck/occheck.jar

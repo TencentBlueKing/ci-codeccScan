@@ -1,4 +1,4 @@
-FROM mirrors.tencent.com/codecc/base:latest
+FROM docker.io/bkci/codecc:latest
 RUN pip3 install Werkzeug typed_ast requests MarkupSafe Jinja2 itsdangerous Flask_RESTful entrypoints ccsyspath aniso8601 -i http://mirrors.cloud.tencent.com/pypi/simple/ --trusted-host mirrors.cloud.tencent.com
 RUN mkdir -p /usr/codecc/tool_scan
 COPY sdk /usr/codecc/tool_scan/sdk/

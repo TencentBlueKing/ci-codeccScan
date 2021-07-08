@@ -1,4 +1,4 @@
-FROM mirrors.tencent.com/codecc/base:latest
+FROM docker.io/bkci/codecc:latest
 RUN mkdir -p /usr/codecc/software
 COPY software/node-v12.16.2-linux-x64.tar /usr/codecc/software
 WORKDIR /usr/codecc/software
