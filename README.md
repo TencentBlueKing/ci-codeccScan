@@ -1,5 +1,5 @@
 ## 概述:
-codeccScan为腾讯CodeCC提供的工具组，包含有14款开源代码检查工具，支持多种语言的代码规范扫描，圈复杂度，及重复率扫描，所有工具都以docker方式运行。工具详细信息请到工具目录下阅览。
+codeccScan包含有18款开源代码检查工具，支持多种语言的代码规范扫描，圈复杂度，及重复率扫描，所有工具都以docker方式运行
 
 圈复杂度工具：[ccn_scan](./ccn_scan/README.md)
 
@@ -35,14 +35,4 @@ clangwarning检查工具：[stylecop_scan](./clangwarning_scan/README.md)
 
 CSS规范检查工具：[stylecop_scan](./csslint_scan/README.md)
 
-stylelint检查工具：stylecop_scan
-
 swiftlint检查工具：swiftlint_scan
-
-
-
-
-
-
-
-

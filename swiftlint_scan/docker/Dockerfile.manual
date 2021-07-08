@@ -1,6 +1,6 @@
 # Explicitly specify `bionic` because `swift:latest` does not use `ubuntu:latest`.
-ARG BUILDER_IMAGE=mirrors.tencent.com/codecc/swift-codecc:5.3.3
-ARG RUNTIME_IMAGE=mirrors.tencent.com/codecc/ubuntu-codecc:18.04
+ARG BUILDER_IMAGE=swift:5.3.3
+ARG RUNTIME_IMAGE=ubuntu:18.04
 
 # builder image
 FROM ${BUILDER_IMAGE} AS builder
