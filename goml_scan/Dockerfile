@@ -1,4 +1,4 @@
-FROM mirrors.tencent.com/codecc/base:latest
+FROM docker.io/bkci/codecc:latest
 RUN mkdir -p /usr/codecc/software
 COPY software/go1.15.2.linux-amd64.tar.gz /usr/codecc/software
 WORKDIR /usr/codecc/software
