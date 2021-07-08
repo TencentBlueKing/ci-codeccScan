@@ -1,3 +1,0 @@
-#!/usr/local/bin/python2.7
-from pylint import epylint
-epylint.Run()

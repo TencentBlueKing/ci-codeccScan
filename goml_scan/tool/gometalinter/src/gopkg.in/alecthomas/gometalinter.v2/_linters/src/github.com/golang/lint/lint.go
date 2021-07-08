@@ -316,7 +316,7 @@ func (f *file) lintFunctionSize() {
 
 		maxFuncSize := Config.FuncSize
 		funcType := ""
-		if strings.HasPrefix(fn.Name.Name, "Test") {
+		if strings.HasPrefix(fn.Name.Name, "Test") || f.isTest() {
 			maxFuncSize = Config.FuncSize * 2
 			funcType = "单元测试函数"
 		}
@@ -434,6 +434,7 @@ func (f *file) lint() {
 	f.lintTimeNames()
 	f.lintContextKeyTypes()
 	f.lintContextArgs()
+	f.lintApiSwaggerComment()
 }
 
 type link string
@@ -795,17 +796,25 @@ func (f *file) lintTOSALineLength() {
 		return true
 	})
 	for i, line := range split {
-
-		// import 模块语句和struct tag不限制行长度
-		if len([]rune(line)) > Config.LineLength && !contains(i+1, importSpecLineArr) && !contains(i+1, structTagLineArr) {
-			var position = token.Position{
-				Filename: f.filename,
-				Offset:   0,
-				Line:     i + 1,
-				Column:   1,
-			}
-			f.pkg.errorfAt(position, 1, "tosa/linelength->line length[%d] should not exceed %d characters", len([]rune(line)), Config.LineLength)
+		// 仅扫描过长的行
+		if len([]rune(line)) <= Config.LineLength {
+			continue
 		}
+		// 忽略go generate语句
+		if strings.HasPrefix(line, "//go:generate ") ||
+			// import 模块语句和struct tag不限制行长度
+			contains(i+1, importSpecLineArr) ||
+			contains(i+1, structTagLineArr) {
+			continue
+		}
+
+		var position = token.Position{
+			Filename: f.filename,
+			Offset:   0,
+			Line:     i + 1,
+			Column:   1,
+		}
+		f.pkg.errorfAt(position, 1, "tosa/linelength->line length[%d] should not exceed %d characters", len([]rune(line)), Config.LineLength)
 	}
 }
 
@@ -814,20 +823,33 @@ func (f *file) lintNoGoTo() {
 	if f.isTest() {
 		return
 	}
-	var fileContent = string(f.src)
-
-	split := strings.Split(fileContent, "\n")
-	for i, line := range split {
-		if strings.Contains(line, "goto") && !strings.Contains(line, "//") {
-			var position = token.Position{
-				Filename: f.filename,
-				Offset:   0,
-				Line:     i + 1,
-				Column:   1,
-			}
-			f.pkg.errorfAt(position, 1, "golint/nogoto->should not use goto")
+	f.walk(func(node ast.Node) bool {
+		fn, ok := node.(*ast.FuncDecl)
+		if !ok {
+			return true
 		}
-	}
+		if fn.Body == nil || len(fn.Body.List) == 0 {
+			return true
+		}
+		for _, stmt := range fn.Body.List {
+			branch, ok := stmt.(*ast.BranchStmt)
+			if !ok {
+				continue
+			}
+			// found goto
+			if branch.Tok.String() == "goto" {
+				pos := f.fset.Position(branch.TokPos)
+				var position = token.Position{
+					Filename: pos.Filename,
+					Offset:   pos.Offset,
+					Line:     pos.Line,
+					Column:   pos.Column,
+				}
+				f.pkg.errorfAt(position, 1, "golint/nogoto->should not use goto")
+			}
+		}
+		return true
+	})
 }
 
 //check file line count
@@ -865,7 +887,7 @@ func validUTF8(buf []byte) bool {
 
 				nBytes-- //减掉首字节的一个计数
 			}
-		} else {                     //处理多字节字符
+		} else { //处理多字节字符
 			if buf[i]&0xc0 != 0x80 { //判断多字节后面的字节是否是10开头
 				return false
 			}
@@ -1412,13 +1434,19 @@ func (f *file) lintStructDoc() {
 
 		case *ast.FuncDecl:
 			funcName := []rune(v.Name.Name)
-			if v.Doc == nil && unicode.IsUpper(funcName[0]) && !strings.HasPrefix(string(funcName), "Test") {
+			if !f.isTest() && !strings.HasPrefix(string(funcName), "Test") && ast.IsExported(v.Name.Name) && v.Doc == nil {
 				f.errorf(v, 1, "golint/funccomment->导出函数需要有注释说明")
 			}
 
 		case *ast.InterfaceType:
 			interfacePos := f.fset.Position(v.Interface)
-			if interfacePos.Line == genDeclPos.Line && genDeclComment == nil {
+			interfaceLine := srcLine(f.src, interfacePos)
+			interfaceLineArr := strings.Fields(interfaceLine)
+			var interfaceTypeName string
+			if len(interfaceLineArr) > 1 && interfaceLineArr[0] == "type" {
+				interfaceTypeName = interfaceLineArr[1]
+			}
+			if interfacePos.Line == genDeclPos.Line && genDeclComment == nil && ast.IsExported(interfaceTypeName) {
 				f.errorf(v, 1, "golint/interfacecomment->接口需要有注释说明")
 			}
 			//fmt.Printf("find interface, pos %d\n", interfacePos.Line)
@@ -1439,7 +1467,7 @@ func (f *file) lintStructDoc() {
 
 			structNameArr := []rune(structName)
 
-			if unicode.IsUpper(structNameArr[0]) && structPos.Line == genDeclPos.Line && genDeclComment == nil {
+			if !f.isTest() && unicode.IsUpper(structNameArr[0]) && structPos.Line == genDeclPos.Line && genDeclComment == nil {
 				f.errorf(v, 1, "golint/structcomment->导出结构体需要有注释说明")
 			}
 			//fmt.Printf("find struct at %d\n", f.fset.Position(v.Struct).Line)
@@ -1458,15 +1486,17 @@ func (f *file) lintStructDoc() {
 					if unicode.IsLower(runeName[0]) == false && runeName[0] != '_' {
 						f.errorf(v, 1, "golint/funcpara->参数[%s]的首字母需要小写", paraName)
 					}
-					if para.Type.Pos()-1 >= 0 && int(para.Type.End()-1) < len(f.src) {
-						paraTypeString := string(f.src[para.Type.Pos()-1 : para.Type.End()-1])
-						if strings.Contains(paraTypeString, " map") && strings.Contains(paraTypeString, "*") {
-							f.errorf(v, 1, "golint/noptr->不建议map类型使用指针类型")
-						}
-						if strings.Contains(paraTypeString, " chan") && strings.Contains(paraTypeString, "*") {
-							f.errorf(v, 1, "golint/noptr->不建议chan类型使用指针类型")
-						}
-					}
+				}
+				starExpr, ok := para.Type.(*ast.StarExpr)
+				if !ok {
+					continue
+				}
+				switch starExpr.X.(type) {
+				case *ast.MapType:
+					f.errorf(v, 1, "golint/noptr->不建议map类型使用指针类型")
+				case *ast.ChanType:
+					f.errorf(v, 1, "golint/noptr->不建议chan类型使用指针类型")
+				default:
 				}
 			}
 
@@ -2285,4 +2315,48 @@ func contains(value int, array []int) bool {
 		}
 	}
 	return false
+}
+
+// lintApiSwaggerComment checks api declarations swagger comment.
+// It complains if they are missing
+func (f *file) lintApiSwaggerComment() {
+	if f.isTest() {
+		return
+	}
+	// check @router comment exists
+	apiComment := "@router"
+	// api comment
+	apiRouterRegex := regexp.MustCompile(
+		`(?i)^//\s+\+((?:GET|POST|PUT|DELETE|PATCH|HEAD|OPTIONS|CONNECT|TRACE))\s+(\S+).*$`)
+	f.walk(func(n ast.Node) bool {
+		fn, ok := n.(*ast.FuncDecl)
+		if !ok {
+			return true
+		}
+		if fn.Doc == nil {
+			return true
+		}
+
+		err := false
+		for _, comment := range fn.Doc.List {
+			line := strings.ToLower(comment.Text)
+			if apiRouterRegex.MatchString(line) {
+				err = true
+				break
+			}
+		}
+		if err {
+			for _, comment := range fn.Doc.List {
+				line := strings.ToLower(comment.Text)
+				if strings.Contains(line, apiComment) {
+					err = false
+					break
+				}
+			}
+		}
+		if err {
+			f.errorf(n, 0.8, category("comments"), fmt.Sprintf("golint/swagger->api function[%s] should have swagger comment", fn.Name))
+		}
+		return true
+	})
 }

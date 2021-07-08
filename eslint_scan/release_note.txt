@@ -1,0 +1,8 @@
+2020.09.24
+    1、升级eslint版本6.8.0 到 7.0.0，修复以下规则出现漏报，告警会增多。
+        semi
+        no-plusplus
+    2、支持JS规范只扫描JS，TS规范只扫描TS
+2020.10.23
+    1、升级@tencent/eslint-config-tencent版本0.5.0 -> 0.12.2
+       

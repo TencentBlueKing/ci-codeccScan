@@ -1,0 +1,31 @@
+{
+  "name": "eslint_scan",
+  "version": "1.0.0",
+  "description": "**ESLint**是一个开源的 JavaScript 代码检查工具。它被设计的容易拓展、拥有大量的自定义规则、容易的通过插件来安装。它给出准确的输出，而且包括规则名，这样可以知道哪个规则造成了错误。ESLint不仅可以支持代码风格的检查，而且还可以简单检查代码中潜在的错误。",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "config": {
+    "unsafe-perm": true
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-tencent": "1.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "7.25.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-vue": "^7.4.1",
+    "patch-package": "^6.4.7",
+    "typescript": "^4.1.3"
+  }
+}

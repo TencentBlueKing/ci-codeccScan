@@ -54,6 +54,7 @@ type Config struct { // nolint: maligned
 	EnableAll       bool
 	CommentRatio	int
 	FuncNameLength	int
+	FnSize			int
 	PluginDir		string
 
 
@@ -143,6 +144,7 @@ var config = &Config{
 	Concurrency:     runtime.NumCPU(),
 	Cyclo:           10,
 	LineLength:      80,
+	FnSize:      	 80,
 	MisspellLocale:  "",
 	MinConfidence:   0.8,
 	MinOccurrences:  3,

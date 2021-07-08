@@ -1,0 +1,71 @@
+diff --git a/node_modules/eslint/lib/cli.js b/node_modules/eslint/lib/cli.js
+index f766764..0334050 100644
+--- a/node_modules/eslint/lib/cli.js
++++ b/node_modules/eslint/lib/cli.js
+@@ -233,9 +233,17 @@ const cli = {
+             return 2;
+         }
+ 
+-        const files = options._;
++        var files = options._;
+         const useStdin = typeof text === "string";
+-
++        //>>>>>begin>>>>>
++        if (options.incFilePath) {
++            const incFilePath = options.incFilePath;
++            debug("incFilePath %o", incFilePath)
++            var data = fs.readFileSync(incFilePath, 'utf8')
++            files = data.toString().split(/\n+/).slice(0,-1);
++            debug("files %o", files)
++        }
++        //>>>>>end>>>>>
+         if (options.help) {
+             log.info(CLIOptions.generateHelp());
+             return 0;
+diff --git a/node_modules/eslint/lib/linter/linter.js b/node_modules/eslint/lib/linter/linter.js
+index 576816b..49ce9b5 100644
+--- a/node_modules/eslint/lib/linter/linter.js
++++ b/node_modules/eslint/lib/linter/linter.js
+@@ -928,7 +928,12 @@ function runRules(sourceCode, configuredRules, ruleMapper, parserOptions, parser
+             )
+         );
+ 
+-        const ruleListeners = createRuleListeners(rule, ruleContext);
++        let ruleListeners;
++        try {
++             ruleListeners = createRuleListeners(rule, ruleContext);
++        } catch (err) {
++             return lintingProblems;
++        }
+ 
+         // add all the selectors from the rule as listeners
+         Object.keys(ruleListeners).forEach(selector => {
+diff --git a/node_modules/eslint/lib/options.js b/node_modules/eslint/lib/options.js
+index 92c140b..aa5cf26 100644
+--- a/node_modules/eslint/lib/options.js
++++ b/node_modules/eslint/lib/options.js
+@@ -24,6 +24,9 @@ const optionator = require("optionator");
+  * @property {"metadata" | "content"} cacheStrategy Strategy to use for detecting changed files in the cache
+  * @property {boolean} [color] Force enabling/disabling of color
+  * @property {string} [config] Use this configuration, overriding .eslintrc.* config options if present
++ * >>>>>begin>>>>>
++ * @property {string} [incFilePath] increment file path
++ * >>>>>end>>>>>
+  * @property {boolean} debug Output debugging information
+  * @property {string[]} [env] Specify environments
+  * @property {boolean} envInfo Output execution environment information
+@@ -85,6 +88,14 @@ module.exports = optionator({
+             type: "path::String",
+             description: "Use this configuration, overriding .eslintrc.* config options if present"
+         },
++        //>>>>>begin>>>>>
++        {
++            option: "inc-file-path",
++            alias: "i",
++            type: "path::String",
++            description: "increment file path"
++        },
++        //>>>>>end>>>>>
+         {
+             option: "env",
+             type: "[String]",

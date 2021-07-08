@@ -269,7 +269,7 @@ var defaultLinters = map[string]LinterConfig{
 		IsFast:            true,
 	},
 	"golint": {
-		Command:           `golint -min_confidence {min_confidence} -comment_ratio {comment_ratio} -func_name_length {func_name_length} -line_length {line_length} -plugin_dir "{plugin_dir}"`,
+		Command:           `golint -min_confidence {min_confidence} -comment_ratio {comment_ratio} -func_name_length {func_name_length} -line_length {line_length} -plugin_dir "{plugin_dir}" -fnsize {fnsize}`,
 		Pattern:           `PATH:LINE:COL:MESSAGE`,
 		InstallFrom:       "github.com/golang/lint/golint",
 		PartitionStrategy: partitionPathsAsDirectories,

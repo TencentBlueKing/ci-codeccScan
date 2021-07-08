@@ -1,213 +1,218 @@
-{
-    "checker_set_id" : "standard_js",
-    "checker_set_name" : "腾讯代码规范(JS必须)",
-    "checker_set_lang" : "JS",
-    "description" : "将根据公司规范持续更新…",
-    "checker_props" : [
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "prefer-const",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-const-assign",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-var",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-new-object",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "quote-props",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-array-constructor",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "prefer-template",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "template-curly-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-eval",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-useless-escape",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "wrap-iife",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-loop-func",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "space-before-function-paren",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "space-before-blocks",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-dupe-class-members",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-duplicate-imports",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-multi-assign",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "operator-linebreak",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-unused-vars",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-case-declarations",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-mixed-operators",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "nonblock-statement-body-position",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "brace-style",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "spaced-comment",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "eol-last",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "space-infix-ops",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "keyword-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "padded-blocks",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-multiple-empty-lines",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "space-in-parens",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "array-bracket-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "max-len",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "block-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "comma-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "func-call-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "key-spacing",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "no-trailing-spaces",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "comma-style",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "camelcase",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "new-cap",
-            "props" : ""
-        },
-        {
-            "tool_name" : "ESLINT",
-            "checker_key" : "semi",
-            "props" : ""
-        }
-    ]
-}
+[
+    {
+        "checker_set_id": "ts_standard",
+        "checker_set_name": "腾讯代码规范(TS规则集)",
+        "checker_set_lang": "TYPESCRIPT",
+        "description": "根据公司规范持续更新...",
+        "checker_props": [
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/adjacent-overload-signatures",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/brace-style",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/comma-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/dot-notation",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/func-call-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/indent",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/keyword-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/naming-convention",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-array-constructor",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-dupe-class-members",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-empty-interface",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-non-null-asserted-optional-chain",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-unused-expressions",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-unused-vars",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/prefer-namespace-keyword",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/quotes",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/semi",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/space-before-function-paren",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/triple-slash-reference",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/type-annotation-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/typedef",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/unified-signatures",
+                "props": ""
+            }
+        ]
+    },
+    {
+        "checker_set_id": "ts_standard_stockproj",
+        "checker_set_name": "腾讯代码规范(TS简化规则集)",
+        "checker_set_lang": "TYPESCRIPT",
+        "description": "存量项目使用的规则集",
+        "checker_props": [
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/adjacent-overload-signatures",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/brace-style",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/comma-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/func-call-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/keyword-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-array-constructor",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-dupe-class-members",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-empty-interface",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-non-null-asserted-optional-chain",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-unused-expressions",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/no-unused-vars",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/prefer-namespace-keyword",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/semi",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/space-before-function-paren",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/triple-slash-reference",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/type-annotation-spacing",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/typedef",
+                "props": ""
+            },
+            {
+                "tool_name": "ESLINT",
+                "checker_key": "@typescript-eslint/unified-signatures",
+                "props": ""
+            }
+        ]
+    }
+]

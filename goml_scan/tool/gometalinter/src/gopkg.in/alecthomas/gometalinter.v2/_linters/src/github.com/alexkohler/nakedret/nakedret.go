@@ -200,7 +200,7 @@ func (v *returnsVisitor) Visit(node ast.Node) ast.Visitor {
 						if funcDecl.Name != nil {
 							//log.Printf("%v:%v %v naked returns on %v line function \n", file.Name(), file.Position(s.Pos()).Line, funcDecl.Name.Name, functionLineLength)
 							//log.Printf("%v:nakedret/ret->在%v %v 的第 %v 行的函数，存在空返回值(naked returns)\n", file.Name(), file.Position(s.Pos()).Line, funcDecl.Name.Name, functionLineLength)
-                            log.Printf("%v->%v->nakedret->nakedret/ret->在%v %v 的第 %v 行的函数，存在空返回值(naked returns)\n", file.Name(), file.Position(s.Pos()).Line, file.Position(s.Pos()).Line, funcDecl.Name.Name, functionLineLength)
+                            log.Printf("%v:%v nakedret/ret->在函数 %v 的第 %v 行，存在空返回值(naked returns)\n", file.Name(), file.Position(s.Pos()).Line, funcDecl.Name.Name, functionLineLength)
 						}
 					}
 					continue

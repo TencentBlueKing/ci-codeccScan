@@ -23,14 +23,14 @@ Gometalinter中的**Golint**，适合于代码规范的落地。
  - (5)  编译得到的golint可执行程序，需要覆盖tool/gometalinter/bin/下对应的程序。
 
 5、在checkers.json中添加新增规则的描述。在描述时需要说明该规则对应到哪一条规范，并附上链接。规则描述示例如下：
-- 单测函数行数限制也是普通函数的2倍，即为160行。即单测函数的行数，包含代码行、注释行、空白行，不得超过160行，否则需要重新评估函数的功能是否过于复杂需进行分拆。  [tencent standards/go 2.6](https://{github.com/xxxxx}/standards/go#26-%E5%BF%85%E9%A1%BB%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
+- 单测函数行数限制也是普通函数的2倍，即为160行。即单测函数的行数，包含代码行、注释行、空白行，不得超过160行，否则需要重新评估函数的功能是否过于复杂需进行分拆。  [tencent standards/go 2.6]({scmUrl}/standards/go#26-%E5%BF%85%E9%A1%BB%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95)
 
 6、在test目录下添加**规则测试代码文件**
 
 7、MR代码到test分支
 
-8、执行流水线部署http://{devops.public.url}/console/pipeline/codecc-tool-auto/p-97719f2456d341c2aa8e4500c6f5f5cc
+8、以"**调试模式**"执行流水线将工具集成到CodeCC平台/pipeline/codecc-auto-tools-prod/p-d6c055d9540447b19d049a40f96a83ad
 
 9、测试完成提合并请求到master分支
 
-10、工具负责人austinshen审核结合第6步骤和第8步骤执行的测试样例代码检查结果，及代码检视结果，评估后正式发布到生产
+10、工具负责人austinshen审核结合第6步骤和第8步骤执行的测试样例代码检查结果，及代码检视结果，评估后发布到灰度，再由灰度发布到正式

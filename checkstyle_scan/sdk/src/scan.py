@@ -31,6 +31,7 @@ def get_classpath(root_dir):
     return ':'.join(class_paths)
 
 def scan(filename, config_path, third_rules, skip_path_list):
+    error_info = []
     file_defects = []
     skip_option = ''
     result_xml = config.current_path+'/result.xml'
@@ -47,11 +48,20 @@ def scan(filename, config_path, third_rules, skip_path_list):
     p = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,shell=True,start_new_session=True)
     try:
         for line in p.stdout:
-            pass
+            if "Caused by:" in line.decode('utf-8'):
+                error_info.append(line.decode('utf-8'))
     finally:
         p.terminate()
         p.wait()
     
+    if "".join(error_info) != "":
+        defect = {}
+        defect['filePath'] = "ParseError"
+        defect['line'] = "1"
+        defect['checkerName'] = "ParseError"
+        defect['description'] = "<br>".join(error_info)
+        file_defects.append(defect)
+
     if os.path.isfile(result_xml):
         try:
             tree = ET.ElementTree(file=result_xml)

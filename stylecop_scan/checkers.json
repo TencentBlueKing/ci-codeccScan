@@ -149,7 +149,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.1](https://{github.com/xxxxx}/standards/csharp#121-%E5%BF%85%E9%A1%BB%E7%B1%BB%E7%BB%93%E6%9E%84%E4%BD%93)，[tencent standards/csharp 1.3.1](https://{github.com/xxxxx}/standards/csharp#131-%E5%BF%85%E9%A1%BB%E5%87%BD%E6%95%B0)",
+    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.1]({scmUrl}/standards/csharp#121-%E5%BF%85%E9%A1%BB%E7%B1%BB%E7%BB%93%E6%9E%84%E4%BD%93)，[tencent standards/csharp 1.3.1]({scmUrl}/standards/csharp#131-%E5%BF%85%E9%A1%BB%E5%87%BD%E6%95%B0)",
     "checkerDescModel": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名",
     "checkerLanguage": [
       "C_SHARP"
@@ -470,7 +470,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]逗号、分号后须跟空格或换行 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]逗号、分号后须跟空格或换行 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]逗号、分号后须跟空格或换行",
     "checkerLanguage": [
       "C_SHARP"
@@ -487,7 +487,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]逗号、分号、右括号后不能紧跟注释 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDesc": "[必须]逗号、分号、右括号后不能紧跟注释 [tencent standards/csharp 2.1.6]({scmUrl}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
     "checkerDescModel": "[必须]逗号、分号、右括号后不能紧跟注释",
     "checkerLanguage": [
       "C_SHARP"
@@ -520,7 +520,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDesc": "[必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
     "checkerDescModel": "[必须]注释语句与其注释对象之间不能空行",
     "checkerLanguage": [
       "C_SHARP"
@@ -537,7 +537,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]注释必须使用C#标准的XML文档注释格式 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDesc": "[必须]注释必须使用C#标准的XML文档注释格式 [tencent standards/csharp 2.1.6]({scmUrl}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
     "checkerDescModel": "[必须]注释必须使用C#标准的XML文档注释格式",
     "checkerLanguage": [
       "C_SHARP"
@@ -762,7 +762,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]禁止在全局命名空间声明类型 [tencent standards/csharp 2.1.7](https://{github.com/xxxxx}/standards/csharp#217-%E5%BF%85%E9%A1%BB%E5%85%A8%E5%B1%80%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
+    "checkerDesc": "[必须]禁止在全局命名空间声明类型 [tencent standards/csharp 2.1.7]({scmUrl}/standards/csharp#217-%E5%BF%85%E9%A1%BB%E5%85%A8%E5%B1%80%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
     "checkerDescModel": "[必须]禁止在全局命名空间声明类型",
     "checkerLanguage": [
       "C_SHARP"
@@ -1435,7 +1435,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.2](https://{github.com/xxxxx}/standards/csharp#122-%E5%BF%85%E9%A1%BB%E6%9E%9A%E4%B8%BE)",
+    "checkerDesc": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名 [tencent standards/csharp 1.2.2]({scmUrl}/standards/csharp#122-%E5%BF%85%E9%A1%BB%E6%9E%9A%E4%B8%BE)",
     "checkerDescModel": "[必须]类、结构体、方法、delegate、枚举及枚举值须用大驼峰形式命名",
     "checkerLanguage": [
       "C_SHARP"
@@ -1820,7 +1820,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]文件须以UTF-8 无BOM形式保存 [tencent standards/csharp 2.1.4](https://{github.com/xxxxx}/standards/csharp#214-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)",
+    "checkerDesc": "[必须]文件须以UTF-8 无BOM形式保存 [tencent standards/csharp 2.1.4]({scmUrl}/standards/csharp#214-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)",
     "checkerDescModel": "[必须]文件须以UTF-8 无BOM形式保存",
     "checkerLanguage": [
       "C_SHARP"
@@ -1853,7 +1853,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]一个cs文件的类的数量不宜过多 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDesc": "[必须]一个cs文件的类的数量不宜过多 [tencent standards/csharp 1.3.4]({scmUrl}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
     "checkerDescModel": "[必须]一个cs文件的类的数量不宜过多",
     "checkerLanguage": [
       "C_SHARP"
@@ -1870,7 +1870,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]一个cs文件只能包含一个NameSpace [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDesc": "[必须]一个cs文件只能包含一个NameSpace [tencent standards/csharp 1.3.4]({scmUrl}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
     "checkerDescModel": "[必须]一个cs文件只能包含一个NameSpace",
     "checkerLanguage": [
       "C_SHARP"
@@ -1935,7 +1935,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须是public或internal型 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须是public或internal型 [tencent standards/csharp 1.3.4]({scmUrl}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
     "checkerDescModel": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须是public或internal型",
     "checkerLanguage": [
       "C_SHARP"
@@ -1952,7 +1952,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须与文件同名 [tencent standards/csharp 1.3.4](https://{github.com/xxxxx}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
+    "checkerDesc": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须与文件同名 [tencent standards/csharp 1.3.4]({scmUrl}/standards/csharp#134-%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6)",
     "checkerDescModel": "[必须]cs文件中定义的第一个类、结构体、枚举或接口必须与文件同名",
     "checkerLanguage": [
       "C_SHARP"
@@ -2145,7 +2145,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]接口须以I(Interface)开头，后接大驼峰形式命名 [tencent standards/csharp 1.3.2](https://{github.com/xxxxx}/standards/csharp#132-%E5%BF%85%E9%A1%BB%E6%8E%A5%E5%8F%A3)",
+    "checkerDesc": "[必须]接口须以I(Interface)开头，后接大驼峰形式命名 [tencent standards/csharp 1.3.2]({scmUrl}/standards/csharp#132-%E5%BF%85%E9%A1%BB%E6%8E%A5%E5%8F%A3)",
     "checkerDescModel": "[必须]接口须以I(Interface)开头，后接大驼峰形式命名",
     "checkerLanguage": [
       "C_SHARP"
@@ -2226,7 +2226,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]if、for、while等关键字后须以空格隔开 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]if、for、while等关键字后须以空格隔开 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]if、for、while等关键字后须以空格隔开",
     "checkerLanguage": [
       "C_SHARP"
@@ -2259,7 +2259,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]宏须以大写蛇形命名 [tencent standards/csharp 1.2.3](https://{github.com/xxxxx}/standards/csharp#123-%E5%BF%85%E9%A1%BB%E5%AE%8F)",
+    "checkerDesc": "[必须]宏须以大写蛇形命名 [tencent standards/csharp 1.2.3]({scmUrl}/standards/csharp#123-%E5%BF%85%E9%A1%BB%E5%AE%8F)",
     "checkerDescModel": "[必须]宏须以大写蛇形命名",
     "checkerLanguage": [
       "C_SHARP"
@@ -2388,7 +2388,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]多行注释不能为空 [tencent standards/csharp 2.1.6](https://{github.com/xxxxx}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
+    "checkerDesc": "[必须]多行注释不能为空 [tencent standards/csharp 2.1.6]({scmUrl}/standards/csharp#216-%E5%BF%85%E9%A1%BB%E6%B3%A8%E9%87%8A)",
     "checkerDescModel": "[必须]多行注释不能为空",
     "checkerLanguage": [
       "C_SHARP"
@@ -2401,12 +2401,12 @@
   },
   {
     "checkerName": "MustNotUseEmptyUpdate",
-    "severity": 1,
+    "severity": 2,
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "性能相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]禁止添加空Update函数 [tencent standards/csharp 4.2](https://{github.com/xxxxx}/standards/csharp#42-%E6%8E%A8%E8%8D%90updatefixedupdatelateupdate%E5%87%BD%E6%95%B0)",
-    "checkerDescModel": "[必须]禁止添加空Update函数",
+    "checkerDesc": "[推荐]禁止添加空Update函数 [tencent standards/csharp 4.2]({scmUrl}/standards/csharp#42-%E6%8E%A8%E8%8D%90updatefixedupdatelateupdate%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "[推荐]禁止添加空Update函数",
     "checkerLanguage": [
       "C_SHARP"
     ],
@@ -2422,7 +2422,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]NameSpace须以大驼峰形式或全部大写(可简称)来命名 [tencent standards/csharp 1.3.5](https://{github.com/xxxxx}/standards/csharp#135-%E5%BF%85%E9%A1%BB%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
+    "checkerDesc": "[必须]NameSpace须以大驼峰形式或全部大写(可简称)来命名 [tencent standards/csharp 1.3.5]({scmUrl}/standards/csharp#135-%E5%BF%85%E9%A1%BB%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4)",
     "checkerDescModel": "[必须]NameSpace须以大驼峰形式或全部大写(可简称)来命名",
     "checkerLanguage": [
       "C_SHARP"
@@ -2503,7 +2503,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]一行只能命名一个变量 [tencent standards/csharp 2.1.8](https://{github.com/xxxxx}/standards/csharp#218-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)",
+    "checkerDesc": "[必须]一行只能命名一个变量 [tencent standards/csharp 2.1.8]({scmUrl}/standards/csharp#218-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)",
     "checkerDescModel": "[必须]一行只能命名一个变量",
     "checkerLanguage": [
       "C_SHARP"
@@ -2648,7 +2648,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]操作符.前后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]操作符.前后不能跟空格 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]操作符.前后不能跟空格",
     "checkerLanguage": [
       "C_SHARP"
@@ -2681,7 +2681,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]一元操作符后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]一元操作符后不能跟空格 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]一元操作符后不能跟空格",
     "checkerLanguage": [
       "C_SHARP"
@@ -2698,7 +2698,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]二元操作符须用空格与操作数前后隔开 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]二元操作符须用空格与操作数前后隔开 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]二元操作符须用空格与操作数前后隔开",
     "checkerLanguage": [
       "C_SHARP"
@@ -3227,7 +3227,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]单行注释不能为空 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDesc": "[必须]单行注释不能为空 [tencent standards/csharp 2.1.5]({scmUrl}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
     "checkerDescModel": "[必须]单行注释不能为空",
     "checkerLanguage": [
       "C_SHARP"
@@ -3582,7 +3582,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]一个Tab包含4个空格 [tencent standards/csharp 2.1.1](https://{github.com/xxxxx}/standards/csharp#211-%E5%BF%85%E9%A1%BB%E7%BC%A9%E8%BF%9B)",
+    "checkerDesc": "[必须]一个Tab包含4个空格 [tencent standards/csharp 2.1.1]({scmUrl}/standards/csharp#211-%E5%BF%85%E9%A1%BB%E7%BC%A9%E8%BF%9B)",
     "checkerDescModel": "[必须]一个Tab包含4个空格",
     "checkerLanguage": [
       "C_SHARP"
@@ -3615,7 +3615,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]右花括号后须跟一行空行隔开 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDesc": "[必须]右花括号后须跟一行空行隔开 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
     "checkerDescModel": "[必须]右花括号后须跟一行空行隔开",
     "checkerLanguage": [
       "C_SHARP"
@@ -3632,7 +3632,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]if、for、return等关键字前须隔一行空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDesc": "[必须]if、for、return等关键字前须隔一行空行 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
     "checkerDescModel": "[必须]if、for、return等关键字前须隔一行空行",
     "checkerLanguage": [
       "C_SHARP"
@@ -3649,7 +3649,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]变量声明与使用之间须隔一行空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
+    "checkerDesc": "[必须]变量声明与使用之间须隔一行空行 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
     "checkerDescModel": "[必须]变量声明与使用之间须隔一行空行",
     "checkerLanguage": [
       "C_SHARP"
@@ -3666,7 +3666,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]if、for、while等关键字的语句要用花括号包起来，即便只有一条语句 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDesc": "[必须]if、for、while等关键字的语句要用花括号包起来，即便只有一条语句 [tencent standards/csharp 2.1.5]({scmUrl}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
     "checkerDescModel": "[必须]if、for、while等关键字的语句要用花括号包起来，即便只有一条语句",
     "checkerLanguage": [
       "C_SHARP"
@@ -3683,7 +3683,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]左括号后不能跟空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]左括号后不能跟空格 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]左括号后不能跟空格",
     "checkerLanguage": [
       "C_SHARP"
@@ -3700,7 +3700,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]类、结构体、方法与其后的左括号之间不能加空格 [tencent standards/csharp 2.1.3](https://{github.com/xxxxx}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
+    "checkerDesc": "[必须]类、结构体、方法与其后的左括号之间不能加空格 [tencent standards/csharp 2.1.3]({scmUrl}/standards/csharp#213-%E5%BF%85%E9%A1%BB%E7%A9%BA%E6%A0%BC)",
     "checkerDescModel": "[必须]类、结构体、方法与其后的左括号之间不能加空格",
     "checkerLanguage": [
       "C_SHARP"
@@ -3717,7 +3717,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]左、右花括号必须各自独占一行 [tencent standards/csharp 2.1.5](https://{github.com/xxxxx}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
+    "checkerDesc": "[必须]左、右花括号必须各自独占一行 [tencent standards/csharp 2.1.5]({scmUrl}/standards/csharp#215-%E5%BF%85%E9%A1%BB%E8%8A%B1%E6%8B%AC%E5%8F%B7)",
     "checkerDescModel": "[必须]左、右花括号必须各自独占一行",
     "checkerLanguage": [
       "C_SHARP"
@@ -3734,7 +3734,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "性能相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]Unity生命周期函数大小写不正确 [tencent standards/csharp 4.1](https://{github.com/xxxxx}/standards/csharp#41-%E5%BF%85%E9%A1%BB%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0)",
+    "checkerDesc": "[必须]Unity生命周期函数大小写不正确 [tencent standards/csharp 4.1]({scmUrl}/standards/csharp#41-%E5%BF%85%E9%A1%BB%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0)",
     "checkerDescModel": "[必须]Unity生命周期函数大小写不正确",
     "checkerLanguage": [
       "C_SHARP"
@@ -3751,7 +3751,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "性能相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]Unity项目禁止使用LINQ，GC内存分配较大，影响性能 [tencent standards/csharp 4.9](https://{github.com/xxxxx}/standards/csharp#49-%E5%BF%85%E9%A1%BB%E5%85%B3%E4%BA%8Elinq)",
+    "checkerDesc": "[必须]Unity项目禁止使用LINQ，GC内存分配较大，影响性能 [tencent standards/csharp 4.9]({scmUrl}/standards/csharp#49-%E5%BF%85%E9%A1%BB%E5%85%B3%E4%BA%8Elinq)",
     "checkerDescModel": "[必须]Unity项目禁止使用LINQ，GC内存分配较大，影响性能",
     "checkerLanguage": [
       "C_SHARP"
@@ -3912,7 +3912,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]变量不应带任何形式的前缀 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDesc": "[必须]变量不应带任何形式的前缀 [tencent standards/csharp 1.1.2]({scmUrl}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
     "checkerDescModel": "[必须]变量不应带任何形式的前缀",
     "checkerLanguage": [
       "C_SHARP"
@@ -3929,7 +3929,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]变量不应以下划线开头 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDesc": "[必须]变量不应以下划线开头 [tencent standards/csharp 1.1.2]({scmUrl}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
     "checkerDescModel": "[必须]变量不应以下划线开头",
     "checkerLanguage": [
       "C_SHARP"
@@ -3946,7 +3946,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]变量不必带任何形式的前缀或下划线 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDesc": "[必须]变量不必带任何形式的前缀或下划线 [tencent standards/csharp 1.1.2]({scmUrl}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
     "checkerDescModel": "[必须]变量不必带任何形式的前缀或下划线",
     "checkerLanguage": [
       "C_SHARP"
@@ -3963,7 +3963,7 @@
     "checkerCategory": "CODE_FORMAT",
     "checkerType": "空格相关",
     "checkerTypeSort": "10",
-    "checkerDesc": "[必须]变量命名须用小驼峰形式 [tencent standards/csharp 1.1.2](https://{github.com/xxxxx}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
+    "checkerDesc": "[必须]变量命名须用小驼峰形式 [tencent standards/csharp 1.1.2]({scmUrl}/standards/csharp#112-%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E7%B1%BB%E5%9E%8B)",
     "checkerDescModel": "[必须]变量命名须用小驼峰形式",
     "checkerLanguage": [
       "C_SHARP"

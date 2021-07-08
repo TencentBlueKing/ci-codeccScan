@@ -12,11 +12,7 @@
             "tool_name" : "GOML",
             "checker_key" : "tosa/linelength",
             "props" : "[{\"displayValue\":\"120\",\"propValue\":\"120\",\"propName\":\"line-length\"}]"
-        }, 
-        {
-            "tool_name" : "GOML",
-            "checker_key" : "golint/comment"
-        }, 
+        },
         {
             "tool_name" : "GOML",
             "checker_key" : "golint/fnsize",
@@ -29,11 +25,7 @@
         {
             "tool_name" : "GOML",
             "checker_key" : "golint/package"
-        }, 
-        {
-            "tool_name" : "GOML",
-            "checker_key" : "golint/naming"
-        }, 
+        },
         {
             "tool_name" : "GOML",
             "checker_key" : "golint/funccomment"
@@ -44,19 +36,15 @@
         }, 
         {
             "tool_name" : "GOML",
+            "checker_key" : "golint/structcomment"
+        }, 
+        {
+            "tool_name" : "GOML",
             "checker_key" : "golint/funcret"
         }, 
         {
             "tool_name" : "GOML",
             "checker_key" : "golint/funcpara"
-        }, 
-        {
-            "tool_name" : "GOML",
-            "checker_key" : "golint/nogoto"
-        }, 
-        {
-            "tool_name" : "GOML",
-            "checker_key" : "staticcheck/defer"
         }
     ]
 }

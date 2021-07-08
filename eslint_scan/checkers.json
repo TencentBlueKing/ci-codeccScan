@@ -1,0 +1,6821 @@
+[
+  {
+    "checkerName": "@typescript-eslint/adjacent-overload-signatures",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "重载的函数必须写在一起",
+    "checkerDescModel": "重载的函数必须写在一起",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/class-literal-property-style",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "类的只读属性若是一个字面量，则必须使用只读属性而不是 getter",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/consistent-type-assertions",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "使用const x: T = { ... }; 而非 const x = { ... } as T; 。后一种情况下的类型断言要么是不必要的，要么可能会隐藏错误。",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/explicit-member-accessibility",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须设置类的成员的可访问性. 将不需要公开的成员设为私有的，可以增强代码的可理解性，对文档输出也很友好",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/member-ordering",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "指定类成员的排序规则：1. static > instance, 2. field > constructor > method， 3. public > protected > private",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-empty-interface",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止定义空的接口",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-inferrable-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止给一个初始化时直接赋值为 number, string 的变量显式的声明类型",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-namespace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 namespace 来定义命名空间",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-non-null-asserted-optional-chain",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止在 optional chaining 之后使用 non-null 断言（感叹号）",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-require-imports",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 require，统一使用 import 来引入模块，特殊情况使用单行注释允许 require 引入",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-this-alias",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止将 this 赋值给其他变量，除非是解构赋值",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-unused-expressions",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止无用的表达式",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-useless-constructor",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止出现没必要的 constructor",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/prefer-for-of",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "使用 for 循环遍历数组时，如果索引仅用于获取成员，则必须使用 for of 循环替代 for 循环",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/prefer-function-type",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "使用函数类型别名替代包含函数调用声明的接口",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/prefer-namespace-keyword",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 module 来定义命名空间",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/prefer-optional-chain",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "使用 optional chaining 替代 &&",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/triple-slash-reference",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用三斜杠导入文件",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/type-annotation-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "在类型注释周围需要一致的间距",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/typedef",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "interface 和 type 定义时必须声明成员的类型",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/unified-signatures",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数重载时，若能通过联合类型将两个函数的类型声明合为一个，则使用联合类型而不是两个函数声明",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/brace-style",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "if 与 else 的大括号风格必须一致",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/comma-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "逗号前禁止有空格，逗号后必须要有空格",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/consistent-type-definitions",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "优先使用 interface 而不是 type",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/dot-notation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止出现 foo['bar']，必须写成 foo.bar",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/func-call-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "要求或禁止在函数标识符和其调用之间有空格",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/indent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "缩进以2空格为单位",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/keyword-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "关键字前后必须有空格",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/method-signature-style",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "接口中的方法必须用属性的方式定义",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/naming-convention",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对代码库中的所有内容强制执行命名约定",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-array-constructor",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 Array 构造函数",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-dupe-class-members",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止重复定义类",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-parameter-properties",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止给类的构造函数的参数添加修饰符",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/no-unused-vars",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "定义过的变量必须使用",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/quotes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须使用单引号，禁止使用双引号",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/semi",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "结尾必须有分号",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "@typescript-eslint/space-before-function-paren",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "命名函数表达式括号前禁止有空格，箭头函数表达式括号前面要有一个空格",
+    "checkerLanguage": [
+      "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "accessor-pairs",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "有 setter 的地方必须有 getter，有 getter 的地方可以没有 setter",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "array-bracket-newline",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "配置数组的中括号内前后的换行格式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "array-bracket-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "数组的括号内的前后禁止有空格 [tencent standards/javascript 19.11]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "数组的括号内的前后禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "array-callback-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "数组的一些方法（map, reduce 等）的回调函数中，必须有返回值。[tencent standards/javascript 4.7]({scmUrl}/standards/javascript#4-%E6%95%B0%E7%BB%84)",
+    "checkerDescModel": "数组的一些方法（map, reduce 等）的回调函数中，必须有返回值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "array-element-newline",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "配置数组的元素之间的换行格式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "arrow-body-style",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "箭头函数能够省略 return 的时候，必须省略，比如必须写成 () => 0，禁止写成 () => { return 0 } [tencent standards/javascript 8.2]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "箭头函数能够省略 return 的时候，必须省略，比如必须写成 () => 0，禁止写成 () => { return 0 }",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "arrow-parens",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "函数只有一个参数并且函数体没有大括号，就删除圆括号。 否则，为了保证清晰和一致性，请给参数加上括号。[tencent standards/javascript 8.2]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)，[tencent standards/javascript 8.4]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "函数只有一个参数并且函数体没有大括号，就删除圆括号。 否则，为了保证清晰和一致性，请给参数加上括号。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "arrow-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "箭头函数的箭头前后必须有空格 [tencent standards/javascript 8.1]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "箭头函数的箭头前后必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "block-scoped-var",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "将 var 定义的变量视为块作用域，禁止在块外使用",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "block-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "代码块如果在一行内，那么大括号内的首尾必须有空格，比如 function () { alert('Hello') } [tencent standards/javascript 19.14]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "代码块如果在一行内，那么大括号内的首尾必须有空格，比如 function () { alert('Hello') }",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "brace-style",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "if 与 else 的大括号风格必须一致 [tencent standards/javascript 16.2]({scmUrl}/standards/javascript#16-%E4%BB%A3%E7%A0%81%E5%9D%97)",
+    "checkerDescModel": "if 与 else 的大括号风格必须一致",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "callback-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "callback 之后必须立即 return",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "camelcase",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "变量名必须是 camelcase 风格的 [tencent standards/javascript 23.2]({scmUrl}/standards/javascript#23-%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83)",
+    "checkerDescModel": "变量名必须是 camelcase 风格的",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "capitalized-comments",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "注释的首字母必须大写",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "class-methods-use-this",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "在类的非静态方法中，必须存在对 this 的引用",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "comma-dangle",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "当最后一个元素或属性与闭括号 ] 或 } 在 不同的行时，要求使用拖尾逗号；当在 同一行时，禁止使用拖尾逗号。[tencent standards/javascript 20.2]({scmUrl}/standards/javascript#20-%E9%80%97%E5%8F%B7)",
+    "checkerDescModel": "当最后一个元素或属性与闭括号 ] 或 } 在 不同的行时，要求使用拖尾逗号；当在 同一行时，禁止使用拖尾逗号。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "comma-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "逗号前禁止有空格，逗号后必须要有空格 [tencent standards/javascript 19.15]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "逗号前禁止有空格，逗号后必须要有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "comma-style",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止在行首写逗号 [tencent standards/javascript 20.1]({scmUrl}/standards/javascript#20-%E9%80%97%E5%8F%B7)",
+    "checkerDescModel": "禁止在行首写逗号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "comment-ratio",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "注释行数在文件总行数占比不少于10%",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": "10",
+        "displayValue": "10"
+      }
+    ]
+  },
+  {
+    "checkerName": "complexity",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止函数的循环复杂度超过 20",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "computed-property-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "用作对象的计算属性时，中括号内的首尾禁止有空格 [tencent standards/javascript 19.16]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "用作对象的计算属性时，中括号内的首尾禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consistent-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止函数在不同分支返回不同类型的值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consistent-this",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制 this 的别名",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "constructor-super",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "constructor 中必须有 super",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "curly",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "if 后面必须要有 {，除非是单行 if",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "default-case",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "switch 语句必须有 default",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "dot-location",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "链式调用的时候，点号必须放在第二行开头处，禁止放在第一行结尾处",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "dot-notation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现 foo['bar']，必须写成 foo.bar [tencent standards/javascript 12.1]({scmUrl}/standards/javascript#12-%E5%B1%9E%E6%80%A7)",
+    "checkerDescModel": "禁止出现 foo['bar']，必须写成 foo.bar",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "eol-last",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "文件最后一行必须有一个空行 [tencent standards/javascript 19.5]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "文件最后一行必须有一个空行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "eqeqeq",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "必须使用 === 或 !==，禁止使用 == 或 != [tencent standards/javascript 15.1]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)",
+    "checkerDescModel": "必须使用 === 或 !==，禁止使用 == 或 !=",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "for-direction",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止 for 循环出现方向错误的循环，比如 for (i = 0; i < 10; i--)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "func-call-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数名和执行它的括号之间禁止有空格 [tencent standards/javascript 19.17]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "函数名和执行它的括号之间禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "func-id-match",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数名字符数不超过35个",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": "^[a-zA-Z0-9_\\$]{1,35}$",
+        "displayValue": "^[a-zA-Z0-9_\\$]{1,35}$"
+      }
+    ]
+  },
+  {
+    "checkerName": "func-name-matching",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数赋值给变量的时候，函数名必须与变量名一致",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "func-names",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数必须有名字",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "func-style",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须只使用函数申明或只使用函数表达式 [tencent standards/javascript 7.1]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "必须只使用函数申明或只使用函数表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "function-paren-newline",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "调用或者书写一个包含多个参数的函数应该像这个指南里的其他多行代码写法一样： 每行值包含一个参数，并且最后一行也要以逗号结尾。[tencent standards/javascript 7.15]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "调用或者书写一个包含多个参数的函数应该像这个指南里的其他多行代码写法一样： 每行值包含一个参数，并且最后一行也要以逗号结尾。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "generator-star-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "generator 的 * 前面禁止有空格，后面必须有空格 [tencent standards/javascript 11.3]({scmUrl}/standards/javascript#11-%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8F%91%E7%94%9F%E5%99%A8)",
+    "checkerDescModel": "generator 的 * 前面禁止有空格，后面必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "getter-return",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "getter 必须有返回值，并且禁止返回空，比如 return;",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "global-require",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "require 必须在全局作用域下",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "guard-for-in",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "for in 内部必须有 hasOwnProperty",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "handle-callback-err",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "callback 中的 error 必须被处理",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "id-blacklist",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用指定的标识符",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "id-length",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制变量名长度",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "id-match",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制变量名必须匹配指定的正则表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "implicit-arrow-linebreak",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "在箭头函数用隐式 return 时强制将函数体的位置约束在箭头后。[tencent standards/javascript 8.6]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "在箭头函数用隐式 return 时强制将函数体的位置约束在箭头后。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import/first",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "导入语句前不允许有任何非导入语句 [tencent standards/javascript 10.7]({scmUrl}/standards/javascript#10-%E6%A8%A1%E5%9D%97)",
+    "checkerDescModel": "导入语句前不允许有任何非导入语句",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import/no-duplicates",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "对于同一个路径，只在一个地方引入所有需要的东西。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import/no-mutable-exports",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 let 导出 [tencent standards/javascript 10.5]({scmUrl}/standards/javascript#10-%E6%A8%A1%E5%9D%97)",
+    "checkerDescModel": "禁止使用 let 导出",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import/no-webpack-loader-syntax",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁用导入的模块时使用 webpack 特有的语法（感叹号）[tencent standards/javascript 10.9]({scmUrl}/standards/javascript#10-%E6%A8%A1%E5%9D%97)",
+    "checkerDescModel": "禁用导入的模块时使用 webpack 特有的语法（感叹号）",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import/prefer-default-export",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "当只有一个导出时，必须使用 export default [tencent standards/javascript 10.6]({scmUrl}/standards/javascript#10-%E6%A8%A1%E5%9D%97)",
+    "checkerDescModel": "当只有一个导出时，必须使用 export default",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "indent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "缩进以2空格为单位 [tencent standards/javascript 19.1]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "缩进以2空格为单位",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "init-declarations",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "变量必须在定义的时候赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "jsx-quotes",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "jsx 中的属性必须用双引号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "key-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对象字面量中冒号前面禁止有空格，后面必须有空格 [tencent standards/javascript 19.18]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "对象字面量中冒号前面禁止有空格，后面必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "keyword-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "关键字前后必须有空格 [tencent standards/javascript 19.3]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "关键字前后必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "license",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "文件头需要包含开源协议信息",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": ".*Tencent is pleased to support the open source community.+",
+        "displayValue": ".+Tencent is pleased to support the open source community.+"
+      }
+    ]
+  },
+  {
+    "checkerName": "line-comment-position",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "单行注释必须写在上一行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "linebreak-style",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制换行符为 LF 或 CRLF",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "linebreak-style-tosa",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "行尾使用换行符LF且禁止使用回车键CR",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": "unix",
+        "displayValue": "unix"
+      }
+    ]
+  },
+  {
+    "checkerName": "lines-around-comment",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "注释前后必须有空行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-depth",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "代码块嵌套的深度禁止超过 5 层",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-len",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制一行最多的字符个数 [tencent standards/javascript 19.13]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "限制一行最多的字符个数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-len-tosa",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "单行字符数不超过指定数量（默认为120个）",
+    "checkerDescModel": "单行字符数不超过指定数量（默认为%s个）",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": "120",
+        "displayValue": "120"
+      }
+    ]
+  },
+  {
+    "checkerName": "max-lines",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制一个文件最多的行数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-nested-callbacks",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "回调函数嵌套禁止超过 3 层，多了请用 async await 替代",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-params",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "函数的参数禁止超过 7 个",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-statements",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制函数块中的语句数量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "max-statements-per-line",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制一行中的语句数量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "multiline-ternary",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "三元表达式必须得换行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "new-cap",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "new 后面的类名必须首字母大写 [tencent standards/javascript 23.3]({scmUrl}/standards/javascript#23-%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83)",
+    "checkerDescModel": "new 后面的类名必须首字母大写",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "new-parens",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "new 后面的类必须有小括号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "newline-per-chained-call",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "链式调用必须换行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-alert",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 alert",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-array-constructor",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 Array 构造函数。[tencent standards/javascript 4.1]({scmUrl}/standards/javascript#4-%E6%95%B0%E7%BB%84)",
+    "checkerDescModel": "禁止使用 Array 构造函数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-await-in-loop",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止将 await 写在循环里，因为这样就无法同时发送多个异步请求了",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-bitwise",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用位运算",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-buffer-constructor",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止直接使用 Buffer",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-caller",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 caller 或 callee",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-case-declarations",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "switch 的 case 内有变量定义的时候，必须使用大括号将 case 内变成一个代码块 [tencent standards/javascript 15.5]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)",
+    "checkerDescModel": "switch 的 case 内有变量定义的时候，必须使用大括号将 case 内变成一个代码块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-catch-shadow",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止 catch 的参数名与定义过的变量重复",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-class-assign",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止对定义过的 class 重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-compare-neg-zero",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止与负零进行比较",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-cond-assign",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 if, for, while 里使用赋值语句，除非这个赋值语句被括号包起来了",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-confusing-arrow",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止出现难以理解的箭头函数，比如 let x = a => 1 ? 2 : 3 [tencent standards/javascript 8.5]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "禁止出现难以理解的箭头函数，比如 let x = a => 1 ? 2 : 3",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-const-assign",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止对使用 const 定义的常量重新赋值。[tencent standards/javascript 2.1]({scmUrl}/standards/javascript#2-%E5%BC%95%E7%94%A8)",
+    "checkerDescModel": "禁止对使用 const 定义的常量重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-constant-condition",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止将常量作为 if 或三元表达式的测试条件，比如 if (true), let foo = 0 ? 'foo' : 'bar'",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-continue",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 continue",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-control-regex",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在正则表达式中出现 Ctrl 键的 ASCII 表示，即禁止使用 /\\x1f/",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-debugger",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止使用 debugger",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-delete-var",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止使用 delete",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-div-regex",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在正则表达式中出现没必要的转义符",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-dupe-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在函数参数中出现重复名称的参数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-dupe-class-members",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止重复定义类 [tencent standards/javascript 9.6]({scmUrl}/standards/javascript#9-%E7%B1%BB%E5%92%8C%E6%9E%84%E9%80%A0%E5%99%A8)",
+    "checkerDescModel": "禁止重复定义类",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-dupe-keys",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在对象字面量中出现重复名称的键名",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-duplicate-case",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 switch 语句中出现重复测试表达式的 case",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-duplicate-imports",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止重复 import 模块 [tencent standards/javascript 10.4]({scmUrl}/standards/javascript#10-%E6%A8%A1%E5%9D%97)",
+    "checkerDescModel": "禁止重复 import 模块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-else-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 else 内使用 return，必须改为提前结束 [tencent standards/javascript 16.3]({scmUrl}/standards/javascript#16-%E4%BB%A3%E7%A0%81%E5%9D%97)",
+    "checkerDescModel": "禁止在 else 内使用 return，必须改为提前结束",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-empty",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止出现空代码块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-empty-character-class",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在正则表达式中使用空的字符集",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-empty-function",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "不允许有空函数，除非是将一个空函数设置为某个项的默认值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-empty-pattern",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止解构中出现空 {} 或 []",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-eq-null",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 foo == null 或 foo != null，必须使用 foo === null 或 foo !== null",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-eval",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 eval [tencent standards/javascript 6.4]({scmUrl}/standards/javascript#6-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "禁止使用 eval",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-ex-assign",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止将 catch 的第一个参数 error 重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-extend-native",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止修改原生对象",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-extra-bind",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没必要的 bind",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-extra-boolean-cast",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止不必要的布尔转换",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-extra-label",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没必要的 label",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-extra-semi",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止出现多余的分号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-fallthrough",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "switch 的 case 内必须有 break, return 或 throw",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-floating-decimal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "表示小数时，禁止省略 0，比如 .5",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-func-assign",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止将一个函数申明重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-global-assign",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止对全局变量赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-implicit-coercion",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 !! ~ 等难以理解的运算符",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-implicit-globals",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在全局作用域下定义变量或申明函数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-implied-eval",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 setTimeout 或 setInterval 中传入字符串，如 setTimeout('alert(\"Hi!\")', 100);",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-inline-comments",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止在代码后添加内联注释",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-inner-declarations",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 if 内出现函数申明或使用 var 定义变量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-invalid-regexp",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止出现非法的正则表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-invalid-this",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在类之外的地方使用 this",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-irregular-whitespace",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止使用特殊空白符（比如全角空格），除非是出现在字符串、正则表达式或模版字符串中",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-iterator",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 __iterator__ [tencent standards/javascript 11.1]({scmUrl}/standards/javascript#11-%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8F%91%E7%94%9F%E5%99%A8)",
+    "checkerDescModel": "禁止使用 __iterator__",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-label-var",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止 label 名称与定义过的变量重复",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-labels",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 label",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-lone-blocks",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用没必要的 {} 作为代码块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-lonely-if",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止 else 中只有一个单独的 if",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-loop-func",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在循环内的函数中出现循环体条件语句中定义的变量，[tencent standards/javascript 7.3]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "禁止在循环内的函数中出现循环体条件语句中定义的变量，",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-magic-numbers",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 magic numbers",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-mixed-operators",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止混用不同的操作符，比如 let foo = a && b < 0 || c > 0 || d + 1 === 0 [tencent standards/javascript 15.8]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)",
+    "checkerDescModel": "禁止混用不同的操作符，比如 let foo = a && b < 0 || c > 0 || d + 1 === 0",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-mixed-requires",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "相同类型的 require 必须放在一起",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-mixed-spaces-and-tabs",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止混用空格和缩进",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-multi-assign",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止连续赋值，比如 a = b = c = 5 [tencent standards/javascript 13.5]({scmUrl}/standards/javascript#13-%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "禁止连续赋值，比如 a = b = c = 5",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-multi-spaces",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现连续的多个空格，除非是注释前，或对齐对象的属性、变量定义、import 等",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-multi-str",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 \\ 来换行字符串",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-multiple-empty-lines",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止出现超过三行的连续空行 [tencent standards/javascript 19.9]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)，[tencent standards/javascript 19.20]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "禁止出现超过三行的连续空行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-negated-condition",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "否定的表达式可以把逻辑表达的更清楚",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-nested-ternary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用嵌套的三元表达式，比如 a ? b : c ? d : e [tencent standards/javascript 15.6]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)",
+    "checkerDescModel": "禁止使用嵌套的三元表达式，比如 a ? b : c ? d : e",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止直接 new 一个类而不赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new-func",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 new Function，比如 let x = new Function(\"a\", \"b\", \"return a + b\");",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new-object",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止直接 new Object。[tencent standards/javascript 3.1]({scmUrl}/standards/javascript#3-%E5%AF%B9%E8%B1%A1)",
+    "checkerDescModel": "禁止直接 new Object",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new-require",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止直接 new require('foo')",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new-symbol",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止使用 new 来生成 Symbol",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-new-wrappers",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 new 来生成 String, Number 或 Boolean [tencent standards/javascript 22.1]({scmUrl}/standards/javascript#22-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%92%8C%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)，[tencent standards/javascript 22.2]({scmUrl}/standards/javascript#22-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%92%8C%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)，[tencent standards/javascript 22.5]({scmUrl}/standards/javascript#22-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%92%8C%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)",
+    "checkerDescModel": "禁止使用 new 来生成 String, Number 或 Boolean",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-obj-calls",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止将 Math, JSON 或 Reflect 直接作为函数调用，必须作为类使用",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-octal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 0 开头的数字表示八进制数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-octal-escape",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用八进制的转义符",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-param-reassign",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止对函数的参数重新赋值 [tencent standards/javascript 7.12]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)，[tencent standards/javascript 7.13]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "禁止对函数的参数重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-path-concat",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止对 __dirname 或 __filename 使用字符串连接",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-plusplus",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 ++ 或 --",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-process-env",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止使用 process.env.NODE_ENV",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-process-exit",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止使用 process.exit(0)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-proto",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 __proto__",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-prototype-builtins",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止使用 hasOwnProperty, isPrototypeOf 或 propertyIsEnumerable.[tencent standards/javascript 3.7]({scmUrl}/standards/javascript#3-%E5%AF%B9%E8%B1%A1)",
+    "checkerDescModel": "禁止使用 hasOwnProperty, isPrototypeOf 或 propertyIsEnumerable",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-redeclare",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止重复定义变量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-regex-spaces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在正则表达式中出现连续的空格，必须使用 /foo {3}bar/ 代替",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-restricted-globals",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止使用指定的全局变量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-restricted-imports",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止 import 指定的模块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-restricted-modules",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止使用指定的模块",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-restricted-properties",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用指定的对象属性 [tencent standards/javascript 12.3]({scmUrl}/standards/javascript#12-%E5%B1%9E%E6%80%A7)",
+    "checkerDescModel": "禁止使用指定的对象属性",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-restricted-syntax",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用特定的语法 [tencent standards/javascript 11.1]({scmUrl}/standards/javascript#11-%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8F%91%E7%94%9F%E5%99%A8)",
+    "checkerDescModel": "禁止使用特定的语法",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-return-assign",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 return 语句里赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-return-await",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 return 语句里使用 await",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-script-url",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现 location.href = 'javascript:void(0)';",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-self-assign",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止将自己赋值给自己",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-self-compare",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止将自己与自己比较",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-sequences",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用逗号操作符",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-shadow",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止变量名与上层作用域内的定义过的变量重复",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-shadow-restricted-names",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止使用保留字作为变量名",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-sparse-arrays",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在数组中出现连续的逗号，如 let foo = [,,]",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-sync",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "Node.js或CommonJS相关",
+    "checkerTypeDesc": "这些规则是关于Node.js 或 在浏览器中使用CommonJS 的",
+    "checkerTypeSort": "1",
+    "checkerDesc": "禁止使用 node 中的同步的方法，比如 fs.readFileSync",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "Node规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-tabs",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 tabs",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-template-curly-in-string",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在普通字符串中出现模版字符串的变量形式，如 'Hello ${name}!'",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-ternary",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用三元表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-this-before-super",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止在 super 被调用之前使用 this 或 super",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-throw-literal",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止 throw 字面量，必须 throw 一个 Error 对象",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-trailing-spaces",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止行尾有空格 [tencent standards/javascript 19.19]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "禁止行尾有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-undef",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止使用未定义的变量 [tencent standards/javascript 13.1]({scmUrl}/standards/javascript#13-%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "禁止使用未定义的变量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-undef-init",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止将 undefined 赋值给变量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-undefined",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "禁止对 undefined 重新赋值",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-underscore-dangle",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止变量名出现下划线 [tencent standards/javascript 23.4]({scmUrl}/standards/javascript#23-%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83)",
+    "checkerDescModel": "禁止变量名出现下划线",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unexpected-multiline",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止出现难以理解的多行表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unmodified-loop-condition",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "循环内必须对循环条件的变量有修改",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unneeded-ternary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须使用 !a 替代 a ? false : true [tencent standards/javascript 15.7]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)",
+    "checkerDescModel": "必须使用 !a 替代 a ? false : true",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unreachable",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 return, throw, break 或 continue 之后还有代码",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unsafe-finally",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 finally 中出现 return, throw, break 或 continue",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unsafe-negation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止在 in 或 instanceof 操作符的左侧使用感叹号，如 if (!key in object)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unused-expressions",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止无用的表达式",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unused-labels",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没用的 label",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-unused-vars",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "定义过的变量必须使用 [tencent standards/javascript 13.8]({scmUrl}/standards/javascript#13-%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "定义过的变量必须使用",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-use-before-define",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "变量必须先定义后使用",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "变量规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-call",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没必要的 call 或 apply",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-computed-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止出现没必要的计算键名，比如 let a = { ['0']: 0 };",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-concat",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没必要的字符串连接",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-constructor",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止出现没必要的 constructor，比如 constructor(value) { super(value) } [tencent standards/javascript 9.5]({scmUrl}/standards/javascript#9-%E7%B1%BB%E5%92%8C%E6%9E%84%E9%80%A0%E5%99%A8)",
+    "checkerDescModel": "禁止出现没必要的 constructor，比如 constructor(value) { super(value) }",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-escape",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现没必要的转义 [tencent standards/javascript 6.5]({scmUrl}/standards/javascript#6-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "禁止出现没必要的转义",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-rename",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止解构时出现同样名字的的重命名，比如 let { foo: foo } = bar;",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-useless-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止没必要的 return",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-var",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "禁止出现 var [tencent standards/javascript 2.2]({scmUrl}/standards/javascript#2-%E5%BC%95%E7%94%A8)",
+    "checkerDescModel": "禁止出现 var ",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-void",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 void",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-warning-comments",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止注释中出现 TODO 和 FIXME",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-whitespace-before-property",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止属性前有空格，比如 foo. bar()",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-with",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 with",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "nonblock-statement-body-position",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止 if 后面不加大括号而写两行代码 [tencent standards/javascript 16.1]({scmUrl}/standards/javascript#16-%E4%BB%A3%E7%A0%81%E5%9D%97)",
+    "checkerDescModel": "禁止 if 后面不加大括号而写两行代码",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "object-curly-newline",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "大括号内的首尾必须有换行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "object-curly-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对象字面量只有一行时，大括号内的首尾必须有空格 [tencent standards/javascript 19.12]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "对象字面量只有一行时，大括号内的首尾必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "object-property-newline",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对象字面量内的属性每行必须只有一个",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "object-shorthand",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用 a = {b} 而不是 a = {b: b}",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "one-var",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止变量申明时用逗号一次申明多个 [tencent standards/javascript 13.2]({scmUrl}/standards/javascript#13-%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "禁止变量申明时用逗号一次申明多个",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "one-var-declaration-per-line",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "变量申明必须每行一个",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "operator-assignment",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须使用 x = x + y 而不是 x += y",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "operator-linebreak",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "需要换行的时候，操作符必须放在行首。避免在赋值语句 = 前后换行。如果你的代码单行长度超过了 max-len 定义的长度而不得不换行，那么使用括号包裹。[tencent standards/javascript 13.7]({scmUrl}/standards/javascript#13-%E5%8F%98%E9%87%8F)",
+    "checkerDescModel": "需要换行的时候，操作符必须放在行首。避免在赋值语句 = 前后换行。如果你的代码单行长度超过了 max-len 定义的长度而不得不换行，那么使用括号包裹。",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "padded-blocks",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "代码块首尾不要有空行 [tencent standards/javascript 19.8]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "代码块首尾不要有空行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "padding-line-between-statements",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制语句之间的空行规则，比如变量定义完之后必须要空行",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-arrow-callback",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用箭头函数作为回调 [tencent standards/javascript 8.1]({scmUrl}/standards/javascript#8-%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "必须使用箭头函数作为回调",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-const",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "申明后不再被修改的变量必须使用 const 来申明。[tencent standards/javascript 2.1]({scmUrl}/standards/javascript#2-%E5%BC%95%E7%94%A8)",
+    "checkerDescModel": "申明后不再被修改的变量必须使用 const 来申明",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-destructuring",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用解构。[tencent standards/javascript 5.1]({scmUrl}/standards/javascript#5-%E8%A7%A3%E6%9E%84)，[tencent standards/javascript 5.2]({scmUrl}/standards/javascript#5-%E8%A7%A3%E6%9E%84)",
+    "checkerDescModel": "必须使用解构",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-numeric-literals",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用 0b11111011 而不是 parseInt('111110111', 2)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-promise-reject-errors",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "Promise 的 reject 中必须传入 Error 对象，而不是字面量",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-rest-params",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用 ...args 而不是 arguments",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-spread",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用 ... 而不是 apply，比如 foo(...args) [tencent standards/javascript 7.14]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "必须使用 ... 而不是 apply，比如 foo(...args)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "prefer-template",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "必须使用模版字面量而不是字符串连接。[tencent standards/javascript 6.3]({scmUrl}/standards/javascript#6-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "必须使用模版字面量而不是字符串连接",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "quote-props",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对象字面量的键名禁止用引号括起来。[tencent standards/javascript 3.6]({scmUrl}/standards/javascript#3-%E5%AF%B9%E8%B1%A1)",
+    "checkerDescModel": "对象字面量的键名禁止用引号括起来",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "quotes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须使用单引号，禁止使用双引号 [tencent standards/javascript 6.1]({scmUrl}/standards/javascript#6-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "必须使用单引号，禁止使用双引号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "radix",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "parseInt 必须传入第二个参数 [tencent standards/javascript 22.2]({scmUrl}/standards/javascript#22-%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2%E5%92%8C%E5%BC%BA%E5%88%B6%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2)",
+    "checkerDescModel": "parseInt 必须传入第二个参数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/boolean-prop-naming",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "布尔值类型的 propTypes 的 name 必须为 is 或 has 开头",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/default-props-match-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "一个 defaultProps 必须有对应的 propTypes",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/display-name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "组件必须有 displayName 属性",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/forbid-component-props",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在自定义组件中使用一些指定的 props",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/forbid-elements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用一些指定的 elements",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/forbid-foreign-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止直接使用别的组建的 propTypes",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/forbid-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用一些指定的 propTypes",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-boolean-value",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "布尔值的属性必须显式的写 someprop={true}",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-closing-bracket-location",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "自闭和标签的反尖括号必须与尖括号的那一行对齐",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-closing-tag-location",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "结束标签必须与开始标签的那一行对齐",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-curly-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "大括号内前后禁止有空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-equals-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "props 与 value 之间的等号前后禁止有空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-filename-extension",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "限制文件后缀",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-first-prop-new-line",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "第一个 prop 必须得换行",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-handler-names",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "handler 的名称必须是 onXXX 或 handleXXX",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-indent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "jsx 的 children 缩进必须为四个空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-indent-props",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "jsx 的 props 缩进必须为四个空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "数组中的 jsx 必须有 key",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-max-props-per-line",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制每行的 props 数量",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-bind",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "jsx 中禁止使用 bind",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-comment-textnodes",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 jsx 中使用像注释的字符串",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-duplicate-props",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现重复的 props",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-literals",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止在 jsx 中出现字符串",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-target-blank",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止使用 target=\"_blank\"",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-no-undef",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用未定义的 jsx elemet",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-pascal-case",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 pascal 写法的 jsx，比如 <TEST_COMPONENT>",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-sort-props",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "props 必须排好序",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-tag-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "jsx 的开始和闭合处禁止有空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-uses-react",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "jsx 文件必须 import React",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-uses-vars",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "定义了的 jsx element 必须使用",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/jsx-wrap-multilines",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "多行的 jsx 必须有括号包起来",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-array-index-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用数组的 index 作为 key",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-children-prop",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 children 做 props",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-danger",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 dangerouslySetInnerHTML",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-danger-with-children",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在使用了 dangerouslySetInnerHTML 的组建内添加 children",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-deprecated",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用已废弃的 api",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-did-mount-set-state",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 componentDidMount 里面使用 setState",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-did-update-set-state",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 componentDidUpdate 里面使用 setState",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-direct-mutation-state",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止直接修改 this.state",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-find-dom-node",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 findDOMNode",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-is-mounted",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 isMounted",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-multi-comp",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在一个文件创建两个组件",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-redundant-should-component-update",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 PureComponent 中使用 shouldComponentUpdate",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-render-return-value",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 ReactDOM.render 的返回值",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-set-state",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用 setState",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-string-refs",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止使用字符串",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-typos",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止拼写错误",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-unescaped-entities",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在组件的内部存在未转义的 >, \", ' 或 }",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-unknown-property",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现 HTML 中的属性，如 class",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-unused-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现未使用的 propTypes",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-unused-state",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "定义过的 state 必须使用",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/no-will-update-set-state",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 componentWillUpdate 中使用 setState",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/prefer-es6-class",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "必须使用 Class 的形式创建组件",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/prefer-stateless-function",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "必须使用 pure function",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "组件必须写 propTypes",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/react-in-jsx-scope",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "出现 jsx 的地方必须 import React",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/require-default-props",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "非 required 的 prop 必须有 defaultProps",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/require-optimization",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "组件必须有 shouldComponentUpdate",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/require-render-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "render 方法中必须有返回值",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/self-closing-comp",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "组件内没有 children 时，必须使用自闭和写法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/sort-comp",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "组件内方法必须按照一定规则排序",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/sort-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeSort": "3",
+    "checkerDesc": "propTypes 的熟悉必须按照字母排序",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/style-prop-object",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "style 属性的取值必须是 object",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "react/void-dom-elements-no-children",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "6",
+    "checkerDesc": "HTML 中的自闭和标签禁止有 children",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "require-await",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "async 函数中必须存在 await 语句",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "require-jsdoc",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "必须使用 jsdoc 风格的注释",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "require-yield",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "generator 函数内必须有 yield",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "rest-spread-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "... 的后面禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "semi",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "结尾必须有分号 [tencent standards/javascript 26.1]({scmUrl}/standards/javascript#26-%E5%88%86%E5%8F%B7)",
+    "checkerDescModel": "结尾必须有分号",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "semi-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "一行有多个语句时，分号前面禁止有空格，分号后面必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "semi-style",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "分号必须写在行尾，禁止在行首出现",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "sort-imports",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "mport 必须按规则排序",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "sort-keys",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "对象字面量的键名必须排好序",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "sort-vars",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "变量申明必须排好序",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "space-before-blocks",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "if, function 等的大括号之前必须要有空格，比如 if (a) { [tencent standards/javascript 7.11]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)，[tencent standards/javascript 19.2]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "if, function 等的大括号之前必须要有空格，比如 if (a) {",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "space-before-function-paren",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "命名函数表达式括号前禁止有空格，箭头函数表达式括号前面要有一个空格 [tencent standards/javascript 7.11]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "命名函数表达式括号前禁止有空格，箭头函数表达式括号前面要有一个空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "space-in-parens",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "小括号内的首尾禁止有空格 [tencent standards/javascript 19.10]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "小括号内的首尾禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "space-indent",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "采用指定个数空格缩进（默认为2个）且禁止使用tab键",
+    "checkerDescModel": "采用指定个数空格缩进（默认为%s个）且禁止使用tab键",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "param1",
+        "propValue": "4",
+        "displayValue": "4"
+      }
+    ]
+  },
+  {
+    "checkerName": "space-infix-ops",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "操作符左右必须有空格，比如 let sum = 1 + 2; [tencent standards/javascript 19.4]({scmUrl}/standards/javascript#19-%E7%A9%BA%E7%99%BD)",
+    "checkerDescModel": "操作符左右必须有空格，比如 let sum = 1 + 2;",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "space-unary-ops",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "new, typeof 等后面必须有空格，++, -- 等禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "spaced-comment",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "注释前后必须有空格 [tencent standards/javascript 18.3]({scmUrl}/standards/javascript#18-%E6%B3%A8%E9%87%8A)",
+    "checkerDescModel": "注释前后必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "strict",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "严格模式",
+    "checkerTypeDesc": "该规则与使用严格模式和严格模式指令有关",
+    "checkerTypeSort": "5",
+    "checkerDesc": "禁止使用 'strict';",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "严格模式"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "switch-colon-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "case 的冒号前禁止有空格，冒号后必须有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "symbol-description",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "创建 Symbol 时必须传入参数",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "template-curly-spacing",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "${name} 内的首尾禁止有空格 [tencent standards/javascript 6.3]({scmUrl}/standards/javascript#6-%E5%AD%97%E7%AC%A6)",
+    "checkerDescModel": "${name} 内的首尾禁止有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "template-tag-spacing",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "模版字符串的 tag 之后禁止有空格，",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unicode-bom",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "文件开头禁止有 BOM",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "use-isnan",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "必须使用 isNaN(foo) 而不是 foo === NaN",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "valid-jsdoc",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "注释必须符合 jsdoc 的规范",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "valid-typeof",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "typeof 表达式比较的对象必须是 'undefined', 'object', 'boolean', 'number', 'string', 'function' 或 'symbol'",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vars-on-top",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "var 必须在作用域的最前面",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/attribute-hyphenation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制自定义组件的属性风格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/html-end-tags",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "html 的结束标签必须符合规定",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/html-quotes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "html 属性值必须用双引号括起来",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/html-self-closing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "没有内容时，组件必须自闭和",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/jsx-uses-vars",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "变量相关",
+    "checkerTypeDesc": "这些规则与变量声明有关",
+    "checkerTypeSort": "2",
+    "checkerDesc": "定义了的 jsx element 必须使用",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/max-attributes-per-line",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制每行允许的最多属性数量",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/name-property-casing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制组件的 name 属性的值的风格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-async-in-computed-properties",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "计算属性禁止包含异步方法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-confusing-v-for-v-if",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现难以理解的 v-if 和 v-for",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-dupe-keys",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止重复的二级键名",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-duplicate-attributes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止出现重复的属性",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-multi-spaces",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "禁止出现连续空格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-parsing-error",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止出现语法错误",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-reservered-keys",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止覆盖保留字",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-shared-component-data",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "组件的 data 属性的值必须是一个函数",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-side-effects-in-computed-properties",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在计算属性中对属性修改",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-template-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止 <template> 使用 key 属性",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/no-textarea-mustache",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "禁止在 <textarea> 中出现 {{message}}",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/order-in-components",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "组件的属性必须为一定的顺序",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/require-component-is",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "<component> 必须有 v-bind:is",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/require-prop-types",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "prop 必须有类型限制",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/require-render-return",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "render 函数必须有返回值",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/require-v-for-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "v-for 指令的元素必须有 v-bind:key",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/require-valid-default-prop",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "prop 的默认值必须匹配它的类型",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/return-in-computed-property",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "计算属性必须有返回值",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/v-bind-style",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制 v-bind 的风格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/v-on-style",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "3",
+    "checkerDesc": "限制 v-on 的风格",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-template-root",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "template 的根节点必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-bind",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-bind 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-cloak",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-cloak 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-else",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-else 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-else-if",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-else-if 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-for",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-for 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-html",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-html 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-if",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-if 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-model",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-model 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-on",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-on 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-once",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-once 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-pre",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-pre 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-show",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-show 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "vue/valid-v-text",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "v-text 指令必须合法",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrap-iife",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "把立即执行函数包裹在圆括号里。 (function () { return { y: 1 };}()) [tencent standards/javascript 7.2]({scmUrl}/standards/javascript#7-%E5%87%BD%E6%95%B0)",
+    "checkerDescModel": "把立即执行函数包裹在圆括号里。 (function () { return { y: 1 };}())",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrap-regex",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格相关",
+    "checkerTypeDesc": "这些规则是关于风格指南的，而且是非常主观的",
+    "checkerTypeSort": "3",
+    "checkerDesc": "正则表达式必须有括号包起来",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "yield-star-spacing",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "ES6相关",
+    "checkerTypeDesc": "这些规则只与 ES6 有关, 即通常所说的 ES2015",
+    "checkerTypeSort": "0",
+    "checkerDesc": "yield* 后面必须要有空格",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "ES6规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "yoda",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeDesc": "这些规则是关于最佳实践的，帮助你避免一些问题",
+    "checkerTypeSort": "6",
+    "checkerDesc": "必须使用 if (foo === 5) 而不是 if (5 === foo)",
+    "checkerLanguage": [
+      "JS", "TYPESCRIPT"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  }
+]

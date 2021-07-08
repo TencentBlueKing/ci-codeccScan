@@ -1,4 +1,4 @@
-FROM docker.io/bkci/codecc:latest
+FROM mirrors.tencent.com/codecc/base:latest
 RUN mkdir -p /usr/codecc/tool_scan
 COPY sdk /usr/codecc/tool_scan/sdk/
 COPY third_rules /usr/codecc/tool_scan/third_rules/

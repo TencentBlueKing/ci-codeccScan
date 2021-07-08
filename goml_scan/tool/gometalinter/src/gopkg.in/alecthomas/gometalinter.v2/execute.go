@@ -85,6 +85,7 @@ func runLinters(linters map[string]*Linter, paths []string, concurrency int, exc
 		"min_confidence":   fmt.Sprintf("%f", config.MinConfidence),
 		"comment_ratio":	fmt.Sprintf("%d", config.CommentRatio),
 		"func_name_length":	fmt.Sprintf("%d", config.FuncNameLength),
+		"fnsize":			fmt.Sprintf("%d", config.FnSize),
 		"line_length":		fmt.Sprintf("%d", config.LineLength),
 		"min_occurrences":  fmt.Sprintf("%d", config.MinOccurrences),
 		"min_const_length": fmt.Sprintf("%d", config.MinConstLength),

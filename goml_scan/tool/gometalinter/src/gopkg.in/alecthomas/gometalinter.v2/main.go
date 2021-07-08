@@ -67,6 +67,7 @@ func setupFlags(app *kingpin.Application) {
 	app.Flag("warn-unmatched-nolint", "Warn if a nolint directive is not matched with an issue.").BoolVar(&config.WarnUnmatchedDirective)
 	app.Flag("comment-ratio", "Minimum comment ratio of a .go file.").PlaceHolder("10").IntVar(&config.CommentRatio)
 	app.Flag("func-name-length", "Maximum length of a function name").PlaceHolder("35").IntVar(&config.FuncNameLength)
+	app.Flag("fnsize", "Maximum line length of a function body").PlaceHolder("80").IntVar(&config.FnSize)
 	app.Flag("plugin-dir", "set plugin dir for golint").PlaceHolder("").StringVar(&config.PluginDir)
 	app.GetFlag("help").Short('h')
 }

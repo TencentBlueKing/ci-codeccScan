@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<ruleset name="PMD ruleset for Checkstyle"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+                             http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+    <description>
+        PMD ruleset for Checkstyle main code
+    </description>
+    <exclude-pattern>.*/src/it/.*</exclude-pattern>
+    <exclude-pattern>.*/src/test/.*</exclude-pattern>
+    <rule ref="config/pmd.xml"/>
+
+    <rule ref="category/java/design.xml/CollapsibleIfStatements"/>
+    <rule ref="category/java/design.xml/ImmutableField">
+        <properties>
+            <!-- Fields with these annotations will have their value injected by picocli.
+              These fields should not be marked final. -->
+            <property name="ignoredAnnotations"
+                      value="picocli.CommandLine.Option
+                            |picocli.CommandLine.Parameters
+                            |picocli.CommandLine.Spec"/>
+            <!-- final modifier prevent us from reaching full test coverage,
+                 we value full coverage more than final modifier. -->
+            <property name="violationSuppressXPath"
+                      value="//ClassOrInterfaceDeclaration[@Image='FileText']
+                                //FieldDeclaration//VariableDeclarator[@Name='fullText']"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField">
+        <properties>
+            <!-- Some fields with picocli annotations will be only used by
+              the picocli and not by the application.
+              They may appear unused by static code analysis tools. -->
+            <property name="ignoredAnnotations"
+                      value="picocli.CommandLine.Option
+                            |picocli.CommandLine.Parameters
+                            |picocli.CommandLine.Spec"/>
+        </properties>
+    </rule>
+    <rule ref="category/java/errorprone.xml/CloseResource">
+        <properties>
+            <property name="allowedResourceTypes" value="java.io.ByteArrayOutputStream|
+            java.io.ByteArrayInputStream|java.io.StringWriter|java.io.CharArrayWriter|
+            java.io.StringReader" />
+            <!-- we do close streams in special methods -->
+            <property name="violationSuppressXPath"
+                      value="//ClassOrInterfaceDeclaration[@Image='DefaultLogger']
+                      |//ClassOrInterfaceDeclaration[@Image='Main']
+                                 //MethodDeclaration[@Name='createListener']
+                      |//ClassOrInterfaceDeclaration[@Image='PropertyCacheFile']
+                                 //MethodDeclaration[@Name='persist' or @Name='serialize']
+                      |//ClassOrInterfaceDeclaration[@Image='XmlLoader']
+                                 //MethodDeclaration[@Name='resolveEntity']
+                      |//ClassOrInterfaceDeclaration[@Image='CheckstyleAntTask']
+                                 //MethodDeclaration[@Name='getListeners'
+                                                       or @Name='createDefaultLogger']
+                      "/>
+        </properties>
+    </rule>
+    <rule ref="category/java/design.xml/ExcessiveMethodLength">
+        <properties>
+            <!-- unfortunate cases -->
+            <property name="violationSuppressXPath"
+                      value="//ClassOrInterfaceDeclaration[@Image='PackageObjectFactory']
+                                 //MethodDeclaration[@Name='fillChecksFromCodingPackage']
+                      "/>
+        </properties>
+    </rule>
+</ruleset>

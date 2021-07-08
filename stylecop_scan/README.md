@@ -23,19 +23,21 @@ StyleCop工具是微软的开源静态代码分析工具，它检查C＃代码�
  - (5)  编译工程，把生成的dll拷贝到stylecop_scan\tool\bin这个目录
  - (6)  本地测试
     - (a) 把cd 切换到目录 stylecop_scan\tool\bin
-    - (b) 执行：StyleCopCLI.exe -set {配置文件路径} -cs {被扫cs源码文件路径} -out {结果输出文件路径}
-        ```如：StyleCopCLI -set ..\..\sdk\config\tencent_config.xml -cs d:\HelloWorld.cs -out result.xml```
+    - (b) 执行：mono StyleCopCLI.exe -set {配置文件路径} -cs {被扫cs源码文件路径} -out {结果输出文件路径}
+        ```如：mono StyleCopCLI.exe -set ..\..\sdk\config\tencent_config.xml -cs d:\HelloWorld.cs -out result.xml```
     - (c) 查阅结果文件，看看规则命中情况    
     
 5、在checkers.json中添加新增规则的描述。在描述时需要说明该规则对应到哪一条规范，并附上链接。规则描述示例如下：
-``` [必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2](https://{github.com/xxxxx}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C) ```
+``` [必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C) ```
 
  6、在test目录下添加规则测试代码文件
 
  7、MR代码到test分支
 
- 8、执行流水线部署http://{devops.public.url}/console/pipeline/codecc-tool-auto/p-f053a67f10d44328956fa314e0b6b570
+ 8、以"**调试模式**"执行流水线将工具集成到CodeCC平台/console/pipeline/codecc-tool-auto/p-f053a67f10d44328956fa314e0b6b570
  
- 9、测试完成提合并请求到master分支，由工具负责人austinshen审核评估后正式发布到生产
+ 9、测试完成提合并请求到master分支
+
+ 10、工具负责人weijianguan审核结合第6步骤和第8步骤执行的测试样例代码检查结果，及代码检视结果，评估后发布到灰度，再由灰度发布到正式
 
  **<font size=4 color="#660000" face="微软雅黑">>>相关官方文档查阅： [StyleCop](https://github.com/StyleCop/StyleCop)、[StyleCopCLI](https://github.com/bbadjari/stylecopcli)</font>**
