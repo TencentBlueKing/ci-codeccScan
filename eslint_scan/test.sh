@@ -2,8 +2,8 @@ rm -rf node_modules/.bin/json5
 rm -rf node_modules/.bin/loose-envify
 rm -rf node_modules/.bin/node-which
 rm -rf node_modules/@babel/highlight/node_modules/
-rm -rf node_modules/@tencent/eslint-config-tencent/base-legacy.js
-rm -rf node_modules/@tencent/eslint-config-tencent/ts-legacy.js
+rm -rf node_modules/eslint-config-tencent/base-legacy.js
+rm -rf node_modules/eslint-config-tencent/ts-legacy.js
 rm -rf node_modules/@types/json5/
 rm -rf node_modules/array.prototype.flatmap/
 rm -rf node_modules/chalk/index.d.ts

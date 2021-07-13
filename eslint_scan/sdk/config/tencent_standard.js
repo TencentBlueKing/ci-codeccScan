@@ -16,7 +16,7 @@
     "overrides": [
         {
             "files": ["*.ts", "*.tsx"],
-            "extends": ["@tencent/eslint-config-tencent/ts"],
+            "extends": ["eslint-config-tencent/ts"],
             "parserOptions": {
                 "project": [
                     "$project_root_path$/**/tsconfig.json"
@@ -361,7 +361,7 @@
         },
         {
             "files": ["*.js", "*.vue"],
-            "extends": ["@tencent/eslint-config-tencent"],
+            "extends": ["eslint-config-tencent"],
             "rules": {
                 "import/no-duplicates": "error",
                 "import/first": "error",
