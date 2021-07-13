@@ -3,6 +3,4 @@
         semi
         no-plusplus
     2、支持JS规范只扫描JS，TS规范只扫描TS
-2020.10.23
-    1、升级@tencent/eslint-config-tencent版本0.5.0 -> 0.12.2
        
