@@ -2,6 +2,7 @@ FROM docker.io/bkci/codecc:latest
 RUN mkdir -p /usr/codecc/software
 COPY software/mono-5.12.0.226.tar.gz /usr/codecc/software
 WORKDIR /usr/codecc/software
+RUN ls -l mono-5.12.0.226.tar.gz
 RUN md5sum mono-5.12.0.226.tar.gz
 RUN tar zxvf mono-5.12.0.226.tar.gz
 RUN rm -rf /usr/codecc/software/mono-5.12.0.226.tar.gz
