@@ -93,7 +93,7 @@ def scan(filename, config_path, third_rules, skip_path_list):
             print(err_msg)
     
         #clean result
-        #os.remove(result_xml)
+        os.remove(result_xml)
     return file_defects
 
 if __name__ == "__main__" :
