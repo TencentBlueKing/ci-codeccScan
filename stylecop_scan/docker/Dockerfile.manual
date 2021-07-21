@@ -3,10 +3,30 @@ RUN mkdir -p /usr/codecc/software
 COPY software/mono-5.12.0.226.tar.gz /usr/codecc/software
 WORKDIR /usr/codecc/software
 RUN ls -l mono-5.12.0.226.tar.gz
+RUN ls -l mono-5.12.0.226-lib1.tar.gz
+RUN ls -l mono-5.12.0.226-lib2.tar.gz
+RUN ls -l mono-5.12.0.226-lib3.tar.gz
+RUN ls -l mono-5.12.0.226-lib4.tar.gz
+RUN ls -l mono-5.12.0.226-lib5.tar.gz
+RUN ls -l mono-5.12.0.226-lib6.tar.gz
 RUN md5sum mono-5.12.0.226.tar.gz
+RUN md5sum mono-5.12.0.226-lib1.tar.gz
+RUN md5sum mono-5.12.0.226-lib2.tar.gz
+RUN md5sum mono-5.12.0.226-lib3.tar.gz
+RUN md5sum mono-5.12.0.226-lib4.tar.gz
+RUN md5sum mono-5.12.0.226-lib5.tar.gz
+RUN md5sum mono-5.12.0.226-lib6.tar.gz
 RUN tar zxvf mono-5.12.0.226.tar.gz
-RUN rm -rf /usr/codecc/software/mono-5.12.0.226.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib1.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib2.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib3.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib4.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib5.tar.gz
+RUN tar zxvf mono-5.12.0.226-lib6.tar.gz
+RUN rm -rf /usr/codecc/software/*.tar.gz
 RUN chmod -R 755 /usr/codecc/software/mono-5.12.0.226
+RUN ls -l /usr/codecc/software/mono-5.12.0.226
+RUN ls -l /usr/codecc/software/mono-5.12.0.226/lib
 ENV MONO_PATH=/usr/codecc/software/mono-5.12.0.226
 ENV PATH="${MONO_PATH}/bin:${PATH}"
 RUN mkdir -p /usr/codecc/tool_scan
