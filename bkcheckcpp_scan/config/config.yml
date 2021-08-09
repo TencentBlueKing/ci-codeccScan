@@ -1,0 +1,18 @@
+CheckOptions:
+- key: ClassNaming.ClassCase
+  value: CamelCaseWithoutUnderscore
+- key: EnumNaming.EnumNameCase
+  value: CamelCaseWithoutUnderscore
+- key: EnumNaming.EnumClassElementCase
+  value: CamelCaseWithoutUnderscore
+- key: MacroNaming.MacroCase
+  value: UPPER_CASE
+- key: MemberVarNaming.MacroCase
+  value: UPPER_CASE
+- key: NamespaceNaming.NamespaceCase
+  value: LOWER_CASE
+  
+  
+  
+Checks: NamespaceNaming,FileNaming,NoThrow,EnumNaming,MemberVarNaming,MacroNaming,EmptyLoop,ClassAccessSpecifierOrder,ClassNaming
+

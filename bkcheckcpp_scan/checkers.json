@@ -1,0 +1,137 @@
+[
+  {
+    "checkerName": "ClassAccessSpecifierOrder",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "访问控制符需要按照public/protected/private顺序使用",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "ClassNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查类命名规范，默认风格为大驼峰无下划线",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "EnumNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查枚举名命名以及枚举成员命名规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "MacroNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查宏命名规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "MemberVarNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查类、结构体成员变量命名规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "NamespaceNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查namespace命名规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "EmptyLoop",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查循环体是否为空",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "FileNaming",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查文件名的命名规范",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  },
+  {
+    "checkerName": "NoThrow",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "检查是否使用了c++异常",
+    "checkerLanguage": [
+      "C_CPP"
+    ],
+    "rightExample": "",
+    "errExample": "",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "风格"
+    ]
+  }
+]

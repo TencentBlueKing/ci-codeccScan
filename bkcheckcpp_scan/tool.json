@@ -1,0 +1,11 @@
+{
+  "name": "BKCHECK-CPP",
+  "displayName": "bkcheck-cpp",
+  "type": "STANDARD",
+  "briefIntroduction": "基于AST的C++静态代码检查工具",
+  "supportedLanguages": ["C_CPP"],
+  "dockerTriggerShell": "/bin/bash##-c##\"source /etc/bashrc && cd /usr/codecc/tool_scan/bkcheck/cpp && python3 bklauncher.py --input={input.json} --output={output.json}\"",
+  "dockerImageURL": "mirrors.tencent.com/codecc-test/bkcheck-cpp",
+  "dockerImageVersion": "latest",
+  "iconFileName": ""
+}

@@ -1,4 +1,4 @@
-tool/target
+target
 .idea/
 .gradle/
 build.yml
