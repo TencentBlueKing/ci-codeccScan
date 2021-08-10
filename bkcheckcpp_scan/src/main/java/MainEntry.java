@@ -192,6 +192,7 @@ public class MainEntry
             {
                 System.out.println("full try adding file:" + path);
                 findAllFiles(path, fileList);
+                System.out.println("finish full try adding file:" + path);
             }
         }
         else
@@ -201,11 +202,16 @@ public class MainEntry
             {
                 System.out.println("incr try adding file:" + path);
                 findAllFiles(path, fileList);
+                System.out.println("finish incr try adding file:" + path);
             }
         }
 
+        System.out.println("start to create report factory: " + options.getFormat());
+
         ReporterFactory reporterFactory = new ReporterFactory();
         BaseReporter reporter = reporterFactory.getReporter(options.getFormat());
+
+        System.out.println("start to get checkers");
 
         String[] split = configEnableChecks.split(",");
         List<String> configEnableCheckList = Arrays.asList(split);
@@ -219,6 +225,8 @@ public class MainEntry
             {
                 try
                 {
+                    System.out.println("start to get checkers: " + cl.getSimpleName());
+
                     BaseCheck checker = (BaseCheck) cl.newInstance();
                     checker.setCheckOptions(checkOptions);
                     checker.setReporter(reporter);
@@ -242,6 +250,7 @@ public class MainEntry
         AllInOneMaker allInOneMaker = new AllInOneMaker();
         try
         {
+            System.out.println("allInOneMaker make");
             allInOneMaker.make(checkerClass);
         }
         catch (NotFoundException | CannotCompileException | InstantiationException | IllegalAccessException e)
@@ -249,6 +258,7 @@ public class MainEntry
             e.printStackTrace();
         }
 
+        System.out.println("CheckerPool init");
         CheckerPool.init(options.getThread(), checkerClass);
 
         logger.info("file count: " + fileList.size());
