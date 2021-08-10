@@ -118,6 +118,7 @@ public class MainEntry
         {
             if (root.getName().endsWith(".h") || root.getName().endsWith(".c") || root.getName().endsWith(".cpp"))
             {
+                System.out.println("add scan file:" + path);
                 fileList.add(path);
 
             }
@@ -139,8 +140,8 @@ public class MainEntry
                 {
                     if (file.getName().endsWith(".h") || file.getName().endsWith(".c") || file.getName().endsWith(".cpp"))
                     {
+                        System.out.println("add scan file:" + file.getPath());
                         fileList.add(file.getPath());
-
                     }
                 }
             }
