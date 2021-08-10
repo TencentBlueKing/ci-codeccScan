@@ -41,7 +41,7 @@ public class Analyzer implements Runnable
     @Override
     public void run()
     {
-        logger.info("scan file:" + filePath);
+        System.out.println("scan file:" + filePath);
         CPP14Lexer lexer = new CPP14Lexer(CharStreams.fromString(source));
         lexer.removeErrorListeners();
         CommonTokenStream token = new CommonTokenStream(lexer);

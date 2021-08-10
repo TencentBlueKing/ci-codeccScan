@@ -29,14 +29,21 @@ public class CheckerPool
 
     public static void init(int poolSize, List<Class<?>> checkerClass)
     {
+        System.out.println("init pool size: " + poolSize);
+
         pool = new CheckerPool(poolSize, checkerClass);
+
 
         for(int i=0; i<=poolSize; i++)
         {
             String threadName = "checker-thread-" + String.valueOf(i);
+            System.out.println("init thread name: " + threadName);
+
             Map<String, BaseCheck> checkerList = new HashMap<>();
             for(Class<?> clazz : checkerClass)
             {
+                System.out.println("init checker class: " + clazz.getName());
+
                 try
                 {
                     BaseCheck checker = (BaseCheck) clazz.newInstance();
@@ -58,6 +65,8 @@ public class CheckerPool
             allInOneChecker.registerSourceChecker();
             CheckerPool.getInst().allInOneCheckMap.put(threadName, allInOneChecker);
         }
+
+        System.out.println("finish to init checker pool");
     }
 
     public static CheckerPool getInst()

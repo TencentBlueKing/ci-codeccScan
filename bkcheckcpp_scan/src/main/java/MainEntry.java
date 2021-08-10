@@ -99,7 +99,7 @@ public class MainEntry
                     String name = opt1.getLongOpt();
                     //System.out.println(name);
                     String value = commandLine.getOptionValue(name);
-                    logger.info(String.format("command line arg: %s=>%s", name, value));
+                    System.out.println(String.format("command line arg: %s=>%s", name, value));
                 }
             }
         }
@@ -154,7 +154,7 @@ public class MainEntry
         //String[] arg = {"-f", "json", "-j", "4", "-c", "D:\\bkcheck-cpp\\config\\config.yml", "D:\\cppexamples\\nishiki.cpp"};
         CommandLine commandLine = parseOptions(argv);
 
-        logger.info("command args:" + new Gson().toJson(argv));
+        System.out.println("command args:" + new Gson().toJson(argv));
         System.out.println("command args:" + new Gson().toJson(argv));
 
         ConfigOptions options = initOptions(commandLine);
@@ -171,7 +171,7 @@ public class MainEntry
         Yaml yaml = new Yaml();
         Map config = (Map) yaml.load(fis);
         String configEnableChecks = (String) config.get("Checks");
-        logger.info("enable checker:" + configEnableChecks);
+        System.out.println("enable checker:" + configEnableChecks);
 
         String configIncrement = (String) config.get("IncrmentFiles");
 
@@ -183,7 +183,7 @@ public class MainEntry
         {
             checkOptions.put((String) map.get("key"), String.valueOf(map.get("value")));
         }
-        logger.info("checker options:" + new Gson().toJson(checkOptions));
+        System.out.println("checker options:" + new Gson().toJson(checkOptions));
 
         ArrayList<String> fileList = new ArrayList<>();
         if(configIncrement == null || configIncrement.isEmpty())
@@ -261,7 +261,7 @@ public class MainEntry
         System.out.println("CheckerPool init");
         CheckerPool.init(options.getThread(), checkerClass);
 
-        logger.info("file count: " + fileList.size());
+        System.out.println("file count: " + fileList.size());
         BkCheck bkCheck = new BkCheck();
         bkCheck.setPath(fileList);
         bkCheck.setChecksList(enableCheckList);
@@ -297,7 +297,7 @@ public class MainEntry
         {
             //System.out.println(result);
         }
-        logger.info("finish all analysis");
+        System.out.println("finish all analysis");
     }
 
 
