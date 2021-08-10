@@ -103,7 +103,7 @@ public class BkCheck
 
     public void startAnalyze()
     {
-        ExecutorService service = Executors.newFixedThreadPool(processor, new NamedThreadFactory());
+        ExecutorService service = Executors.newFixedThreadPool(processor * 2, new NamedThreadFactory());
         List<Runnable> taskList = new ArrayList<>();
         for(String filePath : fileList)
         {
