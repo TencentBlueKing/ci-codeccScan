@@ -1,7 +1,8 @@
 import checks.AllInOneChecker;
 import common.BaseCheck;
 import common.NamedThreadFactory;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import reporters.BaseReporter;
 
 import java.io.BufferedReader;
@@ -25,7 +26,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class BkCheck
 {
-    private final Logger logger = Logger.getLogger(BkCheck.class);
+    private final Logger logger = LogManager.getLogger(BkCheck.class);
 
     public Map<String, String> getCheckerOptions()
     {

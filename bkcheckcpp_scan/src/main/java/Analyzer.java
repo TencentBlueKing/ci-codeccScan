@@ -8,7 +8,8 @@ import org.antlr.v4.runtime.Parser;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import parser.CPP14Lexer;
 import parser.CPP14Parser;
 import reporters.BaseReporter;
@@ -28,7 +29,7 @@ public class Analyzer implements Runnable
     private final BaseReporter reporter;
     private String filePath;
 
-    private static final Logger logger = Logger.getLogger(Analyzer.class);
+    private static final Logger logger = LogManager.getLogger(Analyzer.class);
 
     public Analyzer(String source, BaseReporter reporter, Map<String, String> checkOptions, String filePath)
     {
