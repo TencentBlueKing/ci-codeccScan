@@ -1,5 +1,6 @@
 import common.BaseCheck;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import reporters.BaseReporter;
 
 import java.io.BufferedReader;
@@ -23,7 +24,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class OCCheck
 {
-    private final Logger logger = Logger.getLogger(OCCheck.class);
+    private final Logger logger = LogManager.getLogger(OCCheck.class);
 
     public Map<String, String> getCheckerOptions()
     {

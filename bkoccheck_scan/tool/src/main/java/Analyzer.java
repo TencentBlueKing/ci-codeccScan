@@ -6,7 +6,8 @@ import org.antlr.v4.runtime.Parser;
 import org.antlr.v4.runtime.RecognitionException;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 import parser.ObjectiveCLexer;
 import parser.ObjectiveCParser;
 
@@ -25,7 +26,7 @@ public class Analyzer implements Runnable
     private final Map<String, String> checkOptions;
     private String filePath;
 
-    private static final Logger logger = Logger.getLogger(Analyzer.class);
+    private static final Logger logger = LogManager.getLogger(Analyzer.class);
 
     public Analyzer(String source, List<BaseCheck> enableCheckList, Map<String, String> checkOptions, String filePath)
     {
