@@ -315,10 +315,13 @@
         {
             "files": ["*.vue"],
             "extends": ["plugin:vue/base"],
+            "parser": "vue-eslint-parser",
             "rules": {
+                "license": "off",
+                "comment-ratio": "off",
                 "vue/no-dupe-keys": "off",
                 "vue/no-parsing-error": "error",
-                "vue/no-reservered-keys": "error",
+                "vue/no-reserved-keys": "error",
                 "vue/no-shared-component-data": "off",
                 "vue/no-template-key": "off",
                 "vue/require-render-return": "error",
@@ -362,6 +365,7 @@
         {
             "files": ["*.js", "*.vue"],
             "extends": ["eslint-config-tencent"],
+            "parser": "vue-eslint-parser",
             "rules": {
                 "import/no-duplicates": "error",
                 "import/first": "error",

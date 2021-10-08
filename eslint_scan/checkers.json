@@ -6291,6 +6291,23 @@
     "checkerProps": []
   },
   {
+    "checkerName": "vue/no-reserved-keys",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeDesc": "这些规则与 JavaScript 代码中可能的错误或逻辑错误有关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "禁止覆盖保留字",
+    "checkerLanguage": [
+      "JS"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
     "checkerName": "vue/no-shared-component-data",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
