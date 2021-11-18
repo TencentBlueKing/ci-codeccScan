@@ -1,3 +1,0 @@
-# txt files will not processed. It will report wrong order if processed.
-val=val
-foo=foo

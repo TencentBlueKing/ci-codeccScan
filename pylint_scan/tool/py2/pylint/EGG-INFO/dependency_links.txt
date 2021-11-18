@@ -1,0 +1,1 @@
+https://github.com/PyCQA/astroid/tarball/master#egg=astroid-master-1.5

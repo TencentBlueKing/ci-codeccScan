@@ -1,476 +1,13 @@
 [
-  {
-    "checkerName": "AbbreviationAsWordInName",
+    {
+    "checkerName": "abstract-class-instantiated1",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "The Check validate abbreviations(consecutive capital letters) length in identifier name, it also allow in enforce camel case naming.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AbstractClassName",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Ensures that the names of abstract classes conforming to some regular expression and check that abstract modifier exists.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnnotationLocation",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "Check location of annotation on language elements.[tencent standards/java 3.85]({scmUrl}/standards/java#385%E5%BF%85%E9%A1%BB%E6%B3%A8%E8%A7%A3)",
-    "checkerDescModel": "Check location of annotation on language elements.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnnotationLocationMostCases",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "Check location of annotation on language elements.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnnotationLocationVariables",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "Check location of annotation on language elements.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnnotationOnSameLine",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "The check does verifying that annotations are located on the same line with their targets.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnnotationUseStyle",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "This check controls the style with the usage of annotations.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AnonInnerLength",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
+    "checkerType": "逻辑相关",
     "checkerTypeSort": "4",
-    "checkerDesc": "Checks for long anonymous inner classes.",
+    "checkerDesc": "Used when an abstract class with abc.ABCMeta as metaclass has abstract methods and is instantiated.",
     "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ArrayTrailingComma",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks if array initialization contains optional trailing comma.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ArrayTypeStyle",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks the style of array type definitions.[tencent standards/java 3.83]({scmUrl}/standards/java#383%E5%BF%85%E9%A1%BB%E6%95%B0%E7%BB%84)",
-    "checkerDescModel": "Checks the style of array type definitions.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AtclauseOrder",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks the order of at-clauses.[tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks the order of at-clauses.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AvoidEscapedUnicodeCharacters",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Restrict using Unicode escapes.[tencent standards/java 2.142]({scmUrl}/standards/java#2142%E5%BF%85%E9%A1%BB%E7%89%B9%E6%AE%8A%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6)",
-    "checkerDescModel": "Restrict using Unicode escapes.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AvoidInlineConditionals",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Detects inline conditionals.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AvoidNestedBlocks",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Finds nested blocks.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AvoidStarImport",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Check that finds import statements that use the * notation.[tencent standards/java 2.231]({scmUrl}/standards/java#2231%E5%BF%85%E9%A1%BBimport%E4%B8%8D%E8%A6%81%E4%BD%BF%E7%94%A8%E9%80%9A%E9%85%8D%E7%AC%A6)",
-    "checkerDescModel": "Check that finds import statements that use the * notation.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "AvoidStaticImport",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Check that finds static imports.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "BooleanExpressionComplexity",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "Restricts nested boolean operators (&&, ||, &, | and ^) to a specified depth (default = 3).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CatchParameterName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that catch parameter names conform to a format specified by the format property.[tencent standards/java 5.1]({scmUrl}/standards/java#51%E6%8E%A8%E8%8D%90%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7)",
-    "checkerDescModel": "Checks that catch parameter names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ClassDataAbstractionCoupling",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "This metric measures the number of instantiations of other classes within the given class.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ClassFanOutComplexity",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "The number of other classes a given class relies on.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ClassTypeParameterName",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that class type parameter names conform to a format specified by the format property.[tencent standards/java 4.8]({scmUrl}/standards/java#48%E6%8E%A8%E8%8D%90%E6%B3%9B%E5%9E%8B%E5%8F%98%E9%87%8F%E5%90%8D)",
-    "checkerDescModel": "Checks that class type parameter names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CommentRatioCheck",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks for a minimum comment ratio(the threshold is 10%).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CommentsIndentation",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Controls the indentation between comments and surrounding code.[tencent standards/java 3.2]({scmUrl}/standards/java#32%E5%BF%85%E9%A1%BB%E5%9D%97%E7%BC%A9%E8%BF%9B4%E4%B8%AA%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Controls the indentation between comments and surrounding code.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ConstantName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that constant names conform to a format specified by the format property.[tencent standards/java 4.4]({scmUrl}/standards/java#44%E5%BF%85%E9%A1%BB%E5%B8%B8%E9%87%8F%E5%90%8D)",
-    "checkerDescModel": "Checks that constant names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CovariantEquals",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that if a class defines a covariant method equals, then it defines method equals(java.lang.Object).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CustomImportOrder",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Checks that the groups of import declarations appear in the order specified by the user.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "CyclomaticComplexity",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "Checks cyclomatic complexity against a specified limit.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "10",
-        "displayValue": "10"
-      }
-    ]
-  },
-  {
-    "checkerName": "DeclarationOrder",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that the parts of a class or interface declaration appear in the order suggested by the Code Conventions for the Java Programming Language.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "DefaultComesLast",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Check that the default is after all the cases in a switch statement.",
-    "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -479,1606 +16,14 @@
     "checkerProps": []
   },
   {
-    "checkerName": "DescendantToken",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks for restricted tokens beneath other tokens.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "DesignForExtension",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Checks that classes are designed for inheritance.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyBlock",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks for empty blocks but does not validate sequential blocks.[tencent standards/java 3.13]({scmUrl}/standards/java#313%E6%8E%A8%E8%8D%90%E7%A9%BA%E5%9D%97%E5%8F%AF%E4%BB%A5%E7%94%A8%E7%AE%80%E6%B4%81%E7%89%88%E6%9C%AC)",
-    "checkerDescModel": "Checks for empty blocks but does not validate sequential blocks.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyCatchBlock",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks for empty catch blocks with few options to skip violation.[tencent standards/java 5.1]({scmUrl}/standards/java#51%E6%8E%A8%E8%8D%90%E5%BC%82%E5%B8%B8%E6%8D%95%E8%8E%B7)",
-    "checkerDescModel": "Checks for empty catch blocks with few options to skip violation.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyForInitializerPad",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks the padding of an empty for initializer; that is whether a space is required at an empty for initializer, or such spaces are forbidden.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyForIteratorPad",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks the padding of an empty for iterator; that is whether a space is required at an empty for iterator, or such spaces are forbidden.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyLineSeparator",
+    "checkerName": "abstract-class-instantiated",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks for blank line separators.[tencent standards/java 2.141]({scmUrl}/standards/java#2141%E5%BF%85%E9%A1%BB%E7%A9%BA%E7%99%BD%E5%AD%97%E7%AC%A6)，[tencent standards/java 3.61]({scmUrl}/standards/java#361%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C)",
-    "checkerDescModel": "Checks for blank line separators.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EmptyStatement",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Detects empty statements (standalone ';').",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EqualsAvoidNull",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that any combination of String literals is on the left side of an equals() comparison.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EqualsHashCode",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that classes that override equals() also override hashCode().",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "EscapeSequence",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "对于具有特殊转义序列的任何字符(\\b, \\t, \\n, \\f, \\r, \", '及\\)，我们使用它的转义序列，而不是相应的八进制(比如\\012)或Unicode(比如\\u000a)转义。",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ExecutableStatementCount",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
+    "checkerType": "逻辑相关",
     "checkerTypeSort": "4",
-    "checkerDesc": "Restricts the number of executable statements to a specified limit (default = 30).",
+    "checkerDesc": "Used when an abstract class with abc.ABCMeta as metaclass has abstract methods and is instantiated.",
     "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ExplicitInitialization",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks if any class or object member explicitly initialized to default for its type value (null for object references, zero for numeric types and char and false for boolean.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FallThrough",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for fall through in switch statements Finds locations where a case contains Java code - but lacks a break, return, throw or continue statement.[tencent standards/java 3.842]({scmUrl}/standards/java#3842%E5%BF%85%E9%A1%BB%E7%BB%A7%E7%BB%AD%E5%90%91%E4%B8%8B%E6%89%A7%E8%A1%8C%E7%9A%84%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks for fall through in switch statements Finds locations where a case contains Java code - but lacks a break, return, throw or continue statement.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FileEncodingCheck",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks source files are encoded in UTF-8.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FileLength",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks for long source files.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "2000",
-        "displayValue": "2000"
-      }
-    ]
-  },
-  {
-    "checkerName": "FileTabCharacter",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks to see if a file contains a tab character.[tencent standards/java 2.141]({scmUrl}/standards/java#2141%E5%BF%85%E9%A1%BB%E7%A9%BA%E7%99%BD%E5%AD%97%E7%AC%A6)",
-    "checkerDescModel": "Checks to see if a file contains a tab character.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FinalClass",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Checks that class which has only private constructors is declared as final.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FinalLocalVariable",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Ensures that local variables that never get their values changed, must be declared final.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "FinalParameters",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Check that method/constructor/catch/foreach parameters are final.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "GenericWhitespace",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that the whitespace around the Generic tokens < and > are correct to the typical convention.[tencent standards/java 3.62]({scmUrl}/standards/java#362%E5%BF%85%E9%A1%BB%E8%A1%8C%E5%86%85%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Checks that the whitespace around the Generic tokens < and > are correct to the typical convention.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "Header",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "头部相关",
-    "checkerTypeSort": "11",
-    "checkerDesc": "Checks the header of the source against a fixed header file.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "HiddenField",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that a local variable or a parameter does not shadow a field that is defined in the same class.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "HideUtilityClassConstructor",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Make sure that utility classes (classes that contain only static methods) do not have a public constructor.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalCatch",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Catching java.lang.Exception, java.lang.Error or java.lang.RuntimeException is almost never acceptable.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalImport",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Checks for imports from a set of illegal packages.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalInstantiation",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for illegal instantiations where a factory method is preferred.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalThrows",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Throwing java.lang.Error or java.lang.RuntimeException is almost never acceptable.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalToken",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for illegal tokens.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalTokenText",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for illegal token text.[tencent standards/java 3.73]({scmUrl}/standards/java#373%E5%BF%85%E9%A1%BB%E6%89%80%E6%9C%89%E5%85%B6%E4%BB%96%E6%95%B0%E5%AD%97%E5%89%8D%E7%BC%80%E4%B8%AD%E7%BC%80%E5%92%8C%E5%90%8E%E7%BC%80%E5%9D%87%E5%BA%94%E4%BD%BF%E7%94%A8%E5%B0%8F%E5%86%99%E5%AD%97%E6%AF%8D)",
-    "checkerDescModel": "Checks for illegal token text.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "IllegalType",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that particular classes or interfaces are never used.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ImportOrder",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Ensures that groups of imports come in a specific order.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "Indentation",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks correct indentation of Java Code.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": [
-      {
-        "propName": "throwsIndent",
-        "propValue": "8",
-        "displayValue": "8"
-      },
-      {
-        "propName": "lineWrappingIndentation",
-        "propValue": "8",
-        "displayValue": "8"
-      }
-    ]
-  },
-  {
-    "checkerName": "InnerAssignment",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for assignments in subexpressions, such as in String s = Integer.toString(i = 2);.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "InnerTypeLast",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Check nested (internal) classes/interfaces are declared at the bottom of the class after all method and field declarations.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "InterfaceIsType",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Implements Bloch, Effective Java, Item 17 - Use Interfaces only to define types.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "InterfaceTypeParameterName",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that interface type parameter names conform to a format specified by the format property.[tencent standards/java 4.8]({scmUrl}/standards/java#48%E6%8E%A8%E8%8D%90%E6%B3%9B%E5%9E%8B%E5%8F%98%E9%87%8F%E5%90%8D)",
-    "checkerDescModel": "Checks that interface type parameter names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "InvalidJavadocPosition",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks that Javadocs are located at the correct position.[tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks that Javadocs are located at the correct position.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavaNCSS",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "This check calculates the Non Commenting Source Statements (NCSS) metric for Java source files and methods.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocMethod",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks the Javadoc of a method or constructor.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocPackage",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks that all packages have a package documentation.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocParagraph",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks Javadoc paragraphs.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocStyle",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Custom Checkstyle Check to validate Javadoc.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocTagContinuationIndentation",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks the indentation of the continuation lines in at-clauses.[tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks the indentation of the continuation lines in at-clauses.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocType",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks the Javadoc of a type.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "JavadocVariable",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks that a variable has Javadoc comment.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LambdaParameterName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Check to verify lambda parameter names.[tencent standards/java 3.86]({scmUrl}/standards/java#386%E5%BF%85%E9%A1%BBlambda%E8%A1%A8%E8%BE%BE%E5%BC%8F)",
-    "checkerDescModel": "Check to verify lambda parameter names.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LeftCurly",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks the placement of left curly braces on types, methods and other blocks:[tencent standards/java 3.12]({scmUrl}/standards/java#312%E5%BF%85%E9%A1%BB%E9%9D%9E%E7%A9%BA%E5%9D%97k-r-%E9%A3%8E%E6%A0%BC)",
-    "checkerDescModel": "Checks the placement of left curly braces on types, methods and other blocks:",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LicenseCheck",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "头部相关",
-    "checkerTypeSort": "11",
-    "checkerDesc": "Checks license headers are present in source files.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LineLength",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks for long lines.[tencent standards/java 3.4]({scmUrl}/standards/java#34%E5%BF%85%E9%A1%BB%E8%A1%8C%E9%95%BF%E5%BA%A6%E9%99%90%E5%88%B6)",
-    "checkerDescModel": "Checks for long lines.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "100",
-        "displayValue": "100"
-      }
-    ]
-  },
-  {
-    "checkerName": "LineLength-tosa",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks for long lines(the default threshold is 120).",
-    "checkerDescModel": "Checks for long lines(the default threshold is %s).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "120",
-        "displayValue": "120"
-      }
-    ]
-  },
-  {
-    "checkerName": "LineSeparatorCheck",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks correct line separator style(use LF, no CR).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LocalFinalVariableName",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that local final variable names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "LocalVariableName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that local, non-final variable names conform to a format specified by the format property.[tencent standards/java 4.7]({scmUrl}/standards/java#47%E5%BF%85%E9%A1%BB%E5%B1%80%E9%83%A8%E5%8F%98%E9%87%8F%E5%90%8D)",
-    "checkerDescModel": "Checks that local, non-final variable names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MagicNumber",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for magic numbers.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MemberName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that instance variable names conform to a format specified by the format property.[tencent standards/java 4.5]({scmUrl}/standards/java#45%E5%BF%85%E9%A1%BB%E9%9D%9E%E5%B8%B8%E9%87%8F%E6%88%90%E5%91%98%E5%8F%98%E9%87%8F)",
-    "checkerDescModel": "Checks that instance variable names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MethodCount",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks the number of methods declared in each type declaration by access modifier or total count.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": [
-      {
-        "propName": "maxTotal",
-        "propValue": "100",
-        "displayValue": "100"
-      }
-    ]
-  },
-  {
-    "checkerName": "MethodLength",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks for long methods(the default threshold is 150).",
-    "checkerDescModel": "Checks for long methods(the default threshold is %s).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "150",
-        "displayValue": "150"
-      }
-    ]
-  },
-  {
-    "checkerName": "MethodName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that method names conform to a format specified by the format property.[tencent standards/java 4.3]({scmUrl}/standards/java#43%E5%BF%85%E9%A1%BB%E6%96%B9%E6%B3%95%E5%90%8D)",
-    "checkerDescModel": "Checks that method names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MethodName-tosa",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that method names conform to a format specified by the format property(The function name has no more than 35 characters).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "腾讯开源"
-    ],
-    "checkerProps": [
-      {
-        "propName": "format",
-        "propValue": "^[a-zA-Z0-9_]{1,35}$",
-        "displayValue": "^[a-zA-Z0-9_]{1,35}$"
-      }
-    ]
-  },
-  {
-    "checkerName": "MethodParamPad",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks the padding between the identifier of a method definition, constructor definition, method call, or constructor invocation; and the left parenthesis of the parameter list.[tencent standards/java 3.62]({scmUrl}/standards/java#362%E5%BF%85%E9%A1%BB%E8%A1%8C%E5%86%85%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Checks the padding between the identifier of a method definition, constructor definition, method call, or constructor invocation; and the left parenthesis of the parameter list.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MethodTypeParameterName",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that class type parameter names conform to a format specified by the format property.[tencent standards/java 4.8]({scmUrl}/standards/java#48%E6%8E%A8%E8%8D%90%E6%B3%9B%E5%9E%8B%E5%8F%98%E9%87%8F%E5%90%8D)",
-    "checkerDescModel": "Checks that class type parameter names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MissingCtor",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that classes (except abstract one) define a ctor and don't rely on the default one.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MissingDeprecated",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "This class is used to verify that both the java.lang.Deprecated annotation is present and the @deprecated Javadoc tag is present when either is present.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MissingJavadocMethod",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks for missing Javadoc comments for a method or constructor.[tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks for missing Javadoc comments for a method or constructor.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MissingOverride",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "This class is used to verify that the java.lang.Override annotation is present when the {@inheritDoc} javadoc tag is present.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MissingSwitchDefault",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that switch statement has \"default\" clause.[tencent standards/java 3.843]({scmUrl}/standards/java#3843%E5%BF%85%E9%A1%BBdefault-%E9%9C%80%E8%A6%81%E5%AD%98%E5%9C%A8)",
-    "checkerDescModel": "Checks that switch statement has \"default\" clause.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ModifiedControlVariable",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Check for ensuring that for loop control variables are not modified inside the for block.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ModifierOrder",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "修饰符",
-    "checkerTypeSort": "12",
-    "checkerDesc": "Checks that the order of modifiers conforms to the suggestions in the Java Language specification, sections 8.1.1, 8.3.1 and 8.4.3.[tencent standards/java 3.88]({scmUrl}/standards/java#388%E6%8E%A8%E8%8D%90%E4%BF%AE%E9%A5%B0%E7%AC%A6)",
-    "checkerDescModel": "Checks that the order of modifiers conforms to the suggestions in the Java Language specification, sections 8.1.1, 8.3.1 and 8.4.3.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MultipleStringLiterals",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for multiple occurrences of the same string literal within a single file.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MultipleVariableDeclarations",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that each variable declaration is in its own statement and on its own line.[tencent standards/java 3.82]({scmUrl}/standards/java#382%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)",
-    "checkerDescModel": "Checks that each variable declaration is in its own statement and on its own line.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "MutableException",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Ensures that exceptions (defined as any class name conforming to some regular expression) are immutable.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NPathComplexity",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "复杂度",
-    "checkerTypeSort": "6",
-    "checkerDesc": "Checks the npath complexity against a specified limit (default = 200).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NeedBraces",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks for braces around code blocks.[tencent standards/java 3.11]({scmUrl}/standards/java#311%E5%BF%85%E9%A1%BB%E4%BD%BF%E7%94%A8%E5%A4%A7%E6%8B%AC%E5%8F%B7)",
-    "checkerDescModel": "Checks for braces around code blocks.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NestedForDepth",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Restricts nested for blocks to a specified depth (default = 2).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "2",
-        "displayValue": "2"
-      }
-    ]
-  },
-  {
-    "checkerName": "NestedIfDepth",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Restricts nested if-else blocks to a specified depth (default = 3).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "3",
-        "displayValue": "3"
-      }
-    ]
-  },
-  {
-    "checkerName": "NestedTryDepth",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Restricts nested try-catch-finally blocks to a specified depth (default = 1).",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": [
-      {
-        "propName": "max",
-        "propValue": "1",
-        "displayValue": "1"
-      }
-    ]
-  },
-  {
-    "checkerName": "NewlineAtEndOfFile",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks that there is a newline at the end of each file.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NoClone",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that the clone method is not overridden from the Object class.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NoFinalizer",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that no method having zero parameters is defined using the name finalize.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NoLineWrap",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that chosen statements are not line-wrapped.[tencent standards/java 2.232]({scmUrl}/standards/java#2232%E5%BF%85%E9%A1%BBimport%E4%B8%8D%E8%A6%81%E6%8D%A2%E8%A1%8C)",
-    "checkerDescModel": "Checks that chosen statements are not line-wrapped.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NoWhitespaceAfter",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that there is no whitespace after a token.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NoWhitespaceBefore",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that there is no whitespace before a token.[tencent standards/java 3.62]({scmUrl}/standards/java#362%E5%BF%85%E9%A1%BB%E8%A1%8C%E5%86%85%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Checks that there is no whitespace before a token.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "NonEmptyAtclauseDescription",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks that the at-clause tag is followed by description .",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "OneStatementPerLine",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that there is only one statement per line.[tencent standards/java 3.3]({scmUrl}/standards/java#33%E5%BF%85%E9%A1%BB%E4%B8%80%E8%A1%8C%E6%9C%80%E5%A4%9A%E4%B8%80%E4%B8%AA%E8%AF%AD%E5%8F%A5)",
-    "checkerDescModel": "Checks that there is only one statement per line.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "OneTopLevelClass",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Checks that each top-level class, interfaces or enum resides in a source file of its own.[tencent standards/java 2.241]({scmUrl}/standards/java#2241%E5%BF%85%E9%A1%BB%E5%8F%AA%E6%9C%89%E4%B8%80%E4%B8%AA%E9%A1%B6%E7%BA%A7%E7%B1%BB%E5%A3%B0%E6%98%8E)",
-    "checkerDescModel": "Checks that each top-level class, interfaces or enum resides in a source file of its own.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "OperatorWrap",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping for operators.[tencent standards/java 3.5]({scmUrl}/standards/java#35%E5%BF%85%E9%A1%BB%E9%95%BF%E8%A1%8C%E6%96%AD%E8%A1%8C)",
-    "checkerDescModel": "Checks line wrapping for operators.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": [
-      {
-        "propName": "tokens",
-        "propValue": "BAND, BOR, BSR, BXOR, DIV, EQUAL, GE, GT, LAND, LE, LITERAL_INSTANCEOF, LOR, LT, MINUS, MOD, NOT_EQUAL, PLUS, QUESTION, SL, SR, STAR, METHOD_REF",
-        "displayValue": "BAND, BOR, BSR, BXOR, DIV, EQUAL, GE, GT, LAND, LE, LITERAL_INSTANCEOF, LOR, LT, MINUS, MOD, NOT_EQUAL, PLUS, QUESTION, SL, SR, STAR, METHOD_REF"
-      }
-    ]
-  },
-  {
-    "checkerName": "OuterTypeFilename",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks that the outer type name and the file name match.[tencent standards/java 2.11]({scmUrl}/standards/java#211%E5%BF%85%E9%A1%BB%E6%96%87%E4%BB%B6%E5%90%8D)",
-    "checkerDescModel": "Checks that the outer type name and the file name match.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "OuterTypeNumber",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
-    "checkerTypeSort": "4",
-    "checkerDesc": "Checks for the number of defined types at the \"outer\" level.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "OverloadMethodsDeclarationOrder",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that overload methods are grouped together.[tencent standards/java 2.243]({scmUrl}/standards/java#2243%E5%BF%85%E9%A1%BB%E9%87%8D%E8%BD%BD%E6%96%B9%E6%B3%95%E4%B8%8D%E5%BA%94%E8%AF%A5%E5%88%86%E5%BC%80)",
-    "checkerDescModel": "Checks that overload methods are grouped together.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "PackageAnnotation",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "This check makes sure that all package annotations are in the package-info.java file.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "PackageDeclaration",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Ensures there is a package declaration and (optionally) in the correct directory.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "PackageName",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that package names conform to a format specified by the format property.[tencent standards/java 4.1]({scmUrl}/standards/java#41%E5%BF%85%E9%A1%BB%E5%8C%85%E5%90%8D)",
-    "checkerDescModel": "Checks that package names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ParameterAssignment",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Disallow assignment of parameters.",
-    "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2087,31 +32,30 @@
     "checkerProps": []
   },
   {
-    "checkerName": "ParameterName",
-    "severity": 1,
+    "checkerName": "abstract-method",
+    "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that parameter names conform to a format specified by the format property.[tencent standards/java 4.6]({scmUrl}/standards/java#46%E5%BF%85%E9%A1%BB%E5%8F%82%E6%95%B0%E5%90%8D)",
-    "checkerDescModel": "Checks that parameter names conform to a format specified by the format property.",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an abstract method (i.e. raise NotImplementedError) is not overridden in concrete class.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
-      "系统推荐"
+      "最佳实践"
     ],
     "checkerProps": []
   },
   {
-    "checkerName": "ParameterNumber",
+    "checkerName": "access-member-before-definition",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "长度限制",
+    "checkerType": "逻辑相关",
     "checkerTypeSort": "4",
-    "checkerDesc": "Checks the number of parameters that a method or constructor has.",
+    "checkerDesc": "Used when an instance member is accessed before it's actually assigned.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_DEFAULT",
     "checkerTag": [
@@ -2120,159 +64,30 @@
     "checkerProps": []
   },
   {
-    "checkerName": "ParenPad",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks the padding of parentheses; that is whether a space is required after a left parenthesis and before a right parenthesis, or such spaces are forbidden, with the exception that it does not check for padding of the right parenthesis at an empty for iterator.[tencent standards/java 3.62]({scmUrl}/standards/java#362%E5%BF%85%E9%A1%BB%E8%A1%8C%E5%86%85%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Checks the padding of parentheses; that is whether a space is required after a left parenthesis and before a right parenthesis, or such spaces are forbidden, with the exception that it does not check for padding of the right parenthesis at an empty for iterator.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RedundantImport",
+    "checkerName": "anomalous-backslash-in-string",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Checks for imports that are redundant.",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a backslash is in a literal string but not as an escape.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
-      "系统推荐"
+      "最佳实践"
     ],
     "checkerProps": []
   },
   {
-    "checkerName": "RedundantModifier",
+    "checkerName": "anomalous-unicode-escape-in-string",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "修饰符",
-    "checkerTypeSort": "12",
-    "checkerDesc": "Checks for redundant modifiers in interface and annotation definitions, final modifier on methods of final classes, inner interface declarations that are declared as static, non public class constructors and enum constructors, nested enum definitions that are declared as static.",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an escape like \\u is encountered in a byte string where it has no effect.",
     "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "Regexp",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "正则相关",
-    "checkerTypeSort": "13",
-    "checkerDesc": "A check that makes sure that a specified pattern exists (or not) in the file.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RegexpHeader",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "头部相关",
-    "checkerTypeSort": "11",
-    "checkerDesc": "Checks the header of a java source file against a header that contains a regular expression for each line of the source header.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RegexpMultiline",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "正则相关",
-    "checkerTypeSort": "13",
-    "checkerDesc": "Implementation of a check that looks that matches across multiple lines in any file type.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RegexpOnFilename",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "正则相关",
-    "checkerTypeSort": "13",
-    "checkerDesc": "Implementation of a check that matches based on file and/or folder path.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RegexpSingleline",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "正则相关",
-    "checkerTypeSort": "13",
-    "checkerDesc": "Implementation of a check that looks for a single line in any file type.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RegexpSinglelineJava",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "正则相关",
-    "checkerTypeSort": "13",
-    "checkerDesc": "Implementation of a check that looks for a single line in Java files.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RequireThis",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that code doesn't rely on the \"this\" default.",
-    "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2281,80 +96,14 @@
     "checkerProps": []
   },
   {
-    "checkerName": "ReturnCount",
+    "checkerName": "arguments-differ",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Restricts return statements to a specified count (default = 2).",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a method has a different number of arguments than in the implemented interface or in an overridden method.",
     "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RightCurly",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks the placement of right curly braces.[tencent standards/java 3.12]({scmUrl}/standards/java#312%E5%BF%85%E9%A1%BB%E9%9D%9E%E7%A9%BA%E5%9D%97k-r-%E9%A3%8E%E6%A0%BC)",
-    "checkerDescModel": "Checks the placement of right curly braces.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RightCurlyAlone",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks the placement of right curly braces.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "RightCurlySame",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "代码块相关",
-    "checkerTypeSort": "5",
-    "checkerDesc": "Checks the placement of right curly braces.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SeparatorWrap",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with separators.[tencent standards/java 3.5]({scmUrl}/standards/java#35%E5%BF%85%E9%A1%BB%E9%95%BF%E8%A1%8C%E6%96%AD%E8%A1%8C)",
-    "checkerDescModel": "Checks line wrapping with separators.",
-    "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_DEFAULT",
     "checkerTag": [
@@ -2363,94 +112,14 @@
     "checkerProps": []
   },
   {
-    "checkerName": "SeparatorWrapArrayDeclarator",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with separators Array Declarator.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SeparatorWrapComma",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with separators COMMA.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SeparatorWrapDot",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with separators DOT.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SeparatorWrapEllipsis",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with separators Ellipsis.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SeparatorWrapMethodRef",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks line wrapping with Method Ref.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SimplifyBooleanExpression",
+    "checkerName": "assert-on-tuple",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for overly complicated boolean expressions.",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "A call of assert on a tuple will always evaluate to true if the tuple is not empty, and will always evaluate to false if it is.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_DEFAULT",
     "checkerTag": [
@@ -2459,14 +128,78 @@
     "checkerProps": []
   },
   {
-    "checkerName": "SimplifyBooleanReturn",
+    "checkerName": "assigning-non-slot",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when assigning to an attribute not defined in the class slots.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "assignment-from-no-return",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an assignment is done on a function call but the inferred function doesn't return anything.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "assignment-from-none",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an assignment is done on a function call but the inferred function returns nothing but None.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "astroid-error",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an unexpected error occurred while building the Astroid representation. This is usually accompanied by a traceback. Please report such errors !",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "attribute-defined-outside-init",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks for overly complicated boolean return statements.",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an instance attribute is defined outside the init method.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2475,15 +208,14 @@
     "checkerProps": []
   },
   {
-    "checkerName": "SingleLineJavadoc",
+    "checkerName": "bad-classmethod-argument",
     "severity": 3,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
+    "checkerType": "风格规范",
     "checkerTypeSort": "1",
-    "checkerDesc": "Checks that a JavaDoc block which can fit on a single line and doesn't contain at-clauses [tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks that a JavaDoc block which can fit on a single line and doesn't contain at-clauses",
+    "checkerDesc": "Used when a class method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to \"cls\"), recommended to easily differentiate them from regular instance methods.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2492,14 +224,15 @@
     "checkerProps": []
   },
   {
-    "checkerName": "SingleSpaceSeparator",
-    "severity": 3,
+    "checkerName": "bad-continuation",
+    "severity": 4,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that non-whitespace characters are separated by no more than one whitespace.",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Wrong continued indentation before block (add 4 spaces).[tencent standards/python 1.1.2]",
+    "checkerDescModel": "Wrong continued indentation before block (add 4 spaces)",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2508,134 +241,230 @@
     "checkerProps": []
   },
   {
-    "checkerName": "SpaceIndentationCheck",
+    "checkerName": "bad-except-order",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when except clauses are not in the correct order (from the more specific to the more generic). If you don't fix the order, some exceptions may not be caught by the most specific handler.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-exception-context",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when using the syntax \"raise ... from ...\", where the exception context is not an exception, nor None. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-format-character",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a unsupported format character is used in a format string.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-format-string",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks consistent spaces indentation(the default threshold is 4).",
-    "checkerDescModel": "Checks consistent spaces indentation(the default threshold is %s).",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string is invalid. This message can't be emitted when using Python < 2.7.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
-    "checkerRecommend": "USER_DEFINED",
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-format-string-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a format string that uses named conversion specifiers is used with a dictionary whose keys are not all strings.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-indentation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when an unexpected number of indentation's tabulations or spaces has been found.[tencent standards/python 1.1.1]",
+    "checkerDescModel": "Used when an unexpected number of indentation's tabulations or spaces has been found.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-inline-option",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an inline option is either badly formatted or can't be used inside modules.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-mcs-classmethod-argument",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a metaclass class method has a first argument named differently than the value specified in valid-metaclass-classmethod-first-arg option (default to \"mcs\"), recommended to easily differentiate them from regular instance methods.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-mcs-method-argument",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a metaclass method has a first argument named differently than the value specified in valid-classmethod-first-arg option (default to \"cls\"), recommended to easily differentiate them from regular instance methods.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-open-mode",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Python supports: r, w, a[, x] modes with b, +, and U (only with r) options. See http://docs.python.org/2/library/functions.html#open",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-option-value",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a bad value for an inline option is encountered.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-reversed-sequence",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when the first argument to reversed() builtin isn't a sequence (does not implement reversed, nor getitem and len",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "bad-space-indentation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when an unexpected number of indentation's spaces has been found(the default threshold is 4).",
+    "checkerDescModel": "Used when an unexpected number of indentation's spaces has been found(the default threshold is %s).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
       "腾讯开源"
     ],
     "checkerProps": [
       {
-        "propName": "basicOffset",
+        "propName": "space-indent-size",
         "propValue": "4",
         "displayValue": "4"
       }
     ]
   },
   {
-    "checkerName": "StaticVariableName",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that static, non-final variable names conform to a format specified by the format property.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "StringLiteralEquality",
+    "checkerName": "bad-staticmethod-argument",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that string literals are not used with == or !=.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SummaryJavadoc",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
-    "checkerTypeSort": "1",
-    "checkerDesc": "Checks that Javadoc summary sentence does not contain phrases that are not recommended to use.[tencent standards/java 3.89]({scmUrl}/standards/java#389%E5%8F%AF%E9%80%89java-doc-%E6%B3%A8%E9%87%8A)",
-    "checkerDescModel": "Checks that Javadoc summary sentence does not contain phrases that are not recommended to use.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SuperClone",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that an overriding clone() method invokes super.clone().",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SuperFinalize",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks that an overriding finalize() method invokes super.finalize().",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "SuppressWarnings",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "注释相关",
-    "checkerTypeSort": "14",
-    "checkerDesc": "This check allows you to specify what warnings that",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "ThrowsCount",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
+    "checkerType": "最佳实践",
     "checkerTypeSort": "8",
-    "checkerDesc": "Restricts throws statements to a specified count (default = 4).",
+    "checkerDesc": "Used when a static method has \"self\" or a value specified in valid- classmethod-first-arg option or valid-metaclass-classmethod-first-arg option as first argument.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2644,242 +473,47 @@
     "checkerProps": []
   },
   {
-    "checkerName": "TodoComment",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "A check for TODO comments.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "TrailingComment",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "The check to ensure that requires that comments be the only thing on a line.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "Translation",
+    "checkerName": "bad-str-strip-call",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "The TranslationCheck class helps to ensure the correct translation of code by checking property files for consistency regarding their keys.",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "The argument to a str.{l,r,}strip call contains a duplicate character,",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
-      "最佳实践"
+      "逻辑规则"
     ],
     "checkerProps": []
   },
   {
-    "checkerName": "TypeName",
+    "checkerName": "bad-super-call",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "命名规范",
-    "checkerTypeSort": "9",
-    "checkerDesc": "Checks that type names conform to a format specified by the format property.[tencent standards/java 4.2]({scmUrl}/standards/java#42%E5%BF%85%E9%A1%BB%E7%B1%BB%E5%90%8D)",
-    "checkerDescModel": "Checks that type names conform to a format specified by the format property.",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when another argument than the current class is given as first argument of the super builtin.",
     "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "TypecastParenPad",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks the padding of parentheses for typecasts.",
-    "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
-      "风格规范"
+      "逻辑规则"
     ],
     "checkerProps": []
   },
   {
-    "checkerName": "UncommentedMain",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Detects uncommented main methods.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "UniqueProperties",
+    "checkerName": "bad-whitespace",
     "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Detects duplicated keys in properties files.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "UnnecessaryParentheses",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks if unnecessary parentheses are used in a statement or expression.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "UnusedImports",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Import相关",
-    "checkerTypeSort": "0",
-    "checkerDesc": "Checks for unused import statements.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "UpperEll",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "其他",
-    "checkerTypeSort": "10",
-    "checkerDesc": "Checks that long constants are defined with an upper ell.[tencent standards/java 3.71]({scmUrl}/standards/java#371%E5%BF%85%E9%A1%BBlong%E5%BA%94%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%86%99%E5%AD%97%E6%AF%8Dl%E5%90%8E%E7%BC%80)",
-    "checkerDescModel": "Checks that long constants are defined with an upper ell.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "VariableDeclarationUsageDistance",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "编程相关",
-    "checkerTypeSort": "3",
-    "checkerDesc": "Checks the distance between declaration of variable and its first usage.[tencent standards/java 3.82]({scmUrl}/standards/java#382%E5%BF%85%E9%A1%BB%E5%8F%98%E9%87%8F%E5%A3%B0%E6%98%8E)",
-    "checkerDescModel": "Checks the distance between declaration of variable and its first usage.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_DEFAULT",
-    "checkerTag": [
-      "系统推荐"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "VisibilityModifier",
-    "severity": 2,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "类设计",
-    "checkerTypeSort": "8",
-    "checkerDesc": "Checks visibility of class members.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "最佳实践"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "WhitespaceAfter",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that a token is followed by whitespace, with the exception that it does not check for whitespace after the semicolon of an empty for iterator.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "WhitespaceAround",
-    "severity": 1,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "空格相关",
-    "checkerTypeSort": "7",
-    "checkerDesc": "Checks that a token is surrounded by whitespace.[tencent standards/java 3.62]({scmUrl}/standards/java#362%E5%BF%85%E9%A1%BB%E8%A1%8C%E5%86%85%E7%A9%BA%E6%A0%BC)",
-    "checkerDescModel": "Checks that a token is surrounded by whitespace.",
-    "checkerLanguage": [
-      "JAVA"
-    ],
-    "checkerRecommend": "SYSTEM_RECOMMEND",
-    "checkerTag": [
-      "风格规范"
-    ],
-    "checkerProps": []
-  },
-  {
-    "checkerName": "WriteTag",
-    "severity": 3,
-    "checkerCategory": "CODE_FORMAT",
-    "checkerType": "Javadoc注释",
+    "checkerType": "风格规范",
     "checkerTypeSort": "1",
-    "checkerDesc": "Outputs a JavaDoc tag as information.",
+    "checkerDesc": "Used when a wrong number of spaces is used around an operator, bracket or block opener.[tencent standards/python 1.3.1]",
+    "checkerDescModel": "Used when a wrong number of spaces is used around an operator, bracket or block opener.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2888,14 +522,47 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.ClassMemberNaming",
+    "checkerName": "bare-except",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an except clause doesn't specify exceptions type to catch.[tencent standards/python 2.4.3]",
+    "checkerDescModel": "Used when an except clause doesn't specify exceptions type to catch.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "binary-op-exception",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查函数成员变量是否符合Camel命名规范，且以m开头，没有则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when the exception to catch is of the form \"except A or B:\". If intending to catch multiple, rewrite as \"except (A, B):\"",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "blacklisted-name",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when the name is listed in the black list (unauthorized names).",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2904,14 +571,238 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.EnumNaming",
+    "checkerName": "broad-except",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an except catches a too general exception, possibly burying unrelated errors.[tencent standards/python 2.4.3]",
+    "checkerDescModel": "Used when an except catches a too general exception, possibly burying unrelated errors.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "c-extension-no-member",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查枚举名称是否符合Pascal命名规范，枚举值是否全部大写，没有则给出告警",
+    "checkerDesc": "Alternatively, since pylint emits a separate error for attributes that cannot be found in C extensions, c-extension-no-member, you can disable this error for your project.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "catching-non-exception",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a class which doesn't inherit from Exception is used as an exception in an except clause.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "cell-var-from-loop",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "A variable used in a closure is defined in a loop. This will result in all closures using the same value for the closed-over variable.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "confusing-with-statement",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Emitted when a with statement component returns multiple values and uses name binding with as only for a part of those values, as in with ctx() as a, b. This can be misleading, since it's not clear if the context manager returns a tuple or if the node without a name binding is another context manager.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consider-iterating-dictionary",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Emitted when the keys of a dictionary are iterated through the .keys() method. It is enough to just iterate through the dictionary itself, as in \"for key in dictionary\".",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consider-merging-isinstance",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when multiple consecutive isinstance calls can be merged into one.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consider-using-enumerate",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Emitted when code that iterates with range and len is encountered. Such code can be simplified by using the enumerate builtin.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "consider-using-ternary",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when one of known pre-python 2.5 ternary syntax is used.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "continue-in-finally",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when the continue keyword is found inside a finally clause, which is a SyntaxError.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "cyclic-import",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a cyclic import between two or more modules is detected.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "dangerous-default-value",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a mutable value as list or dictionary is detected in a default value for an argument.[tencent standards/python 2.8.2]",
+    "checkerDescModel": "Used when a mutable value as list or dictionary is detected in a default value for an argument.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "deprecated-method",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "The method is marked as deprecated and will be removed in a future version of Python. Consider looking for an alternative in the documentation.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "deprecated-module",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used a module marked as deprecated is imported.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "deprecated-pragma",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Some inline pylint options have been renamed or reworked, only the most recent form should be used. NOTE:skip-all is only available with pylint >= 0.26",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2920,14 +811,94 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.FinalMemberNaming",
+    "checkerName": "duplicate-argument-name",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Duplicate argument names in function definitions are syntax errors.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "duplicate-bases",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a class has duplicate bases.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "duplicate-code",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查final成员命名是否全部大写，否则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Indicates that a set of similar lines has been detected among multiple file. This usually means that the code should be refactored to avoid this duplication.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "duplicate-except",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an except catches a type that was already caught by a previous handler.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "duplicate-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a dictionary expression binds the same key multiple times.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "empty-docstring",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a module, function, class or method has an empty docstring (it would be too easy ;).",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2936,14 +907,335 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.HeaderComment",
+    "checkerName": "eval-used",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查文件头是否包含Version、Module、Author字段注释，没有则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when you use the \"eval\" function, to discourage its usage. Consider using ast.literal_eval for safely evaluating strings containing Python expressions from untrusted sources.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "exec-used",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when you use the \"exec\" statement (function for Python 3), to discourage its usage. That doesn't mean you cannot use it !",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "expression-not-assigned",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an expression that is not a function call is assigned to nothing. Probably something else was intended.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "fatal",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "used when an error occurred preventing the analysis of a module (unable to find it for instance).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "file-ignored",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used to inform that the file will not be checked",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "fixme",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a warning note as FIXME or XXX is detected.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "format-combined-specification",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string contains both automatic field numbering (e.g. '{}') and manual field specification (e.g. '{0}'). This message can't be emitted when using Python < 2.7.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "format-needs-mapping",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string that uses named conversion specifiers is used with an argument that is not a mapping.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "function-name-too-long",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when a name is longer than a given number of characters(the threshold is 35).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "function-redefined",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function / class / method is redefined.[tencent standards/python 2.8.1]",
+    "checkerDescModel": "Used when a function / class / method is redefined.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "global-at-module-level",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when you use the \"global\" statement at the module level since it has no effect",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "global-statement",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when you use the \"global\" statement to update a global variable. Pylint just try to discourage this usage. That doesn't mean you cannot use it !",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "global-variable-not-assigned",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a variable is defined through the \"global\" statement but no assignment to this variable is done.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "global-variable-undefined",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a variable is defined through the \"global\" statement but the variable is not defined in the module scope.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import-error",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when pylint has been unable to import a module.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "import-self",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a module is importing itself.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "inconsistent-mro",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a class has an inconsistent method resolution order.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "inherit-non-class",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a class inherits from something which is not a class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "init-is-generator",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when the special class method init is turned into a generator by a yield in its body.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-all-object",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an invalid (non-string) object occurs in all.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-characters-in-docstring",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a word in docstring cannot be checked by enchant.",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2952,14 +1244,260 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.InterfaceNaming",
+    "checkerName": "invalid-format-index",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查接口名称是否符合Pascal命名规范，且以I开头，否则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string uses a lookup specifier ({a[1]}), but the argument passed for formatting doesn't contain or doesn't have that key as an attribute. This message can't be emitted when using Python < 2.7.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-length-returned",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an len method returns something which is not a non-negative integer",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-metaclass",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted whenever we can detect that a class is using, as a metaclass, something which might be invalid for using as a metaclass.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when the name doesn't match the regular expression associated to its type (constant, variable, class...).  [tencent standards/python 1.18.1]",
+    "checkerDescModel": "Used when the name doesn't match the regular expression associated to its type (constant, variable, class...).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "good-names",
+        "propValue": "TDW_PL"
+    }
+    ],
+    "editable": "true"
+  },
+  {
+    "checkerName": "invalid-sequence-index",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a sequence type is indexed with an invalid type. Valid types are ints, slices, and objects with an index method.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-slice-index",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a slice index is not an integer, None, or an object with an index method.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-slots",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an invalid slots is found in class. Only a string, an iterable or a sequence is permitted.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-slots-object",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an invalid (non-string) object occurs in slots.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-star-assignment-target",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a star expression is used as a starred assignment target. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "invalid-unary-operand-type",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a unary operand is used on an object which does not support this type of operation",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "len-as-condition",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when Pylint detects incorrect use of len(sequence) inside conditions.[tencent standards/python 2.6.2]",
+    "checkerDescModel": "Used when Pylint detects incorrect use of len(sequence) inside conditions.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "line-too-long",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a line is longer than a given number of characters.[tencent standards/python 1.2.1]",
+    "checkerDescModel": "Used when a line is longer than a given number of characters.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": [
+      {
+        "propName": "max-line-length",
+        "propValue": "120",
+        "displayValue": "120"
+      }
+    ]
+  },
+  {
+    "checkerName": "line-too-long-tosa",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when a line is longer than a given number of characters(the default threshold is 120).",
+    "checkerDescModel": "Used when a line is longer than a given number of characters(the default threshold is %s).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "max-line-length",
+        "propValue": "120",
+        "displayValue": "120"
+      }
+    ]
+  },
+  {
+    "checkerName": "literal-comparison",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when comparing an object to a literal, which is usually what you do not want to do, since you can compare to a different literal than what was expected altogether.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "locally-disabled",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when an inline option disables a message or a messages category.",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2968,14 +1506,14 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.MethodNaming",
-    "severity": 2,
+    "checkerName": "locally-enabled",
+    "severity": 3,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查函数名称是否符合Camel命名规范，没有则给出告警",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when an inline option enables a message or a messages category.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -2984,14 +1522,190 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.MethodParamNaming",
+    "checkerName": "logging-format-interpolation",
     "severity": 2,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查函数参数是否符合Camel命名规范，没有则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a logging statement has a call form of \"logging.method>(format_string.format(format_args...))\". Such calls should use % formatting instead, but leave interpolation to the logging function by passing the parameters as arguments.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "logging-format-truncated",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a logging statement format string terminates before the end of a conversion specifier.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "logging-not-lazy",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a logging statement has a call form of \"logging.(format_string % (format_args...))\". Such calls should leave string interpolation to the logging method itself and be written \"logging.(format_string, format_args...)\" so that the program may avoid incurring the cost of the interpolation in those cases in which no message will be logged. For more, see http://www.python.org/dev/peps/pep-0282/.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "logging-too-few-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a logging format string is given too few arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "logging-too-many-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a logging format string is given too many arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "logging-unsupported-format",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an unsupported format character is used in a logging statement format string.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "lost-exception",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a break or a return statement is found inside the finally clause of a try...finally block: the exceptions raised in the try clause will be silently swallowed instead of being re-raised.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "low-comment-ratio",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when the comment ratio is lower than expected(the threshold is 10%).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "method-check-failed",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when Pylint has been unable to check methods signature compatibility for an unexpected reason. Please report this kind if you don't make sense of it.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "method-hidden",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a class defines a method which is hidden by an instance attribute from an ancestor class or set by some client code.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "misplaced-bare-raise",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a bare raise is not used inside an except clause. This generates an error, since there are no active exceptions to be reraised. An exception to this rule is represented by a bare raise inside a finally clause, which might work, as long as an exception is raised inside the try block, but it is nevertheless a code smell that must not be relied upon.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "misplaced-comparison-constant",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when the constant is placed on the left side of a comparison. It is usually clearer in intent to place it in the right hand side of the comparison.",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
@@ -3000,18 +1714,1994 @@
     "checkerProps": []
   },
   {
-    "checkerName": "onesdk.PackageNaming",
-    "severity": 2,
+    "checkerName": "misplaced-future",
+    "severity": 1,
     "checkerCategory": "CODE_FORMAT",
-    "checkerType": "OneSDK编码规范",
-    "checkerTypeSort": "2",
-    "checkerDesc": "检查package名称是否包含com.tencent.gcloud，没有则给出告警",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Python 2.5 and greater require future import to be the first non docstring statement in the module.[tencent standards/python 1.10.2]",
+    "checkerDescModel": "Python 2.5 and greater require future import to be the first non docstring statement in the module.",
     "checkerLanguage": [
-      "JAVA"
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-docstring",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a module, function, class or method has no docstring.Some special methods like init doesn't necessary require a docstring.",
+    "checkerLanguage": [
+      "PYTHON"
     ],
     "checkerRecommend": "SYSTEM_RECOMMEND",
     "checkerTag": [
       "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-final-newline",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when the last line in a file is missing a newline.[tencent standards/python 1.6.3]",
+    "checkerDescModel": "Used when the last line in a file is missing a newline.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-format-argument-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string that uses named fields doesn't receive one or more required keywords. This message can't be emitted when using Python < 2.7.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-format-attribute",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string uses an attribute specifier ({0.length}), but the argument passed for formatting doesn't have that attribute. This message can't be emitted when using Python < 2.7.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-format-string-key",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string that uses named conversion specifiers is used with a dictionary that doesn't contain all the keys required by the format string.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-kwoa",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function call does not pass a mandatory keyword-only argument. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "missing-license",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when a file has no license.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "mixed-format-string",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string contains both named (e.g. '%(foo)d') and unnamed (e.g. '%d') conversion specifiers. This is also used when a named conversion specifier contains * for the minimum field width and/or precision.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "mixed-indentation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when there are some mixed tabs and spaces in a module.[tencent standards/python 1.1.1]",
+    "checkerDescModel": "Used when there are some mixed tabs and spaces in a module.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "mixed-line-endings",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "[tencent standards/python 1.7.2]\nUsed when there are mixed (LF and CRLF) newline signs in a file.",
+    "checkerDescModel": "Used when there are mixed (LF and CRLF) newline signs in a file.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "multiple-imports",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when import statement importing multiple modules is detected.[tencent standards/python 1.9.1]",
+    "checkerDescModel": "Used when import statement importing multiple modules is detected.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "multiple-statements",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when more than on statement are found on the same line.[tencent standards/python 1.6.4]",
+    "checkerDescModel": "Used when more than on statement are found on the same line.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-classmethod-decorator",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a class method is defined without using the decorator syntax.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-else-return",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used in order to highlight an unnecessary block of code following an if containing a return statement. As such, it will warn when it encounters an else following a chain of ifs, all of them containing a return statement.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-init",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a class has no init method, neither its parent classes.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-member",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a variable is accessed for an unexistent member.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-method-argument",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a method which should have the bound instance as first argument has no argument defined.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-name-in-module",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a name cannot be found in a module.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-self-argument",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a method has an attribute different the \"self\" as first argument. This is considered as an error since this is a so common convention that you shouldn't break it!",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-self-use",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a method doesn't use its bound instance, and so could be written as a function.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-staticmethod-decorator",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a static method is defined without using the decorator syntax.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "no-value-for-parameter",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function call passes too few arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "non-iterator-returned",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an iter method returns something which is not an iterable (i.e. has no __next__ method)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "non-parent-init-called",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an init method is called on a class which is not in the direct ancestors for the analysed class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "nonexistent-operator",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when you attempt to use the C-style pre-increment orpre-decrement operator -- and ++, which doesn't exist in Python.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "nonlocal-and-global",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a name is both nonlocal and global. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "nonlocal-without-binding",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a nonlocal variable does not have an attached name somewhere in the parent scopes This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-a-mapping",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a non-mapping value is used in place where mapping is expected",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-an-iterable",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a non-iterable value is used in place where iterable is expected",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-async-context-manager",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an async context manager is used with an object that does not implement the async context management protocol. This message can't be emitted when using Python < 3.5.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-callable",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an object being called has been inferred to a non callable object",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-context-manager",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an instance in a with statement doesn't implement the context manager protocol(enter/exit).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "not-in-loop",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when break or continue keywords are used outside a loop.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "notimplemented-raised",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when NotImplemented is raised instead of NotImplementedError",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "parse-error",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an exception occured while building the Astroid representation which could be handled by astroid.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "pointless-statement",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a statement doesn't have (or at least seems to) any effect.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "pointless-string-statement",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a string is used as a statement (which of course has no effect).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "protected-access",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a protected member (i.e. class member with a name beginning with an underscore) is access outside the class or a descendant of the class where it's defined.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "raising-bad-type",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when something which is neither a class, an instance or a string is raised (i.e. a TypeError will be raised).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "raising-non-exception",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a new style class which doesn't inherit from BaseException is raised.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "raw-checker-failed",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used to inform that a built-in module has not been checked using the raw checkers.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redefine-in-handler",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an exception handler assigns the exception to an existing name",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redefined-argument-from-local",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a local name is redefining an argument, which might suggest a potential error. This is taken in account only for a handful of name binding operations, such as for iteration, with statement assignment and exception handler assignment.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redefined-builtin",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a variable or function override a built-in.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redefined-outer-name",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a variable's name hide a name defined in the outer scope.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redundant-keyword-arg",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function call would result in assigning multiple values to a function parameter, one value from a positional argument and one from a keyword argument.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "redundant-unittest-assert",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "The first argument of assertTrue and assertFalse is a condition. If a constant is passed as parameter, that condition will be always true. In this case a warning should be emitted.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "reimported",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a module is reimported multiple times.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "relative-beyond-top-level",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a relative import tries to access too many levels in the curren package.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "repeated-keyword",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a function call got multiple values for a keyword.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "return-in-init",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when the special class method init has an explicit return value.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "return-outside-function",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a \"return\" statement is found outside a function or method.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "signature-differs",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a method signature is different than in the implemented interface or in an overridden method.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "simplifiable-if-statement",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an if statement can be replaced with 'bool(test)'.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "single-string-used-for-slots",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a class slots is a simple string, rather than an iterable.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "singleton-comparison",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when an expression is compared to singleton values like True, False or None.[tencent standards/python 2.6.1]",
+    "checkerDescModel": "Used when an expression is compared to singleton values like True, False or None.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "star-needs-assignment-target",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a star expression is not used in an assignment target. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "super-init-not-called",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an ancestor class method has an init method which is not called by a derived class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "superfluous-parens",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a single item in parentheses follows an if, for, or other keyword.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "suppressed-message",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "A message was triggered on a line, but suppressed explicitly by a disable= comment in the file. This message is not generated for messages that are ignored due to configuration settings.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "syntax-error",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a syntax error is raised for a module.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-few-format-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string that uses unnamed conversion specifiers is given too few arguments",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-few-public-methods",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when class has too few public methods, so be sure it's really worth it.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-ancestors",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when class has too many parent classes, try to reduce this to get a simpler (and so easier to use) class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-arguments",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method takes too many arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-boolean-expressions",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a if statement contains too many boolean expressions",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-branches",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method has too many branches, making it hard to follow.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-format-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string that uses unnamed conversion specifiers is given too many arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-function-args",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function call passes too many positional arguments.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-instance-attributes",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when class has too many instance attributes, try to reduce this to get a simpler (and so easier to use) class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-lines",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a module has too much lines, reducing its readability.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-locals",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method has too many local variables.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-nested-blocks",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or a method has too many nested blocks. This makes the code less understandable and maintainable.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-public-methods",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when class has too many public methods, try to reduce this to get a simpler (and so easier to use) class.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-return-statements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method has too many return statement, making it hard to follow.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-star-expressions",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when there are more than one starred expressions (*x) in an assignment. This is a SyntaxError. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "too-many-statements",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method has too many statements. You should then split it in smaller functions / methods.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "trailing-comma-tuple",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "In Python, a tuple is actually created by the comma symbol, not by the parentheses. Unfortunately, one can actually create a tuple by misplacing a trailing comma, which can lead to potential weird bugs in your code. You should always use parentheses explicitly for creating a tuple. This message can't be emitted when using Python < 3.0.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "trailing-newlines",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when there are trailing blank lines in a file.[tencent standards/python 1.6.3]",
+    "checkerDescModel": "Used when there are trailing blank lines in a file.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "trailing-whitespace",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when there is whitespace between the end of a line and the newline.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "truncated-format-string",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a format string terminates before the end of a conversion specifier.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unbalanced-tuple-unpacking",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when there is an unbalanced tuple unpacking in assignment",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "undefined-all-variable",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an undefined variable name is referenced in all.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "undefined-loop-variable",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an loop variable (i.e. defined by a for loop or a list comprehension or a generator expression) is used outside the loop.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "undefined-variable",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an undefined variable is accessed.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unexpected-file-encoding",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "Used when a name is longer than a given number of characters(the threshold is 35).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unexpected-keyword-arg",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a function call passes a keyword argument that doesn't correspond to one of the function's parameter names.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unexpected-line-ending-format",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when there is different newline than expected.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": [
+      {
+        "propName": "expected-line-ending-format",
+        "propValue": "LF",
+        "displayValue": "LF"
+      }
+    ]
+  },
+  {
+    "checkerName": "unexpected-line-ending-format-tosa",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "惯例",
+    "checkerTypeSort": "2",
+    "checkerDesc": "[tencent standards/python 1.7.2]\nUsed when there is different newline than expected(use LF, no CR).",
+    "checkerDescModel": "Used when there is different newline than expected(use LF, no CR).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "腾讯开源"
+    ],
+    "checkerProps": [
+      {
+        "propName": "expected-line-ending-format",
+        "propValue": "LF",
+        "displayValue": "LF"
+      }
+    ]
+  },
+  {
+    "checkerName": "unexpected-special-method-signature",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a special method was defined with an invalid number of parameters. If it has too few or too many, it might not work at all.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "ungrouped-imports",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when imports are not grouped by packages",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unidiomatic-typecheck",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "he idiomatic way to perform an explicit typecheck in Python is to use isinstance(x, Y) rather than type == Y, type is Y. Though there are unusual situations where these give different results.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unnecessary-lambda",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when the body of a lambda expression is a function call on the same argument list as the lambda itself; such lambda expressions are in all but a few cases replaceable with the function being called in the body of the lambda.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unnecessary-pass",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a \"pass\" statement that can be avoided is encountered.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unnecessary-semicolon",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a statement is ended by a semi-colon (\";\"), which isn't necessary (that's python, not C ;).",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unneeded-not",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a boolean expression contains an unneeded negation.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unpacking-non-sequence",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when something which is not a sequence is used in an unpack assignment",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unreachable",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when there is some code behind a \"return\" or \"raise\" statement, which will never be accessed.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unrecognized-inline-option",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an unknown inline option is encountered.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unsubscriptable-object",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a subscripted value doesn't support subscription(i.e. doesn't define getitem method)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unsupported-assignment-operation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when an object does not support item assignment (i.e. doesn't define setitem method)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unsupported-binary-operation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a binary arithmetic operation between two operands is not supported.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unsupported-delete-operation",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when an object does not support item deletion (i.e. doesn't define delitem method)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unsupported-membership-test",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when an instance in membership test expression doesn't implement membership protocol (contains/iter/getitem)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-argument",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a function or method argument is not used.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-format-string-argument",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a PEP 3101 format string that uses named fields is used with an argument that is not required by the format string. This message can't be emitted when using Python < 2.7.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-format-string-key",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a format string that uses named conversion specifiers is used with a dictionary that contains keys not required by the format string.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-import",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an imported module or variable is not used.[tencent standards/python 1.9.4]",
+    "checkerDescModel": "Used when an imported module or variable is not used.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-variable",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when a variable is defined but not used.[tencent standards/python 2.9.1]",
+    "checkerDescModel": "Used when a variable is defined but not used.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "unused-wildcard-import",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when an imported module or variable is not used from a 'from X import *' style import.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "used-before-assignment",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a local variable is accessed before it's assignment.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "useless-else-on-loop",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Loops should only have an else clause if they can exit early with a break statement, otherwise the statements under else should be on the same scope as the loop itself.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "useless-super-delegation",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used whenever we can detect that an overridden method is useless, relying on super() delegation to do the same thing as another method from the MRO.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "useless-suppression",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Reported when a message is explicitly disabled for a line or a block of code, but never triggered.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "using-constant-test",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Emitted when a conditional statement (If or ternary if) uses a constant value for its test. This might not be what the user intended to do.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wildcard-import",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "最佳实践",
+    "checkerTypeSort": "8",
+    "checkerDesc": "Used when from module import * is detected.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "最佳实践"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrong-import-order",
+    "severity": 4,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when PEP8 import order is not respected (standard imports first, then third-party libraries, then local imports).[tencent standards/python 1.9.2]",
+    "checkerDescModel": "Used when PEP8 import order is not respected (standard imports first, then third-party libraries, then local imports)",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrong-import-position",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when code and imports are mixed",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrong-spelling-in-comment",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a word in comment is not spelled correctly.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "wrong-spelling-in-docstring",
+    "severity": 3,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "风格规范",
+    "checkerTypeSort": "1",
+    "checkerDesc": "Used when a word in docstring is not spelled correctly.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "风格规范"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "yield-inside-async-function",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when an yield or yield from statement is found inside an async function. This message can't be emitted when using Python < 3.5.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_RECOMMEND",
+    "checkerTag": [
+      "逻辑规则"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "yield-outside-function",
+    "severity": 1,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerType": "逻辑相关",
+    "checkerTypeSort": "4",
+    "checkerDesc": "Used when a \"yield\" statement is found outside a function or method.",
+    "checkerLanguage": [
+      "PYTHON"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
     ],
     "checkerProps": []
   }

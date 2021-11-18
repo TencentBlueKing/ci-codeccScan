@@ -1,1 +1,0 @@
-/Users/jimxzcai/workspace/checkstyle-checkstyle-8.29/./src/test/resources/com/puppycrawl/tools/checkstyle/checks/regexp/regexpsingleline/InputRegexpSinglelineSemantic.java
