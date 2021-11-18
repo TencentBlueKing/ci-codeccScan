@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+editdistance/__init__.py
+editdistance/_editdistance.cpp
+editdistance/_editdistance.h
+editdistance/bycython.cpp
+editdistance.egg-info/PKG-INFO
+editdistance.egg-info/SOURCES.txt
+editdistance.egg-info/dependency_links.txt
+editdistance.egg-info/top_level.txt

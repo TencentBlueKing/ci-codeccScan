@@ -1,0 +1,9 @@
+packaging>=16.8
+six>=1.6.0
+appdirs>=1.4.0
+
+[certs]
+certifi==2016.9.26
+
+[ssl:sys_platform=='win32']
+wincertstore==0.2
