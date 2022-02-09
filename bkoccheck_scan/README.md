@@ -20,6 +20,6 @@
 
 6.MR代码到test分支
 
-7.执行流水线部署http://{devops.public.url}/console/pipeline/codecc-tool-auto/p-1fbe8e5688d44447b74e34d06dec5031
+7.执行流水线部署
 
 8.测试完成提合并请求到master分支，由工具负责人审核评估后正式发布到生产

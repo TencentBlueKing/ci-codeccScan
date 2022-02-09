@@ -1,9 +1,9 @@
 [
     {
         "checker_set_id": "ts_standard",
-        "checker_set_name": "腾讯代码规范(TS规则集)",
+        "checker_set_name": "CodeCC默认(TS规则集)",
         "checker_set_lang": "TYPESCRIPT",
-        "description": "根据公司规范持续更新...",
+        "description": "持续更新中...",
         "checker_props": [
             {
                 "tool_name": "ESLINT",
@@ -119,7 +119,7 @@
     },
     {
         "checker_set_id": "ts_standard_stockproj",
-        "checker_set_name": "腾讯代码规范(TS简化规则集)",
+        "checker_set_name": "CodeCC默认(TS简化规则集)",
         "checker_set_lang": "TYPESCRIPT",
         "description": "存量项目使用的规则集",
         "checker_props": [
