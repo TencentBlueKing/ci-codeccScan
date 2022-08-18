@@ -1,0 +1,450 @@
+{
+  "code": 200,
+  "message": "Scan complete!",
+  "defects": [
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-auth-verify.lua",
+      "line": "152",
+      "checkerName": "W631",
+      "description": "line is too long (121 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-auth-verify.lua",
+      "line": "173",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-auth-verify.lua",
+      "line": "183",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-components/bkauth-legacy.lua",
+      "line": "27",
+      "checkerName": "W631",
+      "description": "line is too long (123 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-delete-sensitive.lua",
+      "line": "33",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-delete-sensitive.lua",
+      "line": "33",
+      "checkerName": "W212",
+      "description": "unused argument 'ctx'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-jwt.lua",
+      "line": "123",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-jwt.lua",
+      "line": "125",
+      "checkerName": "W631",
+      "description": "line is too long (131 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-request-id.lua",
+      "line": "32",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-request-id.lua",
+      "line": "41",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/plugins/bk-thunderstone.lua",
+      "line": "21",
+      "checkerName": "W212",
+      "description": "unused argument 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "21",
+      "checkerName": "W411",
+      "description": "variable 'token' was previously defined on line 17"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "21",
+      "checkerName": "W411",
+      "description": "variable 'err' was previously defined on line 17"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "41",
+      "checkerName": "W212",
+      "description": "unused argument 'self'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "41",
+      "checkerName": "W212",
+      "description": "unused argument 'timeout'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'self'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'url'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'params'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "90",
+      "checkerName": "W631",
+      "description": "line is too long (138 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth-legacy.lua",
+      "line": "102",
+      "checkerName": "W631",
+      "description": "line is too long (138 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "21",
+      "checkerName": "W411",
+      "description": "variable 'token' was previously defined on line 17"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "21",
+      "checkerName": "W411",
+      "description": "variable 'err' was previously defined on line 17"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "41",
+      "checkerName": "W212",
+      "description": "unused argument 'self'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "41",
+      "checkerName": "W212",
+      "description": "unused argument 'timeout'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'self'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'url'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "42",
+      "checkerName": "W212",
+      "description": "unused argument 'params'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "72",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "84",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "86",
+      "checkerName": "W631",
+      "description": "line is too long (131 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "96",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "98",
+      "checkerName": "W631",
+      "description": "line is too long (131 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "108",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "120",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-components/test-bkauth.lua",
+      "line": "132",
+      "checkerName": "W631",
+      "description": "line is too long (132 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "2",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "6",
+      "checkerName": "W211",
+      "description": "unused variable 'ngx_header'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "31",
+      "checkerName": "W111",
+      "description": "setting non-standard global variable 'err'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "34",
+      "checkerName": "W631",
+      "description": "line is too long (125 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "35",
+      "checkerName": "W631",
+      "description": "line is too long (123 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/bk-core/test-error-codes.lua",
+      "line": "38",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'err'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-validate.lua",
+      "line": "1",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "2",
+      "checkerName": "W211",
+      "description": "unused variable 'request'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "3",
+      "checkerName": "W211",
+      "description": "unused variable 'response'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "120",
+      "checkerName": "W431",
+      "description": "shadowing upvalue 'mock_token' on line 15"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "120",
+      "checkerName": "W431",
+      "description": "shadowing upvalue 'mock_token_err' on line 15"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "127",
+      "checkerName": "W212",
+      "description": "unused argument 'plugin_name'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "212",
+      "checkerName": "W631",
+      "description": "line is too long (124 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "220",
+      "checkerName": "W631",
+      "description": "line is too long (146 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "250",
+      "checkerName": "W631",
+      "description": "line is too long (122 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "258",
+      "checkerName": "W631",
+      "description": "line is too long (147 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "282",
+      "checkerName": "W631",
+      "description": "line is too long (145 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "299",
+      "checkerName": "W631",
+      "description": "line is too long (122 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "310",
+      "checkerName": "W631",
+      "description": "line is too long (122 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "326",
+      "checkerName": "W631",
+      "description": "line is too long (122 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "337",
+      "checkerName": "W631",
+      "description": "line is too long (123 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "401",
+      "checkerName": "W631",
+      "description": "line is too long (170 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-auth-verify.lua",
+      "line": "402",
+      "checkerName": "W631",
+      "description": "line is too long (171 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-delete-sensitive.lua",
+      "line": "1",
+      "checkerName": "W211",
+      "description": "unused variable 'jwt'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-delete-sensitive.lua",
+      "line": "2",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-delete-sensitive.lua",
+      "line": "3",
+      "checkerName": "W211",
+      "description": "unused variable 'request'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-jwt.lua",
+      "line": "2",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-jwt.lua",
+      "line": "66",
+      "checkerName": "W212",
+      "description": "unused argument 'plugin_name'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-jwt.lua",
+      "line": "160",
+      "checkerName": "W631",
+      "description": "line is too long (123 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-jwt.lua",
+      "line": "173",
+      "checkerName": "W631",
+      "description": "line is too long (140 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-jwt.lua",
+      "line": "175",
+      "checkerName": "W631",
+      "description": "line is too long (143 > 120)"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-request-id.lua",
+      "line": "1",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-request-id.lua",
+      "line": "54",
+      "checkerName": "W431",
+      "description": "shadowing upvalue 'ctx' on line 11"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-stage-context.lua",
+      "line": "1",
+      "checkerName": "W211",
+      "description": "unused variable 'core'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-thunderstone.lua",
+      "line": "43",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-thunderstone.lua",
+      "line": "95",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/test-bk-thunderstone.lua",
+      "line": "106",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/thunderstone/test-runner.lua",
+      "line": "147",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'conf'"
+    },
+    {
+      "filePath": "D:/user_test/micro-gateway-master/micro-gateway-master/apisix/tests/thunderstone/test-runner.lua",
+      "line": "158",
+      "checkerName": "W113",
+      "description": "accessing undefined variable 'conf'"
+    }
+  ]
+}
