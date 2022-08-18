@@ -1,4 +1,3 @@
-# 保存执行的规范 使用 --enable选项
 import getopt
 import json
 import os
@@ -58,10 +57,6 @@ def loadInputJson(inputJson):
     if 'scanType' in jsonData:
         global scanType
         scanType = jsonData['scanType']
-
-    # if 'skipPaths' in jsonData:
-    #     global skipPath
-    #     skipPath = jsonData['skipPaths']
 
     print("enable checkers:" + str(enableChecker))
     print("checkerOptions:" + str(checkerOptions))
@@ -196,8 +191,6 @@ def main(argv):
         configFileCmd = ""
     enableCmd = " --only ["
     enableCheckerCount = len(enableChecker)
-    # 因为如果使用str直接将数组输出的话，元素中间会有空格，这会导致luacheck无法执行
-    # 所以使用for循环添加 skip一样
     isEnable = False
     if enableCheckerCount > 0:
         isEnable = True
@@ -209,17 +202,6 @@ def main(argv):
             if index + 1 != enableCheckerCount:
                 enableCmd += ","
         enableCmd += "] "
-    # 工具文件忽略有问题，暂时忽略掉文件过滤
-    # skipCmd = " --exclude-files ["
-    # isSkip = False
-    # skipPathCount = len(skipPath)
-    # if skipPathCount > 0:
-    #     isSkip = True
-    #     for i in range(0, skipPathCount):
-    #         skipCmd += ("'" + skipPath[i] + "'")
-    #         if i + 1 != skipPathCount:
-    #             skipCmd += ','
-    #     skipCmd += "]"
     configCmd = ""
     for i in range(0, len(checkerOptions)):
         options = checkerOptions[i]
@@ -244,8 +226,6 @@ def main(argv):
     runCmd = appCmd + codeCmd + scanPath + configFileCmd
     if isEnable:
         runCmd += enableCmd
-    # if isSkip:
-    #     runCmd += skipCmd
 
     ti = time.time()
     newTime = round(ti * 1000)
