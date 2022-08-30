@@ -1,0 +1,767 @@
+[
+  {
+    "checkerName": "E011",
+    "severity": 1,
+    "checkerCategory": "CODE_DEFECT",
+    "checkerDesc": "A syntax error.",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "E021",
+    "severity": 1,
+    "checkerCategory": "CODE_DEFECT",
+    "checkerDesc": "An invalid inline option..",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "E022",
+    "severity": 1,
+    "checkerCategory": "CODE_DEFECT",
+    "checkerDesc": "An unpaired inline push directive。",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "E023",
+    "severity": 1,
+    "checkerCategory": "CODE_DEFECT",
+    "checkerDesc": "An unpaired inline pop directive。",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W111",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Setting an undefined global variable。[规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "a = {b=1,[1] = 2, {}, 4, 5, \"abc\", function() end} \n foo {123, b = 456, {789}, function() a = {1} end}",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W112",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Mutating an undefined global variable。Try to use local to define variables so that they are not misused as global variables and pollute the namespace[规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W113",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Accessing an undefined global variable.Try to use local to define variables so that they are not misused as global variables and pollute the namespace[规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W121",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Setting a read-only global variable. By default, most standard globals and fields are marked as read-only, so that setting them produces a warning.  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W122",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Setting a read-only field of a global variable. By default, most standard globals and fields are marked as read-only, so that setting them produces a warning.  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W131",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Unused implicitly defined global variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W142",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Setting an undefined field of a global variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W143",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Accessing an undefined field of a global variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#global-variables-1xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W211",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Unused local variable [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W212",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Unused argument. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W213",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "The loop variable is not in use. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W221",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Local variable is accessed but never set. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W231",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Local variable is set but never accessed. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W232",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "An argument is set but never accessed. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W233",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Loop variable is set but never accessed. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W241",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Local variables change, but are never accessed. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W311",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Value assigned to a local variable is unused. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W312",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Value of an argument is unused. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W313",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Value of a loop variable is unused. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W314",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Value of a field in a table literal is unused.  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "a = {b=1,[1] = 2, {}, 4, 5, \"abc\", function() end} ",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W321",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Accessing uninitialized local variable.  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "local bar \n print(bar)",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W331",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Value assigned to a local variable is mutated but never accessed. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W341",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Mutating uninitialized local variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#unused-variables-2xx-and-values-3xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W411",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Redefining a local variable.   [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "local function f(x) \n end \n local function f(x)\n end ",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W412",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Redefining an argument. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "local function f(x)\n   \t local x = x or \"default\" -- bad\n end",
+    "rightExample": "local function f(x)\n   x = x or \"default\" -- bad\n end",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W413",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Redefining a loop variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W421",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing a local variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W422",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing an argument. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W423",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing a loop variable. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W431",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing an upvalue. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W432",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing an upvalue argument. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W433",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Shadowing an upvalue loop variable.[规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#shadowing-declarations-4xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W511",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Unreachable code. foe example:  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "for i = 1, 100 do\n   \t-- Break statement is outside the `if` block,\n\t   -- so that the loop always stops after the first iteration.\n\t   if cond(i) then f() end break\n end",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W512",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Loop can be executed at most once.  [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "for i = 1, 100 do",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W521",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Unused label, Labels that are not used by any goto statements are reported as unused. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W531",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Left-hand side of an assignment is too short. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W532",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Left-hand side of an assignment is too long. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W541",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "An empty do end block. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W542",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "An empty if branch. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W551",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "An empty statement. In Lua 5.2+ semicolons are considered statements and can appear even when not following normal statements. Such semicolons produce Luacheck warnings as they are completely useless. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W561",
+    "severity": 2,
+    "checkerCategory": "COMPLEXITY",
+    "checkerDesc": "Cyclomatic complexity of a function is too high. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": [
+      {
+        "propName": "max",
+        "propValue": "20",
+        "displayValue": "20"
+      }
+    ]
+  },
+  {
+    "checkerName": "W571",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "A numeric for loop goes from #(expr) down to 1 or less without negative step, [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#control-flow-and-data-flow-issues-5xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "for i = #t, 1 do\n\t   print(t[i])\n end  \n correct for example: \n for i = #t, 1, -1 do\n   \tprint(t[i])\n end ",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W611",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "A line consists of nothing but whitespace. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W612",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "A line contains trailing whitespace. Remove unnecessary Spaces at the end of the line.  Any tabs or spaces after either ) would be considered trailing.\nAny tabs or spaces after the . in the comment would be considered trailing\nAny tabs or spaces on the empty line between the two print statements would also be considered a form of trailing whitespace.[规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "errExample": "print(\"luaCheck\")             whitespace",
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W613",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Trailing whitespace in a string. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W614",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Trailing whitespace in a comment. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W621",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Inconsistent indentation (SPACE followed by TAB). [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": []
+  },
+  {
+    "checkerName": "W631",
+    "severity": 2,
+    "checkerCategory": "CODE_FORMAT",
+    "checkerDesc": "Line is too long. [规则详情](https://luacheck.readthedocs.io/en/stable/warnings.html#formatting-issues-6xx)",
+    "checkerLanguage": [
+      "LUA"
+    ],
+    "checkerRecommend": "SYSTEM_DEFAULT",
+    "checkerTag": [
+      "系统推荐"
+    ],
+    "checkerProps": [
+      {
+        "propName": "lineMax",
+        "propValue": "120",
+        "displayValue": "120"
+      },
+      {
+        "propName": "codeMax",
+        "propValue": "120",
+        "displayValue": "120"
+      },
+      {
+        "propName": "stringMax",
+        "propValue": "120",
+        "displayValue": "120"
+      },
+      {
+        "propName": "commendMax",
+        "propValue": "120",
+        "displayValue": "120"
+      }
+    ]
+  }
+]

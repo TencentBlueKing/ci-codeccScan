@@ -1,0 +1,18 @@
+{
+  "name": "LUACHECK",
+  "displayName": "LuaCheck",
+  "pattern": "LINT",
+  "type": "STANDARD",
+  "briefIntroduction": "一个用于检测和静态分析Lua代码的工具。",
+  "description": "一个用于检测和静态分析Lua代码的工具。",
+  "supportedLanguages": [
+    "LUA"
+  ],
+  "dockerTriggerShell": "python3 /usr/codecc/tool_scan/sdk/src/scan.py --input={input.json} --output={output.json}",
+  "toolScanCommand": "",
+  "dockerImageURL": "mirrors.tencent.com/codecc-test/luacheck-codecc-plugin",
+  "dockerImageVersion": "latest",
+  "iconFileName": "icon.jpg",
+  "toolOptions": [],
+  "logo": ""
+}
