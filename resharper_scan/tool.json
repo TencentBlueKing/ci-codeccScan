@@ -1,0 +1,20 @@
+{
+  "name": "RESHARPER",
+  "displayName": "Resharper",
+  "pattern": "LINT",
+  "type": "STANDARD",
+  "briefIntroduction": "One of ReSharper’s most notable features, code inspection, is available even without opening the IDE. InspectCode, a free cross-platform command line tool requires a minimum of one parameter — your solution file — to apply all of ReSharper’s inspections.",
+  "description": "One of ReSharper’s most notable features, code inspection, is available even without opening the IDE. InspectCode, a free cross-platform command line tool requires a minimum of one parameter — your solution file — to apply all of ReSharper’s inspections.",
+  "supportedLanguages": [
+    "C_SHARP",
+    "C_CPP",
+    "JS",
+    "TYPESCRIPT"
+  ],
+  "dockerTriggerShell": "python3 ./sdk/src/scan.py --input {input.json} --output {output.json}",
+  "toolScanCommand": "python3 ./sdk/src/scan.py --input {input.json} --output {output.json}",
+  "dockerImageURL": "mirrors.tencent.com/codecc-test/resharper-codecc-plugin",
+  "dockerImageVersion": "latest",
+  "iconFileName": "favicon.ico",
+  "toolRunType": "local"
+}
