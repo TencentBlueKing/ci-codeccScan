@@ -17,11 +17,6 @@ sdk python执行脚本解析目录
 
 tool 工具二进制命令目录
 
-## 使用指南
-- 解压tool目录下的resharper.rar压缩包，这个压缩包的内容是resharper官方提供的windows二进制包
-- 将sdk、tool文件夹拷贝到C:\\data\\codecc_software\\resharper_scan目录，这个是默认路径，如果需要修改目录查看下方目录修改
-- 其他交由codecc插件去完成即可
-
 目录结构
 
   ![](./img/m.png)
@@ -40,11 +35,19 @@ openCheckers 子属性：
 > 
 > checkerOptions 携带的参数
 
-## 目录修改
+## 使用
 [ci-CodeCCCheckAtom](https://github.com/TencentBlueKing/ci-CodeCCCheckAtom)
-修改codecc插件代码配置
+codecc插件也需要更新
 
-resource目录下的`config.properties`文件第23行可修改工具存放位置，其他resharper请勿更改
+如果需要修改resharper的配置信息：
+- resource目录下的`config.properties`文件第23行可修改工具存放位置，其他resharper请勿更改
+- sdk\src\scan.py 脚本种的windToolPath常量也需要修改，因为是用的绝对路径写死的
+- 默认保存路径：`C:\\data\\codecc_software\\resharper_scan`
+
+## 常见问题
+> A：resharper老是输出一些没用的告警
+> 
+> B：这可能是你的构建机上没有你扫描项目所需要的环境配置
 
 ## 输出结构例子
 > {\
