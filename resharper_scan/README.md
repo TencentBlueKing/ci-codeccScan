@@ -42,6 +42,7 @@ codecc插件也需要更新
 如果需要修改resharper的配置信息：
 - resource目录下的`config.properties`文件第23行可修改工具存放位置，其他resharper请勿更改
 - sdk\src\scan.py 脚本种的windToolPath常量也需要修改，因为是用的绝对路径写死的
+- ci-CodeCCCheckAtom  CodeccUtils.kt 的getResharperScanPy()方法需要修改下载路径
 - 默认保存路径：`C:\\data\\codecc_software\\resharper_scan`
 
 ## 常见问题
