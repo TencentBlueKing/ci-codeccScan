@@ -53,8 +53,10 @@ def get_info(git_dir_path):
     try:
         for line in url_cmd.stdout:
             url = line.decode().strip()
-            if 'origin' in url and '(fetch)' in url:
+            if url.startswith("origin") and '(fetch)' in url:
                 url = url.replace('origin', '').replace('(fetch)', '').replace(' ', '').strip()
+            else :
+                continue
             if 'http://' in url and '@' in url:
                 url = 'http://'+url.split('@')[1]
             elif 'https://' in url and '@' in url:
