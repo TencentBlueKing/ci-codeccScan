@@ -28,13 +28,13 @@ StyleCop工具是微软的开源静态代码分析工具，它检查C＃代码�
     - (c) 查阅结果文件，看看规则命中情况    
     
 5、在checkers.json中添加新增规则的描述。在描述时需要说明该规则对应到哪一条规范，并附上链接。规则描述示例如下：
-``` [必须]注释语句与其注释对象之间不能空行 [tencent standards/csharp 2.1.2]({scmUrl}/standards/csharp#212-%E5%BF%85%E9%A1%BB%E7%A9%BA%E8%A1%8C) ```
+``` [必须]注释语句与其注释对象之间不能空行 ```
 
  6、在test目录下添加规则测试代码文件
 
  7、MR代码到test分支
 
- 8、以"**调试模式**"执行流水线将工具集成到CodeCC平台/console/pipeline/codecc-tool-auto/p-f053a67f10d44328956fa314e0b6b570
+ 8、以"**调试模式**"执行流水线将工具集成到CodeCC平台
  
  9、测试完成提合并请求到master分支
 

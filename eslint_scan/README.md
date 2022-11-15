@@ -14,13 +14,13 @@
 
 4.在checker.json中添加新增规则的描述。在描述时需要说明该规则对应到哪一条规范，并附上链接。规则描述示例如下：
 
-- 必须使用 === 或 !==，禁止使用 == 或 !=。 [tencent standards/javascript 15]({scmUrl}/standards/javascript#15-%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6%E5%92%8C%E7%AD%89%E5%8F%B7)
+- 必须使用 === 或 !==，禁止使用 == 或 !=。 
 
 5.在test目录下添加规则测试代码文件
 
 6.MR代码到test分支
 
-7.执行流水线部署/console/pipeline/codecc-tool-auto/p-2b74a1496b1c493e812d304b50e9b233/history
+7.执行流水线部署
 
 8.测试完成提合并请求到master分支，由工具负责人审核评估后正式发布到生产
 

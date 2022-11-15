@@ -1,8 +1,8 @@
 {
     "checker_set_id" : "standard_go",
-    "checker_set_name" : "腾讯代码规范(Golang)",
+    "checker_set_name" : "CodeCC默认(Golang)",
     "checker_set_lang" : "GOLANG",
-    "description" : "将根据公司规范持续更新…",
+    "description" : "持续更新中…",
     "checker_props" : [ 
         {
             "tool_name" : "GOML",

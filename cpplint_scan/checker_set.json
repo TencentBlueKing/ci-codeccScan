@@ -1,8 +1,8 @@
 {
     "checker_set_id" : "standard_cpp",
-    "checker_set_name" : "腾讯代码规范(C++)",
+    "checker_set_name" : "CodeCC默认(C++)",
     "checker_set_lang" : "C/C++",
-    "description" : "将根据公司规范持续更新…",
+    "description" : "持续更新中…",
     "checker_props" : [
         {
             "tool_name" : "CPPLINT",

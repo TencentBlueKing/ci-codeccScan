@@ -24,12 +24,12 @@ Checkstyle是一款开源的 Java 代码检查工具，用于检查Java源代码
 
 [注：更多规则定制方法可以参考官方文档](https://checkstyle.sourceforge.io/extending.html)
 5、在checkers.json中添加新增规则的描述。在描述时需要说明该规则对应到哪一条规范，并附上链接。规则描述示例如下：
- - Checks license headers are present in source files. [tencent standards/java 2.21](/standards/java#221%E6%8E%A8%E8%8D%90%E7%89%88%E6%9D%83%E5%A3%B0%E6%98%8E)
+ - Checks license headers are present in source files.
 
 6、在test目录下添加规则测试代码文件
 
 7、MR代码到test分支
 
-8、执行流水线部署/console/pipeline/codecc-tool-auto/p-7d9e3f06d5744990b7a077063a902f84
+8、执行流水线部署
 
 9、测试完成提合并请求到master分支，由工具负责人austinshen审核评估后正式发布到生产
